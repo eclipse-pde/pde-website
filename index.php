@@ -64,15 +64,6 @@ ob_start();
 		</div>
 	</div>
 
-	<div id="rightcolumn">
-		<div class="sideitem">
-			<h6>PDE links</h6>
-			<ul>
-				<li><a href="index.php">Home</a></li>
-			</ul>
-		</div>
-	</div>
-
 <?php
 	$html = ob_get_contents();
 	ob_end_clean();
