@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Repackaging Eclipse</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="http://eclipse.org/default_style.css" type=text/css rel=stylesheet>
+</head>
+
+<body>
+<table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
+  <tr>
+    <td ALIGN=LEFT width="60%"><font class=indextop>Packaging eclipse components</font><br>
+        <font class=indexsub>get what you need</font></td>
+  </tr>
+</table>
+<table border="0" width="100%" cellpadding="2" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="2" bgcolor="#0080c0" align="left" valign="top"><b><font  color="#ffffff" face="">Repackaging Eclipse</font></b></td>
+    </tr>
+</table>
+
+<p>Eclipse components are delivered as zip files. Each zip file contains a collection
+  of features and plug-ins. Typically the zips contain all function that a particular
+  component has to offer. It is often the case that consumers either need more
+  than one component and/or only need parts of some components. Without assistance,
+  consumers would have to manually fetch the zips containing the superset of
+  the function they need and then manually extract the required features and
+  plug-ins. This can be a laborious and error prone process.</p>
+<p>Fortunately, PDE contains a batch oriented mechanism, the <em>packager</em> which
+  can help. In short, the packager takes as input a list of zips containing features
+  and a list of interesting features. It then fetches the zips, extracts the
+  features (and their plug-ins) and repackages them into an output zip.</p>
+<h3>Packager configuration files:</h3>
+<dl>
+  <dt><strong>packager.properties</strong></dt>
+  <dd>A Java properties file that controls the packaging process</dd>
+
+  <dt><strong>customTargets.xml</strong></dt>
+  <dd>An Ant file used to customize different aspects of packaging</dd>
+  <dt> <strong>packaging.properties</strong><br>
+  </dt>
+  <dd>A Java properties file that controls the files included at the root
+    of the archives and file permissions</dd>
+</dl>
+<h3>Quick start: </h3>
+<p>Below is a set of basic steps to get started with the packager. More information 
+  is available near the various properties in the actual packager configuration 
+  files. It is suggested that you build *nix packages on a *nix machine to ensure 
+  that file permissions are assigned correctly.</p>
+<ol>
+  <li>Create a directory to host the packaging work (we'll use <em>c:\temp\newPackaging</em> 
+    here)</li>
+  <li>Unzip the <a href="packager.zip">packager template files</a> into c:\temp\newPackaging</li>
+  <li>Customize the files as follows:<br>
+     Changes in the packager.properties: 
+    <ul>
+      <li> update <strong>baseDirectory</strong> to be suitable for you</li>
+      <li> update <strong>featureList</strong> to indicate which features you want to be included in your archive</li>
+      <li>update <strong>componentFilter</strong> to list the components that will contribute the features (if you don't know put *) </li>
+      <li>update <strong>contentFilter</strong> to identify the type of content to be included in the packaging</li>
+      <li>update <strong>config</strong> to indicate the platform configuration for which you are packaging</li>
+      <li> if you are running on linux, set <strong>zipArgs</strong> to -y </li>
+    </ul>
+    Changes in the customTargets.xml: 
+    <ul>
+      <li> update the <strong>getMapFiles</strong> target to indicate the map file for the version you want to package. 
+      The example map provided is referencing the 3.0 components.</li>
+    </ul>
+    <p></p>
+  </li>
+  <li>In a shell, change to the install dir of the Eclipse you want to use to 
+    <strong>run</strong> the packager and execute: 
+    <pre>
+eclipse 
+    -application org.eclipse.ant.core.antRunner 
+    -buildfile &lt;full path to Eclipse&gt;\plugins\org.eclipse.pde.build_3.0.0\scripts\package.xml 
+    -DpackagingInfo=c:\temp\newPackaging 
+</pre>
+  </li>
+
+</ol>
+
+<h3>Packager map file format: </h3>
+The map files are used to describe the various zip, their content and where they can be fetched from. They are alike the map file for the build process.
+The format of a map file entry is as follow:
+<br>
+archiveName = url "|" [configList] "|" [directory] "|" [contentDescription] "|" [componentName]
+</br>
+
+<ul>
+<li>archivename: represents the name of the archive</li>
+
+<li>url: the url where to find the archive (the concatenation of url and zip points to the file to download)</li>
+
+<li>configList: an optional "&" separated list of configurations for which the zip 
+matches. win32,win32,86 & linux,gtk,x86. If nothing is specied, the archive content is platform independent</li>
+
+<li>directory: the directory where the content of the archive should be go relatively to an eclipse install </li>
+
+<li>contentDescription: flags indicating the content of the drop</li>
+
+<li>componentName: the name of the component</li>
+</ul>
+
+<p>
+Examples:<br>
+#Map file entry for the eclipse platform for windows<br>
+eclipse-platform-M20040818-win32.zip=http://download.eclipse.org/downloads/drops/M-M20040818-200408180800/ | win32,win32,x86 | | runtime | ide<br>
+
+#Map file entry for EMF (platform independent)<br>
+emf-sdo-runtime-M200408190924.zip=http://download.eclipse.org/tools/emf/downloads/drops/2.0.1/M200408190924/ | | | runtime | emf<br>
+</p>
+
+<h3>Prerequisites</h3>
+<p>This build process can be executed on any of the 
+<A target="extra" HREF="http://www.eclipse.org/eclipse/development/eclipse_project_plan_3_0.html#TargetOperatingEnvironments">Eclipse 
+3.0 Reference Platforms</A> plus the following:
+<ul>
+	<li><A target="extra" HREF="http://www.cvshome.org/">CVS</A> client version 1.10 or higher on system path. </li>
+
+	<li><A target="extra" HREF="http://www.info-zip.org/pub/infozip/">Info-Zip</A> zip and unzip executables on system path.</li>
+</ul>
+</p>
+</body>
+</html>

@@ -53,7 +53,7 @@ ob_start();
 				<td width="82%"><b>Description</b></td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="http://www.eclipse.org/eclipse/pde-build">Build</a></td>
+				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-build">Build</a></td>
 				<td width="82%">PDE Build</td>
 			</tr>
 			<tr> 
