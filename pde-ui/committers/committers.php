@@ -57,12 +57,6 @@ ob_start();
 		</div>
 	  <div class="homeitem3col">
 			<a name="involved"></a>
-			<h3>Meet The Team </h3>
-	      <p>Visit the <a href="committers/committers.php">Committers</a> page for a list of committers and active contributors on the PDE UI component.</p>
-	  </div>		
-	</div>
-	  <div class="homeitem3col">
-			<a name="involved"></a>
 			<h3>Get Involved!</h3>
 		  <p>If you are interested in participating in the development of the
 			PDE UI component, check out the developer's mailing list: <a
