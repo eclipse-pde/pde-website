@@ -39,7 +39,7 @@ ob_start();
                 <p align="center">Committer, IBM Toronto Lab </p></td>
                 <td><p align="center"><img src="wassim_melhem.gif" alt="Wassim Melhem" width="200" height="280"></p>
                 <p align="center"><strong><a href="http://wassim-melhem.blogspot.com">Wassim Melhem</a></strong></p>
-                <p align="center">Component Lead, IBM Toronto Lab  </p></td>
+                <p align="center">PDE/UI Lead, IBM Toronto Lab  </p></td>
               </tr>
           </table>
         </div>
