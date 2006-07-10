@@ -1,7 +1,7 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "PDE UI";
-	$pageKeywords	= "PDE/UI, PDE, plug-in, feature, fragment, extension point, development, tools, rcp, product, Eclipse";
+	$pageTitle 		= "PDE/UI Committers and Contributors";
+	$pageKeywords	= "PDE/UI, PDE, plug-in, development, tools, Eclipse, committer, contributor";
 	$pageAuthor		= "PDE/UI Team";
 	
 	# Add page-specific Nav bars here
@@ -17,20 +17,19 @@ ob_start();
 ?>
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-	  <div class="homeitem3col">
+		<div class="homeitem3col">
 			<a name="jdt ui"></a>
-			<h3>PDE/UI Committers and Contributors</h3>
-			<table width="61%" border="0">
+			<h3>PDE/UI Committers</h3>
+			<table width="100%" border="0">
               <tr>
-                <td colspan="2"><div align="center"><strong>Active Committers </strong></div></td>
-              </tr>
-              <tr>
-                <td width="50%" height="435"><p align="center"><img src="brian_bauman.gif" alt="Brian Bauman" width="200" height="280"></p>
+                <td><p align="center"><img src="brian_bauman.gif" alt="Brian Bauman" width="200" height="280"></p>
                 <p align="center"><strong>Brian Bauman </strong></p>
-                <p align="center">Committer, IBM Austin Labs </p></td>
-                <td width="50%" height="435"><p align="center"><img src="dejan_glozic.gif" alt="Dejan Glozic" width="200" height="280"></p>
+                <p align="center">Committer, IBM Austin Labs </p>
+				</td>
+                <td><p align="center"><img src="dejan_glozic.gif" alt="Dejan Glozic" width="200" height="280"></p>
                   <p align="center"><strong>Dejan Glozic</strong></p>
-                  <p align="center">Father of PDE, IBM Toronto Lab</p>                </td>
+                  <p align="center">Father of PDE, IBM Toronto Lab</p>               
+			    </td>
               </tr>
               <tr>
                 <td><p align="center"><img src="janek_lasocki_biczysko.gif" alt="Janek Lasocki Biczysko" width="200" height="280"></p>
@@ -40,7 +39,7 @@ ob_start();
                 <p align="center"><strong>Wassim Melhem</strong></p>
                 <p align="center">Component Lead, IBM Toronto Lab  </p></td>
               </tr>
-            </table>
+          </table>
 			<p>&nbsp;</p>
 </div>
 	</div>
