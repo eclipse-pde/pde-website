@@ -29,21 +29,15 @@ ob_start();
 		<div class="homeitem3col">
 		  <h3>About the PDE Subproject</h3>
 		  	<p>
-				The PDE project provides 
-				a number of views and editors that make is easier to build plug-ins for 
-    		    Eclipse. Using the PDE, you can create your plug-in manifest file (plugin.xml), 
-    		    specify your plug-in runtime and other required plug-ins, define extension 
-    		    points, including their specific markup, associate XML Schema files with 
-    		    the extension point markup so extensions can be validated, create extensions 
-    		    on other plug-in extension points, etc. The PDE makes integrating plug-ins 
-    		    easy and fun.
-        </p>
-	    </div>
+				The Plug-in Development Environment (PDE) provides tools to create, develop, test, debug, build and deploy Eclipse plug-ins, fragments, features, update sites and RCP products. </p>
+		  	<p>PDE also provides comprehensive OSGi tooling, which makes it an ideal environment for component programming, not just Eclipse plug-in development.</p>
+		  	<p>PDE is built atop the <a href="http://www.eclipse.org/platform/">Platform</a>  and <a href="http://www.eclipse.org/jdt/">JDT</a>, and ships as part of the Eclipse SDK. </p>
+		</div>
 		</p>
 		<div class="homeitem3col">
 		  <h3>PDE Components</h3>
 			<p>
-				The PDE subproject is broken down into components. Each component operates 
+				The PDE subproject is broken down into two components. Each component operates 
 				like a project unto its own, with its own set of committers, bug categories 
 				and mailing lists.
 			</p>
@@ -57,7 +51,7 @@ ob_start();
 				<td width="82%">PDE Build</td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="http://dev.eclipse.org/viewcvs/index.cgi/%7Echeckout%7E/pde-ui-home/main.html">UI</a></td>
+				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-ui">UI</a></td>
 				<td width="82%">PDE User Interface</td>
 			</tr>
 			</table>
