@@ -60,7 +60,6 @@ ob_start();
 			<h3>Meet The Team </h3>
 	      <p>Visit the <a href="committers/committers.php">Committers</a> page for a list of committers and active contributors on the PDE UI component.</p>
 	  </div>		
-	</div>
 	  <div class="homeitem3col">
 			<a name="involved"></a>
 			<h3>Get Involved!</h3>
@@ -69,8 +68,8 @@ ob_start();
 				href="http://dev.eclipse.org/mailman/listinfo/pde-ui-dev">pde-ui-dev@eclipse.org</a>.
 			Chat with people there about your problems and interests, and find
 		  out what you can do to help.</p>
-	  </div>		
-	</div>
+	  </div>
+   </div>	
 <?php
 	$html = ob_get_contents();
 	ob_end_clean();
