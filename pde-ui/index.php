@@ -18,7 +18,7 @@ ob_start();
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 	  <div class="homeitem3col">
-			<a name="jdt ui"></a>
+			<a name="pde ui"></a>
 			<h3>PDE UI</h3>
 			<p>The PDE UI component provides a comprehensive set of tools to create, develop, test, debug and deploy Eclipse   plug-ins, fragments, features, update sites and RCP products. </p>
 			<p> PDE UI also provides comprehensive OSGi tooling, which makes it an ideal environment   for component programming, not just Eclipse plug-in development.</p>
@@ -52,7 +52,7 @@ ob_start();
 	        <p>Watch this space for more details when the 3.3 plan is posted. </p>
 		</div>
 	  <div class="homeitem3col">
-			<a name="involved"></a>
+			<a name="team"></a>
 			<h3>Meet The Team </h3>
 	      <p>Visit the <a href="committers/committers.php">Committers</a> page for a list of committers and active contributors on the PDE UI component.</p>
 	  </div>		
