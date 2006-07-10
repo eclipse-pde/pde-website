@@ -22,14 +22,16 @@ ob_start();
 			<h3>Active PDE/UI Committers</h3>
 			<table width="100%" border="0">
               <tr>
-                <td height="477"><p align="center"><img src="brian_bauman.gif" alt="Brian Bauman" width="200" height="280"></p>
+                <td><p align="center"><img src="brian_bauman.gif" alt="Brian Bauman" width="200" height="280"></p>
                 <p align="center"><strong>Brian Bauman </strong></p>
                 <p align="center">Committer, IBM Austin Labs </p>
-				</td>
+                <p align="center">&nbsp;</p>
+                <p align="center">&nbsp;</p></td>
                 <td><p align="center"><img src="dejan_glozic.gif" alt="Dejan Glozic" width="200" height="280"></p>
                   <p align="center"><strong>Dejan Glozic</strong></p>
-                  <p align="center">Father of PDE, IBM Toronto Lab</p>               
-			    </td>
+                  <p align="center">Father of PDE, IBM Toronto Lab</p>
+                  <p align="center">&nbsp;</p>
+                  <p align="center">&nbsp;</p></td>
               </tr>
               <tr>
                 <td><p align="center"><img src="janek_lasocki_biczysko.gif" alt="Janek Lasocki Biczysko" width="200" height="280"></p>
