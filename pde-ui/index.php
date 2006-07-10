@@ -65,4 +65,11 @@ ob_start();
 		  out what you can do to help.</p>
 	  </div>		
 	</div>
+<?php
+	$html = ob_get_contents();
+	ob_end_clean();
+
+	# Generate the web page
+	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+?>
 
