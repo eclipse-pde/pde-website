@@ -30,15 +30,11 @@ ob_start();
 				<li>Import Wizards - import plug-ins and features from the file system.</li>
 				<li>Export Wizards  - wizards that build, package and export plug-ins, fragments and products with a single click. </li>
 				<li>Launchers - test and debug Eclipse applications and OSGi bundles. </li>
-				<li>Plug-ins View - shows a unified view of the plug-ins you are developing and the plug-ins you are developing against. </li>
-			    <li>Plug-in Registry View - shows the status  of all plug-ins in the running instance of Eclipse. </li>
-			    <li>Error Log View - shows all the errors and warnings logged by plug-ins. </li>
+				<li>Views - PDE provides views that help plug-in developers inspect different aspects   of their development environment.</li>
 			    <li>Miscelllaneous Tools   - wizards to externalize and clean up manifest files.</li>
 			    <li>Conversion Tools - wizard to convert a plain Java project or plain JARs into a plug-in project. </li>
-			    <li>Refactoring Participation - plug-in manifest files are updated when Java types and packages are renamed or moved.</li>
-			    <li>Search Participation - search hits are shown in plug-in manifest files when you  search for a Java type or package. </li>
-		    </ul>
-	        <p>&nbsp;</p>
+			    <li>Integration with JDT  - plug-in manifest files participate in Java search and refactoring. </li>
+			 </ul>
 	  </div>
 		<div class="homeitem3col">
 			<a name="happening"></a>
