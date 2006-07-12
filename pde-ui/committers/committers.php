@@ -19,7 +19,7 @@ ob_start();
 		<h1><?= $pageTitle ?></h1>
 		<div class="homeitem3col">
 			<a name="committers"></a>
-			<h3>Active PDE/UI Committers</h3>
+			<h3>PDE/UI Committers</h3>
 			<table width="100%" border="0">
               <tr>
                 <td width="33%"><p align="center"><img src="brian_bauman.gif" alt="Brian Bauman" width="200" height="280"></p>
@@ -40,13 +40,15 @@ ob_start();
 				</td>
               </tr>
               <tr>
-                <td><p align="center"><img src="janek_lasocki_biczysko.gif" alt="Janek Lasocki Biczysko" width="200" height="280"></p>
+                <td><p align="center"><img src="janek_lasocki_biczysko.gif" alt="Janek Lasocki-Biczysko" width="200" height="280"></p>
                 <p align="center"><strong>Janek Lasocki-Biczysko</strong></p>
                 <p align="center">Committer, IBM Toronto Lab</p></td>
                 <td><p align="center"><img src="wassim_melhem.gif" alt="Wassim Melhem" width="200" height="280"></p>
                 <p align="center"><strong><a href="http://wassim-melhem.blogspot.com">Wassim Melhem</a></strong></p>
                 <p align="center">PDE/UI Lead, IBM Toronto Lab </p></td>
-                <td>&nbsp;</td>
+                <td><p align="center"><img src="cherie_wong.jpg" alt="Cherie Wong" width="200" height="280"></p>
+                <p align="center"><strong>Cherie Wong</strong></p>
+                <p align="center">Committer, Amazon.com</p></td>
               </tr>
           </table>
         </div>
