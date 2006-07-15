@@ -57,11 +57,14 @@ ob_start();
 			<h3>Active PDE/UI Contributors</h3>
 			<table width="100%" border="0">
               <tr>
+               <td width="50%"><p align="center"><img src="chris_aniszczyk.gif" alt="Chris Aniszczyk" width="200" height="280"></p>
+                  <p align="center"><strong><a href="http://mea-bloga.blogspot.com">Chris Aniszczyk</a></strong></p>
+                  <p align="center">Contributor, IBM Austin Labs</p>               
+			    </td>
                <td width="50%"><p align="center"><img src="mike_pawlowski.gif" alt="Mike Pawlowski" width="200" height="280"></p>
                   <p align="center"><strong>Mike Pawlowski</strong></p>
                   <p align="center">Contributor, IBM Toronto Lab</p>               
 			    </td>
-				<td width="50%"><p></p></td>
               </tr>
           </table>
         </div>
