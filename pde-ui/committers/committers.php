@@ -51,7 +51,7 @@ ob_start();
                 <p align="center">PDE/UI Lead, IBM Toronto Lab </p></td>
                <td><p align="center"><img src="mike_pawlowski.gif" alt="Mike Pawlowski" width="200" height="280"></p>
                   <p align="center"><strong>Mike Pawlowski</strong></p>
-                  <p align="center">Contributor, IBM Toronto Lab</p>               
+                  <p align="center">Committer, IBM Toronto Lab</p>               
 			    </td>
                 <td><p align="center"><img src="cherie_wong.jpg" alt="Cherie Wong" width="200" height="280"></p>
                 <p align="center"><strong>Cherie Wong</strong></p>
