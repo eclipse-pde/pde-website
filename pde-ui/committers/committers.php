@@ -1,6 +1,6 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "PDE/UI Committers and Contributors";
+	$pageTitle 		= "PDE/UI Committers";
 	$pageKeywords	= "PDE/UI, PDE, plug-in, development, tools, Eclipse, committer, contributor";
 	$pageAuthor		= "PDE/UI Team";
 	
@@ -22,53 +22,48 @@ ob_start();
 			<h3>PDE/UI Committers</h3>
 			<table width="100%" border="0">
               <tr>
+                <td width="25%"><p align="center"><img src="chris_aniszczyk.gif" alt="Chris Aniszczyk" width="200" height="280"></p>
+                  <p align="center"><strong><a href="http://mea-bloga.blogspot.com">Chris Aniszczyk</a></strong></p>
+                  <p align="center">Contributor, IBM Austin Labs</p>               
+                  <p align="center">&nbsp;</p>
+                  <p align="center">&nbsp;</p>
+                </td>
                 <td width="25%"><p align="center"><img src="brian_bauman.gif" alt="Brian Bauman" width="200" height="280"></p>
-                <p align="center"><strong>Brian Bauman </strong></p>
-                <p align="center">Committer, IBM Austin Labs</p>
-                <p align="center">&nbsp;</p>
-                <p align="center">&nbsp;</p></td>
+                  <p align="center"><strong>Brian Bauman </strong></p>
+                  <p align="center">Committer, IBM Austin Labs</p>
+                  <p align="center">&nbsp;</p>
+                  <p align="center">&nbsp;</p>
+                </td>
                 <td width="25%"><p align="center"><img src="dejan_glozic.gif" alt="Dejan Glozic" width="200" height="280"></p>
                   <p align="center"><strong>Dejan Glozic</strong></p>
                   <p align="center">Father of PDE, IBM Toronto Lab</p>
                   <p align="center">&nbsp;</p>
-                <p align="center">&nbsp;</p></td>
+                  <p align="center">&nbsp;</p>
+                </td>
 				<td width="25%"><p align="center"><img src="konrad_kolosowski.gif" alt="Konrad Kolosowski" width="200" height="280"></p>
                   <p align="center"><strong>Konrad Kolosowski</strong></p>
 				  <p align="center">Committer, IBM Toronto Lab</p>
                   <p align="center">&nbsp;</p>
                   <p align="center">&nbsp;</p>		
 				</td>
-                <td width="25%"><p align="center"><img src="janek_lasocki_biczysko.gif" alt="Janek Lasocki-Biczysko" width="200" height="280"></p>
-                <p align="center"><strong>Janek Lasocki-Biczysko</strong></p>
-                <p align="center">Committer, IBM Toronto Lab</p>
-				  <p align="center">&nbsp;</p>
-                  <p align="center">&nbsp;</p>		
-				</td>
               </tr>
               <tr>
+                <td width="25%"><p align="center"><img src="janek_lasocki_biczysko.gif" alt="Janek Lasocki-Biczysko" width="200" height="280"></p>
+                  <p align="center"><strong>Janek Lasocki-Biczysko</strong></p>
+                  <p align="center">Committer, IBM Toronto Lab</p>
+				</td>
                 <td><p align="center"><img src="wassim_melhem.gif" alt="Wassim Melhem" width="200" height="280"></p>
-                <p align="center"><strong><a href="http://wassim-melhem.blogspot.com">Wassim Melhem</a></strong></p>
-                <p align="center">PDE/UI Lead, IBM Toronto Lab </p></td>
-               <td><p align="center"><img src="mike_pawlowski.gif" alt="Mike Pawlowski" width="200" height="280"></p>
+                  <p align="center"><strong><a href="http://wassim-melhem.blogspot.com">Wassim Melhem</a></strong></p>
+                  <p align="center">PDE/UI Lead, IBM Toronto Lab</p>
+                </td>
+                <td><p align="center"><img src="mike_pawlowski.gif" alt="Mike Pawlowski" width="200" height="280"></p>
                   <p align="center"><strong>Mike Pawlowski</strong></p>
                   <p align="center">Committer, IBM Toronto Lab</p>               
 			    </td>
                 <td><p align="center"><img src="cherie_wong.jpg" alt="Cherie Wong" width="200" height="280"></p>
-                <p align="center"><strong>Cherie Wong</strong></p>
-                <p align="center">Committer, Amazon.com</p></td>
-                <td>&nbsp;</td>
-              </tr>
-          </table>
-        </div>
-		<div class="homeitem3col">
-			<a name="contributors"></a>
-			<h3>Active PDE/UI Contributors</h3>
-			<table width="25%" border="0">
-              <tr>
-               <td width="25%"><p align="center"><img src="chris_aniszczyk.gif" alt="Chris Aniszczyk" width="200" height="280"></p>
-                  <p align="center"><strong><a href="http://mea-bloga.blogspot.com">Chris Aniszczyk</a></strong></p>
-                  <p align="center">Contributor, IBM Austin Labs</p>               
-			    </td>
+                  <p align="center"><strong>Cherie Wong</strong></p>
+                  <p align="center">Committer, Amazon.com</p>
+				</td>
               </tr>
           </table>
         </div>
