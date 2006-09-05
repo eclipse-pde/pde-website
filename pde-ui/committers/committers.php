@@ -17,7 +17,7 @@ ob_start();
 ?>
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-		<div class="homeitem2col">
+		<div class="homeitem3col">
 			<a name="committers"></a>
 			<h3>PDE/UI Committers</h3>
 			<table width="100%" border="0">
