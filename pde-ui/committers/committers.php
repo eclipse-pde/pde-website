@@ -24,7 +24,7 @@ ob_start();
               <tr>
                 <td width="25%"><p align="center"><img src="chris_aniszczyk.gif" alt="Chris Aniszczyk" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://mea-bloga.blogspot.com">Chris Aniszczyk</a></strong></p>
-                  <p align="center">Contributor, IBM Austin Labs</p>               
+                  <p align="center">Committer, IBM Austin Labs</p>               
                   <p align="center">&nbsp;</p>
                   <p align="center">&nbsp;</p>
                 </td>
