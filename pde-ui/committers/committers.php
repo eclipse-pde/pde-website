@@ -26,32 +26,36 @@ ob_start();
                   <p align="center"><strong><a href="http://mea-bloga.blogspot.com">Chris Aniszczyk</a></strong></p>
                   <p align="center">Committer, IBM Austin Labs</p>               
                   <p align="center">&nbsp;</p>
-                  <p align="center">&nbsp;</p>
                 </td>
                 <td width="25%"><p align="center"><img src="brian_bauman.gif" alt="Brian Bauman" width="200" height="280"></p>
-                  <p align="center"><strong>Brian Bauman </strong></p>
+                  <p align="center"><strong>Brian Bauman</strong></p>
                   <p align="center">Committer, IBM Austin Labs</p>
                   <p align="center">&nbsp;</p>
+                </td>
+                <td width="25%"><p align="center"><img src="ian_bull.PNG" alt="Ian Bull" width="200" height="280"></p>
+                  <p align="center"><strong><a href="http://mea-bloga.blogspot.com">Ian Bull</a></strong></p>
+                  <p align="center">Graph Visualizations Correspondent</p>
                   <p align="center">&nbsp;</p>
                 </td>
+              </tr>
+              <tr>
                 <td width="25%"><p align="center"><img src="dejan_glozic.gif" alt="Dejan Glozic" width="200" height="280"></p>
                   <p align="center"><strong>Dejan Glozic</strong></p>
                   <p align="center">Father of PDE, IBM Toronto Lab</p>
-                  <p align="center">&nbsp;</p>
                   <p align="center">&nbsp;</p>
                 </td>
 				<td width="25%"><p align="center"><img src="konrad_kolosowski.gif" alt="Konrad Kolosowski" width="200" height="280"></p>
                   <p align="center"><strong>Konrad Kolosowski</strong></p>
 				  <p align="center">Committer, IBM Toronto Lab</p>
                   <p align="center">&nbsp;</p>
-                  <p align="center">&nbsp;</p>		
 				</td>
-              </tr>
-              <tr>
                 <td width="25%"><p align="center"><img src="janek_lasocki_biczysko.gif" alt="Janek Lasocki-Biczysko" width="200" height="280"></p>
                   <p align="center"><strong>Janek Lasocki-Biczysko</strong></p>
                   <p align="center">Committer, IBM Toronto Lab</p>
+                  <p align="center">&nbsp;</p>
 				</td>
+              </tr>
+              <tr>
                 <td><p align="center"><img src="wassim_melhem.gif" alt="Wassim Melhem" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://wassim-melhem.blogspot.com">Wassim Melhem</a></strong></p>
                   <p align="center">PDE/UI Lead, IBM Toronto Lab</p>
