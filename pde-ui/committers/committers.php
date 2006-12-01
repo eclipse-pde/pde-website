@@ -33,7 +33,7 @@ ob_start();
                   <p align="center">&nbsp;</p>
                 </td>
                 <td width="25%"><p align="center"><img src="ian_bull.PNG" alt="Ian Bull" width="200" height="280"></p>
-                  <p align="center"><strong><a href="http://mea-bloga.blogspot.com">Ian Bull</a></strong></p>
+                  <p align="center"><strong><a href="http://www.ianbull.com/">Ian Bull</a></strong></p>
                   <p align="center">Graph Visualizations Correspondent</p>
                   <p align="center">&nbsp;</p>
                 </td>
