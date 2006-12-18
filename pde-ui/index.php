@@ -18,8 +18,8 @@ ob_start();
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 	  <div class="homeitem3col">
-			<a name="pde ui"></a>
-			<h3>PDE UI</h3>
+			<a name="about"></a>
+			<h3>About the PDE UI Component</h3>
 			<p>The PDE UI component provides a comprehensive set of tools to create, develop, test, debug and deploy Eclipse   plug-ins, fragments, features, update sites and RCP products. </p>
 			<p> PDE UI also provides comprehensive OSGi tooling, which makes it an ideal environment   for component programming, not just Eclipse plug-in development.</p>
 			<p>Some of the PDE UI tools include:</p>
@@ -37,6 +37,16 @@ ob_start();
 			 </ul>
 	  </div>
 		<div class="homeitem3col">
+			<a name="articles"></a>
+			<h3>Articles</h3>
+
+		</div>	  
+		<div class="homeitem3col">
+			<a name="dev"></a>
+			<h3>Development Resources</h3>
+			Coming soon ...
+		</div>			
+		<div class="homeitem3col">
 			<a name="happening"></a>
 			<h3>What&#8217;s Happening?</h3>
 			<p><b>R3.3 Development</b></p>
@@ -53,7 +63,7 @@ ob_start();
 		</div>
 	  <div class="homeitem3col">
 			<a name="team"></a>
-			<h3>Meet The Team </h3>
+			<h3>Meet the Team </h3>
 	      <p>Visit the <a href="committers/committers.php">Committers</a> page for a list of committers and active contributors on the PDE UI component.</p>
 	  </div>		
 	  <div class="homeitem3col">
@@ -66,6 +76,29 @@ ob_start();
 		  out what you can do to help.</p>
 	  </div>
    </div>	
+   
+   	<div id="rightcolumn">
+		<div class="sideitem">
+
+			<h6>Quick Links</h6>
+			<ul>
+			    <li><a href="http://www.eclipse.org/pde/pde-ui/">Home</a></li>
+				<li><a href="#articles">About the PDE UI Component</a></li>
+				<li><a href="#articles">Articles</a></li>
+				<li><a href="#dev">Development Resources</a></li>				
+				<li><a href="#happening">What&lsquo;s Happening?</a></li>
+				<li><a href="#team">Meet the Team</a></li>
+				<li><a href="#involved">Get Involved!</a></li>
+			</ul>
+		</div>
+		<div class="sideitem">
+			<h6>Related Links</h6>
+			<ul>
+				<li><a href="http://wiki.eclipse.org/index.php/PDE_UI">PDE UI Wiki</a></li>
+			</ul>
+		</div>
+	</div>
+   
 <?php
 	$html = ob_get_contents();
 	ob_end_clean();
