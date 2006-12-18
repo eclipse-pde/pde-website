@@ -73,7 +73,7 @@ ob_start();
         </div>
 	</div>
 	
-	   	<div id="rightcolumn">
+	<div id="rightcolumn">
 		<div class="sideitem">
 
 			<h6>Quick Links</h6>

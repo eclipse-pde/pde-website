@@ -39,16 +39,19 @@ ob_start();
 		<div class="homeitem3col">
 			<a name="articles"></a>
 			<h3>Articles</h3>
+			<p>The following PDE UI related articles are available:</p>
 			<ul>
-				<li><a href="http://www.eclipse.org/articles/Article-PDE-does-plugins/PDE-intro.html">PDE Does Plug-ins</a></li>
-				<li><a href="articles/cheat_sheet_dev_workflow/index.html">Recommended Work Flow for Cheat Sheet Development</a></li>
+				<li><a href="http://www.eclipse.org/articles/Article-PDE-does-plugins/PDE-intro.html">PDE Does Plug-ins</a> - 
+				Chronicles the creation, development, testing, building, and deployment of a simple "Hello World" plug-in using PDE tools.</li>
+				<li><a href="articles/cheat_sheet_dev_workflow/index.html">Recommended Work Flow for Cheat Sheet Development</a> - 
+				Demonstrate the recommended work flow for doing cheat sheet development using User Assistance and PDE tools.</li>
 			</ul>
 		</div>	  
 		<div class="homeitem3col">
 			<a name="dev"></a>
 			<h3>Development Resources</h3>
 			<p>
-				Coming soon ...
+				If you are already a PDE UI developer, check out the <a href="resources/dev.php">Development Resources.
 			</p>
 		</div>			
 		<div class="homeitem3col">
