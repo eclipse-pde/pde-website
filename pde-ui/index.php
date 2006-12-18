@@ -39,12 +39,17 @@ ob_start();
 		<div class="homeitem3col">
 			<a name="articles"></a>
 			<h3>Articles</h3>
-
+			<ul>
+				<li><a href="http://www.eclipse.org/articles/Article-PDE-does-plugins/PDE-intro.html">PDE Does Plug-ins</a></li>
+				<li><a href="articles/cheat_sheet_dev_workflow/index.html">PDE Does Plug-ins</a></li>
+			</ul>
 		</div>	  
 		<div class="homeitem3col">
 			<a name="dev"></a>
 			<h3>Development Resources</h3>
-			Coming soon ...
+			<p>
+				Coming soon ...
+			</p>
 		</div>			
 		<div class="homeitem3col">
 			<a name="happening"></a>
@@ -83,7 +88,7 @@ ob_start();
 			<h6>Quick Links</h6>
 			<ul>
 			    <li><a href="http://www.eclipse.org/pde/pde-ui/">Home</a></li>
-				<li><a href="#articles">About the PDE UI Component</a></li>
+				<li><a href="#about">About the PDE UI Component</a></li>
 				<li><a href="#articles">Articles</a></li>
 				<li><a href="#dev">Development Resources</a></li>				
 				<li><a href="#happening">What&lsquo;s Happening?</a></li>

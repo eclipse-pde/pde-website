@@ -1,0 +1,804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   
+   <!-- HEAD -->
+   
+   <head>
+      <title>Recommended Work Flow for Cheat Sheet Development</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="author" content="Mike Pawlowski" />
+      <meta name="keywords" content="TODO" />
+      <link rel="stylesheet" type="text/css" href="style/main.css" media="screen" />
+      <link rel="stylesheet" type="text/css" href="style/print.css" media="print" />
+   </head>
+
+   <!-- BODY -->
+
+   <body>
+      
+      <!-- HEADER -->
+
+      <div id="header">
+         <a name="top"/>
+         <a href="http://www.eclipse.org/">
+            <img src="images/image_header_logo.gif" alt="Eclipse Logo" class="logo" height="68" width="163"/></a>
+   
+         <ul id="headernav">
+            <li class="first">
+               <a href="mailto:mpawlow@ca.ibm.com">Contact</a>
+            </li>
+         </ul>
+      </div>
+      
+      <!-- SEPARATOR -->
+
+      <div id="topnavsep"></div>
+      
+      <!-- CONTAINER -->
+      
+      <div id="container">
+         
+         <!-- MAIN BODY -->
+         
+         <div id="midcolumn">
+
+            <!-- TITLE -->
+
+            <h1>Recommended Work Flow for Cheat Sheet Development</h1>
+            <p>By Mike Pawlowski</p>
+
+            <!-- SECTION -->
+            
+            <div class="homeitem3col">
+               <h3><a name="introduction"/><a href="#top">Introduction</a></h3>
+               <p>
+                  In general, cheat sheets help guide users through complex 
+                  instructions.   There are two types of cheat sheets:  simple 
+                  and composite.  Simple cheat sheets are used to organize and 
+                  present logical steps and sub-steps to achieve a certain 
+                  task.  Composite cheat sheets are used to organize and 
+                  present tasks represented by simple cheat sheets to achieve 
+                  a larger goal.
+               </p>
+               <p>
+                  Depending on the complexity of the goal, users may choose to 
+                  use simple cheat sheets alone or in association with 
+                  composite cheat sheets.  In this document, we will be 
+                  developing a simple <span class="italic">Hello World!</span> 
+                  example that makes use of simple and composite cheat sheets.
+               </p>
+               <p>
+                  The purpose of this document is to demonstrate the 
+                  recommended work flow for doing cheat sheet development 
+                  using the following User Assistance and PDE tools:
+               </p>
+               <ul>
+                  <li>
+                     New cheat sheet wizard
+                  </li>
+                  <li>
+                     New simple cheat sheet wizard
+                  </li>
+                  <li>
+                     Composite cheat sheet editor
+                  </li>
+                  <li>
+                     Simple cheat sheet editor
+                  </li>
+                  <li>
+                     Register cheat sheet wizard
+                  </li>
+                  <li>
+                     Cheat sheet view
+                  </li>
+               </ul>
+               <p>
+                  The recommended work flow for doing cheat 
+                  sheet development can be summarized in the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Composite Cheat Sheet
+                  </li>
+               </ul>
+               <ol>
+                  <li>
+                     1) <a href="#create_composite">Create</a>                     
+                  </li>
+                  <li>
+                     2) <a href="#edit_composite">Edit</a> <a href="#edit_composite2">[Again]</a>
+                  </li>                  
+               </ol>     
+               <ul class="indent">
+                  <li>
+                     Simple Cheat Sheet
+                  </li>                
+               </ul>
+               <ol class="indent">
+                  <li>
+                     2.1) <a href="#create_simple">Create</a>                  
+                  </li>
+                  <li>
+                     2.2) <a href="#edit_simple">Edit</a>
+                  </li>                  
+                  <li>
+                     2.3) <a href="#preview_simple">Preview</a>
+                  </li>                  
+               </ol>                
+               <ol>
+                  <li>
+                     3) <a href="#preview_composite">Preview</a>
+                  </li>                  
+                  <li>
+                     4) <a href="#register_composite">Register</a>
+                  </li>                  
+                  <li>
+                     5) <a href="#test_composite">Test</a>
+                  </li>                       
+               </ol>
+            </div>
+
+            <!-- SECTION -->
+
+            <div class="homeitem3col">
+               <h3><a name="create_composite"/><a href="#top">1) Create a Composite Cheat Sheet</a></h3>
+               <p>
+                  To start the <span class="italic">New cheat sheet 
+                  wizard</span>, perform the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Select <span class="bold">File &gt; New &gt; Other...</span>
+                     from the main menu.
+                  </li>
+                  <li>
+                     Select 
+                     <span class="italic">&quot;Cheat Sheet&quot;</span> under the 
+                     <span class="italic">&quot;User Assistance&quot;</span> category.
+                  </li>
+                  <li>
+                     Click the <span class="bold">Next &gt;</span> button.
+                  </li>
+               </ul>                
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_dialog_wizard_selection.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>               
+               <p>
+                  On the next page, perform the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Select the <span class="italic">&quot;cheatsheets&quot;</span> folder 
+                     in the tree viewer (any folder will suffice).
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;helloworld_composite.xml&quot;</span> 
+                     in the <span class="bold">File name:</span> text field.
+                  </li>
+                  <li>
+                     Select the <span class="bold">Composite Cheat Sheet</span> 
+                     radio button.
+                  </li>
+                  <li>
+                     Click the <span class="bold">Finish</span> button.
+                  </li>                  
+               </ul>     
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_wizard_new_cheat_sheet.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>               
+               <p>
+                  The new composite cheat sheet will be opened in the 
+                  <span class="italic">Composite cheat sheet editor.</span>
+               </p>               
+            </div>
+
+            <!-- SECTION -->
+
+            <div class="homeitem3col">
+               <h3><a name="edit_composite"/><a href="#top">2) Edit the Composite Cheat Sheet</a></h3>
+               <p>
+                  To edit the cheat sheet title, perform the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Select the root <span class="italic">&quot;Title&quot;</span> node 
+                     in the tree viewer (if not already selected).
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Composite&quot;</span> 
+                     into the <span class="bold">Name*:</span> text field.
+                  </li>
+               </ul>  
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_composite_edit_title.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>               
+               <p>
+                  To edit the task group, perform the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Select the <span class="italic">&quot;Group&quot;</span> node in the
+                     tree viewer.
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Group&quot;</span> 
+                     into the <span class="bold">Name*:</span> text field.
+                  </li>
+                  <li>
+                     Click the <span class="bold">Introduction</span> tab (if 
+                     not already selected).
+                  </li>                   
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Group 
+                     Introduction&quot;</span> into the associated text field.
+                  </li>     
+                  <li>
+                     Click the <span class="bold">Conclusion</span> tab.
+                  </li>                               
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Group 
+                     Conclusion&quot;</span> into the associated text field.
+                  </li>     
+               </ul>               
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_composite_edit_group.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>               
+               <p>
+                  To edit the task, perform the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Select the <span class="italic">&quot;Task&quot;</span> node in the
+                     tree viewer.
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Simple #1&quot;</span> 
+                     into the <span class="bold">Name*:</span> text field.
+                  </li>
+                  <li>
+                     Click the <span class="bold">Introduction</span> tab (if 
+                     not already selected).
+                  </li>                   
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Simple #1 
+                     Introduction&quot;</span> into the associated text field.
+                  </li>     
+                  <li>
+                     Click the <span class="bold">Conclusion</span> tab.
+                  </li>                               
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Simple #1 
+                     Conclusion&quot;</span> into the associated text field.
+                  </li>     
+               </ul>         
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_composite_edit_task_1.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>               
+               <p>
+                  Leave, the <span class="bold">Path*:</span> text field blank
+                  for now.
+               </p>               
+            </div>
+
+            <!-- SECTION -->
+
+            <div class="homeitem3col">
+               <h3><a name="create_simple"/><a href="#top">2.1) Create a Simple Cheat Sheet</a></h3>
+               <p>
+                  To start the <span class="italic">New simple cheat sheet 
+                  wizard</span>, click the <span class="bold">Path*:</span>
+                  hyperlink.
+               </p>
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_composite_click_hyperlink.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>               
+               <p>
+                  In the resulting wizard, perform the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Select the <span class="italic">&quot;cheatsheets&quot;</span> folder 
+                     in the tree viewer (any folder will suffice).
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;helloworld_simple_1.xml&quot;</span> 
+                     in the <span class="bold">File name:</span> text field.
+                  </li>
+                  <li>
+                      Click the <span class="bold">Finish</span> button.
+                  </li>
+               </ul>      
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_wizard_new_simple_cheat_sheet.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>               
+               <p>
+                  The new simple cheat sheet will be opened in the 
+                  <span class="italic">Simple cheat sheet editor.</span>
+               </p>                     
+            </div>
+
+            <!-- SECTION -->
+
+            <div class="homeitem3col">
+               <h3><a name="edit_simple"/><a href="#top">2.2) Edit the Simple Cheat Sheet</a></h3>
+               <p>
+                  To edit the cheat sheet title, perform the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Select the root <span class="italic">&quot;Title&quot;</span> node 
+                     in the tree viewer (if not already selected).
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Simple #1&quot;</span> 
+                     into the <span class="bold">Title*:</span> text field.
+                  </li>
+               </ul>  
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_simple_edit_title.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>               
+               <p>
+                  To edit the introduction, perform the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Select the <span class="italic">&quot;Introduction&quot;</span> node 
+                     in the tree viewer.
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Introduction&quot;</span> 
+                     into the <span class="bold">Body*:</span> text field.
+                  </li>
+               </ul>    
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_simple_edit_introduction.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>               
+               <p>
+                  To edit the first item, perform the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Select the <span class="italic">&quot;Item&quot;</span> node 
+                     in the tree viewer.
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;Item #1&quot;</span> 
+                     into the <span class="bold">Title*:</span> text field.
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;Hello World! #1&quot;</span> 
+                     into the <span class="bold">Body*:</span> text field.
+                  </li>
+               </ul>      
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_simple_edit_item_1.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>               
+               <p>
+                  To edit the second item, perform the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Click the <span class="bold">Add Step</span> button.
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;Item #2&quot;</span> 
+                     into the <span class="bold">Title*:</span> text field.
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;Hello World! #2&quot;</span> 
+                     into the <span class="bold">Body*:</span> text field.
+                  </li>
+               </ul>           
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_simple_edit_item_2.png" alt="TODO"/>
+               </div>
+            </div>
+
+            <!-- SECTION -->
+
+            <div class="homeitem3col">
+               <h3><a name="preview_simple"/><a href="#top">2.3) Preview the Simple Cheat Sheet</a></h3>
+               <p>
+                  To preview the unsaved cheat sheet, click the 
+                  <span class="bold">Preview</span> button.
+               </p>     
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_simple_click_preview.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>      
+               <p>
+                  The cheat sheet is opened up in the 
+                  <span class="italic">Cheat sheet view</span> to the right
+                  of the editor.
+               </p>                             
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_view_simple_preview.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>      
+               <p>
+                  Verify the cheat sheet content and save the cheat sheet by 
+                  selecting <span class="bold">File &gt; Save</span> from the 
+                  main menu. 
+               </p>                       
+            </div>
+
+            <!-- SECTION -->
+
+            <div class="homeitem3col">
+               <h3><a name="preview_composite"/><a href="#top">3) Preview the Composite Cheat Sheet</a></h3>
+               <p>
+                  Switch back to the <span class="italic">Composite cheat sheet
+                  editor</span> for the 
+                  <span class="italic">&quot;helloworld_composite.xml&quot;</span>
+                  file.
+               </p>
+               <p>
+                  Note how the <span class="italic">New simple cheat sheet
+                  wizard</span> poplulated the <span class="bold">Path*:</span> 
+                  field with the path to the newly created simple cheat sheet.
+               </p>  
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_composite_filled_simple.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>  
+               <p>
+                  To preview the unsaved cheat sheet, click the 
+                  <span class="bold">Preview</span> button.
+               </p>       
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_composite_click_preview.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>  
+               <p>
+                  The cheat sheet is opened up in the 
+                  <span class="italic">Cheat sheet view</span> to the right
+                  of the editor.
+               </p>   
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_view_composite_preview.png" alt="TODO" />
+               </div>
+               <div class="line"></div>               
+               <p>
+                  Verify the cheat sheet content and save the cheat sheet by 
+                  selecting <span class="bold">File &gt; Save</span> from the 
+                  main menu. 
+               </p>       
+            </div>
+
+            <!-- SECTION -->
+
+            <div class="homeitem3col">
+               <h3><a name="edit_composite2"/><a href="#top">2) Edit the Composite Cheat Sheet [Again]</a></h3>
+               <p>
+                  Optionally, to add another task, perform the following steps:
+               </p>      
+               <ul>
+                  <li>
+                     Click the <span class="bold">Add Task</span> button.
+                  </li>
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Simple #2&quot;</span> 
+                     into the <span class="bold">Name*:</span> text field.
+                  </li>
+                  <li>
+                     Click the <span class="bold">Introduction</span> tab (if 
+                     not already selected).
+                  </li>                   
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Simple #2 
+                     Introduction&quot;</span> into the associated text field.
+                  </li>     
+                  <li>
+                     Click the <span class="bold">Conclusion</span> tab.
+                  </li>                               
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Simple #2 
+                     Conclusion&quot;</span> into the associated text field.
+                  </li>     
+                  <li>
+                     Repeat the following steps for a Simple Cheat Sheet:
+                  </li>
+               </ul>                       
+               <ol>
+                  <li>
+                     2.1) <a href="#create_simple">Create</a>
+                  </li>                  
+                  <li>
+                     2.2) <a href="#edit_simple">Edit</a>
+                  </li>
+                  <li>
+                     2.3) <a href="#preview_simple">Preview</a>
+                  </li>
+               </ol>
+               <ul>                       
+                  <li>
+                     Repeat the following step for the Composite Cheat Sheet:
+                  </li>
+               </ul>                       
+               <ol>
+                  <li>
+                     3) <a href="#preview_composite">Preview</a>
+                  </li>
+               </ol>
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_composite_edit_task_2.png" alt="TODO"/>
+               </div>
+            </div>
+            
+            <!-- SECTION -->
+
+            <div class="homeitem3col">
+               <h3><a name="register_composite"/><a href="#top">4) Register the Composite Cheat Sheet</a></h3>
+               <p>
+                  To start the <span class="italic">Register cheat sheet 
+                  wizard</span>, click the <span class="bold">Register this 
+                  cheat sheet</span> hyperlink.
+               </p>    
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_editor_composite_click_register.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>
+               <p>
+                  To create a new cheat sheet category, click the 
+                  <span class="bold">New...</span> button.
+               </p> 
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_wizard_register_cheat_sheet_1.png" alt="TODO" />
+               </div>
+               <div class="line"></div>               
+               <p>
+                  In the resulting dialog, perform the following steps:
+               </p>      
+               <ul>
+                  <li>
+                     Input <span class="italic"> &quot;Hello World! Category&quot;</span> 
+                     into the <span class="bold">Name:</span> text field.
+                  </li>
+                  <li>
+                     Click the <span class="bold">OK</span> button.
+                  </li>
+               </ul>               
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_dialog_new_category.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>                          
+               <p>
+                  Note how the <span class="bold">Category:</span> drop menu
+                  is now populated with the category created in the previous
+                  step.
+               </p> 
+               <p>
+                  To complete the registration, complete the following steps:
+                  
+               </p>
+               <ul>
+                  <li>
+                     Input <span class="italic">&quot;Hello World! Description&quot;
+                     </span> in the <span class="bold">Description:</span> 
+                     text field.
+                  </li>
+                  <li>
+                     Click the <span class="bold">Finish</span> button.
+                  </li>
+               </ul>               
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_wizard_register_cheat_sheet_2.png" alt="TODO"/>
+               </div>
+            </div>
+
+            <!-- SECTION -->
+
+            <div class="homeitem3col">
+               <h3><a name="test_composite"/><a href="#top">5) Test the Composite Cheat Sheet</a></h3>
+               <p>
+                  To test the cheat sheet, perform the following steps:
+               </p>      
+               <ul>
+                  <li>
+                     Select <span class="bold">Run &gt; Run...</span> from the 
+                     main menu to open the <span class="italic">
+                     Launch configuration dialog</span>.
+                  </li>
+                  <li>
+                     Create a new 
+                     <span class="italic">Eclipse Application</span> launch 
+                     configuration.
+                  </li>
+                  <li>
+                     Click the <span class="bold">Run</span> button to launch a 
+                     second instance of Eclipse.
+                  </li>
+                  <li>
+                     Once loaded, switch to the second instance of Eclipse.
+                  </li>   
+                  <li>
+                     Select <span class="bold">Help &gt; Cheat Sheets...</span> 
+                     from the main menu to open the <span class="italic">
+                     Cheat sheet selection</span> dialog.
+                  </li> 
+                  <li>
+                     Select the 
+                     <span class="italic">&quot;Hello World! Composite&quot;</span> 
+                     node under the 
+                     <span class="italic">&quot;Hello World! Category&quot;</span> in the
+                     tree viewer.
+                  </li>                                       
+                  <li>
+                     Click the <span class="bold">OK</span> button.
+                  </li>                      
+               </ul>               
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_dialog_cheat_sheet_selection.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>
+               <p>
+                  The cheat sheet is opened up in the 
+                  <span class="italic">Cheat sheet view</span>.
+               </p>                                
+               <div class="line"></div>
+               <div class="center">
+                  <img src="images/image_view_composite_cheat_sheet.png" alt="TODO"/>
+               </div>
+               <div class="line"></div>
+               <p>
+                  Verify the cheat sheet content. 
+               </p>                                
+            </div>
+
+            <!-- SECTION -->
+
+            <div class="homeitem3col">
+               <h3><a name="conclusion"/><a href="#top">Conclusion</a></h3>
+               <p>
+                  In conclusion, the recommended work flow for doing cheat 
+                  sheet development can be summarized in the following steps:
+               </p>
+               <ul>
+                  <li>
+                     Composite Cheat Sheet
+                  </li>
+               </ul>
+               <ol>
+                  <li>
+                     1) <a href="#create_composite">Create</a>                     
+                  </li>
+                  <li>
+                     2) <a href="#edit_composite">Edit</a> <a href="#edit_composite2">[Again]</a>
+                  </li>                  
+               </ol>     
+               <ul class="indent">
+                  <li>
+                     Simple Cheat Sheet
+                  </li>                
+               </ul>
+               <ol class="indent">
+                  <li>
+                     2.1) <a href="#create_simple">Create</a>                  
+                  </li>
+                  <li>
+                     2.2) <a href="#edit_simple">Edit</a>
+                  </li>                  
+                  <li>
+                     2.3) <a href="#preview_simple">Preview</a>
+                  </li>                  
+               </ol>                
+               <ol>
+                  <li>
+                     3) <a href="#preview_composite">Preview</a>
+                  </li>                  
+                  <li>
+                     4) <a href="#register_composite">Register</a>
+                  </li>                  
+                  <li>
+                     5) <a href="#test_composite">Test</a>
+                  </li>                       
+               </ol>
+            </div>
+            
+         </div>
+   
+         <!-- RIGHT INDEX -->
+    
+         <div id="rightcolumn">
+            <div class="sideitem">
+               <h6>Index</h6>
+               <ul>
+                  <li>
+                     <a href="#introduction">Introduction</a>
+                  </li>
+               </ul>
+               <ul>
+                  <li>
+                     Composite Cheat Sheet
+                  </li>
+               </ul>
+               <ol>
+                  <li>
+                     1) <a href="#create_composite">Create</a>                     
+                  </li>
+                  <li>
+                     2) <a href="#edit_composite">Edit</a> <a href="#edit_composite2">[Again]</a>
+                  </li>                  
+               </ol>     
+               <ul class="indent">
+                  <li>
+                     Simple Cheat Sheet
+                  </li>                
+               </ul>
+               <ol class="indent">
+                  <li>
+                     2.1) <a href="#create_simple">Create</a>                  
+                  </li>
+                  <li>
+                     2.2) <a href="#edit_simple">Edit</a>
+                  </li>                  
+                  <li>
+                     2.3) <a href="#preview_simple">Preview</a>
+                  </li>                  
+               </ol>                
+               <ol>
+                  <li>
+                     3) <a href="#preview_composite">Preview</a>
+                  </li>                  
+                  <li>
+                     4) <a href="#register_composite">Register</a>
+                  </li>                  
+                  <li>
+                     5) <a href="#test_composite">Test</a>
+                  </li>                       
+               </ol>
+               <ul>      
+                  <li>
+                     <a href="#conclusion">Conclusion</a>
+                  </li>                  
+               </ul>
+            </div>
+         </div>
+         
+      </div>
+      
+      <!-- FOOTER -->
+
+      <div id="footer">
+         <ul id="footernav">
+            <li class="first">
+               <a href="http://www.eclipse.org/">Home</a>
+            </li>
+         </ul>
+         <p>Copyright &copy; 2006 The Eclipse Foundation. All Rights Reserved</p>
+      </div>
+
+   </body>
+</html>
