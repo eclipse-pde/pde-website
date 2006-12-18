@@ -41,7 +41,7 @@ ob_start();
 			<h3>Articles</h3>
 			<ul>
 				<li><a href="http://www.eclipse.org/articles/Article-PDE-does-plugins/PDE-intro.html">PDE Does Plug-ins</a></li>
-				<li><a href="articles/cheat_sheet_dev_workflow/index.html">PDE Does Plug-ins</a></li>
+				<li><a href="articles/cheat_sheet_dev_workflow/index.html">Recommended Work Flow for Cheat Sheet Development</a></li>
 			</ul>
 		</div>	  
 		<div class="homeitem3col">
