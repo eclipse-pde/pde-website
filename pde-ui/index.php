@@ -44,7 +44,7 @@ ob_start();
 				<li><a href="http://www.eclipse.org/articles/Article-PDE-does-plugins/PDE-intro.html">PDE Does Plug-ins</a> - 
 				Chronicles the creation, development, testing, building, and deployment of a simple "Hello World" plug-in using PDE tools.</li>
 				<li><a href="articles/cheat_sheet_dev_workflow/index.html">Recommended Work Flow for Cheat Sheet Development</a> - 
-				Demonstrate the recommended work flow for doing cheat sheet development using User Assistance and PDE tools.</li>
+				Demonstrates the recommended work flow for doing cheat sheet development using User Assistance and PDE tools.</li>
 			</ul>
 		</div>	  
 		<div class="homeitem3col">
