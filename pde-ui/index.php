@@ -37,21 +37,18 @@ ob_start();
 			 </ul>
 	  </div>
 		<div class="homeitem3col">
-			<a name="articles"></a>
-			<h3>Articles</h3>
+			<a name="user"></a>
+			<h3>User Resources</h3>
 			<p>The following PDE UI related articles are available:</p>
-			<ul>
-				<li><a href="http://www.eclipse.org/articles/Article-PDE-does-plugins/PDE-intro.html">PDE Does Plug-ins</a> - 
-				Chronicles the creation, development, testing, building, and deployment of a simple &quot;Hello World&quot; plug-in using PDE tools.</li>
-				<li><a href="articles/cheat_sheet_dev_workflow/index.html">Recommended Work Flow for Cheat Sheet Development</a> - 
-				Demonstrates the recommended work flow for doing cheat sheet development using User Assistance and PDE tools.</li>
-			</ul>
+			<p>
+				New to PDE? Check out the <a href="resources/user.php">User Resources</a>.
+			</p>
 		</div>	  
 		<div class="homeitem3col">
 			<a name="dev"></a>
 			<h3>Development Resources</h3>
 			<p>
-				If you are already a PDE UI developer, check out the <a href="resources/dev.php">Development Resources.
+				If you are already a PDE UI developer, check out the <a href="resources/dev.php">Development Resources</a>.
 			</p>
 		</div>			
 		<div class="homeitem3col">
@@ -74,15 +71,6 @@ ob_start();
 			<h3>Meet the Team </h3>
 	      <p>Visit the <a href="committers/committers.php">Committers</a> page for a list of committers and active contributors on the PDE UI component.</p>
 	  </div>		
-	  <div class="homeitem3col">
-			<a name="involved"></a>
-			<h3>Get Involved!</h3>
-		  <p>If you are interested in participating in the development of the
-			PDE UI component, check out the developer's mailing list: <a
-				href="http://dev.eclipse.org/mailman/listinfo/pde-ui-dev">pde-ui-dev@eclipse.org</a>.
-			Chat with people there about your problems and interests, and find
-		  out what you can do to help.</p>
-	  </div>
    </div>	
    
    	<div id="rightcolumn">
@@ -92,11 +80,10 @@ ob_start();
 			<ul>
 			    <li><a href="http://www.eclipse.org/pde/pde-ui/">Home</a></li>
 				<li><a href="#about">About the PDE UI Component</a></li>
-				<li><a href="#articles">Articles</a></li>
+				<li><a href="#user">User Resources</a></li>
 				<li><a href="#dev">Development Resources</a></li>				
 				<li><a href="#happening">What&lsquo;s Happening?</a></li>
 				<li><a href="#team">Meet the Team</a></li>
-				<li><a href="#involved">Get Involved!</a></li>
 			</ul>
 		</div>
 		<div class="sideitem">

@@ -64,7 +64,15 @@ ob_start();
  href="http://dev.eclipse.org/mhonarc/lists/pde-ui-dev/maillist.html">archives</a>)</li>
       	</ul>
 		</div>
-		
+	<div class="homeitem3col">
+			<a name="involved"></a>
+			<h3>Get Involved!</h3>
+		  <p>If you are interested in participating in the development of the
+			PDE UI component, check out the developer's mailing list: <a
+				href="http://dev.eclipse.org/mailman/listinfo/pde-ui-dev">pde-ui-dev@eclipse.org</a>.
+			Chat with people there about your problems and interests, and find
+		  out what you can do to help.</p>
+	</div>
 	</div>
 
 	<div id="rightcolumn">
@@ -77,7 +85,8 @@ ob_start();
 				<li><a href="#plugins">Plug-ins</a></li>
 				<li><a href="#documents">Documents</a></li>
 				<li><a href="#bugs">Bugs</a></li>
-				<li><a href="#mail">Mailing Lists</a></li>				
+				<li><a href="#mail">Mailing Lists</a></li>		
+				<li><a href="#involved">Get Involved!</a></li>
 			</ul>
 		</div>
 		<div class="sideitem">
