@@ -24,7 +24,7 @@ ob_start();
 			<ul>
 				<li><a href="http://www.eclipse.org/articles/Article-PDE-does-plugins/PDE-intro.html">PDE Does Plug-ins</a> - 
 				Chronicles the creation, development, testing, building, and deployment of a simple &quot;Hello World&quot; plug-in using PDE tools.</li>
-				<li><a href="articles/cheat_sheet_dev_workflow/index.html">Recommended Work Flow for Cheat Sheet Development</a> - 
+				<li><a href="http://www.eclipse.org/pde/pde-ui/articles/cheat_sheet_dev_workflow/index.html">Recommended Work Flow for Cheat Sheet Development</a> - 
 				Demonstrates the recommended work flow for doing cheat sheet development using User Assistance and PDE tools.</li>
 			</ul>
 		</div>
@@ -38,7 +38,7 @@ ob_start();
 The view contains three sections:
 (1) Project Links - Contains a tree viewer that models the Eclipse project, sub-projects and components; 
 (2) Useful Links - Contains useful Eclipse hyperlinks;
-(3) Search - Contains a Google search box to enter search queries</li>
+(3) Search - Contains a Google search box to enter search queries.</li>
 			</ul>
 		</div>		
 	</div>

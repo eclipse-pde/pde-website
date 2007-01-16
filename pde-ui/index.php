@@ -39,7 +39,6 @@ ob_start();
 		<div class="homeitem3col">
 			<a name="user"></a>
 			<h3>User Resources</h3>
-			<p>The following PDE UI related articles are available:</p>
 			<p>
 				New to PDE? Check out the <a href="resources/user.php">User Resources</a>.
 			</p>
