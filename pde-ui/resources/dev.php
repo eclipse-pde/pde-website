@@ -38,6 +38,12 @@ ob_start();
  			</ul>
 		</div>
 		<div class="homeitem3col">
+			<h3>Patches</h3>
+			<a name="patches"></a>
+			<p>The following is a patched org.eclipse.pde.core plug-in that fixes <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=179125">bug 179125</a> that was introduced in 3.3M6</p>
+			<p><a href="../patches/org.eclipse.pde.core_3.3.0.20070323-patch.jar">org.eclipse.pde.core</a><p>		 
+		</div>
+		<div class="homeitem3col">
 			<h3>Documents</h3>
 			<a name="documents"></a>
 			<p>Coming soon ...</p>
