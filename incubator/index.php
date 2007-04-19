@@ -26,7 +26,7 @@ ob_start();
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 
-			<p class=bar>Mission Statement</p>
+			<p class="homeitem3col">Mission Statement</p>
 <p>
 </p>
 
