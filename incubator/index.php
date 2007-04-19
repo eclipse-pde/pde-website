@@ -8,7 +8,7 @@
 	#
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "PDE Incubator";
-	$pageKeywords	= "pde, build, ui, plug-in, development, environment, bundle";
+	$pageKeywords	= "pde, build, ui, plug-in, development, environment, bundle, incubator";
 	
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -26,36 +26,58 @@ ob_start();
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 
-		<div class="homeitem3col">
-		  <h3>About the PDE Incubator</h3>
-		  	<p>
-			</p>
-		</div>
-		</p>
-		<div class="homeitem3col">
-		  <h3>PDE Components</h3>
-			<p>
-				The PDE subproject is broken down into two components. Each component operates 
-				like a project unto its own, with its own set of committers, bug categories 
-				and mailing lists.
-			</p>
-			<table width="100%" border="0">
-			<tr> 
-				<td width="20%" valign="top"><b>Name</b></td>
-				<td width="82%"><b>Description</b></td>
-			</tr>
-			<tr> 
-				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-build">Build</a></td>
-				<td width="82%">PDE Build</td>
-			</tr>
-			<tr> 
-				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-ui">UI</a></td>
-				<td width="82%">PDE User Interface</td>
-			</tr>
-			</table>
-		</div>
+			<p class=bar>Mission Statement</p>
+<p>
+</p>
+
+			<p class=bar>Work Areas</p>
+<table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
+	<tr>
+      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
+      <td width="98%"><a href="aspects/index.php" target="_top"><b>Dependency Visualization</b></a><br>
+    Issues around Aspect-oriented programming, load-time weaving and modularity.</td>
+  </tr>
+  </table>
+
+<p>For an understanding of how work is carried out in the incubators, check out
+  the <a href="howto.php">How to Incubate</a> guide.</p>
+
+			<p class=bar>Old Work Areas</p>
+<p>See the <a href="archive">Equinox Incubator Archive</a> for details of previous
+  work areas.</p>
+
+			<p class=bar>What's New</p>
+<p><b>Nov 10, 2006</b> - <IMG src="http://www.eclipse.org/images/new.gif"
+	width="31" height="14"> Andrew Niefer has been added as a committer and has started working on a new launcher story for Eclipse.  
+	See the <a href="http://wiki.eclipse.org/index.php/Equinox_Launcher">wiki</a> for more information.</p>
+</p>
+
+			<p class=bar>Committers</p>
+      <p>The following people are committers on the Equinox Incubator:</p>
+      <ul>
+        <li>Jennifer Fogell, IBM PvC</li>
+        <li>Olivier Gruber, IBM Research</li>
+		<li>Ted Habeck, IBM Research</li>
+        <li>BJ Hargrave, IBM PvC</li>
+        <li>Simon Kaegi, IBM Rational</li>
+        <li>Peter Kriens, aQute</li>
+        <li>Martin Lippert, it-agile</li>
+        <li>Jeff McAffer, IBM Rational (Project lead)</li>
+        <li>Andrew Niefer, IBM Rational</li>
+        <li>Pascal Rapicault, IBM Rational</li>
+        <li>Tom Watson, IBM PvC</li>
+        <li>Matthew Webster, IBM Hursley</li>
+        <li>Ikuo Yamasaki, NTT Corporation</li>
+      </ul>
+      
+<p>&nbsp;</p>
 	</div>
 
+<?php
+	include $_SERVER['DOCUMENT_ROOT'] . "/equinox/global-links.html";
+	include $_SERVER['DOCUMENT_ROOT'] . "/equinox/incubator/component-links.html";
+	if (file_exists("dir-links.html")) {include "dir-links.html";}
+?>
 <?php
 	$html = ob_get_contents();
 	ob_end_clean();
