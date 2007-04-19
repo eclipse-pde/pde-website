@@ -49,7 +49,7 @@ support for the tasks they perform every day.<BR>
   </table>
 
 <p>For an understanding of how work is carried out in the incubators, check out
-  the <a href="howto.php">How to Incubate</a> guide.</p>
+  the <a href="http://www.eclipse.org/equinox/incubator/howto.php">How to Incubate</a> guide.</p>
 
 		
 		
