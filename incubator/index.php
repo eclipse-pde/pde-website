@@ -26,10 +26,12 @@ ob_start();
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 
-			<p class="homeitem3col">Mission Statement</p>
+			<div class="homeitem3col">
+			<H3>Mission Statement</H3>
 <p>
+Mission
 </p>
-
+</div>
 			<p class=bar>Work Areas</p>
 <table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
 	<tr>
