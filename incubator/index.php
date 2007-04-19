@@ -48,16 +48,7 @@ support for the tasks they perform every day.<BR>
   </tr>
   </table>
 
-<p>For an understanding of how work is carried out in the incubators, check out
-  the <a href="http://www.eclipse.org/equinox/incubator/howto.php">How to Incubate</a> guide.</p>
-
 		
-		
-			<p class=bar>Committers</p>
-      <p>The following people are committers on the PDE Incubator:</p>
-      <ul>
-
-      </ul>
       
 <p>&nbsp;</p>
 	</div>
