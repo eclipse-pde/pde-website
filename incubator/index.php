@@ -28,15 +28,23 @@ ob_start();
 
 			<p class=bar>Mission Statement</p>
 			<p>
-Mission
+The goal of the PDE Incubator is to do experimental, forward-looking work outside of the constraints of the 
+regular release cycles. While not necessarily targetting the next Eclipse release, our work in the 
+incubator is always focused on delivering new capabilities into the development stream.  
+In particular, the PDE Incubator will focus on tools and technologies to assist with 
+plug-in development providing plug-in developers more cognitive 
+support for the tasks they perform every day.<BR>
+
+In PDE we do tooling, but our business is people!
+
 </p>
 
 			<p class=bar>Work Areas</p>
 <table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
 	<tr>
       <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
-      <td width="98%"><a href="aspects/index.php" target="_top"><b>Dependency Visualization</b></a><br>
-    Issues around Aspect-oriented programming, load-time weaving and modularity.</td>
+      <td width="98%"><a href="index.php" target="_top"><b>Dependency Visualization</b></a><br>
+    Views designed to assist with plug-in dependency analysis tasks.</td>
   </tr>
   </table>
 
