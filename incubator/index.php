@@ -43,40 +43,19 @@ Mission
 <p>For an understanding of how work is carried out in the incubators, check out
   the <a href="howto.php">How to Incubate</a> guide.</p>
 
-			<p class=bar>Old Work Areas</p>
-<p>See the <a href="archive">Equinox Incubator Archive</a> for details of previous
-  work areas.</p>
-
-			<p class=bar>What's New</p>
-<p><b>Nov 10, 2006</b> - <IMG src="http://www.eclipse.org/images/new.gif"
-	width="31" height="14"> Andrew Niefer has been added as a committer and has started working on a new launcher story for Eclipse.  
-	See the <a href="http://wiki.eclipse.org/index.php/Equinox_Launcher">wiki</a> for more information.</p>
-</p>
-
+		
+		
 			<p class=bar>Committers</p>
-      <p>The following people are committers on the Equinox Incubator:</p>
+      <p>The following people are committers on the PDE Incubator:</p>
       <ul>
-        <li>Jennifer Fogell, IBM PvC</li>
-        <li>Olivier Gruber, IBM Research</li>
-		<li>Ted Habeck, IBM Research</li>
-        <li>BJ Hargrave, IBM PvC</li>
-        <li>Simon Kaegi, IBM Rational</li>
-        <li>Peter Kriens, aQute</li>
-        <li>Martin Lippert, it-agile</li>
-        <li>Jeff McAffer, IBM Rational (Project lead)</li>
-        <li>Andrew Niefer, IBM Rational</li>
-        <li>Pascal Rapicault, IBM Rational</li>
-        <li>Tom Watson, IBM PvC</li>
-        <li>Matthew Webster, IBM Hursley</li>
-        <li>Ikuo Yamasaki, NTT Corporation</li>
+
       </ul>
       
 <p>&nbsp;</p>
 	</div>
 
 <?php
-	include $_SERVER['DOCUMENT_ROOT'] . "/equinox/global-links.html";
-	include $_SERVER['DOCUMENT_ROOT'] . "/equinox/incubator/component-links.html";
+	include $_SERVER['DOCUMENT_ROOT'] . "/pde/incubator/component-links.html";
 	if (file_exists("dir-links.html")) {include "dir-links.html";}
 ?>
 <?php
