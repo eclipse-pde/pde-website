@@ -32,10 +32,10 @@ The goal of the PDE Incubator is to do experimental, forward-looking work outsid
 regular release cycles. While not necessarily targetting the next Eclipse release, our work in the 
 incubator is always focused on delivering new capabilities into the development stream.  
 In particular, the PDE Incubator will focus on tools and technologies to assist with 
-plug-in development providing plug-in developers more cognitive 
+plug-in development, providing plug-in developers more cognitive 
 support for the tasks they perform every day.<BR>
-
-In PDE we do tooling, but our business is people!
+<BR>
+<I>In PDE we do tooling, but our business is people!</I>
 
 </p>
 
