@@ -27,11 +27,9 @@ ob_start();
 		<h1><?= $pageTitle ?></h1>
 
 		<div class="homeitem3col">
-		  <h3>About the PDE Subproject</h3>
+		  <h3>About the PDE Incubator</h3>
 		  	<p>
-				The Plug-in Development Environment (PDE) provides tools to create, develop, test, debug, build and deploy Eclipse plug-ins, fragments, features, update sites and RCP products. </p>
-		  	<p>PDE also provides comprehensive OSGi tooling, which makes it an ideal environment for component programming, not just Eclipse plug-in development.</p>
-		  	<p>PDE is built atop the <a href="http://www.eclipse.org/platform/">Platform</a>  and <a href="http://www.eclipse.org/jdt/">JDT</a>, and ships as part of the Eclipse SDK. </p>
+			</p>
 		</div>
 		</p>
 		<div class="homeitem3col">
