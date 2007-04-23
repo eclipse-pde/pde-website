@@ -40,6 +40,15 @@ ob_start();
 			for tracking issues with the Plug-in Dependency Visualization Incubator project.<BR><BR> 
 			Click <A HREF="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=%5Bpde+viz%5D&classification=Eclipse&product=PDE&component=Incubators&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">here</a> 
 			for a list of currently opened bugs.
+			</p>
+			
+			<p class=bar>Accessing Source Code</p>
+			Currently the PDE Dependency Visualization tool is only available in CVS.  The tool is built
+			using the <A HREF="http://www.eclipse.org/mylar/zest.php">Zest</A> toolkit and 
+			<A HREF="http://www.eclipse.org/gef/">Draw2D</A>.  In order to get the source and
+			build the PDE Dependency Visualization Tool follow the instructions found 
+			<A HREF="getsource.php">here</a>.
+	
 			
 			
 
