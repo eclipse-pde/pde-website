@@ -32,7 +32,13 @@ ob_start();
       <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
       <td width="98%">Select the CVS Perspective.<BR>
       <IMG SRC="images/selectCVS.jpg"></IMG>
-    
+    </td>
+  </tr>
+  <tr>
+      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
+      <td width="98%">Add a repository location by right clicking on the CVS 
+      Repository View and selecting Repository Location from the context menu.<BR>
+      <IMG SRC="images/createRepository.jpg"></IMG>
     </td>
   </tr>
   </table>
