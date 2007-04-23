@@ -26,6 +26,17 @@ ob_start();
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 		
+	<p class=bar>Accessing The Source Code</p>
+<table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
+	<tr>
+      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
+      <td width="98%">Select the CVS Perspective.<BR>
+      <IMG SRC="images/selectCVS.jpg"></IMG>
+    
+    </td>
+  </tr>
+  </table>
+		
 		
 		
 <p>&nbsp;</p>
