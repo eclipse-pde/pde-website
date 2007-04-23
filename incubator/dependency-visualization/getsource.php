@@ -50,7 +50,7 @@ ob_start();
       <li><b>User:</b>anonymous
       <li><b>Connection type:</b>pserver
       </ul>
-      <i>Leave all other values as their defaults.</I>.
+      <i>Leave all other values as their defaults.</I>.<BR>
       <IMG SRC="images/connectionProfile.jpg"></IMG>
     </td>
   </tr>
