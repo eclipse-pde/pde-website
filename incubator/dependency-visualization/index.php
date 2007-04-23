@@ -26,7 +26,7 @@ ob_start();
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 
-			<p class=bar>Dependency Visualization</p>
+			<p class=bar>Overview</p>
 			<p>
 			The dependency visualization aims to provide a set of 
 			views to assist with plug-in dependency analysis tasks.  
@@ -34,6 +34,13 @@ ob_start();
 			to people as they attempt to understand the dependencies 
 			between their plug-ins.
 			</p>
+			
+			<p class=bar>Bugs and Feature Requests</p>
+			
+			Click <A HREF="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=%5Bpde+viz%5D&classification=Eclipse&product=PDE&component=Incubators&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">here</a> 
+			for a list of currently opened bugs.
+			
+			
 
 </p>
 		
