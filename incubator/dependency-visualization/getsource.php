@@ -24,7 +24,7 @@ ob_start();
 ?>		
 
 	<div id="midcolumn">
-		<h1><?= $pageTitle ?></h1>
+		<h1><A HREF="http://www.eclipse.org/pde/incubator/dependency-visualization/index.php"><?= $pageTitle ?></A></h1>
 		
 	<p class=bar>Accessing The Source Code</p>
 <table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
