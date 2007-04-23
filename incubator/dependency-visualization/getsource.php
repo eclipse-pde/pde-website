@@ -54,6 +54,13 @@ ob_start();
       <IMG SRC="images/connectionProfile.jpg"></IMG>
     </td>
   </tr>
+    <tr>
+      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
+      <td width="98%">Select pde-incubator -> visualization -> plugins -> org.eclipse.pde.visualization.dependency.  
+      Right click, and select "Check Out".
+      <IMG SRC="images/checkout.jpg"></IMG>
+    </td>
+  </tr>
   </table>
 		
 		
