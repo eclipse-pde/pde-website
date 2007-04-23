@@ -41,6 +41,19 @@ ob_start();
       <IMG SRC="images/createRepository.jpg"></IMG>
     </td>
   </tr>
+  <tr>
+      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
+      <td width="98%">Create a connection profile using the following values:<BR>
+      <ul>
+      <li><B>Host:</B> dev.eclipse.org
+      <li><b>Repository Path:</B> /cvsroot/eclipse
+      <li><b>User:</b>anonymous
+      <li><b>Connection type:</b>pserver
+      </ul>
+      <i>Leave all other values as their defaults.</I>.
+      <IMG SRC="images/connectionProfile.jpg"></IMG>
+    </td>
+  </tr>
   </table>
 		
 		
