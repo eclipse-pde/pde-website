@@ -32,7 +32,10 @@ ob_start();
 			views to assist with plug-in dependency analysis tasks.  
 			In particular, the views will provide cognitive support 
 			to people as they attempt to understand the dependencies 
-			between their plug-ins.
+			between their plug-ins.<BR><BR>
+			This tool is part of the <A HREF="http://www.eclipse.org/eclipse/incubator">Eclipse Incubator</a> project.  
+			For a complete description of Eclipse incubation please read 
+			<A HREF="http://www.eclipse.org/projects/what-is-incubation.php">this.</a>
 			</p>
 			
 			<p class=bar>Bugs and Feature Requests</p>
