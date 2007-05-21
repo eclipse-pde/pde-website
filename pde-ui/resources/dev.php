@@ -46,12 +46,14 @@ ob_start();
 		<div class="homeitem3col">
 			<h3>Test Plans </h3>
 			<a name="documents"></a>
-			<p><a href="../scenarios/PDEScenarios3_3.html">3.3 Test Plan</a></p>
-			<p><a href="../scenarios/PDEScenarios3_2.html">3.2 Test Plan</a></p>
-			<p><a href="../scenarios/PDEScenarios3_1.html">3.1 Test Plan</a></p>
-			<p><a href="../scenarios/PDEScenarios3_0.html">3.0 Test Plan</a></p>
-			<p><a href="../scenarios/PDEScenarios.html">2.1 Test Plan     </a></p>
-		</div>
+			<ul>
+			  <li><a href="../scenarios/PDEScenarios3_3.html">3.3 Test Plan</a></li>
+		      <li><a href="../scenarios/PDEScenarios3_2.html">3.2 Test Plan</a></li>
+		      <li><a href="../scenarios/PDEScenarios3_1.html">3.1 Test Plan</a></li>
+		      <li><a href="../scenarios/PDEScenarios3_0.html">3.0 Test Plan</a></li>
+		      <li><a href="../scenarios/PDEScenarios.html">2.1 Test Plan     </a></li>
+		  </ul>
+	  </div>
 		<div class="homeitem3col">
 			<h3>Bugs</h3>
 			<a name="bugs"></a>
