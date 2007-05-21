@@ -1,0 +1,1592 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+   <title>PDE Scenarios</title>
+</head>
+<body>
+
+<center>
+<h1>
+PDE Usage Scenarios</h1></center>
+The following set of scenarios are designed to assist Eclipse user community
+explore and test the Plug-in Development Environment (PDE). Not all the scenarios are sequential but doing S1 and A1 scenarios
+first ensures that the basic functionality is correct.
+<p>If you find a problem with the scenario step, open a Bugzilla defect against
+component PDE/UI. Include the build number (e.g. RC1, RC2 etc.). <b>Always
+prefix the description with the step number</b> as in:</p>
+<blockquote>
+  <p>B7.5: Debugger does not stop at the second point</p>
+</blockquote>
+<h2>
+Setup</h2>
+
+<ul>
+<li>
+<b>S1.1</b> Switch to the Plug-in Development perspective in order to get
+the property sheet positioned properly.</li>
+<li>
+<b>S1.2</b> Alternatively, you can use Java perspective but open Properties and
+Error Log views on top of the Tasks.</li>
+</ul>
+
+<hr>
+<h2>
+Scenario A: Basic plug-in activities in a simple self-hosting mode</h2>
+In this scenario, the assumption is that there is an installation of a
+full Eclipse-based product. A small to medium-scale (value-add) ISV wants
+to add a relatively small number of plug-ins to the product. The final
+plug-in complement should be everything that is already in the product
+plus new plug-ins. Product plug-ins will be referenced from the outside,
+while the new plug-ins will be in the development time workspace. Although not
+prohibited, the assumption is that user's projects are not shared.
+<h3>
+A1. Preparation for work</h3>
+
+<ul>
+<li>
+<b>A1.1 </b>Ensure that external plug-ins are enabled to avoid compilation
+errors. To do so, go to Window->Preferences, expand 'Plug-in Development'
+node and select Target Platform page. Press 'Select All' button to enable
+all external plug-ins.</li>
+
+<li>
+<b>A1.2</b> Enlarge the workbench window to occupy most of the viewable
+area (you need some space for all the views and editors that will be showing
+in the PDE perspective).</li>
+</ul>
+
+<h3>
+A2. Creating a new plug-in project.</h3>
+<font color="#000080">Note: The first set of scenarios walk you through
+the plug-in development lifecycle manually. Newly added feature called
+'extension templates' provides for very fast results using pre-packaged
+templates. If you want to have a very short 'speed to glass' starting with
+a clean install, jump to the <a href="#templates">scenario A12</a>.</font>
+<ul>
+<li>
+<b>A2.1</b> Bring the 'New' dialog by selecting File->New->Project... from
+the menu bar. Select 'Plug-in Development' in the Category list and 'Plug-in
+Project' in the Wizard list. Press 'Next'.</li>
+
+<li>
+<b>A2.2</b> You are now in 'New Project' wizard of PDE. Enter 'com.example.xyz'
+as the name of the new project. This name will also be used to initialize
+plug-in ID but does not have to match it. Press 'Next'.</li>
+
+<li>
+<b>A2.3</b> Observe the settings for the plug-in structure. Run-time library
+name should be 'xyz.jar' and initial source folder should be 'src'. Press
+'Next'. <i><font color="#000080">Note: these names are just a 'guess'. In real life, you are
+free to modify them, and/or add more source folders. For the sake of testing,
+we will keep the provided names.</font></i></li>
+
+<li>
+<b>A2.4</b> At this page, a choice has to be made. A blank plug-in project
+can be created, together with the build.properties file and a blank plugin.xml.
+Alternatively, if 'Create plug-in using a template wizard' is selected,
+a list below the button will be enabled and you can choose between various
+wizards that provide for the initial plug-in content. For this scenario,
+select 'Default Plug-In Structure' from the list of wizards. Press 'Next'.</li>
+
+<li>
+<b>A2.5</b> You are now in <b>Default Plug-In Content</b> wizard. Its role
+is to fill in the initial content of the <tt>plugin.xml</tt> and to create
+top-level plug-in Java class. <i><font color="#000080">Note: by definition, plug-ins are not
+required to provide top-level Java class. This feature is used for Java
+class libraries that are made available to other plug-ins. If a plug-in
+contributes extensions and/or extension points, this class is required.</font></i></li>
+
+<li>
+<b>A2.6</b> Keep all the settings as provided by the wizard. In a real
+life, you would modify them. Press 'Finish'. Wait for the dialog to close
+and for manifest editor to open. <i><font color="#000080">Note: be patient - there is a brief
+moment when the wizard closes that the cursor turns to normal, but it will
+soon turn to hourglass again and the editor will open.</font></i></li>
+</ul>
+
+<h3>
+A3. Examining plug-in manifest editor pages</h3>
+
+<ul>
+<li>
+<b>A3.0 Welcome page.</b> This optional page should show up when a project has 
+been created from a template. It can be turned off using the checkbox at the 
+bottom.</li>
+<li>
+<b>A3.1 Overview page.</b> This page shows 'plug-in at a glance' view,
+provide quick links for detail pages and allows changes in the basic plug-in
+properties like name, version etc. Change the name of the plug-in from
+'XYZ Plugin' to 'XYZ Sample Plugin' by typing this name in the provided
+text field. When done, hit 'Enter'. Observe how 'Save' button enables and
+page title changes to display the new name. Save the page.</li>
+
+<li>
+<b>A3.2</b> Verify that top-level Java class is created by following the
+link 'Class' in front of the Java class text field. The link should open
+the class in Java editor.</li>
+
+<li>
+<b>A3.3 Runtime page.</b> Press the button 'More...' in the Runtime Libraries
+section of the Overview page. This should open Runtime page. The list of
+libraries should contain a library as defined in the project wizard (xyz.jar).
+Select the library. In the section on the right, export all the classes
+in the JAR by selecting 'Export the entire library' radio button. In the
+section below, verify that the list contains 'src' source folder. Save (Ctrl+S or Save from pop-up menu).</li>
+
+<li>
+<b>A3.4</b> <b>Plugin.jars exclusive access test.</b> While the manifest
+editor is up, switch to the navigator and open build.properties for editing.
+A similar looking (form-based) editor should open with a title: <b>Properties
+(in use or read only)</b>. This is because build.properties is currently
+used by the Runtime page of the manifest editor. This lock prevents changes
+that are not in sync. The lock works both ways. To verify it, close both
+the manifest editor and build.properties editor. Open build.properties
+editor first. The title is now <b>Properties</b>. Buttons in the page are
+enabled - the file can be modified. Open plugin.xml and go to Runtime page.
+The bottom section heading should be "<b>Library content (in use - read
+only)</b>". Close both editors.</li>
+
+<li>
+<b>A3.5 Dependencies page.</b> Go back to manifest editor and switch to
+'Dependencies' using the appropriate bottom tab. Verify that the section
+on the left contains three plug-in references: 'org.eclipse.core.runtime', 'org.eclipse.core.resources' and
+'org.eclipse.ui'.</li>
+
+<li>
+<b>A3.6 External manifests.</b> While in 'Dependencies' page, double-click
+on the 'org.eclipse.ui' plug-in reference or select 'Open' from the pop-up
+menu. Manifest editor for the Workbench UI should open. This editor is
+opened on an external file and is therefore read-only. Verify that (nothing
+that can cause file change should be enabled). When done, close the editor.</li>
+
+<li>
+<b>A3.7 Source page - round-trip. </b>Switch to Source page. It should
+show plugin.xml source with syntax highlighting. Verify that the content
+is correct (it should contain three <b>import</b> elements, one <b>library</b>
+element and the correct attributes for <b>plugin</b> element). Change the
+value of the 'name' attribute from "XYZ Sample Plugin&quot; to "XYZ Plugin&quot;.
+Do not save. Switch to Overview page. Verify that the change has been propagated
+to the page (name text field should contain the new name and the title
+should also reflect it). Save now.</li>
+
+<li>
+<b>A3.8 Source page - syntax errors.</b> Return to source page. Find the
+closing tag of the 'runtime' element. Remove '>' character from the closing
+tag. Save. The task list should show an error about '>' being expected.
+In addition, the error marker should appear in the vertical annotation
+bar.</li>
+
+<li>
+<b>A3.9 Source page - error mode.</b> Without saving or correcting the
+error, select 'Overview' page tab. You should see an error dialog warning
+you that you cannot leave the source page until syntax errors are corrected.</li>
+
+<li>
+<b>A3.10 Source page - error on startup.</b> Save the source page with
+an error and close the editor. Open the editor by double-clicking on the
+plugin.xml file. The editor will detect problems in the file and will open
+editor into source page - error mode.</li>
+
+<li>
+<b>A3.11 Source page - recovery.</b> Add the '>' back and save. The error
+should go away and you should be able to go back to other pages.</li>
+</ul>
+
+<h3>
+A4. Adding an action set</h3>
+
+<ul>
+<li>
+<b>A4.1</b> Switch to Extensions page. It should be empty. Press the 'Add' button. A wizard should
+appear. Select 'Generic Wizards' category. Select "Schema-based Extension"
+wizard on the right. Press "Next'.</li>
+
+<li>
+<b>A4.2</b> From the list of available extension points select "Action
+Sets". Press "Finish". A new extension should appear in the list. Verify
+that the property sheet shows the correct extension point Id (org.eclipse.ui.actionSets)
+when extension is selected.</li>
+
+<li>
+<b>A4.3</b> Select the extension and open the pop-up menu. Select New-&gt;actionSet
+(this is possible because PDE has extension point schema for action sets
+that allows it to calculate valid children of the selected XML element).
+A new 'actionSet' element should appear as a child of the extension. Select
+it (if not already selected).</li>
+
+<li>
+<b>A4.4</b> Move to the property sheet. Select 'id' property and change
+it to 'com.example.xyz.sampleActionSet'. Select 'label' attribute and change
+it to "Sample Action Set". Observe how element name in the extension tree
+changes as well.</li>
+
+<li>
+<b>A4.5 </b>Go back to the extension tree. Select action set element, bring
+up the pop-up menu and select 'New->menu'. Select action set again, then
+select the new element<i>.</i></li>
+
+<li>
+<b>A4.6</b> Move to the property sheet. Select 'id' property and change
+it to 'sampleMenu'. Select 'label' property and change it to 'Sample Menu'.</li>
+
+<li>
+<b>A4.7</b> Select the menu element and bring up the pop-up menu. Select
+'New->separator'. Select the new element.</li>
+
+<li>
+<b>A4.8</b> Move to the property sheet. Select 'name' property and change
+it to 'sampleGroup'.</li>
+
+<li>
+<b>A4.9</b> Save. Select action set element, bring up the pop-up menu and
+select 'New->action'. Select the newly added element.</li>
+
+<li>
+<b>A4.10</b> Move to the property sheet. Change 'id' property to 'com.example.xyz.sampleAction'.
+Set 'label' property to '&amp;Sample Action'. Set 'menubarPath' to 'sampleMenu/sampleGroup'.</li>
+
+<li>
+<b>A4.11</b> Select 'class' property and bring up property editor dialog.
+<i>Note:
+'class' attribute is marked as 'Java' in 'actionSet' extension point schema.
+This allows PDE to treat its attribute value as a fully qualified Java
+class name and interact with Java plug-in to find its value.</i></li>
+
+<li>
+<b>A4.12</b> Select "Generate a new Java class" radio button. Set the container
+by selecting "Browse..." and choosing &quot;src&quot; in container selection dialog.
+Set the package name to &quot;com.example.xyz&quot; (you can browse for the package name 
+if you want). Set the class name to &quot;SampleAction&quot;.
+Hit "Finish". Verify that a new task has appeared in the task list to remind
+you to finish implementation of the action class.</li>
+
+<li>
+<b>A4.13</b> Wait for SampleAction.java to open in Java editor after it
+has been created by the wizard.</li>
+
+<li>
+<b>A4.14</b> While inside Java editor, locate 'run' method and add the
+following statement:</li>
+
+<pre>System.out.println(&quot;Hello, PDE world!&quot;);</pre>
+Save and close. Return to the manifest editor. Save.
+<li>
+<b>A4.15</b> Switch to the Source page. Verify that the file now contains
+XML code for new extension point. Return to the Extension page.</li>
+</ul>
+
+<h3>
+A5. Testing the newly added action set</h3>
+
+<ul>
+<li>
+<b>A5.1</b> Switch back to the manifest editor and make sure there are
+no unsaved changes. If there are, save.</li>
+
+<li>
+A5.2 Select the 'running man' icon on tool bar: not the icon itself by
+the drop-down menu on the tool bar button. Select 'Run...' option.</li>
+
+<li>
+A5.3 Select 'Run-time Workbench' in the list of launch types. Select 'New'
+button at the lower-left corner of the dialog.</li>
+
+<li>
+A5.4 When the launch configuration tabs appear on the right, rename 'New_Configuration'
+into 'Standard' or something else that will be easy to distinguish.</li>
+
+<li>
+<b>A5.5</b> Press on the "Run" button at the lower-right corner of the
+dialog. Wait until another Eclipse workbench instance starts.</li>
+
+<li>
+<b>A5.6 </b>Select "Window->Customize Perspective...->Other" from the runtime
+Eclipse window menu bar. Select the checkbox for "Sample Action Set" (the
+one provided by our new plug-in).</li>
+
+<li>
+<b>A5.7</b> Verify that there is a new top-level menu "Sample Menu" in
+the menu bar and that it contains menu item "Sample Action". Select it.
+Verify that the console view shows "Hello, PDE world!" text (blue). Congratulations,
+you have successfully created your first Eclipse plug-in in PDE!</li>
+
+<li>
+<b>A5.8</b> Select "Perspective->Customize->Other..." and turn "Sample
+Action Set" off.</li>
+
+<li>
+<b>A5.9</b> Close the run-time workbench, return to the design time instance
+and switch back to the "Plug-in Development" perspective page.</li>
+</ul>
+
+<h3>
+A6. Refining the action set</h3>
+
+<ul>
+<li>
+<b>A6.1</b> Go the Packages view and select &quot;com.example.xyz&quot; project.
+Bring up the pop-up menu and select "New->Folder". Type in the folder name
+"icons" and press OK.</li>
+
+<li>
+<b>A6.2</b> Select the newly created folder. Open the "Import..." wizard
+from the File menu. Select "File system" import engine. Press "Next".</li>
+
+<li>
+<b>A6.3</b> Press "Browse" to select the source directory for the Import.
+Browse to the Eclipse installation you are running, then drill down to eclipse/plugins/org.eclipse.ui/icons/full/obj16.</li>
+
+<li>
+<b>A6.4</b> Press "Details" button. First deselect all in the left pane.
+After that, select &quot;info_tsk.gif&quot; in the right pane. Press "OK". Press
+"Finish" in the wizard. Verify that &quot;info_tsk.gif&quot; file is now in the "icons"
+directory.</li>
+
+<li>
+<b>A6.5</b> Open plugin.xml using plug-in manifest editor and switch to
+the Extensions page. Select 'actionSets', 'actionSet' then 'action' element.</li>
+
+<li>
+<b>A6.6</b> Move to the property sheet. Select 'icon' property and press
+the button to launch the resource selection dialog. <i>Note: 'icon' attribute
+has been marked with 'resource' flag in 'actionSet' extension point schema.
+This is an indication for PDE to treat attribute values as resources in
+the workspace.</i></li>
+
+<li>
+<b>A6.7</b> Navigate to the 'icons' folder in the left dialog pane. Select
+the checkbox for 'info_tsk.gif' file in the right pane. Press OK. Verify
+that the property value is now 'icons/info_tsk.gif'. Also note that the
+action element icon has changed in the 'Extensions' section and is now
+showing the newly defined tool bar icon.</li>
+
+<li>
+<b>A6.8</b> Set the 'toolbarPath' property to 'Normal/Sample'. Set the 'tooltip' property to 'Sample
+tooltip'. Select the editor to bring focus
+and save.</li>
+
+<li>
+<b>A6.9</b> Run Eclipse as in <b>A5</b> (this time around, you may use
+the 'Standard' shortcut from the 'Run' drop-down menu on the tool bar action).
+Turn on "Sample Action Set". The tool bar button should appear. Verify
+that the tool tip shows up and that the text is printed on the console
+when the button is selected. Close the runtime Eclipse instance.</li>
+</ul>
+
+<h3>
+A7. Debugging action set code</h3>
+
+<ul>
+<li>
+<b>A7.1</b> Switch to the 'Overview' page of the plug-in manifest editor.
+Open XyzPlugin.java by following the hyperlink "Class". Place a breakpoint
+at the first statement in the constructor (double-click on the annotation
+bar on the left edge of the editor).</li>
+
+<li>
+<b>A7.2</b> While still in the 'Overview' page, follow the link 'Action
+Sets' in the 'Extensions' section. When in 'Extensions', expand the extension
+and select 'action' element of the action set. Go to the property sheet
+and select 'class' property. Use local tool bar button "Open file in editor"
+to open SampleAction.java. Place a breakpoint at the 'println' statement
+of the 'run' method.</li>
+
+<li>
+<b>A7.3</b> Run the debugger by selecting the 'Debug' button on the tool
+bar (similar to A6.9, you can select the 'Standard' shortcut instead of
+going through the Launch configuration dialog).</li>
+
+<li>
+<b>A7.4</b> After the runtime Eclipse instance started, activate the action
+by activating the action set first, and then pressing the tool bar button.
+This should prompt the debugger to stop at the first breakpoint (plug-in
+constructor) because this is the first time plug-ins has been used. <i><font color="#000080">Note:
+the debugger will not be brought to the front when it stops - you need
+to keep an eye on it (do not obscure the design time Eclipse window completely).</font></i></li>
+
+<li>
+<b>A7.5</b> Resume the debugger. It should stop at the second breakpoint
+('run' method of the action). Resume it again.</li>
+
+<li>
+<b>A7.6</b> Press the 'Sample Action' button again. The debugger should
+stop at the second breakpoint only, because the plug-in has now been loaded
+and its constructor will not be called again for the duration of the runtime
+session.</li>
+
+<li>
+<b>A7.7</b> Close the runtime workbench and switch back to the PDE perspective
+using the perspective icon on the perspective bar on the left edge of the
+design Eclipse instance.</li>
+</ul>
+
+<h3>
+A8. Creating a new extension point</h3>
+
+<ul>
+<li>
+<b>A8.1</b> Activate the manifest editor and switch to "Extension Points"
+page. Select the "Add..." button. A wizard should appear.</li>
+
+<li>
+<b>A8.2</b> Type the ID of the new extension point: "parsers". Observe
+how extension point schema file follows (it does not have to have the same
+name as the extension point, but it is a good convention). Type the name
+of the extension point: "Sample Parsers". Hit "Finish".</li>
+
+<li>
+<b>A8.3</b> As a result of the wizard, a new extension point entry will
+appear and XML Schema editor for the extension point will be opened.</li>
+
+<li>
+<b>A8.4</b> Select the "extension" object in Schema editor and open the
+pop-up menu. Select "New->Element". Change the name of the newly created
+element from the temp. value to &quot;parser&quot; using Properties view.</li>
+
+<li>
+<b>A8.5</b> Select the "parser" element and open the pop-up menu. Select
+"New->Attribute". Change the name of the attribute into "id". Change the
+"use" property to "required" (observe how the icon for the attribute changes).</li>
+
+<li>
+<b>A8.6</b> While still in the property sheet, select the "Clone" local
+tool bar button to clone the current attribute. This should create a copy.
+Modify the name of the copy into "name". Keep the other properties.</li>
+
+<li>
+<b>A8.6a</b> Select the element 'parser' and set the value of the 'Label Attribute'
+property to 'name'. <i>Note: This attribute tells PDE to use the value
+of the specified attribute when presenting the element in the UI. The value must 
+resolve to one of the currently defined attributes, otherwise the property 
+validation will complain.</i></li>
+
+<li>
+<b>A8.7</b> Clone the attribute again. This time, change the name of the
+new attribute into "class". Change the property "kind" into "java". Again,
+observe the icon. Set the value of &quot;basedOn&quot; property to &quot;com.example.xyz.IParser&quot;
+(a fictitious interface that this class needs to implement).</li>
+
+<li>
+<b>A8.8</b> Clone the attribute. Set the 'name' to 'mode'. Set the 'use'
+to 'optional'. Set the 'kind' to 'string'. Clear the 'basedOn' property.</li>
+
+<li>
+<b>A8.9</b> Select the 'restriction' property and bring up the restriction
+dialog. For restriction type, select 'enumeration'. Enter choices by adding
+the following names and pressing 'Add' button: "never", "always", "manual".
+Press "OK". Observe how choices are now showing for the property value.</li>
+
+<li>
+<b>A8.10</b> Select 'use' property and change it to 'default'. Select 'value'
+property and type in 'always'. <i>Note how Eclipse status line shows error
+message for values that do not belong to the choices set in the restriction.</i></li>
+
+<li>
+<b>A8.11 </b>Bring the page back into focus and save the editor. Select
+"id" attribute again. In the text area below, enter the following text
+and press "Apply" button when done:</li>
+
+<p><br><b><font size=+0>a unique name that will be used to reference this
+parser.</font></b>
+<li>
+<font color="#000000"><font size=+0><b>A8.12</b> Select "name" attribute.
+Enter the following text in the description field and press "Apply":</font></font></li>
+
+<p><br><b><font size=+0>a translatable name that will be used for presenting
+this parser in the UI.</font></b>
+<li>
+<font color="#000000"><font size=+0><b>A8.13</b> Select "class" attribute.
+Enter the following text and press "Apply":</font></font></li>
+
+<p><br><b><font color="#000000"><font size=+0>a fully qualified name of
+the Java class that implements &lt;samp&gt;com.example.xyz.IParser&lt;/samp&gt;
+interface.</font></font></b>
+<p><i><font color="#000000"><font size=+0>Note the HTML tags - this text
+will be used to compose the reference documentation for this extension
+point.</font></font></i>
+<li>
+<font color="#000000"><font size=+0><b>A8.14</b> Select 'mode' attribute.
+Enter the following text and save (Ctrl+S):</font></font></li>
+
+<p><br><b><font size=+0>an optional flag that indicates how often this
+parser instance will run (default is &lt;samp&gt;always&lt;/samp&gt;).</font></b>
+<p><font color="#000000"><font size=+0>Note that you didn't press 'Apply'
+- when the text is modified, 'Save' will apply first (transfer text to
+the model) and then save to the file.</font></font>
+<li>
+<font color="#000000"><font size=+0><b>A8.11 </b>Select "extension" element.
+In the "Grammar" section, select the "Sequence" object and open the pop-up
+menu. Select "New->Reference->Parser". This has added "Parser" element
+as the only valid element that can be a child of this extension.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A8.12 </b>Modify properties of the
+Parser reference. For minOccurs, type in "0". For maxOccurs, type in "unbounded".
+Notice how the status line warns about invalid value until the correct
+word is entered. Also notice how the label below the Grammar section shows
+the approximate DTD representation of the grammar (which means that any
+number of "parser" elements can appear in this extension, including 0).
+Save.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A8.13</b> Switch to the Documentation
+page. Select "Overview" from the combo box above the text editor. Replace
+the stub text with the following and press Apply button:</font></font></li>
+
+<p><br><b><font color="#000000"><font size=+0>This extension point is used
+to plug in additional parsers.</font></font></b>
+<br>&nbsp;
+<br>&nbsp;
+<li>
+<font color="#000000"><font size=+0><b>A8.14</b> Select "Examples" in the
+combo box. Enter the following text exactly as follows and press "Apply"
+button:</font></font></li>
+</ul>
+
+<blockquote>
+<blockquote>
+<pre>The following is an example of the extension point usage:
+&lt;p&gt;
+&lt;pre&gt;
+&nbsp;&nbsp; &lt;extension point=&quot;com.example.xyz.parsers&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;parser
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; id=&quot;com.example.xyz.parser1&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name=&quot;Sample Parser 1&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; class=&quot;com.example.xyz.SampleParser1&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/parser&gt;
+&nbsp;&nbsp; &lt;/extension&gt;
+&lt;/pre&gt;
+&lt;/p&gt;</pre>
+</blockquote>
+</blockquote>
+<i><font size=+0 color="#000080">Note: XML Schema editor makes no
+guarantee that white space will be preserved in text that appears in Description
+field because it will be moved to an HTML file as-is, and HTML will not
+respect white space either. For any special formatting, HTML tags should
+be used and not tabs or white space. An exception to this rule is 'preformatted'
+text that is marked using &lt;pre> tag. PDE will preserve white space between
+&lt;pre> and &lt;/pre> tags so that the code examples end up looking correct
+when final HTML documentation is produced.</font></i>
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>A8.15</b> Select "API Information"
+in the combo box. Enter the following text and save:</font></font></li>
+
+<br><b><font size=+0>Plug-ins that want to extend this extension point
+must implement &lt;samp&gt;com.example.xyz.IParser&lt;/samp&gt; interface.</font></b>
+<br>&nbsp;
+<br>&nbsp;
+<li>
+<font color="#000000"><font size=+0><b>A8.16</b> Selection "Supplied Implementation"
+in the combo box. Enter the following text:</font></font></li>
+
+<p><br><b><font color="#000000"><font size=+0>XYZ Plugin provides default
+implementation of the parser.</font></font></b>
+<br>&nbsp;
+<br>&nbsp;
+<li>
+<font color="#000000"><font size=+0><b>A8.17</b> Save the document again.
+Preview the reference HTML by selecting 'Preview Reference Document' from the
+pop-up menu.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A8.18 </b>Select 'com.example.xyz'
+project in the Navigator. Select File->New->Other... in the menu bar. In
+the left pane of the wizard, select 'Java'. In the right pane, select 'Java
+Interface'. Press 'Next'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A8.19</b> Select 'Browse...' to
+search for a package. Pick 'com.example.xyz'. For interface name choose 'IParser'. Press 'Finish'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A8.20</b> When Java editor opens
+with the new interface, add the following abstract method:</font></font></li>
+
+<pre><font size=+0>public void parse(int mode);</font></pre>
+<font color="#000000"><font size=+0>Save and close.</font></font>
+<li>
+<font color="#000000"><font size=+0><b>A8.21</b> Close the Schema editor
+and switch back to manifest editor. Save. Switch to the Source page. Verify
+the presence of the extension point declaration.</font></font></li>
+</ul>
+
+<h3>A9. Using the new extension point</h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>A9.1</b> Bring the manifest editor
+back up. Go to Extensions page.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A9.2</b> Press the 'Add...' button.
+In the wizard left pane, select 'Generic wizards'. In the left pane, select
+'Schema-based extensions'. Press Next.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A9.3</b> Choose 'com.example.xyz.parsers'
+from the list (that's the one we have created in A8). Press 'Finish'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A9.4 </b>Select the new extension
+and bring up the pop-up menu. Select 'New->parser'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A9.5</b> Move to the property sheet.
+Set 'id' to 'com.example.xyz.defaultParser'. Set 'name' to "Default Parser".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A9.6</b> Select 'mode' property.
+Press on the 'value' column to edit it. Notice how the first value to appear
+is the default value set in A8.10. The combo box should contain three choices.
+Select 'manual'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A9.7</b> Select 'class' attribute.
+Press the button to open dialog cell editor. Press 'Browse...' for the
+container and select "XYZ Plugin&quot; folder. Keep 'com.example.xyz' package.
+Change the class name to &quot;DefaultParser&quot;. Press "Finish".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A9.8</b> While the 'class' attribute
+is still selected, press on the local tool bar button to open the Java
+file. It should implement com.example.xyz.IParser interface that we specified
+in A8.7 and created in A8.18.</font></font></li>
+</ul>
+
+<h3>A10. Unresolved and cyclical plug-in references</h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>A10.1</b> While the manifest editor
+for XYZ Plugin is still opened, bring the New wizard (File->New->Other...).
+Select Plug-in Project again. Press "Next".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A10.2</b> Type in the name of the
+new project: &quot;com.example.bogus&quot;. Press "Next".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A10.3</b> Just skip the next page.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A10.4</b> Select the 'Default Plugin
+Content' wizard and press "Next".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A10.5</b> Press "Finish". Wait for
+the wizard to close and for the new manifest editor to open. Switch to
+"Dependencies" page.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A10.6</b> Press the 'Add...' button
+and select 'XYZ Plugin' from the list of choices. Save the editor.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A10.7</b> Switch to XYZ Plugin manifest
+editor (still up). Go to "Dependencies" page. Press the 'Add...' button
+and select Bogus Plugin from the list. Notice how the description text
+in the wizard changes to "WARNING: selected dependencies will create cyclical
+references.".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A10.8</b> Ignore the warning and
+press 'Finish'. Note how 'Dependency Status' section now has a loop node
+called 'Loop 1'. Expand it. It should contain plug-ins that are members
+of the loop (XYZ Plugin and Bogus Plugin). Switch to the "Overview" page.
+Notice how "Alert" section contains a line about cyclical references. When
+you move the mouse over the line, it should turn into a hyperlink. Select
+it - it should bring you back to the "Dependencies page". Break the cycle
+(remove Bogus Plugin from the list).</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A10.9</b> Switch to the Source page.
+Add another element to the list of "import" elements (DO NOT SAVE):</font></font></li>
+
+<pre><font color="#000000"><font size=+0>&lt;import plugin=&quot;org.eclipse.unknown&quot;/&gt;</font></font></pre>
+<font size=+0>
+<font color="#000000">Switch to the Dependencies page. The
+added import will appear with an error icon overlay. You can fix it by
+either importing the plug-in with the missing Id or removing the dependency.
+Go back to the Source page and remove the element. Save. </font></font> <i><font size=+0 color="#000080">Note: Unresolved
+references can only happen in PDE if plug-ins are removed, since references
+are typically added through form pages. However, if references are typed
+in directly into the Source page, it is also possible to introduce them
+by a typing error.</font></i></ul>
+
+<h3>A11. Tracing Control</h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>A11.1</b> Bring up the Launch Configuration
+dialog by pressing 'Run...' option (drop down menu from the 'running man'
+tool bar button). Select the 'Standard' configuration we created earlier
+and switch to the 'Tracing' tab.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A11.2</b> Enable tracing and select 'org.eclipse.core.runtime' plug-in. Turn the loader tracing on (loader/debug
+property to 'true') and for 'loader/debug/filter/class' property &quot;com.example.xyz.*&quot;
+and hit 'Enter'. Press "Apply". Close.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A11.3</b> Turn the 'hidden' file
+filter off in the Packages (the one for the '.*' match). Select com.example.xyz
+project. Create a new file ".options".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A11.4</b> Add the following lines
+in the new file:</font></font></li>
+
+<pre><font color="#000000"><font size=+0>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; com.example.xyz/debug = true
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; com.example.xyz/debug/variables=*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; com.example.xyz/debug/flags=false</font></font></pre>
+
+<li>
+<font color="#000000"><font size=+0><b>A11.5</b> Save and close. Bring
+up the Launch Configuration dialog again as in A11.1. Select "Workspace
+Plug-ins" node. Verify that it now contains "XYZ Plug-in" and that the
+variables defined in .options are listed in the property sheet.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A11.6</b> Change the value of "debug/flags"
+option to "true". Press 'Apply'. Close.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A11.7</b> Bring the dialog again.
+Verify that the variable value has been saved.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A11.8</b> Run the configuration.
+You should see a lot of 'blue' messages on the console (startup tracing)
+as well as notification when classes from XYZ Plugin are loaded.</font></font></li>
+</ul>
+
+<h3>
+<a NAME="templates"></a>A12. Creating
+new plug-ins using plug-in templates</h3>
+<font color="#000000"><font size=+0>This scenario uses newly introduced
+plug-in templates to generate initial plug-in contents. The templates also
+serve double duty of providing initial extension contents for well-known
+extensions.</font></font>
+<p>This scenario is most likely to be exercised with a fresh workspace
+(new install). If you spent some time testing PDE before this, exit Eclipse
+and start by pointing at a new workspace using "-data &lt;workspace>" command
+line option.
+<ul>
+<li>
+<b>A12.1</b> Starting from a new install, go to &quot;Help-&gt;Welcome...&quot; menu, bring 
+up the dialog and select PDE welcome page. Scroll down the 'Welcome' page until
+you reach the link for &quot;plug-in project&quot;. Follow the link to bring up the
+New plug-in wizard.<font color="#000000"><font size=+0></font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.2</b> Choose 'com.example.xyz'
+for a plug-in id. Press 'Next'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.2</b> Keep the default settings.
+Press 'Next'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.3</b> Move selection in the
+list of wizards. Verify that the rich text description in the right pane
+follows the selection.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.4</b> Pick the custom wizard
+that allows you to choose from the list of templates. Press 'Next'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.5</b> Leave all the template
+checked. Move the selection in the list of templates to verify that individual
+descriptions show up correctly in the description area below the list.
+Press Next.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.6</b> You can keep pressing
+'Next' through all the individual template pages or press Finish when allowed
+by the wizard.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.7</b> You should be asked if
+the wizard should enable external plug-ins in order to avoid compile errors.
+Accept it.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.8</b> Once the generation is
+finished, manifest editor should open in the the 'Welcome' page. The page
+should list all the templates that were used to generate initial content.
+It should also contain general tips on how to use the plug-in.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.9</b> Jump to the 'Extensions'
+page to verify that it contains all the extensions.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.10</b> Run the plug-in and verify
+that all the extensions have been generated correctly. Test the presence
+of the preference page, new view, 'Hello, World' button and menu etc. You
+can read the 'Welcome' page in the design time instance as a reference
+as to what to expect.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.11</b> Close the manifest editor.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.12</b> Open the editor again.
+It should still contain the 'Welcome' page (the default page should
+be the last one that was selected when the editor was closed).</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>A12.13</b> Switch to the 'Welcome'
+page, scroll to the bottom and check the button that will get rid of the
+page. Close the editor. Open it again. It should not contain 'Welcome'
+page any more.</font></font></li>
+</ul>
+
+<h3>
+A13. Adding new extensions using extension templates</h3>
+This scenario shows how to add new extensions incrementally using templates.
+You can start with any plug-in.
+<ul>
+<li>
+<b>A13.1</b> Create a 'Hello, world' plug-in by following A12 scenario
+but selecting 'Hello, World' template wizard in step A12.4.</li>
+
+<li>
+<b>A13.2</b> Switch to 'Extensions' page. Select 'Add'.</li>
+
+<li>
+<b>A13.3</b> Select 'Extension Templates' category. From the list on the
+right, select 'Sample View' template. Press 'Next'.</li>
+
+<li>
+<b>A13.4</b> Keep the default settings or change them at will. Press 'Finish'.</li>
+
+<li>
+<b>A13.5 </b>You should see the newly added view extension. Also verify
+that view class has been created in the chosen package.</li>
+
+<li>
+<b>A13.6</b> Run the plug-in to verify that there is a sample view showing
+up in addition to the Hello, World menu and button.</li>
+
+<li>
+<b>A13.7</b> Keep adding other templates.</li>
+</ul>
+
+<p>A14. Manifest editor editing support</p>
+<p>This is a free-form scenario. The goal is to test clipboard and undo/redo
+support in manifest editor form pages. Each non-source page in the manifest
+editor fully supports cut/copy/paste and undo/redo operations. In addition,
+object property changes through Properties view are also under Undo/Redo
+control.&nbsp;</p>
+<ul>
+  <li><b>A14.1</b> Test clipboard operations by cutting or copying elements from
+    sections and pasting them back.</li>
+  <li><b>A14.2</b> Copy an element from the section and paste it into the
+    Notepad or another valid Paste operation target that can only handle text.
+    Verify that the result is a valid XML fragment for the selected object. For
+    example, if a 'library' element is selected, it should paste a valid
+    'library' element XML into Notepad.</li>
+  <li><b>A14.3</b> Delete elements from lists and bring them back by selecting
+    'Undo'. Also verify that 'Undo' and 'Redo' actions show the correct custom
+    label (e.g. 'Undo Remove', 'Undo Add') instead of the stock 'Undo/Redo'.</li>
+  <li><b>A14.4</b> Open two manifest editors for two manifest files in two
+    plug-in projects. Copy compatible objects from one to another using only
+    form pages (do not switch to the Source page). Verify that you can copy an
+    'extension' element from one Extensions page to another, but you cannot
+    paste that element into the 'Runtime' page, for example.</li>
+  <li><b>A14.5</b> Select an element in on of the form pages in one editor and
+    paste it in the Source page of another.</li>
+</ul>
+
+<hr>
+<h2>
+Scenario B: Advanced self-hosting</h2>
+The second set of scenarios is designed to test binary project self-hosting.
+In this set-up, external plug-ins that serve as a development target are
+brought into the workspace by using the import wizard. The assumption is
+that you have already completed the 'A' scenarios and that everything works
+well. In binary self-hosting mode, plug-in references will be modeled as
+project references, but everything else should (and must) work the same
+and product the same results.
+<p>It is recommended to finish scenarios 'A' (at least to the point where
+you have a plug-in that compiles and runs against external plug-ins). We
+will then migrate this plug-in to use binary projects.
+<h3>
+<font color="#000000"><font size=+0>B1. Setting up the environment for
+binary self-hosting</font></font></h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>B1.1</b> Open Preferences->Plug-In
+Development. Deselect all external plug-ins by selecting button "Deselect
+All". This will reduce the plug-in set to the workspace only and all the
+references will have to be resolved there.</font></font></li>
+</ul>
+
+<h3>
+<font color="#000000"><font size=+0>B2. Importing binary projects</font></font></h3>
+
+<ul>
+<li>
+<font size=+0><b>B2.1</b> Select 'File->Import->External Plug-ins and Fragments'
+wizard. Press 'Next'.</font></li>
+
+<li>
+<font size=+0><b>B2.2</b> Leave the default values on the first wizard
+page. Press 'Next'.</font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>B2.3</b> Select all the provided
+plug-ins in the second page. Press 'Finish'. Wait for the wizard to complete
+the operation (it may take some time).</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>B2.4</b> Verify that you have a
+long list of projects in the workspace and that they are all marked with
+a 'binary' overlay icon in the upper-left corner (except any source plug-ins
+you already have in the workspace).</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>B2.5</b> Create a working set that
+only contains source projects (in Packages, select the drop-down menu and
+pick the 'Select working set' option). If you have "XYZ Plug-in" from A-set
+of scenarios, just choose it. You should see all the binary project going
+away and XYZ Plug-in should be the only one remaining.</font></font></li>
+</ul>
+
+<h3>
+<font color="#000000"><font size=+0>B3. Migrating XYZ Plug-in to binary
+projects</font></font></h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>B3.1</b> Select com.example.xyz
+project and bring up 'Properties->Java Buildpath'. Verify that it contains
+4 external JAR entries, each prefixed with ECLIPSE_HOME variable. Close
+the dialog.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>B3.2</b> While the project is still
+selected, bring up the pop-up menu and select 'Update classpath' option.
+There should be a list of projects with only com.example.xyz selected.
+Press 'Finish'. This should trigger a build and complete without errors.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>B3.3</b> Repeat the step <b>B3.1</b>.
+Verify that the build path now contains 4 project references instead of
+ECLIPSE_HOME-prefixed JARs. If it does, the migration is complete and the
+workspace is now in full binary self-hosting mode.</font></font></li>
+</ul>
+
+<h3>
+<font color="#000000"><font size=+0>B4. Mixed-mode self-hosting</font></font></h3>
+<p><font color="#000000"><font size=+0>In this mode, we will import only
+the binary projects that are in the required subset of the entire external
+plug-in list. The rest of the plug-ins will be used as external.</font></font>
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>B4.1</b> If there are any binary
+projects in the workspace created in the previous scenarios, remove them.
+This will result in 'Missing required project' errors if B3. scenario has
+already been executed (the migration is complete).</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>B4.2</b> Select the Plug-in Import
+wizard again (as in B2.1).</font></font></li>
+
+<li>
+<font size="+0" color="#000000"><b>B4.3</b> Check 'org.eclipse.resources' and 'org.eclipse.ui'
+plug-ins, then press 'Add Required Plug-ins' button. You should have 21 plug-in
+selected in total. Press 'Finish'.</font></li>
+
+<li>
+<font size="+0" color="#000000"><b>B4.4</b> Open Preferences-&gt;PDE-&gt;Target
+Platform and press 'Not in Workspace' button. You should have 44 selected
+plug-ins.</font></li>
+
+<li>
+<font size="+0" color="#000000"><b>B4.5</b> Select 'com.example.xyz' plug-in and
+update the classpath again. The new classpath should contain only project
+references for required plug-ins.</font></li>
+
+<li>
+<font size="+0" color="#000000"><b>B4.6</b> Bring up the Launch Configurations
+dialog. Switch to the Plug-ins and Fragments page. Press on the 'Plug-in Path'
+and verify that it contains a mix of external and workspace paths. </font><font size="+0" color="#000080"><i>Note:
+if you imported binary projects using linking (without copying source), the
+actual plug-in path will still point to the original (external) location. In
+this case, there will be no different in binary and external paths - they will
+all come from the same place.</i></font></li>
+</ul>
+
+<h3>
+<font color="#000000"><font size=+0>B5. Migrating back to external plug-ins</font></font></h3>
+<font color="#000000"><font size=+0>It is possible to do a reverse migration
+at any time.</font></font>
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>B5.1 </b>Clear the working set so
+that all the projects show up.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>B5.2 </b>Select all the binary projects
+(skip XYZ Plug-in) and delete them WITH their contents. This should result
+in four 'missing required Java project' errors.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>B5.3 </b>Go back to Preferences->Plug-in
+Development->Target Platform' and enable all the external plug-ins (Not In
+Workspace will give you the same results).</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>B5.4 </b>Update the classpath of
+com.example.xyz project as in B3.2. After the build, the errors should
+go away.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>B5.5 </b>Repeat step B3.3. The classpath
+should again contain 4 external JAR references with ECLIPSE_HOME variable.</font></font></li>
+</ul>
+
+<h3><font size="+0" color="#000000">B6. Adaptive self-hosting and Plug-ins view</font></h3>
+<p><font size="+0" color="#000000">In the scenarios above, switching from
+external to binary projects was not automatic. Each time we changed the way
+required plug-ins were represented, the classpath didn't follow. We had to
+explicitly recompute it to make it in sync with the changed environment. PDE has
+an alternative way of representing required plug-ins using classpath containers.
+In this mechanism, all the required plug-in entries are replaced with one
+dynamic classpath container entry. This entry computes 'real' entries in real
+time - reacting to changes.</font></p>
+<ul>
+  <li><font size="+0" color="#000000"><b>B6.1</b> Go to
+'Preferences-&gt;PDE-&gt;Java Build Path Control'. Turn the 'Use classpath
+container...' checkbox on. Apply and close.
+</font></li>
+  <li><font size="+0" color="#000000"><b>B6.2</b> Select 'com.example.xyz' project and update its classpath. Observe
+how all the external JARs are gone and replaced with 'Required plug-in entries'.
+When you expand it, it should contain the external JARs but <b>without
+ECLIPSE_HOME variable</b>.
+</font></li>
+  <li><font size="+0" color="#000000"><b>B6.3</b> Select 'com.example.xyz' project and bring up the 'Java Build Path'
+page in Properties. Switch to 'Libraries' tab. Select 'Required plug-in entries'
+and press 'Edit...' button. Verify that you can see all the entries and that
+'Attach Source...' button enables when you select the entry.&nbsp;</font></li>
+  <li><font size="+0"><b>B6.4 </b>If in PDE perspective, switch to Plug-ins view.
+If in Java perspective, open it and stack it with the Package Explorer.</font></li>
+  <li><font size="+0"><b>B6.5</b> Spend some time in the view. Expand external plug-ins, browse the
+content, explore the pop-up menus etc. Open files into the editors and ensure
+you cannot modify them (these are external plug-ins).</font></li>
+  <li><font size="+0"><b>B6.6</b> Select plug-in org.eclipse.ant.core (or any other). Expand it.
+Observe how 'antsupport.jar' is shown as a plain file. Bring up the pop-up menu
+and select 'Add to Java Search'. Notice how the icon of the Jar has changed and
+how you can drill into the Jar and see packages and class files. Select the
+plug-in again and select 'Remove from Java Search'. The JAR should return to
+being a simple file.</font></li>
+  <li><font size="+0"><b>B6.7</b> Select any plug-in and choose 'Open Dependencies' from the pop-up
+menu. Explore the Dependencies view that will open stacked with the Tasks.</font></li>
+  <li><font size="+0"><b>B6.8</b> Select 'org.eclipse.core.resources' plug-in and choose
+'Import-&gt;As Binary Project' from the pop-up menu. Switch to the Project
+Explorer and expand 'Required plug-in entries'. Notice how 'org.eclipse.core.resources'
+JAR is missing from the list. Open Java Build Path properties for the project,
+switch to the Libraries tab and notice how there is a new project entry there.<br>
+<br>
+<font color="#000080">Known JDT problem: <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=32569">
+  32569</a> Classpath container does not show project entries in Package 
+  Explorer<br>
+    </font></font></li>
+  <li><font size="+0"><b>B6.9</b> Remove the 'org.eclipse.core.resource' binary
+project. Check the classpath of com.example.xyz again. Notice how it switched
+back to using the external JAR for this plug-in automatically. <font color="#000080"><i>Note:
+unlike with the fixed classpath, the location of the required plug-ins
+(workspace or external) is dynamically tracked and classpath is always in sync.
+Also note that binary project org.eclipse.core.resources also has dynamic
+classpath so that we didn't have to import all the binary projects it required.</i></font></font></li>
+</ul>
+
+<hr>
+<h2>
+Scenario&nbsp; C: Various tasks</h2>
+
+<h3>
+<font size=+0>C1. Converting Java projects into PDE projects</font></h3>
+
+<ul>
+<li>
+<font size=+0><b>C1.1</b> Create a new Java project named 'com.example.java'.
+When setting up source location, choose to create a new source folder and
+name it 'src'.</font></li>
+
+<li>
+<font size=+0><b>C1.2</b> Launch 'New' wizard using 'File->New->Other...'.
+Select "Plug-in Development" category, wizard "Convert Java to Plug-in
+Projects". Press "Next".</font></li>
+
+<li>
+<font size=+0><b>C1.3</b> The newly created project should be available
+as a choice. Select it and press Finish.</font></li>
+
+<li>
+<font color="#000000"><font size=+0>Verify that the project now has PDE
+nature and two PDE builders (by browsing the '.project' file). Also verify
+that plugin.xml has been created with minimal content).</font></font></li>
+</ul>
+
+<h3>
+C2. Plug-in Search</h3>
+<ul>
+  <li><b>C2.1</b> Open the Search dialog and switch to the Plug-in Search tab.</li>
+  <li><b>C2.2</b> Type in 'org.eclipse.jdt.*' in the entry, search for 'Plug-in' and limit to
+'Declarations'. Search. Verify that you got 9 matches (all JDT plug-ins).
+Double-click on the entries to open individual manifest files.</li>
+  <li><b>C2.3</b> Bring up the dialog again. Type in '*', search for 'Extension Point' and
+'Declarations'. You should get 107 entries (last time I checked :-).
+Double-click on the entry. It should open into the &quot;Extension Points' page
+of the owning manifest. Switch to source page. Note how markers are showing the
+hits. Also test 'Description' action on the pop-up menu of the search result
+list.</li>
+  <li><b>C2.4</b> Bring up the dialog again. Type in 'org.eclipse.core.resources.natures',
+search for 'Extension Point' and 'References'. You should get all the extensions
+that plug into this extension point.</li>
+  <li><b>C2.5</b> Keep playing with the search, forming the queries at will.</li>
+</ul>
+
+<h3>
+C3. Plug-in Build and Export</h3>
+
+
+<ul>
+  <li><b>C3.1</b> Open 'build.properties' file in com.example.xyz project and
+    verify that 'bin.includes' contains all the files you want to build. By
+    default, it cointains the manifest that all the jars (*.jar). You need to
+    add 'icons/' and any other file or folder you want to end up in the build.</li>
+  <li><b>C3.2</b> Select plugin.xml in 'com.example.xyz' project. Choose 'Create Ant build
+file' from the pop-up menu. Verify that the file has been created and that you
+can run it to get the libraries built. <font color="#000080"><i> Note: 'Run Ant...' action is owned by the
+PDE Build team. If you notice a problem, open it against PDE Core component.</i></font></li>
+  <li><b>C3.3</b> Using PDE template wizard, create another plug-in project 'com.example.view'
+and select 'Plug-in with a view' template. Repeat C3.1 for this plug-in.</li>
+  <li><b>C3.4</b> Select 'Export...' to open export wizard. From the list of wizards, choose
+'Deployable plug-ins and fragments'.</li>
+  <li><b>C3.5</b> Choose 'com.example.xyz' and 'com.example.view' from the list of plug-ins.
+Also choose the path for the target zip file. Press 'Finish'.</li>
+  <li><b>C3.6</b> When finished, verify that the zip file contains the expected
+    content (all the files and the built libraries).</li>
+  <li><b>C3.7</b> Unzip the zip file into a temp directory.  Verify that resources for plug-in 'com.example.xyz' 
+    fall under eclipse/plugins/com.example.xyz_1.0.0/ and that resources for plug-in 'com.example.view' fall under
+    eclipse/plugins/com.example.view_1.0.0/.</li> 
+</ul>
+<h3>C4. Dependency Extent and Unused Dependencies</h3>
+<ul>
+  <li><b>C4.1</b> Open 'com.example.xyz' plug-in manifest. Switch to
+    Dependencies page. Select one of the entries in the list and choose 'Compute
+    Dependency Extent' on the pop-up menu. After the search has finished, verify
+    that it contains Java types and extension points.<br>
+    <b>C4.2</b> Press 'Add...' and add any plug-in from the list. After that,
+    select 'Find Unused Dependencies' from the pop-up menu. It<br>
+    should detect that the newly added dependency is not used anywhere (no
+    extensions that plug into the plug-in's extension points, no referenced
+    code).</li>
+</ul>
+<hr>
+<h2>
+Scenario D: Fragments
+</h2>
+<i><font color="#000000"><font size=+0>Prerequisite: In order to go through
+scenarios in this group, you need to finish scenario A2 and create com.example.xyz
+plug-in first.</font></font></i>
+<h3>
+<font color="#000000"><font size=+0>D1. Fragment Project Creation</font></font></h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>D1.1</b> Ensure that you went through
+setup and preparation for work as described in A1.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D1.2</b> Select "File->New->Projects...",
+"Plug-in Development", then "Fragment Project".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D1.3</b> In the fragment name field,
+type "com.example.german". Press "Next".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D1.4</b> Leave the Structure page
+as-is. Press 'Next". Select the default content wizard. Press Next.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D1.5</b> In "Simple Fragment Content"
+page leave the first three fields as-is. Select "Browse" button to bring
+the plug-in selection dialog up.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D1.6</b> Find tree node "Workspace
+Plug-ins" and select "XYZ Plug-in". Press "OK". Verify that plug-in ID
+and version have been set and that the wizard can finish.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D1.7</b> Choose the match rule 'Compatible'
+from the combo box. Press 'Finish'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D1.8</b> Verify that the new project
+has been created and that fragment.xml has been opened for editing.</font></font></li>
+</ul>
+
+<h3>
+<font color="#000000"><font size=+0>D2. Adding Fragment Extension</font></font></h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>D2.1</b> While in fragment manifest
+editor, go to "Extensions" page. Press 'New' to bring the Extension wizard
+up.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D2.2</b> Select "Generic Wizards"
+and "Schema-based extension". Press Next. Select "Actions Sets" from the
+list of extension points. Press "Finish".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D2.3</b> Select new action set.
+Bring pop-up menu and select "New->actionSet".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D2.4</b> Move to the property sheet
+and change the "label" property to "Deutsche Aktionsmenge".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D2.5</b> Move back to the "All Elements"
+section. bring up the pop-up menu. Select "New->menu".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D2.6</b> Change "label" property
+of the menu to "Beispiel Menu" and "id" property to "beispielMenu".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D2.7</b> Select menu element again
+and select "New->separator" from the pop-up menu. Change its name in properties
+to "beispielGruppe". Save (from the pop-up menu).</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D2.8</b> Similar to D2.5, create
+new "action" element. Set the label property to "Beispiel Aktion". Set
+the menuPath to "beispielMenu/beispielGruppe".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D2.9</b> Select "class" property
+for editing and bring up the cell editor dialog. Select "Generate a new
+class" radio button.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D2.10</b> Browse for the class container
+and select "GERMAN Fragment" folder in com.example.german project.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D2.11</b> Change the class name
+to "GermanSampleAction". Press "Finish".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D2.12</b> When Java editor with
+the new class opens, find "run" method and add the following:</font></font></li>
+
+<pre><font size=+0>System.out.println(&quot;Hallo, welt!&quot;);</font></pre>
+<font color="#000000"><font size=+0>Save and close the Java editor.</font></font>
+<li>
+<font color="#000000"><font size=+0><b>D2.13</b> Save fragment manifest
+editor.</font></font></li>
+</ul>
+
+<h3>
+<font color="#000000"><font size=+0>D3. Running the Fragment</font></font></h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>D3.1</b> Run the run-time workbench
+as before. Wait until run-time Eclipse instance starts up.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D3.2</b> Open "Window->Customize
+Perspective" and select "Other...". It should contain "Deutsche Aktionsmenge"
+set. Select it.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D3.3</b> Verify that "Beispiel Menu"
+has appeared on the menu bar. Also verify that it contains one menu item
+with "Beispiel Aktion" label.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>D3.4</b> Press the item. Verify
+that the console shows "Hallo, welt!" each time it is selected.</font></font></li>
+</ul>
+
+<hr>
+<h2>
+Scenario E: Features</h2>
+
+<h3>
+<font color="#000000"><font size=+0>E1. Feature Project Creation</font></font></h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>E1.1</b> Ensure that you went through
+Setup and preparation for work as described in A1.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E1.2</b> As described in A2, create
+a new plug-in project 'com.example.xyz'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E1.3</b> Repeat E1.2 using project
+name 'com.example.bogus'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E1.4</b> Repeat E1.2 using project
+name 'com.example.another'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E1.5</b> As described in D1, create
+a new fragment 'com.example.german'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E1.6</b> By now, you should have
+four PDE plug-in projects in the workspace and four manifest editors opened.
+Close them all.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E1.7</b> Select 'File->New->Project...'.
+In the left wizard pane, select "Plug-in Development". In the right pane,
+select "Feature Project". Press Next.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E1.8</b> In the project name field,
+type &quot;com.example.xyz-feature&quot;. Press Next.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E1.9</b> Enter &quot;XYZ Feature"
+for the feature name and &quot;Acme Inc.&quot; for the provider. Press 'Next'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E1.10</b> The next page should contain
+a list of all PDE plug-ins and fragments in the workspace. Select them all using checkboxes
+next to their names. Press 'Next'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E1.11 </b>Verify that the project
+has been created and that the feature manifest file (feature.xml) is opened
+for editing.</font></font></li>
+</ul>
+
+<h3>
+<font color="#000000"><font size=+0>E2. Feature Manifest Editor</font></font></h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>E2.1</b> Manifest editor should
+already be opened after E1.11. Ensure that the data shown in the form page
+is the data entered during E1 and that the correct plug-in and fragment
+references have been checked.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E2.2</b> Switch to the Source page
+and examine the XML source. Switch to "Content" page.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E2.4</b> Select "Discovery URLs"
+in "Component URLs" section of the Overview page. Bring up pop-up menu
+and select "New->Discovery URL".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E2.5</b> Select the new URL and
+move to the property sheet. Change "label" to "Main Eclipse Discovery Site".
+Change URL to "<a href="http://www.eclipse.org/updates">http://update.eclipse.org/testUpdates</a>".</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E2.6</b> Select "Update URLs". Bring
+up the pop-up menu and select "New->Update URL".</font></font></li>
+
+<li>
+<font size=+0>
+<font color="#000000"><b>E2.7</b> Select the new URL and
+move to the property sheet. Change "label" to "Main Eclipse Update Site".
+Change URL to "<a href="http://www.eclipse.org/components">http://update.eclipse.org/testUpdates</a>".
+Return focus to the editor and save. </font></font> <i><font size=+0 color="#000080">Note: URLs are
+real, but this feature does not exist there so any search for new version will
+fail.</font></i></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E2.8</b> Expand Supported Environments
+section and ensure that each Edit button (...) provides the appropriate
+list of choices for the associated text field.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E2.9</b> Switch to the 'Information'
+page and enter some dummy content for 'Description', 'License and 'Copyright'
+topics. For the Description topic, also define the URL to be "http://www.eclipse.org".</font></font></li>
+
+<li>
+<font size=+0>
+<font color="#000000"><b>E2.10</b> Switch to the 'Content'
+page. Remove all the plug-ins from the 'Required' list and re-compute them
+by pressing the 'Compute' button. Also verify that you can add these plug-ins
+manually by selecting the 'Add...' button.</font></font></li>
+</ul>
+
+<h3>
+<font size=+0 color="#000000">E3. Nested features</font></h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>E3.1</b> Keep feature created in
+E1 and repeat the scenario, but this time do not include any plug-ins (create
+an empty feature). Call it 'com.example.product', name 'Sample Product'.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E3.2</b> When the editor opens,
+switch to the 'Advanced' page and press 'Add...' button. Select 'Sample
+Feature' from the list.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E3.3</b> Switch to the source page.
+Verify that 'includes' element has been created.</font></font></li>
+</ul>
+
+<h3>
+<font color="#000000"><font size=+0>E4. Feature Preview</font></font></h3>
+
+<ul>
+<li>
+<font color="#000000"><font size=+0><b>E4.1</b> From within 'Sample Product'
+feature opened into the manifest editor, bring up the pop-up menu and select
+'Preview'. Once the Preview view opens, position it somewhere to be able
+to see it changing (for example, stack it over the Tasks view).</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E4.2</b> The basic content should
+match, the hyperlinks for More Info, License and Copyright should work
+and 'Supported Platforms' should show the choices set in the E2.8.</font></font></li>
+
+<li>
+<font color="#000000"><font size=+0><b>E4.3</b> Switch to the main page
+of the manifest editor. Copy a gif image into the feature project and reference
+it by pressing 'Browse' button. Select 'Preview' again. The image should
+replace the default image in the preview view.</font></font></li>
+</ul>
+
+<h3>
+<font color="#000000"><font size=+0>E5. Feature Build</font></font></h3>
+<ul>
+  <li>E5.1 Go through E1 to E3 to ensure you have 'com.example.xyz-feature' and
+    'com.example.product' feature projects in your workspace.</li>
+  <li>E5.2 Select 'Export-&gt;Deployable Features' wizard. Select both features
+    in the list. Choose to export update archives and specify the destination
+    directory.  Verify that JAR archives for plug-ins have been created and placed under a plugins/ 
+    subdirectory of the directory you specified. Verify that feature JAR archives have 
+    been created and placed under a features/ subdirectory of 
+    the directory you specified.</li>
+  <li>E5.3 Repeat E5.2, but choose the 'deployable ZIP *with* source' option.  Verify that the zip file
+    you specified is generated.  Unzip it in a temp directory.  Verify that resources for features are placed under 
+    eclipse/features, resources for plugins are placed under eclipse/plugins, with source zip files being packaged
+    alongside the libraries.
+   </li> 
+</ul>
+<hr>
+<h2>Scenario F: Update Sites</h2>
+<p>This scenario shows how update sites can be built as workspace projects. A prerequisite
+is to have features created in scenario E.</p>
+<h3>F1. Creating a site project</h3>
+<ul>
+  <li><b>F1.1</b> Bring up 'New-&gt;Plug-in Development'. Select 'Update Site'
+    from the list of wizards. Press Next.</li>
+  <li><b>F1.2</b> For the name of the project, enter 'sampleUpdateSite'. Press
+    'Finish'. Decline to switch to the Resource perspective.</li>
+  <li><b>F1.3</b> Verify that a new project has been created with 'site.xml'
+    file, 'features' and 'plugins' folders and that site manifest editor has
+    been opened.</li>
+</ul>
+<h3>F2. Working with the site manifest editor</h3>
+<ul>
+  <li><b>F2.1</b> Select the project in the Package Explorer and choose 'New-&gt;File'.
+    Enter 'index.html' for the name of the file. If the external editor/browser
+    has opened for the file, close it and open it in the internal text editor.
+    Copy and paste the following:</li>
+</ul>
+<font SIZE="2">
+<blockquote>
+  <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Sample Update Site Information&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Sample Update Site Information&lt;/h1&gt;
+&lt;p&gt;This file demonstrates how update sites can have
+associated information pages.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</blockquote>
+</font>
+<ul>
+  <li><b>F2.2</b> Enter 'index.html' in the URL entry in the Site Description
+    section.</li>
+  <li><b>F2.3</b> Press 'Add...' in the Category Definitions and create a new
+    category definition with name 'sample-category', label 'Sample Category' and
+    some random text for the description.</li>
+  <li><b>F2.4</b> Switch to the 'Build' page. Press 'Add...' in the Features To
+    Build section. Select all the features in the provided list. Once the
+    features appear in the list, check only 'com.example.product' (we want both
+    to be built, but only the product should show up in the site manifest - the
+    other will be downloaded by the inclusion). Notice how the entry appeared in
+    the outline view.</li>
+  <li><b>F2.5</b> Switch to the Features page and verify that it has one entry (com.example.product).
+    Select it and check the category in the 'Categories' list. Save.</li>
+  <li><b>F2.6</b> Switch back to the 'Build' page and press 'Build'. After the
+    build, verify that 'plugins' contains two plug-ins and 'features' contains
+    two features. Select the 'Build Log' link and examine the build log.<br>
+    <br>
+    <font color="#000080">Known problem: <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=32574">32574</a>
+    F2.6: Site builder leaves files behind in the related projects<br>
+    Known problem: <a href="http://bugs.eclipse.org/bugs/show_bug.cgi?id=32575">32575</a>
+    F2.6: Update site build log could be more informative<br>
+  </font><br>
+  </li>
+  <li><b>F2.7</b> Switch to the feature manifest file of 'com.example.xyz'
+    feature and make any change (just add a blank and remove it - anything to
+    trigger a change). Go back to the 'Build' page of the site manifest and
+    press 'Build'. Verify that only 'com.example.xyz' is rebuilt. <font color="#000080"><i>Note:
+    the builder keeps a list of changed projects and rebuilds only those changed
+    since the last build, unlike 'Build All' that always builds all the
+    features.</i></font></li>
+  <li><b>F2.8</b> Open Update Manager using 'Help-&gt;Software
+    Updates-&gt;Update Manager'. Switch to the 'Updates' view. Starting from My
+    Computer, drill down into the location of the workspace until the site is
+    reached (it should show up as an Update site already). Bookmark that
+    location as &quot;Update Site Preview&quot; and collapse all using local
+    tool bar button.</li>
+  <li><b>F2.9</b> Click on the site bookmark and follow link 'Site home page' in
+    the Preview. Verify that 'index.html' file is opened into the configured
+    HTML view (on Windows, either embedded or default browser; on other
+    platforms, browser only).</li>
+  <li><b>F2.10</b> Expand the site bookmark and verify that it has the category
+    'Sample Category'. Click on it and verify that the description you put is
+    showing in the Preview.</li>
+  <li><b>F2.11</b> Expand the category. Verify that 'XYZ Product' is shown.
+    Select it. It should have the data we put in the features. Click on the
+    'Copyright' and 'License' links and check the text.</li>
+  <li><b>F2.12</b> Expand XYZ Product feature. Verify that XYZ Feature is
+    showing as a child and that it has all the correct content in the Preview
+    view.</li>
+  <li><b>F2.13</b> Switch back to the working perspective. Open XYZ Product
+    feature and add some more text in the description. Save. Switch to the site
+    manifest editor, 'Build' page and press 'Build' button. Switch to the Update
+    perspective, select the site bookmark and press 'Refresh' on the pop-up
+    menu. Expand and verify that the new description is now showing in the
+    Preview.</li>
+</ul>
+</body>
+</html>

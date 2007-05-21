@@ -1,0 +1,728 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+   <title>PDE Scenarios</title>
+</head>
+<body>
+
+<center>
+<h1>
+PDE Usage Scenarios</h1></center>
+The following set of scenarios are designed to assist the Eclipse user community 
+explore and test the Plug-in Development Environment (PDE).
+<p>Note that the different scenarios are independent of each other and can be 
+executed in any sequence.</p>
+<p>If you find a problem with a scenario step:</p>
+<ol>
+  <li>Open a Bugzilla defect against
+  the PDE/UI component.</li>
+  <li>Include the build number (e.g. RC1, RC2 etc.). </li>
+  <li> <b>Always
+prefix the Summary of the defect with the step number</b>.</li>
+</ol>
+
+<hr>
+<h2>
+Setup</h2>
+<ul>
+  <li>To be able to run the scenarios exactly as described below, you need <b>
+  Eclipse 3.0 RC1 (or later)</b> installed.</li>
+  <li>Two steps that need to be done before executing any of the scenarios.<ul>
+    <li>Launch Eclipse on a new workspace.</li>
+    <li>Dismiss the <b>Welcome Page</b> by clicking on the <b>Go to Workbench</b> 
+    icon.</li>
+  </ul>
+  </li>
+</ul>
+
+<hr>
+<h2>
+Scenario A: Your first plug-in in less than 10 minutes</h2>
+<p>
+<b>Objective: </b>&nbsp;This is the out-of-the-box experience scenario. We will 
+create a new plug-in, test it and deploy it in less than 10 minutes.</p>
+<p>
+<font size="4"><b>A0. Start the clock</b></font></p>
+<p>
+<b><font size="4">A1. Creating a new plug-in project</font></b></p>
+<ul>
+  <li><b>A1.1</b>&nbsp; Bring up the <b>New Project Creation</b><i> </i>wizard 
+  by selecting <b>File &gt; New &gt; Project... </b>from the top menu.</li>
+  <li><b>A1.2&nbsp; </b>Select <b>Plug-in Project</b> from the list, and click
+  <b>Next</b>.</li>
+  <li><b>A1.3</b>&nbsp; Enter <b>com.example.xyz </b>as the name of the plug-in 
+  project, and click <b>Next</b>.</li>
+  <li><b>A1.4</b>&nbsp; Accept all defaults on the <b>Project Structure</b> page 
+  and click <b>Next</b>.</li>
+  <li><b>A1.5</b>&nbsp; Accept all defaults on the <b>Plug-in Content</b> page 
+  and click <b>Next</b>.</li>
+  <li><b>A1.6&nbsp; </b>On the <b>Templates</b> page, select the <b>Create a 
+  plug-in using one of the templates</b> checkbox.&nbsp; This will enable the 
+  list of templates below and disable the <b>Finish</b> button.</li>
+  <li><b>A1.7</b>&nbsp; Select the <b>Hello World</b> template from the list and 
+  click <b>Finish</b>.&nbsp; As its description indicates, this template will 
+  create a menu item and a toolbar item, which, when pressed, will pop up a 
+  dialog containing the phrase &quot;Hello, world!&quot;.</li>
+  <li><b>A1.8</b>&nbsp; A dialog will come up asking you if you would like to 
+  switch to the <b>Plug-in Development</b> perspective.&nbsp; Answer <b>Yes</b>.</li>
+  <li><b>A1.9 </b>&nbsp;A project will be created in your workspace, and the 
+  manifest editor, which is used to edit and manage all the plug-in's files, 
+  will open on the <b>Overview</b> page.</li>
+</ul>
+<p>
+<font size="4"><b>A2. Testing the Plug-in</b></font></p>
+<ul>
+  <li><b>A2.1&nbsp; </b>In the <b>Testing</b> section of the <b>Overview</b> 
+  page of the manifest editor, click on the <b>Launch a runtime workbench</b> 
+  link.</li>
+  <li><b>A2.2 </b>&nbsp;The Eclipse splash screen will appear, and a second 
+  (runtime) workbench will appear within seconds.</li>
+  <li><b>A2.3</b>&nbsp; In the runtime workbench, dismiss the <b>Welcome</b> 
+  page.&nbsp; The <b>Resource</b> perspective will open.</li>
+  <li><b>A2.4 </b>&nbsp;Verify that there is a new top-level menu <b>Sample Menu</b> 
+  in the menu bar and that it contains menu item <b>Sample Action</b>. </li>
+  <li><b>A2.5</b>&nbsp; Select the menu item, and verify that the Hello World 
+  dialog comes up.&nbsp; Dismiss the dialog.</li>
+  <li><b>A2.6</b>&nbsp; Verify that there is a toolbar button showing the blue 
+  Eclipse icon.&nbsp; Click it.&nbsp; The same Hello World dialog will come up.&nbsp; 
+  Dismiss the dialog.</li>
+  <li><b>A2.7</b>&nbsp; Close the runtime workbench.</li>
+</ul>
+<p>
+<b><font size="4">A3. Deploying the Plug-in</font></b></p>
+<ul>
+  <li><b>A3.1</b>&nbsp; Select the <b>com.example.xyz</b> project in the Package 
+  Explorer view.&nbsp; From the context menu, select <b>Export...&nbsp; </b>The 
+  Export wizard will come up.</li>
+  <li><b>A3.2</b>&nbsp; From the list of wizards, select the <b>Deployable 
+  Plug-ins and Fragments</b> wizard, and click <b>Next</b>.</li>
+  <li><b>A3.3</b>&nbsp; Verify that the <b>com.example.xyz</b> plug-in is <b>
+  pre-selected</b> in the wizard.</li>
+  <li><b>A3.4</b>&nbsp; In the <b>Export Options</b> section, choose to deploy 
+  as <b>a directory structure</b>.</li>
+  <li><b>A3.5</b>&nbsp; In the <b>Destination</b> section, browse for the 
+  installation directory of the Eclipse instance you are running, e.g. 
+  D:/Eclipse.&nbsp; Click <b>Finish</b>.</li>
+  <li><b>A3.6</b>&nbsp; When the export operation starts, verify that you see a 
+  progress dialog where you have the option to run the operation in the 
+  background if you choose to.</li>
+  <li><b>A3.7</b>&nbsp; Go to the Eclipse installation directory where you 
+  exported the plug-in and verify that:<ul>
+    <li>In the <b>plugins</b> subdirectory of the Eclipse installation, there is 
+    a new folder called <b>com.example.xyz_1.0.0</b></li>
+    <li>In the com.example.xyz_1.0.0 folder, there is a <b>plugin.xml </b>file, 
+    an <b>xyz.jar</b> JAR, and an <b>icons</b> folder.</li>
+    <li>In the icons folder, there is a <b>sample.gif</b> file.</li>
+  </ul>
+  </li>
+  <li><b>A3.8</b>&nbsp; Shut down Eclipse and restart.</li>
+  <li><b>A3.9</b>&nbsp; Verify that you see in your workbench the same Hello 
+  World menu and toolbar button that you saw in steps A2.4-2.6.</li>
+  <li><b>A3.10</b> Verify that the Hello World dialog comes up when you press 
+  the toolbar button or the Sample Action menu item.</li>
+  <li><b>A3.11</b>&nbsp; Delete the project from the workspace.</li>
+  <li><b>A3.12</b> Close the workbench.</li>
+</ul>
+<p>
+<b><font size="4">A4. Stop the clock</font></b></p>
+
+<hr>
+<h2>
+Scenario B:&nbsp; Variations in Plug-in Project creation</h2>
+<p>
+<b><font size="4">B1. Creating a plug-in with a special encoding</font></b></p>
+<ul>
+  <li><b>B1.1</b>&nbsp; Change the default encoding of text files to <b>UTF-16BE</b> 
+  on the <b>Window &gt; Preferences...&gt; Workbench &gt; Editors</b> preference page.</li>
+  <li><b>B1.2</b>&nbsp; Create a Hello World plug-in as described in section <b>
+  A1</b> above.</li>
+  <li><b>B1.3</b>&nbsp; Verify that: NO problem markers were generated in the 
+  Problems view.&nbsp; (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=56314">Bug 
+  56314</a>)</li>
+  <li><b>B1.4</b>&nbsp; In the <b>com.example.xyz</b> package, open the <b>
+  XyzPlugin.java</b> file and make sure its content is readable.&nbsp; (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=56314">Bug 
+  56314</a>)</li>
+  <li><b>B1.5</b>&nbsp; Select the <b>XyzPlugin.java</b> file&nbsp; in the <b>
+  Package Explorer</b> view and click <b>Alt+Enter</b> to bring up the 
+  Properties dialog.&nbsp; Select the Info property page and verify that the 
+  encoding of the file has been set to <b>UTF-16BE</b>.</li>
+  <li><b>B1.6</b>&nbsp; Repeat <b>B1.5</b> for the plug-in's <b>build.properties</b> 
+  file and verify that the encoding of this file has been set to <b>ISO-8859-1</b>.</li>
+  <li><b>B1.7</b>&nbsp; Repeat <b>B1.5 </b>for the plug-in's <b>plugin.xml</b> 
+  file and verify that the encoding of this file has been set to <b>UTF-8</b>.</li>
+  <li><b>B1.8</b>&nbsp; Delete the project you created in <b>B1.2</b></li>
+  <li><b>B1.9&nbsp; </b>Go back to the <b>Windows &gt; Preferences... &gt; Workbench &gt; 
+  Editors</b> preference page and restore the default encoding of text files to
+  <b>Cp1252</b>.</li>
+</ul>
+<p>
+<font size="4"><b>B2. Creating a plug-in with a MANIFEST.MF file</b></font></p>
+<ul>
+  <li><b>B2.1&nbsp; </b>Create a new plug-in project as described in section <b>
+  A1</b> above, with two differences:<ul>
+    <li>When you get to the <b>Project Structure</b> page (step <b>A1.4</b>), 
+    select the <b>Create an OSGi bundle manifest for the plug-in</b> checkbox.</li>
+    <li>When you get to the <b>Templates</b> page (step <b>A1.6</b>), select the
+    <b>Plug-in with a View</b> template.&nbsp; This template creates a sample 
+    view that will be added to the Resource perspective.</li>
+  </ul>
+  </li>
+  <li><b>B2.2 </b>Verify that the project created contains three files: 
+  META-INF/MANIFEST.MF, plugin.xml and build.properties, and that the Java code 
+  generated compiles without errors.</li>
+  <li><b>B2.3</b>&nbsp; Bring up the <b>Launch Configuration Dialog</b> by 
+  selecting <b>Run &gt; Run...</b> from the top menu.</li>
+  <li><b>B2.4</b>&nbsp; In the list of configuration types, check if there are 
+  any configurations created of the type Run-time Workbench (i.e. if there is 
+  one left over from other scenarios).&nbsp; If so, reuse it and select the 
+  Clear workspace data before launching checkbox on the Arguments tab of the 
+  launch configuration.&nbsp; Otherwise create a new launch configuration and 
+  keep all defaults.</li>
+  <li><b>B2.5</b>&nbsp; Press <b>Run</b> to launch the runtime workbench, and 
+  answer <b>Yes</b> when/if asked to clear the workspace data.</li>
+  <li><b>B2.6</b>&nbsp; When the runtime workbench appears, dismiss the Welcome 
+  page.&nbsp; Verify that a Sample View appears at the bottom right corner of 
+  the Resource perspective.</li>
+  <li><b>B2.7</b>&nbsp; Close the runtime workbench.</li>
+  <li><b>B2.8</b>&nbsp; Delete the project from the workspace.</li>
+</ul>
+
+<p><font size="4"><b>B3. Converting a Java project to a plug-in project</b></font></p>
+
+<ul>
+<li>
+<font size=+0><b>B3.1&nbsp; </b> Create a new Java project named <b>com.example.java</b>.</font></li>
+<li>
+<b>B3.2</b> <font size=+0> <b>&nbsp;File > New > Other...</b>.
+Select the <b>Convert Java to Plug-in
+Projects</b> wizard under the <b>Plug-in Development</b> category. Click <b>Next</b>.</font></li>
+<li>
+<b>B3.3</b>&nbsp; <font size=+0>The newly created project should be available
+as a choice. Select it and press <b>Finish</b>.</font>&nbsp;&nbsp; </li>
+
+<li>
+<font size=+0 color="#000000"><b>B3.4</b>&nbsp; Open the .project file of the project 
+and verify that the project now has PDE
+nature and two PDE builders.</font></li>
+
+<li>
+<b>B3.5</b>&nbsp; Verify that a <b>plugin.xml</b> file with minimal content has 
+been created for the project.</li>
+</ul>
+
+<p><font size="4"><b>B4.&nbsp; Manifest files on demand</b></font></p>
+<ul>
+  <li><b>B4.1</b>&nbsp; Create a Hello World plug-in as described in section <b>
+  A1</b>.</li>
+  <li><b>B4.2</b>&nbsp; Open its plugin.xml in the PDE manifest editor and go to 
+  the <b>Runtime</b> page.<i> </i></li>
+  <li><b>B4.3&nbsp; </b>Verify that the <b>Plug-in Activation</b> section is <b>
+  disabled</b>, as it is only available to plug-ins with a MANIFEST.MF file.</li>
+  <li><b>B4.4</b>&nbsp; Click on the link to create a manifest file.</li>
+  <li><b>B4.5</b>&nbsp; Verify that the line inviting you to create a 
+  manifest.mf file has vanished and the Plug-in Activation section is now 
+  enabled.</li>
+  <li><b>B4.6</b>&nbsp; Verify that the editor now contains a manifest.mf tab.&nbsp; 
+  Switch to it.&nbsp; Switch back to the <b>Runtime</b> page.</li>
+  <li><b>B4.7</b>&nbsp; Go to the newly created META-INF folder in your project 
+  and delete it.</li>
+  <li><b>B4.8</b>&nbsp; Verify that the Plug-in Activation section is now 
+  disabled again, the line asking you if you want to create a manifest.mf file 
+  is restored, and the manifest.mf tab is gone.</li>
+</ul>
+
+<hr>
+<p><font size="5"><b>Scenario C: Plug-in Import and Export</b></font></p>
+<p><font size="4"><b>C1. Importing a single plug-in</b></font></p>
+<ul>
+  <li><b>C1.1&nbsp; </b>On a fresh workspace, in the PDE perspective, open the 
+  plug-in import wizard via File &gt; Import... &gt; External Plug-ins and Fragments</li>
+  <li><b>C1.2</b>&nbsp; In the <b>Import As</b> section of the first page of the 
+  wizard, change the setting to <b>Projects with source folders</b>.&nbsp; Click
+  <b>Next</b>.</li>
+  <li><b>C1.3</b>&nbsp; In the search text field, slowly enter <b>
+  org.eclipse.pde.ui</b> and watch for the correctly matching plug-ins in the 
+  left viewer being selected as you type.</li>
+  <li><b>C1.4</b>&nbsp; Double-click on <b>org.eclipse.pde.ui</b> to move it to 
+  the right pane and press <b>Finish</b>.</li>
+  <li><b>C1.5</b>&nbsp; Verify that a project named <b>org.eclipse.pde.ui</b> is 
+  created in your workspace and that its source code is in a source folder 
+  called <b>src-pdeui</b>.&nbsp; No compiler errors.</li>
+  <li><b>C1.6</b>&nbsp; In the package explorer view, expand the <b>Plug-in 
+  Dependencies</b> container of the project and you should see that all the 
+  references made in the container are references to external JARs (i.e. they 
+  all have the JAR icon).</li>
+  <li><b>C1.7</b> Verify that source code has been successfully attached to all 
+  external JARs in the container.&nbsp; You can do so easily by looking at the 
+  JAR icon.&nbsp; If the source is attached, you will see an overlay at the 
+  bottom right of the JAR icon showing a document.&nbsp; Alternatively, you can 
+  expand any of the JARs, open an arbitrary class file and verify that you see 
+  source code.</li>
+</ul>
+<p><b><font size="4">C2.&nbsp; Importing plug-ins required by org.eclipse.pde.ui</font></b></p>
+<ul>
+  <li><b>C2.1</b>&nbsp; Select the <b>org.eclipse.pde.ui </b>project in your 
+  workspace, and open the plug-in import wizard again.</li>
+  <li><b>C2.2 </b>&nbsp;Verify that the setting from <b>C1.2</b> should have 
+  persisted.&nbsp; Change it to <b>Binary projects</b>.</li>
+  <li><b>C2.3</b>&nbsp; In the <b>Plug-ins and Fragments to Import</b> section, 
+  select the second option.&nbsp; Click Next.</li>
+  <li><b>C2.4</b>&nbsp; Verify that the org.eclipse.pde.ui plug-in is 
+  pre-selected in the left viewer and that the right viewer contains <b>55</b> 
+  plug-ins.&nbsp; Number might vary on non-Windows platforms.&nbsp; Press <b>Finish</b>.</li>
+  <li><b>C2.5</b>&nbsp; When the operation completes, expand the <b>Plug-in 
+  Dependencies</b> container for 5 randomly chosen plug-ins and ensure that none 
+  of the containers reference external JARs.&nbsp; They must all be referencing 
+  other projects.&nbsp; The exceptions, of course, are <b>org.eclipse.osgi</b> 
+  and <b>org.eclipse.swt</b> whose container must not reference anything, as 
+  they have no dependencies on any other plug-ins.</li>
+</ul>
+<p><b><font size="4">C3.&nbsp; Importing with links</font></b></p>
+<ul>
+  <li><b>C3.1&nbsp; </b>Open the plug-in import wizard, change the <b>Import As</b> 
+  setting to <b>Binary projects with linked content</b>, and select the <b>first</b> 
+  option in the <b>Plug-ins and Fragments to Import</b> section.&nbsp; Click <b>
+  Next</b>.</li>
+  <li><b>C3.2</b>&nbsp; Click the <b>Existing Unshared --&gt;</b> button.&nbsp; 
+  Verify that the label indicates that 56 plug-ins have been selected.&nbsp; 
+  (i.e. 55 from C2.4 + org.eclipse.pde.ui).&nbsp; Number might vary on 
+  non-Windows platforms. Click <b>Finish</b> and answer
+  <b>Yes to All</b> when asked to overwrite existing plug-ins.</li>
+  <li><b>C3.3</b>&nbsp; Go to <b>Window &gt; Preferences &gt; Workbench &gt; Label 
+  decorations</b> preference page, select the <b>Binary Plug-in Projects</b> 
+  decorator and click OK.</li>
+  <li><b>C3.4</b>&nbsp; Verify that all projects in your workspace acquire a <b>
+  01</b> overlay on the top left quadrant of the project icon.</li>
+  <li><b>C3.5</b>&nbsp; Right-click the <b>org.eclipse.debug.ui/dtui.jar</b> and 
+  bring up its properties.&nbsp; Select the <b>Info</b> property page.&nbsp; 
+  Verify that the <b>file type</b> is listed as <b>linked</b>, and the path 
+  actually points to the location of the plug-in in your Eclipse install.</li>
+  <li><b>C3.6</b>&nbsp; Randomly open a class file from any of the plug-ins you 
+  imported and verify that source has been attached successfully.</li>
+  <li><b>C3.7</b>&nbsp; Delete all projects from your workspace.</li>
+</ul>
+<p><b><font size="4">C4.&nbsp; Exporting plug-ins en masse as a directory 
+structure</font></b></p>
+<ul>
+  <li><b>C4.1</b>&nbsp; Using the plug-in import wizard, import the <b>
+  org.eclipse.team.*</b> plug-ins (total of 6 plug-ins) as <b>projects with 
+  source folders.</b></li>
+  <li><b>C4.2&nbsp; </b>Open the plug-in export wizard via <b>File &gt; Export... &gt; 
+  Deployable Plug-ins and Fragments</b>.&nbsp; </li>
+  <li><b>C4.3</b>&nbsp; Select all six plug-ins.</li>
+  <li><b>C4.4</b>&nbsp; In the <b>Export Options</b> section, select <b>Deploy 
+  as a directory structure</b>.&nbsp; Select <b>Include source code</b>.</li>
+  <li><b>C4.5</b>&nbsp; In the destination, enter a temp directory, e.g.
+  <a href="file:///D:/Temp">D:\Temp</a>.&nbsp; Click <b>Finish</b>.</li>
+  <li><b>C4.6</b>&nbsp; When the operation completes, verify that all six 
+  plug-ins are placed in a <b>plugins </b>subdirectory of the destination 
+  specified in C4.5.</li>
+  <li><b>C4.7</b>&nbsp; Verify that each plug-in has a JAR.&nbsp; Also verify 
+  that alongside each JAR is a zip file containing its source code.</li>
+  <li><b>C4.8</b>&nbsp; Delete said <b>plugins</b> directory.</li>
+</ul>
+<p><b><font size="4">C5.&nbsp; Exporting plug-ins in a zip via the wizard and 
+via an Ant task</font></b></p>
+<ul>
+  <li><b>C5.1&nbsp; </b>Open the plug-in export wizard via <b>File &gt; Export... &gt; 
+  Deployable Plug-ins and Fragments</b>.&nbsp; </li>
+  <li><b>C5.2</b>&nbsp; Select all six plug-ins.</li>
+  <li><b>C5.3</b>&nbsp; In the <b>Export Options</b> section, select <b>Deploy 
+  as a single deployable ZIP file</b>.</li>
+  <li><b>C5.4</b>&nbsp; As a <b>destination</b>, enter the name of a zip file in 
+  a temp directory, e.g. <a href="file:///D:/Temp/teamPlugins.zip">
+  D:\Temp\teamPlugins.zip</a>.</li>
+  <li><b>C5.5</b>&nbsp; Select the <b>Save this export operation as an Ant build 
+  script</b> option.</li>
+  <li><b>C5.6</b>&nbsp; As a location for the ant script, enter the location of 
+  the <b>org.eclipse.team.core</b> plug-in in your workspace, and name the 
+  script <b>exportPlugins.xml</b>.</li>
+  <li><b>C5.7 </b>&nbsp;When the operation completes, verify that the zip file 
+  has been created in the correct location.</li>
+  <li><b>C5.8</b>&nbsp; Open the zip file and verify that the path for all 
+  resources starts with <b>plugins/</b>.</li>
+  <li><b>C5.9</b>&nbsp; Verify that JARs for all six plug-ins are in the zip 
+  file.</li>
+  <li><b>C5.10</b> Rename the zip file to <b>teamPluginsOld.zip</b>.</li>
+  <li><b>C5.11</b> Right-click on the <b>org.eclipse.team.core</b> project in 
+  your workspace and select <b>Refresh</b> to bring in thee <b>pluginExport.xml</b> 
+  the wizard had created.</li>
+  <li><b>C5.12</b> Right-click on <b>pluginExport.xml</b> and from the context 
+  menu, select Run &gt; Ant Build...&nbsp; <b>Make sure you select the Ant Build 
+  menu item that has the ...</b></li>
+  <li><b>C5.13 </b>In the Ant launch configuration dialog, go to the <b>JRE</b> 
+  tab.&nbsp; In the <b>Runtime JRE</b> section, select the <b>Run in the same 
+  JRE as the workspace</b> option.&nbsp; Press Run.</li>
+  <li><b>C5.14</b> The operation will run in the background.&nbsp; When it 
+  completes, make sure the end result is the <b>same as in C5.7</b>.&nbsp; The 
+  zip file created should be <b>identical </b>in size and content to <b>
+  teamPluginsOld.zip</b>.</li>
+  <li><b>C5.15</b> Delete all zip files generated and all plug-in projects from 
+  your workspace.</li>
+</ul>
+
+<hr>
+<p>
+<font size="5"><b>Scenario D: Plugins View and Dynamic Classpaths</b></font></p>
+<p>
+<font size="4"><b>D1.&nbsp; Opening Files in the Plug-ins View</b></font></p>
+<ul>
+  <li><b>D1.1</b>&nbsp; On a fresh workspace, open the <b>Plug-in Development</b> 
+  perspective, and switch to the <b>Plug-ins</b> view.</li>
+  <li><b>D1.2</b>&nbsp; Verify that all plug-ins shown in the view have are 
+  expandable and their icon has the arrow overlay in the top-left quadrant, 
+  indicating that they are external plug-ins.</li>
+  <li><b>D1.3</b>&nbsp; Expand the <b>org.eclipse.jdt.debug</b> plug-in and 
+  double-click on its plugin.xml.&nbsp; Verify that the file will open in the 
+  PDE manifest editor.</li>
+  <li><b>D1.4</b>&nbsp; Verify that the file will be in read-only mode only.&nbsp; 
+  That is, the editor will not let you type anything in the source page, and all 
+  buttons and actions are disabled in the forms.</li>
+  <li><b>D1.5</b>&nbsp; Expand any of the fragments listed and double-click on 
+  its fragment.xml. Verify that the file will open in the PDE manifest editor.</li>
+  <li><b>D1.6</b>&nbsp; Verify that the file will be in read-only mode only.&nbsp; 
+  That is, the editor will not let you type anything in the source page, and all 
+  buttons and actions are disabled in the forms.</li>
+  <li><b>D1.7</b>&nbsp; Expand the <b>org.eclipse.osgi </b>plug-in and 
+  double-click on the META-INF/MANIFEST.MF file. Verify that the file will open 
+  in the PDE manifest editor. (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=64842">Bug 
+  64842</a>)</li>
+  <li><b>D1.8</b>&nbsp; Verify that the file will be in read-only mode only.&nbsp; 
+  That is, the editor will not let you type anything in the source page, and all 
+  buttons and actions are disabled in the forms.</li>
+</ul>
+<p>
+<b><font size="4">D2.&nbsp; Plug-ins View and Target Platform</font></b></p>
+<ul>
+  <li><b>D2.1&nbsp; </b>While the <b>Plugins</b> view is visible, open the <b>
+  Plug-in Development &gt; Target Platform</b> preference page.&nbsp; Deselect the
+  <b>org.apache.ant</b> plug-in and click OK.</li>
+  <li><b>D2.2</b>&nbsp; Verify that the <b>org.apache.ant</b> plug-in now 
+  disappears from the view.</li>
+  <li><b>D2.3</b>&nbsp; From the drop down menu of the <b>Plugins</b> view, 
+  select <b>Show disabled external plug-ins</b>.&nbsp; Verify that the <b>
+  org.apache.ant</b> plug-in will reappear in the view, but its icon will be <b>
+  hollow</b> and its label will end with &quot;<b>-disabled</b>&quot;.</li>
+  <li><b>D2.4</b>&nbsp; Go back to the <b>Target Platform</b> preference page, 
+  reselect <b>org.apache.ant</b>, and click OK.&nbsp; Verify that the plug-in's 
+  icon and label will go back to normal in the <b>Plugins</b> view.</li>
+  <li><b>D2.5&nbsp; </b>Create a Hello World plug-in named <b>com.example.xyz</b> 
+  as described in section A1.</li>
+  <li><b>D2.6</b>&nbsp; Switch to the Plugins View and verify that the new 
+  plug-in appears in the view.&nbsp; It would have a <b>project</b> icon and it 
+  is not expandable.</li>
+  <li><b>D2.7</b>&nbsp; Go back to the Package Explorer view and <b>close</b> 
+  the project.&nbsp; Switch to the Plugins view, the plug-in should have 
+  vanished from the list.</li>
+  <li><b>D2.8</b>&nbsp; <b>Reopen </b>the com.example.xyz project.&nbsp; Switch 
+  back to the <b>Plugins</b> view and verify that the plug-in is back again.</li>
+  <li><b>D2.9 </b>&nbsp;Open the <b>plugin.xml</b> file of the com.example.xyz 
+  plug-in to the Overview page, and change its id to &quot;com.example.abc&quot;.&nbsp; 
+  Save.</li>
+  <li><b>D2.10</b> Switch to the Plugins view and verify that the view has been 
+  correctly updated with the new plug-in ID.</li>
+  <li><b>D2.11</b> Open the <b>plugin.xml</b> file of the com.example.abc 
+  plug-in to the Overview page, and reset its id to &quot;com.example.xyz&quot;.&nbsp; 
+  Save.</li>
+  <li><b>D2.12</b> Verify that the <b>Plugins</b> view has updated correctly.</li>
+</ul>
+<p>
+<b><font size="4">D3.&nbsp; Dynamic Classpath</font></b></p>
+<ul>
+  <li><b>D3.1</b>&nbsp; In the <b>Package Explorer</b> view, expand the <b>
+  Plug-in Dependencies</b> container of the <b>com.example.xyz</b> plug-in 
+  project, and verify that all its entries are references to JARs found in your 
+  target platform.</li>
+  <li><b>D3.2</b>&nbsp; Go the <b>Plug-in Development &gt; Target Platform</b> 
+  preference page.&nbsp; <b>Deselect</b> all plug-ins.&nbsp; Click OK.</li>
+  <li><b>D3.3 </b>&nbsp;Verify that the <b>Plug-in Dependencies </b>container of 
+  the com.example.xyz plug-in is now empty, and that you have 19 compiler errors 
+  in your <b>Problems</b> view.</li>
+  <li><b>D3.4</b>&nbsp; Go back to the Target Platform preference page.&nbsp; 
+  Select all plug-ins <b>EXCEPT org.eclipse.core.runtime</b>.&nbsp; Click OK.</li>
+  <li><b>D3.5</b>&nbsp; Verify that the <b>Plug-in Dependencies</b> container of 
+  the com.example.xyz shows references to 4 UI-related external JARs, and the 
+  number of compiler errors in the <b>Problems</b> view has now been reduced to 
+  2.</li>
+  <li><b>D3.6</b>&nbsp; Using the plug-in import wizard, import <b>
+  org.eclipse.core.runtime</b> as a <b>project with source folders</b>.</li>
+  <li><b>D3.7</b>&nbsp; Upon the completion of the import operation, verify that 
+  all compiler errors in <b>com.example.xyz</b> are gone.</li>
+  <li><b>D3.8</b>&nbsp; Verify that the <b>Plug-in Dependencies</b> container of
+  <b>com.example.xyz</b> now shows a reference to the <b>
+  org.eclipse.core.runtime</b> project.</li>
+  <li><b>D3.9</b>&nbsp; Close the <b>org.eclipse.core.runtime</b> project.&nbsp; 
+  Verify that compiler errors appear again in the <b>com.example.xyz </b>
+  plug-in.</li>
+  <li><b>D3.10</b> Go the <b>Target Platform</b> preference page, select <b>
+  org.eclipse.core.runtime</b> and click OK.</li>
+  <li><b>D3.11 </b>Verify that the <b>Plug-in Dependencies</b> container of the
+  <b>com.example.xyz</b> plug-in has now updated.&nbsp; It shows references to 
+  external JARs, and compiler errors are gone.</li>
+  <li><b>D3.12</b> Reopen the <b>org.eclipse.core.runtime</b> project.&nbsp; 
+  Verify that the <b>com.example.xyz</b> plug-in remains <b>error-free </b>and 
+  that its container now shows the <b>org.eclipse.core.runtime project.</b></li>
+  <li><b>D3.13 </b>Open the manifest editor of the org.eclipse.core.runtime 
+  plug-in.&nbsp; Go to the Overview page and append an <b>S</b> to its id.&nbsp; 
+  Save.</li>
+  <li><b>D3.14</b> Verify that the <b>Plug-in Dependencies</b> container of <b>
+  com.example.xyz</b> no longer references the <b>org.eclipse.core.runtime</b> 
+  project.</li>
+  <li><b>D3.15</b> Also verify that <b>com.example.xyz </b>remains error-free.</li>
+  <li><b>D3.16</b> Revert the change made in <b>D3.13</b> and save.&nbsp; Verify 
+  that the <b>com.example.xyz</b> remains error-free and its container once 
+  again references the <b>org.eclipse.core.runtime project</b>.</li>
+  <li><b>D3.17</b> Delete all projects from your workspace.</li>
+</ul>
+
+<hr>
+<p>
+<font size="5"><b>Scenario E: Debugging and Tracing</b></font></p>
+<p>
+<font size="4"><b>E1. Transparent Debugging</b></font></p>
+<p>
+<b>Objective: </b>&nbsp;In this scenario, we will demonstrate how you can set 
+breakpoints in source files, class files, linked libraries, external libraries 
+that are part of the Java model, external libraries that are NOT part of the 
+Java model, and how you will be able to debug, step in and out of any file 
+transparently without you being aware where the file is coming from.</p>
+<ul>
+  <li><b>E1.1&nbsp; </b>On a fresh workspace, using the plug-in import wizard, 
+  import the <b>org.eclipse.osgi</b> plug-in WITH source.</li>
+  <li><b>E1.2</b>&nbsp; Import the <b>org.eclipse.core.runtime</b> plug-in as 
+  binary WITH links.</li>
+  <li><b>E1.3</b>&nbsp; Import the <b>org.eclipse.ui</b> plug-in as binary.</li>
+  <li><b>E1.4</b>&nbsp; Go to the <b>Plugins</b> view, right-click on the <b>
+  org.eclipse.pde.ui </b>plug-in and select <b>Add to Java Search</b>.&nbsp; 
+  Verify that this will create a Java project in your workspace called External 
+  Plug-ins Libraries.&nbsp; When you expand it, you will see a classpath 
+  container called External Plug-ins.&nbsp; When you expand the container, you 
+  will find a reference to an external JAR in the org.eclipse.pde.ui plug-in.</li>
+  <li><b>E1.5 </b>&nbsp;In the Package Explorer view, click on the <b>Link With 
+  Editor</b> toolbar button.</li>
+  <li><b>E1.6</b>&nbsp; From the top menu, <b>Navigate &gt; Open Type...</b> Enter
+  <b>PluginImportWizard</b>.&nbsp; Verify that it will open a class file found 
+  in the project created in <b>E1.4</b>.&nbsp; Set a breakpoint in the 
+  PluginImportWizard.addPages() method.</li>
+  <li><b>E1.7</b>&nbsp; <b>Navigate &gt; Open Type...</b>&nbsp; Enter <b>Plugin</b>.&nbsp; 
+  This will open a class file in the <b>linked</b> library of the <b>
+  org.eclipse.core.runtime</b> project.&nbsp; Set a breakpoint in 
+  Plugin.start(BundleContext) method.</li>
+  <li><b>E1.8</b>&nbsp; <b>Navigate &gt; Open Type...</b>&nbsp; Enter <b>
+  BundleContextImpl</b>.&nbsp; This will open a java file in one of the source 
+  folders of the <b>org.eclipse.osgi</b> project.&nbsp; Set a breakpoint in 
+  BundleContextImpl.getBundle() method.</li>
+  <li><b>E1.9</b>&nbsp; <b>Navigate &gt; Open Type...</b>&nbsp; Enter <b>
+  AbstractUIPlugin</b>.&nbsp; This will open a class file in the external 
+  library referenced by the <b>org.eclipse.ui</b> project.&nbsp; Set a 
+  breakpoint in AbstractUIPlugin.start(BundleContext) method.</li>
+  <li><b>E1.10</b> Start a runtime workbench in debug mode.</li>
+  <li><b>E1.11</b> The first breakpoint you will hit is the one in 
+  BundleContextImpl (i.e. in a source file).&nbsp; Verify that you can read the 
+  variables at that breakpoint.&nbsp; Disable the breakpoint so you won't hit it 
+  again and press Continue.</li>
+  <li><b>E1.12</b> The next breakpoint you hit will be the one in 
+  Plugin.start(BundleContext) - i.e. in a class from a linked library.&nbsp; 
+  Step over some of the statements.&nbsp; Verify that you can see the variables 
+  changing as you step over.&nbsp; Disable the breakpoint and press Continue.</li>
+  <li><b>E1.13</b>&nbsp; The next breakpoint you hit will be the one in 
+  AbstractUIPlugin.start(BundleContext) - i.e. a class in an external library 
+  that is part of the Java model.&nbsp; Step over the statements.&nbsp; Verify 
+  that your debugging experience is smooth.&nbsp; Disable the breakpoint and hit 
+  continue.</li>
+  <li><b>E1.14</b>&nbsp; When the runtime workbench comes up, dismiss the 
+  Welcome page.&nbsp; Bring up the Plug-in Import Wizard.&nbsp; You will hit the 
+  breakpoint in PluginImportWizard.addPages() - i.e. a breakpoint in a class 
+  coming from a library that is not part of the Java model.&nbsp; Step over a 
+  couple of statements and hit Continue.</li>
+  <li><b>E1.15</b>&nbsp; Dismiss the wizard.&nbsp; Close the runtime workbench.</li>
+</ul>
+
+<p><font size="4"><b>E2.&nbsp; Tracing</b></font></p>
+<ul>
+  <li><b>E2.1</b>&nbsp; Open the launch configuration dialog.&nbsp; Create a new 
+  run-time workbench launch configuration or reuse an existing one.</li>
+  <li><b>E2.2</b>&nbsp; Go to the tracing tab.&nbsp; Select the<b> Enable 
+  tracing for selected plug-ins</b> option.</li>
+  <li><b>E2.3</b>&nbsp; Deselect all plug-ins and select the <b>org.eclipse.osgi</b> 
+  plug-in only.</li>
+  <li><b>E2.4</b>&nbsp; In the tracing options of the <b>org.eclipse.osgi</b> 
+  plug-in, turn the <b>debug </b>flag on.&nbsp; Press <b>Run</b>.</li>
+  <li><b>E2.5 </b>&nbsp;In the console of the host workbench, you will see a lot 
+  of blue messages including ones indicating that plug-ins are being read, where 
+  they are read from, etc.</li>
+  <li><b>E2.6</b> Close the runtime workbench.</li>
+</ul>
+<p><b><font size="4">E3.&nbsp; Fine-grained control over the runtime classpath</font></b></p>
+<ul>
+  <li><b>E3.1&nbsp; </b>On a fresh workspace, create a Hello World plug-in named
+  <b>com.example.xyz</b>, as described in section <b>A1</b>.</li>
+  <li><b>E3.2&nbsp; </b>Create a plug-in with a template view named <b>
+  com.example.view</b>,&nbsp; as described in section <b>A1</b>.</li>
+  <li><b>E3.3</b>&nbsp; Launch a runtime workbench on a new workspace. </li>
+  <li><b>E3.4</b>&nbsp; Test the Hello World plug-in as in section <b>A2</b>.&nbsp; 
+  Verify that it works fine.</li>
+  <li><b>E3.5 </b>&nbsp;Verify that the sample view appears in the bottom right 
+  corner of the <b>Resource</b> perspective.</li>
+  <li><b>E3.6</b>&nbsp; Close the runtime workbench.</li>
+  <li><b>E3.7</b>&nbsp; Right-click on the <b>com.example.xyz</b> plug-in and 
+  bring up its properties dialog.</li>
+  <li><b>E3.8</b>&nbsp; Select the Self-Hosting property page.</li>
+  <li><b>E3.9</b>&nbsp; Deselect the <b>/com.example.xyz/bin</b> folder.&nbsp; 
+  This will prevent the runtime classloader from not finding these classes at 
+  runtime.&nbsp; Click OK.</li>
+  <li><b>E3.10</b> Launch a runtime workbench.</li>
+  <li><b>E3.11</b> Verify that the sample view is OK.</li>
+  <li><b>E3.12</b> Verify that when you select the Sample Action menu item from 
+  the top Sample Menu, you will get a dialog saying &quot;The chosen operation is not 
+  currently available&quot;.</li>
+  <li><b>E3.13</b> Open the log view of the runtime workbench via Window &gt; Show 
+  View &gt; Error Log.&nbsp; Verify that it contains log entries about classloading 
+  errors.</li>
+  <li><b>E3.14</b> Double-click on one of the log entries.&nbsp; This will bring 
+  up the Events Dialog.&nbsp; Use the Up and Down arrow to navigate from one 
+  entry to the next.</li>
+  <li><b>E3.15 </b>Verify that the log entries that have a stack trace have a 
+  different icon (one with a document background) than log entries with no stack 
+  trace.</li>
+  <li><b>E3.16</b> Close the runtime workbench.</li>
+</ul>
+
+<hr>
+<p>
+<font size="5"><b>Scenario F: Search</b></font></p>
+<p>
+<font size="4"><b>F1.&nbsp; Expanding the Java search scope</b></font></p>
+<ul>
+  <li><b>F1.1&nbsp; </b>On a fresh workspace, open the <b>Plug-in Development</b> 
+  perspective and switch to the <b>Plug-ins</b> view.</li>
+  <li><b>F1.2 </b>&nbsp;Select all the plug-ins.&nbsp; Right-click and select <b>
+  Add to Java Search</b> from the context menu.&nbsp; </li>
+  <li><b>F1.3</b>&nbsp; Switch to the Resource perpective.&nbsp; Verify that an 
+  empty Java project named External Plug-in Libraries has been created and that 
+  it only contains three hidden files.</li>
+  <li><b>F1.4</b>&nbsp; Switch back to the PDE perspective and select <b>
+  Navigate &gt; Open Type in Hierarchy</b> from the top menu.&nbsp; Type <b>Job.&nbsp;
+  </b>Click OK.</li>
+  <li><b>F1.5 </b>Verify that the hierarchy for the type <b>Job</b> is 
+  successfully created.&nbsp; This actually shows you all the background jobs 
+  implemented in the SDK, and you did not have to import a single plug-in into 
+  your workspace.</li>
+</ul>
+<p>
+<b><font size="4">F2.&nbsp; Plug-in Search</font></b></p>
+<ul>
+  <li><b>F2.1&nbsp; </b>Open the Plug-in search page via <b>Search &gt; Search...</b> 
+  from the top menu.</li>
+  <li><b>F2.2</b>&nbsp; Search for all declarations of plug-ins whose name start 
+  with <b>org.eclipse.team.*</b></li>
+  <li><b>F2.3</b>&nbsp; Verify that the search results in 6 hits.&nbsp; </li>
+  <li><b>F2.4</b>&nbsp; Verify that double-clicking on any of the hits will 
+  result in the manifest file of that plug-in to be opened in the manifest 
+  editor.</li>
+  <li><b>F2.5</b>&nbsp; Open the search page again, and search for <b>all 
+  occurrences</b> of extension point <b>org.eclipse.core.runtime.applications</b>.</li>
+  <li><b>F2.6&nbsp; </b>Verify that the search yields 12 hits.&nbsp; One for the 
+  extension point itself, and 11 extensions that plug into it.</li>
+  <li><b>F2.7</b>&nbsp; Double-click on any of the hits and verify that the 
+  manifest editor opens on the source page with the correct line highlighted.</li>
+</ul>
+<p>
+<font size="4"><b>F3.&nbsp; Dependency Analysis</b></font></p>
+<ul>
+  <li><b>F3.1&nbsp; </b>Using the plug-in import wizard, import the 
+  org.eclipse.pde.ui plug-in as binary and open its plugin.xml.</li>
+  <li><b>F3.2</b>&nbsp; Go the <b>Dependencies</b> tab.&nbsp; Select <b>
+  org.eclipse.search</b> from the list and click on <b>Compute Dependency Extent</b> 
+  in the <b>Dependency Analysis</b> section.&nbsp; (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=64862">Bug 
+  64862</a>)</li>
+  <li><b>F3.3</b>&nbsp; The search result should yield all the extension points 
+  and Java types declared in <b>org.eclipse.search</b> that are used by <b>
+  org.eclipse.pde.ui</b>.&nbsp;&nbsp; The result should be 2 extension points, 6 
+  interfaces and one class.</li>
+  <li><b>F3.4</b>&nbsp; Use the <b>Add...</b> button to add an extraneous 
+  dependency to the list (e.g. org.eclipse.compare).&nbsp; Save the file.</li>
+  <li><b>F3.5</b>&nbsp; Click on <b>Find Unused Dependencies</b> in the <b>
+  Dependency Analysis</b> section, the search result will yield the plug-in you 
+  added in <b>F3.4</b>.</li>
+</ul>
+
+<hr>
+<p>
+<font size="5"><b>Scenario G:&nbsp; Features and Update Sites</b></font></p>
+<p>
+<font size="4"><b>G1.&nbsp; Feature Creation</b></font></p>
+<ul>
+  <li><b>G1.1&nbsp; </b>Using the plug-in import wizard, import <b>
+  org.eclipse.pde</b>, <b>org.eclipse.pde.build</b>, <b>org.eclipse.pde.core</b>,<b> 
+  org.eclipse.pde.junit.runtime,</b> <b>org.eclipse.pde.runtime</b>, and <b>
+  org.eclipse.pde.ui</b> as projects with source folders.</li>
+  <li><b>G1.2</b>&nbsp; Bring up the New Feature Creation wizard via <b>File &gt; 
+  New...&gt; Feature Project</b>.</li>
+  <li><b>G1.3 </b>&nbsp;Enter <b>org.eclipse.pde-feature</b> as the project 
+  name.&nbsp; Click <b>Next</b>.</li>
+  <li><b>G1.4</b>&nbsp; Set the feature ID to <b>org.eclipse.pde</b>.&nbsp; Set 
+  the feature name to <b>PDE Feature</b>.&nbsp; Click <b>Next</b>.</li>
+  <li><b>G1.5</b>&nbsp; Leave all defaults on the Custom Install Handler page.&nbsp; 
+  Click <b>Next</b>.</li>
+  <li><b>G1.6</b>&nbsp; Select all six plug-ins from <b>G1.1</b>.&nbsp; Press <b>
+  Finish</b>.&nbsp; Verify that the feature.xml for the feature project is open 
+  for editing.</li>
+  <li><b>G1.7 </b>&nbsp;In the Feature URLs section, create a <b>Discovery URL</b> 
+  whose label is <font size=+0 color="#000000"><b>Main Eclipse Discovery Site</b> 
+  and whose URL is <a href="http://update.eclipse.org/testUpdates">
+  http://update.eclipse.org/testUpdates</a>.</font></li>
+  <li><b>G1.8</b>&nbsp; Create a new <b>Update URL</b> whose label is <b>Main 
+  Eclipse Update Site</b> and whose URL is
+  <a href="http://update.eclipse.org/testUpdates">
+  http://update.eclipse.org/testUpdates</a></li>
+  <li><b>G1.9</b>&nbsp; Switch to the <b>Information</b> page and enter dummy 
+  content on all three tabs.&nbsp; Save the file.</li>
+</ul>
+<p>
+<b><font size="4">G2.&nbsp; Update Site Creation</font></b></p>
+<ul>
+  <li><b>G2.1</b><font size="4">&nbsp;  </font>Create a site project via <b>File &gt; 
+  New...&gt; Project &gt; Plug-in development &gt; Update Site Project</b>.&nbsp; Click
+  <b>Next</b>.</li>
+  <li><b>G2.2&nbsp; </b>Enter <b>site</b> as the name of the 
+  project.&nbsp; Click <b>Next</b>.</li>
+  <li><b>G2.3 </b>&nbsp;Select the option to generate a sample 
+  web page to preview the site.&nbsp; Press <b>Finish</b>.&nbsp; Verify that the
+  <b>site.xml</b> file is open for editing.</li>
+  <li><b>G2.4</b>&nbsp; In the <b>Features to Build</b> section, 
+  add the <b>org.eclipse.pde</b> feature.</li>
+  <li><b>G2.5 </b>&nbsp;In the <b>Features to Publish</b> 
+  section, create a new category whose label is <b>Sample Category</b> and whose 
+  name is<b> sampleCategory</b>.</li>
+  <li><b>G2.6</b> Drag and drop the org.eclipse.pde feature from 
+  the left viewer into the category created in the previous step. (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=61834">bug 
+  61834</a>).&nbsp; Note: if drag and drop fails, right-click on the feature in 
+  the left viewer and select Publish from the context menu.</li>
+  <li><b>G2.7</b>&nbsp; Once the feature in under the category in 
+  the right viewer, double-click on it and set its label as <b>PDE Feature</b> 
+  in the properties dialog.&nbsp; Save the file.</li>
+  <li><b>G2.8</b>&nbsp; Right-click on the <b>index.html</b> file 
+  at the root of the site project and view the file in the system editor.&nbsp; 
+  Verify that the html page is well-formatted.</li>
+  <li><b>G2.9</b>&nbsp; In the <b>Features to Build</b> section, 
+  press the Build All button.&nbsp; </li>
+  <li><b>G2.10</b> When the build operation completes, verify 
+  that a feature Update JAR is created in the <b>features</b> folder of the site 
+  project, and 6 plug-in Update JARs have been created in the <b>plugins</b> 
+  folder.</li>
+</ul>
+
+<hr>
+<p><font size="5"><b>Scenario H: Manifest Editors</b></font></p>
+<p>Testing all the manifest editors that PDE provides (plugin, feature, 
+fragment, site, and schema) exhaustively will quadruple the length of this 
+testing document and consequently quadruple the amount of time it takes to 
+complete the testing of PDE on each platform.</p>
+<p>Therefore, I recommend to do adhoc testing on the editors (2-3 minutes on 
+each), mainly to make sure that Eclipse Forms look good on all platforms.</p>
+<p>&nbsp;</p>
+</body>
+</html>

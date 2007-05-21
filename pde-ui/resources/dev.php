@@ -44,9 +44,13 @@ ob_start();
 			<p><a href="../patches/org.eclipse.pde.core_3.3.0.20070323-patch.jar">org.eclipse.pde.core</a><p>		 
 		</div>
 		<div class="homeitem3col">
-			<h3>Documents</h3>
+			<h3>Test Plans </h3>
 			<a name="documents"></a>
-			<p>Coming soon ...</p>
+			<p><a href="../scenarios/PDEScenarios3_3.html">3.3 Test Plan</a></p>
+			<p><a href="../scenarios/PDEScenarios3_2.html">3.2 Test Plan</a></p>
+			<p><a href="../scenarios/PDEScenarios3_1.html">3.1 Test Plan</a></p>
+			<p><a href="../scenarios/PDEScenarios3_0.html">3.0 Test Plan</a></p>
+			<p><a href="../scenarios/PDEScenarios.html">2.1 Test Plan     </a></p>
 		</div>
 		<div class="homeitem3col">
 			<h3>Bugs</h3>
