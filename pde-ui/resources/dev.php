@@ -41,8 +41,8 @@ ob_start();
 			<h3>Eclipse Forum India Downloads</h3>
 			<a name="patches"></a>
 			<p>The following are the plug-in needed for the Eclipse Forum tutorial:</p>
-			<p><a href="../patches/org.eclipse.browser_1.0.0.jar">Cheat Sheets</a><p>		 
-			<p><a href="../patches/org.eclipse.browser.cheatsheets_2.0.0.jar">Starter Plug-in</a><p>		 
+			<p><a href="../patches/org.eclipse.browser_1.0.0.jar">Starter Plug-in</a><p>		 
+			<p><a href="../patches/org.eclipse.browser.cheatsheets_2.0.0.jar">Cheat Sheets</a><p>		 
 		</div>
 		<div class="homeitem3col">
 			<h3>Test Plans </h3>
