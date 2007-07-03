@@ -27,7 +27,7 @@ ob_start();
                   <p align="center">Committer, IBM Austin Labs</p>               
                   <p align="center">&nbsp;</p>
                 </td>
-                <td width="25%"><p align="center"><img src="brian_bauman.gif" alt="Brian Bauman" width="200" height="280"></p>
+                <td width="25%"><p align="center"><img src="brian_bauman.png" alt="Brian Bauman" width="200" height="280"></p>
                   <p align="center"><strong>Brian Bauman</strong></p>
                   <p align="center">Committer, IBM Austin Labs</p>
                   <p align="center">&nbsp;</p>
