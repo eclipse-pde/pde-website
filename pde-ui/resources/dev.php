@@ -72,7 +72,7 @@ ob_start();
 			<a name="mail"></a>
 		<ul>
         	<li><a
- href="http://dev.eclipse.org/mailman/listinfo/pde-ui-dev">platform-team-dev@eclipse.org</a> 
+ href="http://dev.eclipse.org/mailman/listinfo/pde-ui-dev">pde-ui-dev@eclipse.org</a> 
            (<a href="mailto:pde-ui-dev@eclipse.org">post</a>, <a
  href="http://dev.eclipse.org/mhonarc/lists/pde-ui-dev/maillist.html">archives</a>)</li>
       	</ul>
