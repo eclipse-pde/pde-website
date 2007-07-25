@@ -14,7 +14,7 @@
 	#
 		
 ob_start();
-?>
+?><title>PDE/UI Committers and Contributor</title>
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 		<div class="homeitem3col">
@@ -72,6 +72,27 @@ ob_start();
           </table>
         </div>
 	</div>
+		<div class="homeitem3col">
+			<a name="contributors"></a>
+			<h3>PDE/UI Contributors </h3>
+			<table width="100%" border="0">
+              <tr>
+                <td width="25%"><p align="center"><img src="chris_aniszczyk.png" alt="Adam Archer" width="200" height="280"></p>
+                  <p align="center"><strong>Adam Archer</strong></p>
+                  <p align="center">&nbsp;</p>
+                </td>
+                <td width="25%"><p align="center"><img src="chris_aniszczyk.png" alt="Noam Chitayat" width="200" height="280"></p>
+                  <p align="center"><strong>Noam Chitayat</strong></p>
+                  <p align="center">&nbsp;</p>
+                </td>
+                <td width="25%"><p align="center"><img src="peter_friese.JPG" alt="Peter Friese" width="200" height="280"></p>
+                  <p align="center"><strong><a href="http://www.peterfriese.de/">Peter Friese</a></strong></p>
+                  <p align="center">&nbsp;</p>
+                </td>
+              </tr>
+          </table>
+        </div>
+	</div>
 	
 	<div id="rightcolumn">
 		<div class="sideitem">
@@ -79,7 +100,7 @@ ob_start();
 			<h6>Quick Links</h6>
 			<ul>
 			    <li><a href="http://www.eclipse.org/pde/pde-ui/">Home</a></li>
-				<li><a href="#committers">PDE/UI Committers</a></li>
+				<li><a href="#committers">PDE/UI Committers and Contributors </a></li>
 			</ul>
 		</div>
 		<div class="sideitem">
