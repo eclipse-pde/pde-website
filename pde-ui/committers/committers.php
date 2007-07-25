@@ -38,7 +38,7 @@ ob_start();
                   <p align="center">&nbsp;</p>
                 </td>
                 <td width="25%"><p align="center"><img src="dejan_glozic.gif" alt="Dejan Glozic" width="200" height="280"></p>
-                  <p align="center"><strong>Dejan Glozic</strong></p>
+                  <p align="center"><strong><a href="http://dejan-glozic.blogspot.com">Dejan Glozic</a></strong></p>
                   <p align="center">Father of PDE, IBM Toronto Lab</p>
                   <p align="center">&nbsp;</p>
                 </td>
@@ -46,7 +46,7 @@ ob_start();
               <tr>
                 <td width="25%"><p align="center"><img src="janek_lasocki_biczysko.gif" alt="Janek Lasocki-Biczysko" width="200" height="280"></p>
                   <p align="center"><strong>Janek Lasocki-Biczysko</strong></p>
-                  <p align="center">Committer, IBM Toronto Lab</p>
+                  <p align="center">Committer</p>
  				</td>
                 <td><p align="center"><img src="wassim_melhem.png" alt="Wassim Melhem" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://wassim-melhem.blogspot.com">Wassim Melhem</a></strong></p>
@@ -63,20 +63,33 @@ ob_start();
 	<div id="midcolumn">
 		<div class="homeitem3col">
 			<a name="contributors"></a>
-			<h3>PDE/UI Contributors </h3>
+			<h3>PDE/UI Contributors</h3>
 			<table width="100%" border="0">
               <tr>
                 <td width="25%"><p align="center"><img src="chris_aniszczyk.png" alt="Adam Archer" width="200" height="280"></p>
                   <p align="center"><strong>Adam Archer</strong></p>
-                  <p align="center">&nbsp;</p>
                 </td>
                 <td width="25%"><p align="center"><img src="chris_aniszczyk.png" alt="Noam Chitayat" width="200" height="280"></p>
                   <p align="center"><strong>Noam Chitayat</strong></p>
-                  <p align="center">&nbsp;</p>
                 </td>
                 <td width="25%"><p align="center"><img src="peter_friese.JPG" alt="Peter Friese" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://www.peterfriese.de/">Peter Friese</a></strong></p>
-                  <p align="center">&nbsp;</p>
+                </td>
+              </tr>
+          </table>
+        </div>
+	</div>
+	<div id="midcolumn">
+		<div class="homeitem3col">
+			<a name="contributors"></a>
+			<h3>PDE/UI Past Committers</h3>
+			<table width="100%" border="0">
+              <tr>
+                <td width="50%"><p align="center"><img src="konrad_kolosowski.gif" alt="Konrad Kolosowski" width="200" height="280"></p>
+                  <p align="center"><strong>Konrad Kolosowski</strong></p>
+                </td>
+                <td width="50%"><p align="center"><img src="cherie_wong.jpg" alt="Cherie Wong" width="200" height="280"></p>
+                  <p align="center"><strong>Cherie Wong</strong></p>
                 </td>
               </tr>
           </table>
