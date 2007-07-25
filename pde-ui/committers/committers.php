@@ -72,7 +72,7 @@ ob_start();
           </table>
         </div>
 	</div>
-	<div>
+	<div id="midcolumn">
 		<div class="homeitem3col">
 			<a name="contributors"></a>
 			<h3>PDE/UI Contributors </h3>
