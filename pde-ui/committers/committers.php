@@ -1,6 +1,6 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "PDE/UI Committers";
+	$pageTitle 		= "PDE/UI Committers and Contributors";
 	$pageKeywords	= "PDE/UI, PDE, plug-in, development, tools, Eclipse, committer, contributor";
 	$pageAuthor		= "PDE/UI Team";
 	
@@ -72,6 +72,7 @@ ob_start();
           </table>
         </div>
 	</div>
+	<div>
 		<div class="homeitem3col">
 			<a name="contributors"></a>
 			<h3>PDE/UI Contributors </h3>
