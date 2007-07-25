@@ -75,6 +75,9 @@ ob_start();
                 <td width="25%"><p align="center"><img src="peter_friese.JPG" alt="Peter Friese" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://www.peterfriese.de/">Peter Friese</a></strong></p>
                 </td>
+                <td width="25%"><p align="center"><img src="chris_aniszczyk.png" alt="Brock Janiczak" width="200" height="280"></p>
+                  <p align="center"><strong>Brock Janiczak</strong></p>
+                </td>
               </tr>
           </table>
         </div>
