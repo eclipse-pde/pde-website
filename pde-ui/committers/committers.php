@@ -82,24 +82,6 @@ ob_start();
           </table>
         </div>
 	</div>
-	
-	<div id="rightcolumn">
-		<div class="sideitem">
-
-			<h6>Quick Links</h6>
-			<ul>
-			    <li><a href="http://www.eclipse.org/pde/pde-ui/">Home</a></li>
-				<li><a href="#committers">PDE/UI Committers and Contributors </a></li>
-			</ul>
-		</div>
-		<div class="sideitem">
-			<h6>Related Links</h6>
-			<ul>
-				<li><a href="http://wiki.eclipse.org/index.php/PDE_UI">PDE UI Wiki</a></li>
-			</ul>
-		</div>
-	</div>
-	
 <?php
 	$html = ob_get_contents();
 	ob_end_clean();
