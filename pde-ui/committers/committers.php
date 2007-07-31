@@ -66,19 +66,27 @@ ob_start();
 			<h3>PDE/UI Contributors</h3>
 			<table width="100%" border="0">
               <tr>
-                <td width="25%"><p align="center"><img src="adam_archer.PNG" alt="Adam Archer" width="200" height="280"></p>
+                <td width="33%"><p align="center"><img src="adam_archer.PNG" alt="Adam Archer" width="200" height="280"></p>
                   <p align="center"><strong>Adam Archer</strong></p>
                 </td>
-                <td width="25%"><p align="center"><img src="noam_chitayat.png" alt="Noam Chitayat" width="200" height="280"></p>
+                <td width="33%"><p align="center"><img src="noam_chitayat.png" alt="Noam Chitayat" width="200" height="280"></p>
                   <p align="center"><strong>Noam Chitayat</strong></p>
                 </td>
-                <td width="25%"><p align="center"><img src="peter_friese.JPG" alt="Peter Friese" width="200" height="280"></p>
+			    <td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Joern Dinkla" width="200" height="280"></p>
+                  <p align="center"><strong>Joern Dinkla</strong></p>
+                </td>				
+              </tr>
+			  <tr>
+                <td width="33%"><p align="center"><img src="peter_friese.JPG" alt="Peter Friese" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://www.peterfriese.de/">Peter Friese</a></strong></p>
                 </td>
-                <td width="25%"><p align="center"><img src="chris_aniszczyk.png" alt="Brock Janiczak" width="200" height="280"></p>
+			    <td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Brock Janiczak" width="200" height="280"></p>
                   <p align="center"><strong>Brock Janiczak</strong></p>
                 </td>
-              </tr>
+			    <td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Bartosz Michalik" width="200" height="280"></p>
+                  <p align="center"><strong>Bartosz Michalik</strong></p>
+                </td>
+			   </tr>
           </table>
         </div>
 	</div>
