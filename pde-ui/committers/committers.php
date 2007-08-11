@@ -47,10 +47,12 @@ ob_start();
                 <td width="33%"><p align="center"><img src="janek_lasocki_biczysko.gif" alt="Janek Lasocki-Biczysko" width="200" height="280"></p>
                   <p align="center"><strong>Janek Lasocki-Biczysko</strong></p>
                   <p align="center">Committer</p>
+                  <p align="center">&nbsp;</p>
  				</td>
                 <td width="33%"><p align="center"><img src="wassim_melhem.png" alt="Wassim Melhem" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://wassim-melhem.blogspot.com">Wassim Melhem</a></strong></p>
                   <p align="center">PDE/UI Lead, IBM Toronto Lab</p>
+                  <p align="center">&nbsp;</p>
                 </td>
 			</tr>
 			<tr>
