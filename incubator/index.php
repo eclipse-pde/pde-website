@@ -46,6 +46,11 @@ support for the tasks they perform every day.<BR>
       <td width="98%"><a href="dependency-visualization/index.php" target="_top"><b>Dependency Visualization</b></a><br>
     Views designed to assist with plug-in dependency analysis tasks.</td>
   </tr>
+  	<tr>
+      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
+      <td width="98%"><a href="dependency-visualization/index.php" target="_top"><b>Plug-in Spy</b></a><br>
+    A way for a plug-in developer to introspect Eclipse to aid plug-in development.</td>
+  </tr>
   </table>
 
 		
