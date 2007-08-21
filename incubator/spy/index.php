@@ -30,7 +30,7 @@ ob_start();
 
 			<p class=bar>Overview</p>
 			<p>
-			The plug-in spy aims to provide a simple tool to introspect Eclipse in terms of what a plug-in developer would find useful. 
+			The plug-in spy aims to provide a simple tool to introspect Eclipse in terms of what a plug-in developer would find useful. Simply hit the <b>F9</b> key on what you're looking at, and Plug-in Spy will be presented to you with relevant information.
 			This tool is part of the <A HREF="http://www.eclipse.org/eclipse/incubator">Eclipse Incubator</a> project.  
 			For a complete description of Eclipse incubation please read 
 			<A HREF="http://www.eclipse.org/projects/what-is-incubation.php">this.</a>
