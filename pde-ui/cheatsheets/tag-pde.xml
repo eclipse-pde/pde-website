@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet title="How To Tag PDE">
+   <intro>
+      <description>
+         How to tag PDE using Releng tools.
+      </description>
+   </intro>
+   <item title="Setup Releng Tools" dialog="true" skip="false">
+      <description>
+         To setup Releng tools perform the following steps:
+      </description>
+      <subitem label="Download &quot;org.eclipse.releng.tools&quot; plug-in from &quot;www.eclipse.org&quot;.  The plug-in can be found at the bottom of each individual eclipse SDK build download page." skip="false">
+         <command serialization="org.eclipse.ui.browser.openBrowser(browserId=eclipse-downloads,tooltip=Eclipse Downloads,name=Eclipse Downloads,url=http://download.eclipse.org/eclipse/downloads/)" confirm="false">
+         </command>
+      </subitem>
+      <subitem label="Install the &quot;org.eclipse.releng.tools&quot; plug-in by unzipping the downloaded zipfile overtop an eclipse installation.  The plug-in is added to the &quot;plugins&quot; and &quot;features&quot; directory." skip="false">
+      </subitem>
+      <subitem label="Start the eclipse build containing the installed &quot;org.eclipse.releng.tools&quot; plug-in." skip="false">
+      </subitem>
+   </item>
+   <item title="Check-out PDE" dialog="true" skip="false">
+      <description>
+         Check-out the following PDE projects from HEAD:
+<br/>
+<br/>
+org.eclipse.
+<br/>
+pde
+<br/>
+pde.core
+<br/>
+pde.doc.user
+<br/>
+pde.junit.runtime
+<br/>
+pde.runtime
+<br/>
+pde.ui
+<br/>
+pde.ui.templates
+<br/>
+pde.ui.tests
+<br/>
+<br/>
+Make sure to synchronize with HEAD if the project are already in the workspace.
+      </description>
+   </item>
+   <item title="Check-out Releng Map Files" dialog="true" skip="false">
+      <description>
+         Check-out the &quot;org.eclipse.releng&quot; plug-in from HEAD.  
+<br/>
+<br/>
+Make sure to synchronize with HEAD if the project is already in the workspace.
+<br/>
+<br/>
+doc.map:  Contains &quot;pde.doc.user&quot; plug-in
+<br/>
+pde.map:  Contains the other 7 PDE plug-ins
+      </description>
+   </item>
+   <item title="Test PDE" dialog="true" skip="false">
+      <description>
+         To test PDE, do the following steps:
+      </description>
+      <subitem label="Run all PDE JUnit Plug-in Tests.  Should be 100% pass rate.  Any failures should be fixed." skip="false">
+      </subitem>
+      <subitem label="Manually perform UI tests for any risky changes.  Source code should not be tagged if there are major failures." skip="false">
+      </subitem>
+   </item>
+   <item title="Tag PDE" dialog="true" skip="false">
+      <description>
+         To tag PDE using Releng tools, perform the following steps:
+      </description>
+      <subitem label="Right-click on any PDE plug-in project in the &quot;Package Explorer&quot; view and select &quot;Team &gt; Release...&quot; to start the Releng release wizard." skip="false">
+      </subitem>
+      <subitem label="Select &quot;Use default map project (org.eclipse.releng)&quot; radio button." skip="false">
+      </subitem>
+      <subitem label="Click &quot;Next &gt;&quot;" skip="false">
+      </subitem>
+      <subitem label="Select &quot;pde.map&quot; and &quot;doc.map&quot; checkbox" skip="false">
+      </subitem>
+      <subitem label="Select &quot;Release only projects that have changed since the last release&quot; checkbox." skip="false">
+      </subitem>
+      <subitem label="Click &quot;Next &gt;&quot;" skip="false">
+      </subitem>
+      <subitem label="Briefly review release changes." skip="false">
+      </subitem>
+      <subitem label="Click &quot;Next &gt;&quot;" skip="false">
+      </subitem>
+      <subitem label="Enter the &quot;Tag name&quot; as the target build&apos;s date and time (usually I-Build).  Format: vYYYMMDD-HHMM.  Example: v20070712-0800." skip="false">
+      </subitem>
+      <subitem label="Select &quot;Validate the release once completed&quot; checkbox." skip="false">
+      </subitem>
+      <subitem label="Select &quot;Show the file change before committing&quot; radio option." skip="false">
+      </subitem>
+      <subitem label="Click &quot;Next &gt;&quot;" skip="false">
+      </subitem>
+      <subitem label="Review the configuration file changes." skip="false">
+      </subitem>
+      <subitem label="Click &quot;Next &gt;&quot;" skip="false">
+      </subitem>
+      <subitem label="Enter a commit comment:  e.g. &quot;Tag PDE for I20070712-0800&quot;" skip="false">
+      </subitem>
+      <subitem label="Click &quot;Finish&quot;" skip="false">
+      </subitem>
+   </item>
+   <item title="Verify PDE Tags" dialog="true" skip="false">
+      <description>
+         To verify PDE was tagged properly in CVS, do the following steps:
+      </description>
+      <subitem label="Open &quot;CVS Repositories&quot; view" skip="false">
+         <command serialization="org.eclipse.team.ccvs.ui.RepositoriesView" confirm="false">
+         </command>
+      </subitem>
+      <subitem label="Expand &quot;Versions&quot; node." skip="false">
+      </subitem>
+      <subitem label="Expand the node of a PDE project that was tagged." skip="false">
+      </subitem>
+      <subitem label="Verify the tagged created exists with the proper changes (e.g. v20070712-0800).  Should be the first entry if done right." skip="false">
+      </subitem>
+   </item>
+</cheatsheet>
