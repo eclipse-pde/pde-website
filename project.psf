@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.team.cvs.core.cvsnature">
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde,org.eclipse.pde"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.core,org.eclipse.pde.core"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.doc.user,org.eclipse.pde.doc.user"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.runtime,org.eclipse.pde.runtime"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.ui,org.eclipse.pde.ui"/>
+</provider>
+</psf>
