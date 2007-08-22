@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+READ ME FIRST
+
+Project Set File Import Instructions:
+
+(1) Save this file to a local directory
+(2) Start an eclipse instance.
+(3) Select "File > Import..." from the main workbench menu to open the "Import" dialog.
+(4) Select "Team > Team Project Set" in the tree viewer.
+(5) Click "Next >".
+(6) Click "Browse..." to select and locate this file saved in step (1)
+(7) Click "Finish"
+(8) Accept the defaults and Click "OK" on the "Specify Repository Location" dialog if necessary
+
+-->
+
+
+<psf version="2.0">
+<provider id="org.eclipse.team.cvs.core.cvsnature">
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde,org.eclipse.pde"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.core,org.eclipse.pde.core"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.doc.user,org.eclipse.pde.doc.user"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.junit.runtime,org.eclipse.pde.junit.runtime"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.runtime,org.eclipse.pde.runtime"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.ui,org.eclipse.pde.ui"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.ui.templates,org.eclipse.pde.ui.templates"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.ui.tests,org.eclipse.pde.ui.tests"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.test.performance,org.eclipse.test.performance"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.test.performance.win32,org.eclipse.test.performance.win32"/>
+</provider>
+</psf>

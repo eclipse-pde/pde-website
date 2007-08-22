@@ -25,7 +25,7 @@ ob_start();
 		<div class="homeitem3col">
 			<h3>Plug-ins</h3>
 			<a name="plugins"></a>
-			<p>The PDE UI component is made up of the following plugins:</p>
+			<p>The PDE UI component is comprised of the following plugins:</p>
 			
 			 <ul>        
           		<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde">org.eclipse.pde</a></li>
@@ -34,8 +34,23 @@ ob_start();
                 <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.junit.runtime">org.eclipse.pde.junit.runtime</a></li>
                 <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.runtime">org.eclipse.pde.runtime</a></li>
                 <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.ui">org.eclipse.pde.ui</a></li>
+                <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.ui.templates">org.eclipse.pde.ui.templates</a></li>
                 <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.ui.tests">org.eclipse.pde.ui.tests</a></li>
  			</ul>
+
+			<p>The <em>org.eclipse.pde.ui.tests</em> plug-in requires the following plugins:</p>
+
+			<ul>        
+          		<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.test.performance">org.eclipse.test.performance</a></li>
+                <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.test.performance.win32">org.eclipse.test.performance.win32</a></li>
+ 			</ul>
+
+			<p>Use the following Project Set File (PSF) to quickly import PDE UI related projects from CVS:</p>
+			<ul>        
+          		<li>Committers:  <a href="../project-set-files/pde-ui-extssh.psf">PDE UI PSF</a></li>
+                <li>Non-Committers:  <a href="../project-set-files/pde-ui-pserver.psf">PDE UI PSF</a></li>
+ 			</ul>
+
 		</div>
 		<div class="homeitem3col">
 			<h3>Eclipse Forum India Downloads</h3>
