@@ -45,10 +45,10 @@ ob_start();
                 <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.test.performance.win32">org.eclipse.test.performance.win32</a></li>
  			</ul>
 
-			<p>Use the following Project Set File (PSF) to quickly import PDE UI related projects from CVS:</p>
+			<p>Use the following project set files to quickly import PDE UI related projects from CVS:</p>
 			<ul>        
-          		<li>Committers:  <a href="../project-set-files/pde-ui-extssh.psf">PDE UI PSF</a></li>
-                <li>Non-Committers:  <a href="../project-set-files/pde-ui-pserver.psf">PDE UI PSF</a></li>
+          		<li>Committers:  <a href="../project-set-files/pde-ui-extssh.psf">PDE UI project set file</a></li>
+                <li>Non-Committers:  <a href="../project-set-files/pde-ui-pserver.psf">PDE UI project set file</a></li>
  			</ul>
 
 		</div>
