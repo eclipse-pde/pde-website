@@ -53,17 +53,16 @@ ob_start();
 		<div class="homeitem3col">
 			<a name="happening"></a>
 			<h3>What&#8217;s Happening?</h3>
-			<p><b>R3.3 Development</b></p>
-			<p>During the Eclipse 3.3 development cycle, focus will be on the following areas:</p>
+			<p><b>R3.4 Development</b></p>
+			<p>Areas of focus during the Eclipse 3.4 development cycle:</p>
 			<ul>
 			  <li>API Tools</li>
 		      <li>Bundle/Module Development Tools</li>
-		      <li>Improved Launching Support</li>
-		      <li>Target Provisioning</li>
+		      <li>Editor Enhancements</li>
 		      <li>Bundle Management</li>
-		      <li>User Assistance Tooling      </li>
+		      <li>Provisioning Tooling</li>
+		      <li>User Assistance Tooling</li>
 	      </ul>
-	        <p>Watch this space for more details when the 3.3 plan is posted. </p>
 		</div>
 	  <div class="homeitem3col">
 			<a name="team"></a>
