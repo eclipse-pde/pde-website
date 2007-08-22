@@ -6,12 +6,11 @@ READ ME FIRST
 
 Cheat Sheet Loading Instructions:
 
-(1) Save the cheat sheet to a local directory.
-(2) Start an eclipse instance.
-(3) Select "Help > Cheat Sheets..." from the main workbench menu to open the "Cheat Sheet Selection" dialog.
-(4) Select the "Select a cheat sheet from a file" option.
-(5) Use the "Browse..." button to locate and select the cheat sheet using the "Select Cheat Sheet Content File" dialog.
-(6) Click "OK" to open the cheat sheet in the "Cheat Sheets" view.
+(1) Start an eclipse instance.
+(2) Select "Help > Cheat Sheets..." from the main workbench menu to open the "Cheat Sheet Selection" dialog.
+(3) Select the "Enter the URL of a cheat sheet" option.
+(4) Enter the following URL into the combo box: "http://www.eclipse.org/pde/pde-ui/cheatsheets/tag-pde.xml".
+(5) Click "OK" to open the cheat sheet in the "Cheat Sheets" view.
 
 -->
 
