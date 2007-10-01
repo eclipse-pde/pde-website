@@ -92,7 +92,7 @@ ob_start();
                 </td>
 			   </tr>
 			   <tr>
-			    <td width="33%"><o align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280" border="0"></p>
+			    <td width="33%"><p align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280" border="0"></p>
 			      <p align="center"><strong>Jacek Pospychala</strong></p>
 			    </td>
 			   </tr>
