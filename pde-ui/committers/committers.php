@@ -91,6 +91,11 @@ ob_start();
                   <p align="center"><strong><a href="http://eclipser-blog.blogspot.com/">Bartosz Michalik</a></strong></p>
                 </td>
 			   </tr>
+			   <tr>
+			    <td width="33%"><o align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280" border="0"></p>
+			      <p align="center><strong>Jacek Pospychala</strong></p>
+			    </td>
+			   </tr>
           </table>
         </div>
 	</div>
