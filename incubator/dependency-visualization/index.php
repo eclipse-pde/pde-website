@@ -50,7 +50,8 @@ ob_start();
             Eclipse incubation please read <a href=
             "http://www.eclipse.org/projects/what-is-incubation.php">
             this.</a></p>
-            <img alt="" src="images/pde_graph_view.JPG"> 
+            <img alt="" width="600px" src=
+            "images/pde_graph_view.JPG"> 
 
             <p class="bar">Bugs and Feature Requests</p>
             We use the <a href=
@@ -60,53 +61,45 @@ ob_start();
             <br>
              Click <a href=
             "https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=%5Bpde+viz%5D&classification=Eclipse&product=PDE&component=Incubators&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-            here</a> for a list of currently opened bugs. <br>
+            here</a> for a list of currently opened bugs.<br>
             <br>
              
 
-            <p class="bar">Release</p>
-            New &amp; Noteworthy (Released 2007-10-13) 
+            <p class="bar">0.1 Release</p>
+            New &amp; Noteworthy (Released 2007-10-13)    <a href=
+            "http://www.example.com">New & Noteworthy</a> (Released
+            2007-10-13) . 
 
-            <div class="homeitem3col" style="margin-left:40px; width:90%">
-                <h3>0.1 Release </h3>
-                <br>
-                   <a href="http://www.example.com">New &  Noteworthy</a> ((Released 2007-10-13) . 
+            <ul>
+                <li>
+                <b>http://download.eclipse.org/eclipse/pde/incubator/visualization/site</b>  (Eclipse
+                3.3 or later)</li>
+            </ul>
 
-              	  <ul>
-                 	   <li><b>download.eclipse.org/tools/mylyn/update/e3.4</b>  (Eclipse 3.4M2)</li>
+            <p class="bar">Accessing Source Code</p>
+            Currently the PDE Dependency Visualization tool is only
+            available in CVS. The tool is built using the <a href=
+            "http://www.eclipse.org/mylar/zest.php">Zest</a>
+            toolkit and <a href=
+            "http://www.eclipse.org/gef/">Draw2D</a>. In order to
+            get the source and build the PDE Dependency
+            Visualization Tool follow the instructions found <a
+            href="getsource.php">here</a>.<br>
+            <br>
+             
 
-              	   </ul>
-			</div>
-			
-                        <p class="bar">Accessing Source Code</p>
-                        Currently the PDE Dependency Visualization
-                        tool is only available in CVS. The tool is
-                        built using the <a href=
-                        "http://www.eclipse.org/mylar/zest.php">Zest</a>
-                        toolkit and <a href=
-                        "http://www.eclipse.org/gef/">Draw2D</a>.
-                        In order to get the source and build the
-                        PDE Dependency Visualization Tool follow
-                        the instructions found <a href=
-                        "getsource.php">here</a>. <br>
-                        <br>
-                         
-
-                        <p> </p>
-                    </li>
-                </ul>
-            </div>
-            <?php
-                include $_SERVER['DOCUMENT_ROOT'] . "/pde/incubator/component-links.html";
-                if (file_exists("dir-links.html")) {include "dir-links.html";}
-            ?><?php
-                $html = ob_get_contents();
-                ob_end_clean();
-
-                # Generate the web page
-                $App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
-            ?>
+            <p> </p>
         </div>
+        <?php
+                        include $_SERVER['DOCUMENT_ROOT'] . "/pde/incubator/component-links.html";
+                        if (file_exists("dir-links.html")) {include "dir-links.html";}
+                    ?><?php
+                        $html = ob_get_contents();
+                        ob_end_clean();
+
+                        # Generate the web page
+                        $App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+                    ?>
     </body>
 </html>
 
