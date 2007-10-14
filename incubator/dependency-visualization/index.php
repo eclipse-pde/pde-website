@@ -66,7 +66,7 @@ ob_start();
              
 
             <p class="bar">0.1 Release</p>
-            <a href="http://www.example.com"> New &amp; Noteworthy</a> (Released 2007-10-13)  
+            <a href="new/index.php"> New &amp; Noteworthy</a> (Released 2007-10-13)  
 
 			<br><br>
             <ul>
