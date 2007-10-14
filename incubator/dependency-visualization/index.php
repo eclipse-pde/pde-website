@@ -68,7 +68,7 @@ ob_start();
             <p class="bar">0.1 Release</p>
             <a href="http://www.example.com"> New &amp; Noteworthy</a> (Released 2007-10-13)  
 
-			<br><br><br>
+			<br><br>
             <ul>
                 <li>
                 <b>http://download.eclipse.org/eclipse/pde/incubator/visualization/site</b>  (Eclipse
