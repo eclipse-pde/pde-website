@@ -70,7 +70,7 @@ ob_start();
             "http://www.example.com">New & Noteworthy</a> (Released
             2007-10-13) . 
 
-			<br>
+			<br><br>
             <ul>
                 <li>
                 <b>http://download.eclipse.org/eclipse/pde/incubator/visualization/site</b>  (Eclipse
