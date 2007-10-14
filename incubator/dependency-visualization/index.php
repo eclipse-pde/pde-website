@@ -70,12 +70,15 @@ ob_start();
             "http://www.example.com">New & Noteworthy</a> (Released
             2007-10-13) . 
 
+			<br>
             <ul>
                 <li>
                 <b>http://download.eclipse.org/eclipse/pde/incubator/visualization/site</b>  (Eclipse
                 3.3 or later)</li>
             </ul>
 
+			<br>
+			
             <p class="bar">Accessing Source Code</p>
             Currently the PDE Dependency Visualization tool is only
             available in CVS. The tool is built using the <a href=
