@@ -65,8 +65,8 @@ ob_start();
             <br>
              
 
-            <p class="bar">0.1 Release</p>
-            <a href="new/index.php"> New &amp; Noteworthy</a> (Released 2007-10-13)  
+            <p class="bar">M1 Available</p>
+            <a href="new/index.php"> New &amp; Noteworthy</a> (2007-10-13)  
 
 			<br><br>
             <ul>
@@ -78,7 +78,7 @@ ob_start();
 			<br>
 			
             <p class="bar">Accessing Source Code</p>
-            Currently the PDE Dependency Visualization tool is only
+            The PDE Dependency Visualization tool is 
             available in CVS. The tool is built using the <a href=
             "http://www.eclipse.org/mylar/zest.php">Zest</a>
             toolkit and <a href=
