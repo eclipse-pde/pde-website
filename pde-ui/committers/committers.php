@@ -76,22 +76,24 @@ ob_start();
                 <td width="33%"><p align="center"><img src="noam_chitayat.png" alt="Noam Chitayat" width="200" height="280"></p>
                   <p align="center"><strong>Noam Chitayat</strong></p>
                   <p align="center">&nbsp;</p></td>
-			    <td width="33%"><p align="center"><img src="joern_dinkla.png" alt="Joern Dinkla" width="200" height="280"></p>
-                  <p align="center"><strong>Joern Dinkla</strong></p>
+			    <td width="33%"><p align="center"><img src="patrick_dempsey.jpg" alt="Patrick Dempsey" width="200" height="280"></p>
+                  <p align="center"><strong>Patrick Dempsey</strong></p>
                   <p align="center">&nbsp;</p></td>				
               </tr>
 			  <tr>
+			    <td width="33%"><p align="center"><img src="joern_dinkla.png" alt="Joern Dinkla" width="200" height="280"></p>
+                  <p align="center"><strong>Joern Dinkla</strong></p>
+                  <p align="center">&nbsp;</p></td>	
                 <td width="33%"><p align="center"><img src="peter_friese.JPG" alt="Peter Friese" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://www.peterfriese.de/">Peter Friese</a></strong></p>
                   <p align="center">&nbsp;</p></td>
 			    <td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Brock Janiczak" width="200" height="280"></p>
                   <p align="center"><strong>Brock Janiczak</strong></p>
                   <p align="center">&nbsp;</p></td>
-			    <td width="33%"><p align="center"><img src="bartosz_michalik.PNG" alt="Bartosz Michalik" width="200" height="280"></p>
-                  <p align="center"><strong><a href="http://eclipser-blog.blogspot.com/">Bartosz Michalik</a></strong></p>
-                  <p align="center">&nbsp;</p></td>
 			  </tr>
 			  <tr>
+			    <td width="33%"><p align="center"><img src="bartosz_michalik.PNG" alt="Bartosz Michalik" width="200" height="280"></p>
+                  <p align="center"><strong><a href="http://eclipser-blog.blogspot.com/">Bartosz Michalik</a></strong></p>
 			    <td width="33%"><p align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280"></p>
 			      <p align="center"><strong>Jacek Pospychala</strong></p>
 			    </td>
