@@ -30,10 +30,14 @@ ob_start();
 
 			<p class=bar>Overview</p>
 			<p>
-			The plug-in spy aims to provide a simple tool to introspect Eclipse in terms of what a plug-in developer would find useful. Simply hit the <b>F9</b> key on what you're looking at, and Plug-in Spy will be presented to you with relevant information.
+			The plug-in spy aims to provide a simple tool to introspect Eclipse in terms of what a plug-in developer would find useful. Simply hit <b>ALT+SHIFT+F1</b> on what you're looking at, and Plug-in Spy will be presented to you with relevant information.
 			This tool is part of the <A HREF="http://www.eclipse.org/eclipse/incubator">Eclipse Incubator</a> project.  
 			For a complete description of Eclipse incubation please read 
 			<A HREF="http://www.eclipse.org/projects/what-is-incubation.php">this.</a>
+			</p>
+			
+			<p>
+				<b>Note, the Plug-in Spy has graduated and will be in the Eclipse 3.4 release.</b>
 			</p>
 			
 			<p class=bar>Bugs and Feature Requests</p>
@@ -44,7 +48,7 @@ ob_start();
 			</p>
 			
 			<p class=bar>Accessing Source Code</p>
-			Currently the Plug-in Spy tool is only available in <a href="http://dev.eclipse.org/viewcvs/index.cgi/pde-incubator/spy/plugins/">CVS</a>.
+			Since Plug-in Spy has graduated from incubation, it's located in the <a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.runtime">org.eclipse.pde.runtime</a> plug-in in CVS.
 				
 </p>
 		
