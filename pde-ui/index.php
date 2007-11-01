@@ -31,7 +31,7 @@ ob_start();
 				<li>Export Wizards  - wizards that build, package and export plug-ins, fragments and products with a single click. </li>
 				<li>Launchers - test and debug Eclipse applications and OSGi bundles. </li>
 				<li>Views - PDE provides views that help plug-in developers inspect different aspects   of their development environment.</li>
-			    <li>Miscelllaneous Tools   - wizards to externalize and clean up manifest files.</li>
+			    <li>Miscellaneous Tools   - wizards to externalize and clean up manifest files.</li>
 			    <li>Conversion Tools - wizard to convert a plain Java project or plain JARs into a plug-in project. </li>
 			    <li>Integration with JDT  - plug-in manifest files participate in Java search and refactoring. </li>
 			 </ul>
