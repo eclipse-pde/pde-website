@@ -87,7 +87,7 @@ ob_start();
                 <td width="33%"><p align="center"><img src="peter_friese.JPG" alt="Peter Friese" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://www.peterfriese.de/">Peter Friese</a></strong></p>
                   <p align="center">&nbsp;</p></td>
-                <td width="33%"><p align="center"><img src="les_jones.png" alt="Les Jones" width="200" height="280"></p>
+                <td width="33%"><p align="center"><img src="les_jones.jpg" alt="Les Jones" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://www.persiflage-n-piffle.com/blog/">Les Jones</a></strong></p>
                   <p align="center">&nbsp;</p></td>
 			  </tr>
