@@ -95,15 +95,18 @@ ob_start();
 			  	<td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Brock Janiczak" width="200" height="280"></p>
                   <p align="center"><strong>Brock Janiczak</strong></p>
                   <p align="center">&nbsp;</p></td>
+                <td width="33%"><p align="center"><img src="jakub_jurkiewicz.jpg" alt="Jakub Jurkiewicz" width="200" height="280"></p>
+                  <p align="center"><strong>Jakub Jurkiewicz</strong></p>
+                  <p align="center">&nbsp;</p></td>
 			    <td width="33%"><p align="center"><img src="bartosz_michalik.PNG" alt="Bartosz Michalik" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://eclipser-blog.blogspot.com/">Bartosz Michalik</a></strong></p>
                   <p align="center">&nbsp;</p></td>
+			   </tr>
+			  <tr>
 			    <td width="33%"><p align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280"></p>
 			      <p align="center"><strong>Jacek Pospychala</strong></p>
 			      <p align="center">&nbsp;</p></td>
 			    </td>
-			   </tr>
-			  <tr>
 			  	<td width="33%"><p align="center"><img src="curtis_windatt.jpg" alt="Curtis Windatt" width="200" height="280"></p>
                   <p align="center"><strong>Curtis Windatt</strong></p>
                   <p align="center">&nbsp;</p></td>
