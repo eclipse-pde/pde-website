@@ -36,13 +36,27 @@ ob_start();
 		<br>
 		<blockquote><i>In PDE we do tooling, but our business is people!</i></blockquote>
 		</p>
-	<p class=bar>Work Areas</p>
+	<p class=bar>Current Work Areas</p>
 		<table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
 			<tr>
 		      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
 		      <td width="98%"><a href="dependency-visualization/index.php" target="_top"><b>Dependency Visualization</b></a><br>
 			    Views designed to assist with plug-in dependency analysis tasks.</td>
-			  </tr>
+			</tr>
+			<tr>
+		      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
+		      <td width="98%"><a href="ds/index.php" target="_top"><b>Declarative Services Tooling</b></a><br>
+			    Tooling around the declarative services (DS) specification from OSGi</td>
+			</tr>
+			<tr>
+		      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
+		      <td width="98%"><a href="product_customization/index.php" target="_top"><b>Product Customization Tooling</b></a><br>
+			    Tooling built around the Equinox Transformations component</td>
+			</tr>
+	  	</table>
+	  	
+	  	<p class=bar>Graduated Work</p>
+		<table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
 		  	<tr>
 		      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
 		      <td width="98%"><a href="spy/index.php" target="_top"><b>Plug-in Spy</b></a><br>
