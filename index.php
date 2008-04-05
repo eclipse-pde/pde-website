@@ -55,6 +55,10 @@ ob_start();
 				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-ui">UI</a></td>
 				<td width="82%">PDE User Interface</td>
 			</tr>
+			<tr> 
+				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-api-tools">API Tools</a></td>
+				<td width="82%">PDE API Tools</td>
+			</tr>
 			</table>
 		</div>
 	</div>
