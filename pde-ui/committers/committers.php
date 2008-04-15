@@ -60,6 +60,10 @@ ob_start();
                   <p align="center"><strong>Mike Pawlowski</strong></p>
                   <p align="center">Committer, IBM Toronto Lab</p>               
 			    </td>
+			    <td width="33%"><p align="center"><img src="curtis_windatt.jpg" alt="Curtis Windatt" width="200" height="280"></p>
+                  <p align="center"><strong>Curtis Windatt</strong></p>
+                  <p align="center">&nbsp;</p></td>
+			    </td>
               </tr>
           </table>
         </div>
@@ -103,16 +107,15 @@ ob_start();
                   <p align="center">&nbsp;</p></td>
 			   </tr>
 			  <tr>
+			  <td width="33%"><p align="center"><img src="blazej_kroll.jpg" alt="Blazej Kroll" width="200" height="280"></p>
+                  <p align="center"><strong>Blazej Kroll</strong></p>
+                  <p align="center">&nbsp;</p></td>
 				<td width="33%"><p align="center"><img src="bartosz_michalik.PNG" alt="Bartosz Michalik" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://eclipser-blog.blogspot.com/">Bartosz Michalik</a></strong></p>
                   <p align="center">&nbsp;</p></td>
 			    <td width="33%"><p align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280"></p>
 			      <p align="center"><strong>Jacek Pospychala</strong></p>
 			      <p align="center">&nbsp;</p></td>
-			    </td>
-			  	<td width="33%"><p align="center"><img src="curtis_windatt.jpg" alt="Curtis Windatt" width="200" height="280"></p>
-                  <p align="center"><strong>Curtis Windatt</strong></p>
-                  <p align="center">&nbsp;</p></td>
 			    </td>
 			  </tr>
           </table>
