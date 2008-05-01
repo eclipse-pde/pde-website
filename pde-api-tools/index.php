@@ -49,8 +49,8 @@ ob_start();
 				Chat with people there about your problems and interests, and find out what you can do to help.
 			</p>
 			<p>
-				To get started you can check out the source for API Tools using either the <a href="/documents/projectSet.psf">extssh project set file</a> (if you have a bugzilla account) or the 
-				<a href="/documents/pserverProjectSet.psf">pserver project set file</a> (if you do not have a bugzilla account).
+				To get started you can check out the source for API Tools using either the <a href="../documents/projectSet.psf">extssh project set file</a> (if you have a bugzilla account) or the 
+				<a href="../documents/pserverProjectSet.psf">pserver project set file</a> (if you do not have a bugzilla account).
 			</p>
 		</div>
 	</div>
