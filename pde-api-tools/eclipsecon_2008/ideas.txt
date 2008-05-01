@@ -1,0 +1,25 @@
+Eclipsecon 2008 ideas
+
+1. Do not talk about architecture at all, there just isn't enough time, and most people won't care for such a 'young' project
+2. Integrate quick demos into the talk (talk for bit, show a demo, talk for bit, etc)
+3. Topics to talk about:
+	a. what is the project all about? (sell it to the audience)
+		- providing tooling to help with api evolution
+		- api consistency
+	b. what can users expect?
+		- tooling for use from the command line / builder integration / IDE integration
+		- quick fixes for a variety of issues
+		- variety of tools to help plugin developers (expand on these)
+	c. what is the project not?
+		- not a code gen tool, does not create apis
+		- does not work if you don't set it up
+	d. how can it help developers? (new / medium / experts)
+		- api evolution
+		- api contracts
+		- api consistency
+	e. what is the current state of the project? (what can they see now)
+		- building / marker support in IDE
+		- reference extraction
+		- searching (limited)
+		- provisional apis for 'early adopters'
+	f. talk about some of the features like the ability to extract refs, use from the command line, builder integration, searching, integration in the IDE
