@@ -29,7 +29,7 @@ include($App->getProjectCommon());
 	
 	$pageTitle 		= "API Tools";
 	$pageKeywords	= "pde, api, tools";
-	$pageAuthor		= "API Tools Team"
+	$pageAuthor		= "API Tools Team";
 	
 ob_start();
 ?>		
