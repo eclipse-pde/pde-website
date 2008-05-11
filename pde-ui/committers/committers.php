@@ -113,10 +113,19 @@ ob_start();
 				<td width="33%"><p align="center"><img src="bartosz_michalik.PNG" alt="Bartosz Michalik" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://eclipser-blog.blogspot.com/">Bartosz Michalik</a></strong></p>
                   <p align="center">&nbsp;</p></td>
-			    <td width="33%"><p align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280"></p>
+                  <td width="33%"><p align="center"><img src="rafael_oliveira.jpg" alt="Rafael Oliveira" width="200" height="280"></p>
+                  <p align="center"><strong>Rafael Oliveira</strong></p>
+                  <p align="center">&nbsp;</p></td>
+			  </tr>
+			  <tr>
+			  <td width="33%"><p align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280"></p>
 			      <p align="center"><strong>Jacek Pospychala</strong></p>
 			      <p align="center">&nbsp;</p></td>
 			    </td>
+				<td>
+				</td>
+				<td>
+				</td>
 			  </tr>
           </table>
         </div>
