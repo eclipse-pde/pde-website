@@ -33,7 +33,7 @@
 	
 	include("_sideCommon.php");
 	
-	$html = <<<EOHTML	
+$html = <<<EOHTML	
 
 <div id="maincontent">
 	<div id="midcolumn">
@@ -73,6 +73,7 @@
 		$commonside
 	</div>
 </div>
+
 
 EOHTML;
 
