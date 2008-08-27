@@ -55,6 +55,11 @@
 			</p>
 	    </div>
 		<div class="homeitem3col">
+		  <h3>Current Development</h3>
+		  	<p><a href="./dev_plans/r3_5/plan.php">API Tools 3.5 Plan</a>
+			</p>
+	    </div>	    
+		<div class="homeitem3col">
 		  <h3>Get involved!</h3>
 		    <p>
 		    	If you are interested in participating in the development of the API Tools component, 
