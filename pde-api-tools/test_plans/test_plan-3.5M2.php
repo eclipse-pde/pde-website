@@ -65,6 +65,12 @@
 				<td><div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			  <tr> 
+			    <td><a href="#TAGSCANNING">Unsupported Javadoc Tags</a></td>
+				<td> <div align="center"></div></td>
+			    <td> <div align="center"></div></td>
+				<td><div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
+			  </tr>
+			  <tr> 
 			    <td><a href="#QUICKFIXES">Quick Fixes</a></td>
 			    <td><div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
 				<td> <div align="center"></div></td>
@@ -80,6 +86,12 @@
 			    <td><a href="#PREFERENCES">Preferences</a></td>
 				<td><div align="center"></div></td>
 			    <td><div align="center"></div></td>
+			    <td> <div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
+			  </tr>
+			   <tr> 
+			    <td><a href="#TESTSUITE">Preferences</a></td>
+			    <td> <div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
+			    <td> <div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
 			    <td> <div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			</table>
@@ -98,17 +110,18 @@
 				<li> Setup API Tooling
 				<ul><li> wizard with no selections in workspace and with selections; if the there are selected projects in the workspace that can have API tooling setup on them, they should be preselected in the wizard 
 				</li><li> try canceling the wizard
-				</li><li> try selecting / unselecting all to make sure the finish and preview button work as expected
+				</li><li> try selecting / un-selecting all to make sure the finish and preview button work as expected
 				</li><li> try selecting a project and viewing a preview
 				</li><li> try selecting projects that do and do not have a component.xml file
 				</li><li> ensure tags are added correctly to files (from the component.xml)
-				</li></ul>
+				</li>
+				<li>try finishing the wizard without viewing a preview (from the first page)</li></ul>
 				</li></ol>
 				<p><a href="#TOP">Back to top</a><br><hr></p>
 			<a name="APIPROFILES"></a>
 			<h4>API Profiles</h4>
 				<ol><li> General
-				<ul><li> changing / editing / removing of the default profile should ask you to build when the Ok button is pressed on the preference page
+				<ul><li> changing / editing / removing of the default profile should ask you to build when the Ok (or Apply) button is pressed on the preference page
 				</li><li> the page and wizard should have help topics
 				</li></ul>
 				</li><li> Create a new API profile
@@ -120,7 +133,8 @@
 				
 				<ul><li> try completing the wizard and canceling it
 				</li><li> try renaming a profile (accepting and canceling the process)
-				</li></ul>
+				</li>
+				<li>try resetting a profile</li></ul>
 				</li><li> Deleting an API profile
 				<ul><li> try deleting a profile 
 				</li><li> try deleting select profiles
@@ -143,7 +157,7 @@
 				
 				</li><li> filters should be respected
 				</li><li> progress messages should be correct
-				</li><li> time to build should be resonable
+				</li><li> time to build should be reasonable
 				</li></ul>
 				</li><li> Run a full build on the workspace
 				<ul><li> builder should only run on 'API aware' projects
@@ -151,7 +165,7 @@
 				</li><li> filters should be respected
 				</li><li> progress messages should be correct
 				
-				</li><li> time to build should be resonable
+				</li><li> time to build should be reasonable
 				</li></ul>
 				</li></ul>
 				</li><li> Incremental Building
@@ -165,8 +179,23 @@
 				</li></ul>
 				</li></ol>
 				<p><a href="#TOP">Back to top</a><br><hr></p>
+			<a name="TAGSCANNING"></a>
+			<h4>Unsupported Javadoc Tags</h4>
+				<p>Enable the check for unsupported Javadoc tag checking. All of the given tests should produce API problems, and all 
+				content assist-available tags should not</p>
+				<ol>
+					<li> add noimplement, no reference and nooverride tags to class (inner, outer, static, static inner, etc)</li>
+					<li> add noinstantiate, noextend, noreference and nooverride tags to an interface (annotation)</li>
+					<li> add noimplement, noextend and noinstantiate tags to a method</li>
+					<li> add noimplement, noextend, noreference and noinstantiate tags to a constructor</li>
+					<li> add noimplement, noextend, nooverride and noinstantiate tags to a field</li>
+					<li> add noimplement, noextend, noreference, nooverride and noinstantiate tags to a final field</li>
+				</ol>
+			<p><a href="#TOP">Back to top</a><br><hr></p>
 			<a name="QUICKFIXES"></a>
 			<h4>Quick Fixes</h4>
+				<p>All quick fixes should not put a project in a state of error, and should work with an existing 
+				modified editor (i.e. even if there are unsaved edits in the editor the quick-fix is being activated on)</p>
 				<ol><li> Usage problems
 				</li><li> Compatibility problems
 				</li><li> Version problems
@@ -191,7 +220,7 @@
 				</li><li> Remove Filters
 				<ul><li> Use the property page
 				<ul><li> Try removing one or more filters by individually selecting filters or their parent file.
-				</li><li> Ensure rmeoved filters are removed (apply change or click Ok to close the property page, and reopen)
+				</li><li> Ensure removed filters are removed (apply change or click Ok to close the property page, and reopen)
 				</li><li> Canceling deleting filters should make no change
 				
 				</li><li> Removing filters should rebuild the project (incremental)
@@ -203,7 +232,7 @@
 				</li><li> Share Filters
 				<ul><li> Commit filter to CVS and check it out in another workspace
 				</li><li> Should update filtered problems on next rebuild (unless the filter store for the project in question is already loaded)
-	
+
 				</li></ul>
 				</li></ol>
 				<p><a href="#TOP">Back to top</a><br><hr></p>
@@ -230,6 +259,24 @@
 				</li><li> Use the link to configure workspace settings
 				</li></ul>
 				</li></ol>
+				<p><a href="#TOP">Back to top</a><br><hr></p>
+			<a name="TESTSUITE"></a>
+			<h4>Run The Test Suite</h4>
+				<ol><li> Run ApiToolsTestSuite
+					<ul><li> on Windows XP
+					</li><li> on Windows Vista
+					</li><li> on Linux
+					</li><li> on Mac OS
+					</li></ul>
+				</li>
+				<li> Run ApiToolsPluginTestSuite
+					<ul><li> on Windows XP
+					</li><li> on Windows Vista
+					</li><li> on Linux
+					</li><li> on Mac OS
+					</li></ul>
+				</li>
+				</ol>
 				<p><a href="#TOP">Back to top</a><br><hr></p>
 		</div>
 	</div>
