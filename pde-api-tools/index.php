@@ -36,7 +36,7 @@
 
 <div id="maincontent">
 	<div id="midcolumn">
-		<h1><?= $pageTitle ?></h1>
+		<h1>$pageTitle</h1>
 		<div class="homeitem3col">
 		  <h3>Introduction to API Tools</h3>
 		  	<p>  API tooling will assist developers in API maintenance by reporting API defects such as binary incompatibilities, incorrect plug-in version numbers, missing or incorrect @since tags, and usage of non-API code between plug-ins. 
