@@ -20,15 +20,15 @@
 	# Author: 		API Tools Team
 	# Date:			August 27, 2008
 	#
-	# Description: 
+	# Description: Main page for the API Tools team website
 	#
 	#
 	#****************************************************************************
 	
 	
-	$pageTitle 		= "";
+	$pageTitle 		= "PDE API Tools";
 	$pageKeywords	= "api, platform, pde, tooling, tools, tags, test, testing, plan, plans, 3.5";
-	$pageAuthor		= "Debug Team";
+	$pageAuthor		= "API Tools Team";
 	
 	include("_sideCommon.php");
 	
