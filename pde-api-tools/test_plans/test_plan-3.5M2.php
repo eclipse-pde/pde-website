@@ -89,7 +89,7 @@
 			    <td> <div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			   <tr> 
-			    <td><a href="#TESTSUITE">Preferences</a></td>
+			    <td><a href="#TESTSUITE">Run The Test Suite</a></td>
 			    <td> <div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
 			    <td> <div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
 			    <td> <div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
