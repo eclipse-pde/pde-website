@@ -35,6 +35,7 @@ include($App->getProjectCommon());
 	
 	$html = <<<EOHTML	
 
+<div id="maincontent">
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 
@@ -71,6 +72,7 @@ include($App->getProjectCommon());
 	<div id="rightcolumn">
 		$commonside
 	</div>
+</div>
 
 	EOHTML;
 
