@@ -1,4 +1,4 @@
-<?php  	
+<?php  
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	
@@ -20,15 +20,17 @@
 	# Author: 		API Tools Team
 	# Date:			August 27, 2008
 	#
-	# Description: 
+	# Description: a new and noteworty entry for API Tools 
 	#
 	#
 	#****************************************************************************
 	
 	
 	$pageTitle 		= "";
-	$pageKeywords	= "api, platform, pde, tooling, tools, tags, test, testing, plan, plans, 3.5";
-	$pageAuthor		= "Debug Team";
+	$pageKeywords	= "api, platform, pde, tooling, tools, tags, test, testing, new, noteworthy, plan, plans";
+	$pageAuthor		= "API Tools Team";
+	
+	#adjust the level of file nesting, our default is for a milestone entry inside a milestone for a given version
 	
 	include("_sideCommon.php");
 	
@@ -37,14 +39,11 @@
 <div id="maincontent">
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
-		<div class="homeitem3col">
-			<h3>This is a wide column</h3>
-			<ul>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
-				<li><a href="#">Link</a>. Teaser text <a href="#">'Reference'</a><span class="dates">02/05/05</span></li>
-			</ul>
-		</div>
+		<table border="0" width="80%" cellpadding="10" cellspacing="0">
+		  
+		  # paste table entries in here
+		  
+		</table>
 	</div>
 	<div id="rightcolumn">
 		$commonside

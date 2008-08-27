@@ -24,7 +24,7 @@
 			<li><a href="/pde/pde-api-tools/index.php">Home</a></li>
 			<li><a href="http://wiki.eclipse.org/API_Tooling_User_Guide">API Tools User Guide</a></li>
 			<li><a href="">New and Noteworthy</a></li>
-			<li><a href="/test_plans/test_plans.php">Test Plans</a></li>
+			<li><a href="/pde/pde-api-tools/test_plans/test_plans.php">Test Plans</a></li>
 			<li><a href="http://wiki.eclipse.org/ApiTools_Milestones">Milestone Plans</a></li>
 			<li><a href="http://wiki.eclipse.org/Api_Tooling">WIKI</a></li>
 		</ul>
