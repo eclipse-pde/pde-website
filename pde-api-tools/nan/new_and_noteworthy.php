@@ -34,10 +34,7 @@
 			of the newest and more interesting additions to the component.</p>
 		<div class="homeitem3col">
 			<h3>New and Noteworthy for 3.4</h3>
-			<p>Listing of new and noteworthy items separated by milestone:
-				<ul>
-				</ul>
-			</p>
+			<p><a href="/pde/pde-api-tools/nan/3.4/nan.php">3.4 Release</a></p>
 		</div>
 	</div>
 	<div id="rightcolumn">

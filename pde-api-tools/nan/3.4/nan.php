@@ -41,9 +41,12 @@
 		<h1>$pageTitle</h1>
 		<p>Eclipse 3.4 was the first release of API Tooling</p>
 		<table border="0" width="80%" cellpadding="10" cellspacing="0">
+		<tr> 
+		    <td colspan="2"> <hr></td>
+		  </tr>
 		 <tr>
-		    <td><p align="right"><b>API analysis </b></p></td>
-		    <td><p>Integrated tooling assists developers with API maintenance. Developers can add special Javadoc tags to document API restrictions and specify an API baseline for binary compatibility checks.</p>
+		    <td align="left" valign="top"><p><b>API analysis </b></p></td>
+		    <td valign="top"><p>Integrated tooling assists developers with API maintenance. Developers can add special Javadoc tags to document API restrictions and specify an API baseline for binary compatibility checks.</p>
 		      <p>Code is analyzed during incremental and full builds and problems are reported (quick fixes are provided where possible):</p>
 		      <ul>
 		        <li>Binary incompatibilities between releases </li>
@@ -54,6 +57,9 @@
 		        </ul>
 		      <p><img src="missing-since.png" alt="Problem and quick fix for a missing @since tag"></p>
 		      <p>Problem severities can be configured for the workspace and overridden per project at a fine grained level, and specific problems can be filtered from the workspace (problem filters can be shared in CVS). </p></td>
+		  </tr>
+		   <tr> 
+		    <td colspan="2"> <hr /> </td>
 		  </tr>
 		</table>
 	</div>
