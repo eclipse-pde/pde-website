@@ -1,11 +1,11 @@
-<?php 
+<?php  	
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	
-	$App = new App();	
-	$Nav = new Nav();	
-	$Menu = new Menu();		
-	include($App->getProjectCommon());  
+	$App 	= new App();	
+	$Nav	= new Nav();	
+	$Menu 	= new Menu();		
+	include($App->getProjectCommon());
 
 	#*****************************************************************************
 	#
@@ -18,25 +18,25 @@
 	#     IBM Corporation - initial implementation
 	#
 	# Author: 		API Tools Team
-	# Date:			April 23, 2008
+	# Date:			August 27, 2008
 	#
-	# Description: This is the new main page for the API Tools team website
+	# Description: 
 	#
 	#
 	#****************************************************************************
 	
-	$pageTitle 		= "API Tools";
-	$pageKeywords	= "pde, api, tools";
-	$pageAuthor		= "API Tools Team";
+	
+	$pageTitle 		= "";
+	$pageKeywords	= "api, platform, pde, tooling, tools, tags, test, testing, plan, plans, 3.5";
+	$pageAuthor		= "Debug Team";
 	
 	include("_sideCommon.php");
 	
-	$html = <<<EOHTML	
+	$html = <<<EOHTML
 
 <div id="maincontent">
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-
 		<div class="homeitem3col">
 		  <h3>Introduction to API Tools</h3>
 		  	<p>  API tooling will assist developers in API maintenance by reporting API defects such as binary incompatibilities, incorrect plug-in version numbers, missing or incorrect @since tags, and usage of non-API code between plug-ins. 
