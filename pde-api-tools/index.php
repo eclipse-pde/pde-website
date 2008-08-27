@@ -31,6 +31,8 @@ include($App->getProjectCommon());
 	$pageKeywords	= "pde, api, tools";
 	$pageAuthor		= "API Tools Team";
 	
+	include("_sideCommon.php");
+	
 ob_start();
 ?>		
 
@@ -38,8 +40,21 @@ ob_start();
 		<h1><?= $pageTitle ?></h1>
 
 		<div class="homeitem3col">
-		  <h3>About API Tools</h3>
-		  	<p>The goal of API Tools is to help the user in maintaining good APIs.</p>
+		  <h3>Introduction to API Tools</h3>
+		  	<p>  API tooling will assist developers in API maintenance by reporting API defects such as binary incompatibilities, incorrect plug-in version numbers, missing or incorrect @since tags, and usage of non-API code between plug-ins. 
+			  	The tooling will be integrated in the Eclipse SDK and will be used in the automated build process. 
+			  	<br>
+			  	Specifically, the tooling is designed to do the following:
+				<ol>
+				    <li> Identify binary compatibility issues between two versions of a software component or product.</li>
+				    <li> Update version numbers for plug-ins (bundles) based on the Eclipse versioning scheme.</li>
+				    <li> Update @since tags for newly added classes, interfaces, methods, etc.</li>
+				    <li> Provide new javadoc tags and code assist to annotate types with special restrictions.</li>
+				   	<li> Leverage existing information (in MANIFEST.MF) to define the visibility of packages between bundles.</li>
+				    <li> Identify usage of non-API code between plug-ins.</li>
+				    <li> Identity leakage of non-API types into API.</li>
+				</ol>
+			</p>
 	    </div>
 		<div class="homeitem3col">
 		  <h3>Get involved!</h3>
@@ -54,16 +69,8 @@ ob_start();
 			</p>
 		</div>
 	</div>
-
-	
 	<div id="rightcolumn">
-		<div class="sideitem">
-			<h6>API Tools links</h6>
-			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="http://wiki.eclipse.org/Api_Tooling">WIKI</a></li>
-			</ul>
-		</div>
+		$commonside
 	</div>
 
 <?php
