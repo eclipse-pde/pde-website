@@ -103,9 +103,8 @@
 			<h4>API Tools Setup</h4>
 				<ol>
 				<li> General
-					<ul>
-						<li> setup wizard should have a help topic</li>
-					</ul>
+				<ul><li> setup wizard should have a help topic
+				</li></ul>
 				</li>
 				<li> Setup API Tooling
 				<ul><li> wizard with no selections in workspace and with selections; if the there are selected projects in the workspace that can have API tooling setup on them, they should be preselected in the wizard 
@@ -114,12 +113,19 @@
 				</li><li> try selecting a project and viewing a preview
 				</li><li> try selecting projects that do and do not have a component.xml file
 				</li><li> ensure tags are added correctly to files (from the component.xml)
+				</li><li>try finishing the wizard without viewing a preview (from the first page)
+				</li></ul>
 				</li>
-				<li>try finishing the wizard without viewing a preview (from the first page)</li></ul>
-				</li></ol>
+				<li> New Plug-in Project Wizard
+				<ul><li> try creating a new plug-in project with the option checked to automatically enable API analysis (on the second page of the wizard)
+				</li></ul>
+				</li>
+				</ol>
 				<p><a href="#TOP">Back to top</a><br><hr></p>
 			<a name="APIPROFILES"></a>
 			<h4>API Profiles</h4>
+				<p>To ensure that missing API profiles are reported in the workspace, you must have at least one API analysis enabled project
+				in your testing workspace.</p>
 				<ol><li> General
 				<ul><li> changing / editing / removing of the default profile should ask you to build when the Ok (or Apply) button is pressed on the preference page
 				</li><li> the page and wizard should have help topics
@@ -151,6 +157,9 @@
 				<p><a href="#TOP">Back to top</a><br><hr></p>
 			<a name="BUILDING"></a>
 			<h4>Building</h4>
+				<p>Builder testing requires that you make a test workspace and that you have one or more projects that have API analysis enabled. 
+				Additionally, to test that compatibility problems are reported properly, you will require an API baseline with a version of the 
+				project you are testing in it.</p>
 				<ol><li> Full Build
 				<ul><li> Run a full build on one project
 				<ul><li> markers should be updated
