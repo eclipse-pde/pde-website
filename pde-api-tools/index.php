@@ -33,8 +33,7 @@ include($App->getProjectCommon());
 	
 	include("_sideCommon.php");
 	
-ob_start();
-?>		
+	$html = <<<EOHTML	
 
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
@@ -70,12 +69,10 @@ ob_start();
 		</div>
 	</div>
 	<div id="rightcolumn">
-		<?=$commonside?>
+		$commonside
 	</div>
 
-<?php
-	$html = ob_get_contents();
-	ob_end_clean();
+	EOHTML;
 
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
