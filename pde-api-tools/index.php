@@ -70,7 +70,7 @@ ob_start();
 		</div>
 	</div>
 	<div id="rightcolumn">
-		$commonside
+		<?=$commonside?>
 	</div>
 
 <?php

@@ -43,7 +43,7 @@
 			<h3>3.5 Test Plans</h3>
 			<a name="3-5_testing"></a>
 			<ul>
-				<li><a href="/test_plans/test_plan-3.5M2.php">3.5M2</a></li>
+				<li><a href="/pde/pde-api-tools/test_plans/test_plan-3.5M2.php">3.5M2</a></li>
 			</ul>
 		</div>
 	</div>

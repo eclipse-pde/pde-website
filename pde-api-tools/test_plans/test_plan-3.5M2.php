@@ -206,7 +206,7 @@
 	
 				</li></ul>
 				</li></ol>
-				<p><a href="#top">Back to top</a><br><hr></p>
+				<p><a href="#TOP">Back to top</a><br><hr></p>
 			<a name="PREFERENCES"></a>
 			<h4>Preferences</h4>
 				<ol><li> General
@@ -230,7 +230,7 @@
 				</li><li> Use the link to configure workspace settings
 				</li></ul>
 				</li></ol>
-				<p><a href="#top">Back to top</a><br><hr></p>
+				<p><a href="#TOP">Back to top</a><br><hr></p>
 		</div>
 	</div>
 	<div id="rightcolumn">
