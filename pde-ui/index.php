@@ -53,15 +53,12 @@ ob_start();
 		<div class="homeitem3col">
 			<a name="happening"></a>
 			<h3>What&#8217;s Happening?</h3>
-			<p><b>R3.4 Development</b></p>
-			<p>Areas of focus during the Eclipse 3.4 development cycle:</p>
+			<p><b>R3.5 Development</b></p>
+			<p>Areas of focus for the <a href="dev_plans/r3_5/plan.php">3.5 Development Plan</a>:</p>
 			<ul>
-			  <li>API Tools</li>
-		      <li>Bundle/Module Development Tools</li>
-		      <li>Editor Enhancements</li>
-		      <li>Bundle Management</li>
-		      <li>Provisioning Tooling</li>
-		      <li>User Assistance Tooling</li>
+			  <li>Performance - analyze OSGi state use, expand performance test suite</li>
+		      <li>Reliability - fix critical bugs</li>
+		      <li>Enhancements - improve target platform definition and p2 integration</li>
 	      </ul>
 		</div>
 	  <div class="homeitem3col">
