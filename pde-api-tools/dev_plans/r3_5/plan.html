@@ -150,7 +150,7 @@ function showHiddenWork() {
 		<ul>
 		  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Polish API Errors/Warnings preference page (Olivier Thomann, IBM)
 		    <ul>
-		      <li>Reduce the numbe of settings by combining errors related to type variables/bounds  into one section and combining type conversions into one error [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242618">bug 242618</a> and <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242610">bug 242610</a>] </li>
+		      <li>Reduce the number of settings by combining errors related to type variables/bounds  into one section and combining type conversions into one error [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242618">bug 242618</a> and <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242610">bug 242610</a>] </li>
               <li>Simplify settings for Annotations [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242609">bug 242609</a>] </li>
 		    </ul>
 		  </li>
@@ -167,14 +167,14 @@ function showHiddenWork() {
 		<ul>
 			<li>Migrate architecture to support binary or source analysis </li>
           <li>Consolidate data structures used for delta creation and API use/leak analysis</li>
-		  <li>Make search criteria implementation more fleixble by allowing specializations rather than having one search criteria that can do everything </li>
+		  <li>Make search criteria implementation more flexible by allowing specializations rather than having one search criteria that can do everything </li>
 		</ul>
 		
 		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Analysis Enhancements [<a href="#3">3</a>]</h4>
 		<ul>
-		  <li>For non-API supertype leaks, analyze if anything internal is actually exposed </li>
-          <li>Allow &quot;friends&quot; to have special priveleges - like implement, reference etc.            </li>
-	      <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>Flag when new API is used in a required bunlde that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating) </li>
+		  <li>For non-API super-type leaks, analyze if anything internal is actually exposed </li>
+          <li>Allow &quot;friends&quot; to have special privileges - like implement, reference etc.            </li>
+	      <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating) </li>
 	  </ul>
 		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>
 	</td>
@@ -189,9 +189,9 @@ function showHiddenWork() {
 	    <li><strong></strong>Validate references to system library based on EE (J2SE-1.4, etc). A 1.4 project should not reference 1.5/1.6 methods/classes</li>
         <li>Investigate methods to ship required metadata for access validation </li>
       </ul>
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Releng Ant Task API [<a href="#3">2</a>]</h4>
+	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> RelEng Ant Task API [<a href="#3">2</a>]</h4>
 	  <ul>
-	    <li>Support API ant tasks for general consumption and integration into releng build process
+	    <li>Support API ant tasks for general consumption and integration into RelEng build process
 	      <ul>
 	        <li>Separate data collection and report generation such that report generation can be pluggable </li>
           </ul>
@@ -200,9 +200,9 @@ function showHiddenWork() {
       </ul>	  
       <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Baseline Definition [<a href="#3">2</a>]</h4>
       <ul>
-        <li>Follow PDE's use of p2 to discover/analyze what bunldes are present in an installation
+        <li>Follow PDE's use of p2 to discover/analyze what bundles are present in an installation
           <ul>
-            <li>API Baseline definition is similar to target platfrom definition, and we should use a similar approach </li>
+            <li>API Baseline definition is similar to target platform definition, and we should use a similar approach </li>
           </ul>
         </li>
       </ul>      
@@ -215,13 +215,13 @@ function showHiddenWork() {
  <tr> 
 	<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Extension point compatibility analysis [<a href="#3">3</a>]</h4>
 	  <ul>
-	    <li>Analyze extension points for compatability errors (addition of non-optional attributes) </li>
+	    <li>Analyze extension points for compatibility errors (addition of non-optional attributes) </li>
         <li>Update bundle version numbers based on breaking/compatible changes in extension points</li>
       </ul>	  
 	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API comparison reporting [<a href="#3">3</a>]</h4>
 	  <ul>
 	    <li>Tooling to compare APIs - highlights what APIs have changed in a release, relative to a baseline	      </li>
-        <li>Coule be presented in the IDE (structural compare) and as an Ant task/report for releng builds</li>
+        <li>Could be presented in the IDE (structural compare) and as an Ant task/report for RelEng builds</li>
 	  </ul>	  
 	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4></td>
 </tr>
