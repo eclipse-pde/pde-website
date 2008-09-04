@@ -70,6 +70,7 @@
 				To get started you can check out the source for API Tools using either the <a href="../pde-api-tools/documents/projectSet.psf">extssh project set file</a> (if you have a bugzilla account) or the 
 				<a href="../pde-api-tools/documents/pserverProjectSet.psf">pserver project set file</a> (if you do not have a bugzilla account).
 			</p>
+			<br>
 		</div>
 	</div>
 	<div id="rightcolumn">
