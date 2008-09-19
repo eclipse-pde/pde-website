@@ -112,7 +112,7 @@ function showHiddenWork() {
 		
 		<p>
 		<strong><a name="3"></a>[3] Keep Eclipse vibrant and attractive</strong>.
-		Investigate and implement enhancements such support for custom execution environments, p2 based target platform defintions and enhanced OSGi support.		</p>
+		Investigate and implement enhancements such support for custom execution environments, p2 based target platform defintions and enhanced Equinox support.		</p>
 
     </td>
 </tr>
@@ -161,7 +161,7 @@ function showHiddenWork() {
  <tr> 
 	<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Custom Execution Environments[<a href="#3">3</a>]</h4>
 		<ul>
-			<li>A joint effort between OSGi, JDT, and PDE. OSGi needs support for contributing system library profile definitions (such as J2SE-1.4, etc.). JDT needs support to associate compiler options with a system profile. PDE will set default compiler options for bundles based on the bundle's profile. Similarly, JDT will set the compiler options for a Java project. (Darin Wright, IBM) [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=238802">bug 238802</a>] </li>
+			<li>A joint effort between Equinox, JDT, and PDE. Equinox needs support for contributing system library profile definitions (such as J2SE-1.4, etc.). JDT needs support to associate compiler options with a system profile. PDE will set default compiler options for bundles based on the bundle's profile. Similarly, JDT will set the compiler options for a Java project. (Darin Wright, IBM) [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=238802">bug 238802</a>] </li>
         </ul>
 		
 		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top">Usability/Workflow [<a href="#3">3</a>]</h4>
@@ -175,6 +175,7 @@ function showHiddenWork() {
           <li><img src="../../images/progress.gif" width="14" height="5"> Product definition enhancements
             <ul>
                 <li>The ability to set start levels on a product  [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=240737">bug 240737</a>]</li>
+            	<li>The ability to set a validate a product  [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=247920">bug 247920</a>]</li>
             	<li>The ability to set a license on a product  [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=241169">bug 241169</a>]</li>
 				<li>The ability to create product definitions from OSGi launch configurations  [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=245782">bug 245782</a>]</li>            	
             </ul>
@@ -206,6 +207,8 @@ function showHiddenWork() {
               <li>Define a target platform based on an existing p2 installation of bundles</li>
               <li>Support target platform definition by creating/modifying a p2 installation of bundles (download and install bundles into a target from update sites)</li>
               <li>Support multiple target platform definitions in the workspace, with one active target platform that workspace projects are built against (preference page with check box for active target)</li>
+              <li>Support per-project target platforms</li>
+              <li>Support versions in target definition files</li>
               <li><strong><em>Investigate</em></strong> sharing target platform definitions with a development team </li>
               <li>Source code should be installed in/part of a target platform (source bundles) rather than a global setting</li>
               <li>Support target management for non-p2 installs (update manager) in a similar fashion </li>
