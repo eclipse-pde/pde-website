@@ -74,11 +74,10 @@ ob_start();
 			<h6>Quick Links</h6>
 			<ul>
 			    <li><a href="http://www.eclipse.org/pde/pde-ui/">Home</a></li>
-				<li><a href="#about">About the PDE UI Component</a></li>
-				<li><a href="#user">User Resources</a></li>
-				<li><a href="#dev">Development Resources</a></li>				
-				<li><a href="#happening">What&lsquo;s Happening?</a></li>
-				<li><a href="#team">Meet the Team</a></li>
+				<li><a href="resources/user.php">User Resources</a></li>
+				<li><a href="resources/dev.php">Development Resources</a></li>				
+				<li><a href="dev_plans/r3_5/plan.php">3.5 Development Plan</a></li>
+				<li><a href="committers/committers.php">Meet the Team</a></li>
 			</ul>
 		</div>
 		<div class="sideitem">
