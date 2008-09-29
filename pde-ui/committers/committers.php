@@ -139,16 +139,15 @@ ob_start();
 			<h3>PDE/UI Past Committers</h3>
 			<table width="100%" border="0">
               <tr>
-                <td width="50%"><p align="center"><img src="konrad_kolosowski.gif" alt="Konrad Kolosowski" width="200" height="280"></p>
+                <td width="33%"><p align="center"><img src="konrad_kolosowski.gif" alt="Konrad Kolosowski" width="200" height="280"></p>
                   <p align="center"><strong>Konrad Kolosowski</strong></p>
                 </td>
-                <td width="50%"><p align="center"><img src="cherie_wong.jpg" alt="Cherie Wong" width="200" height="280"></p>
+                <td width="33%"><p align="center"><img src="cherie_wong.jpg" alt="Cherie Wong" width="200" height="280"></p>
                   <p align="center"><strong>Cherie Wong</strong></p>
                 </td>
 				 <td width="33%"><p align="center"><img src="ian_bull.PNG" alt="Ian Bull" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://www.ianbull.com/">Ian Bull</a></strong></p>
                   <p align="center">Graph Visualizations Correspondent</p>
-                  <p align="center">&nbsp;</p>
                 </td>
               </tr>
           </table>
