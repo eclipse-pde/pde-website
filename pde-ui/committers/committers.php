@@ -19,26 +19,34 @@ ob_start();
 		<h1><?= $pageTitle ?></h1>
 		<div class="homeitem3col">
 			<a name="committers"></a>
-			<h3>PDE/UI Committers</h3>
+			<h3>PDE/UI Active Committers</h3>
 			<table width="100%" border="0">
               <tr>
                 <td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Chris Aniszczyk" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://mea-bloga.blogspot.com">Chris Aniszczyk</a></strong></p>
-                  <p align="center">Committer, IBM Austin Labs</p>               
+                  <p align="center">PDE/UI Technical Lead, Code 9</p>               
                   <p align="center">&nbsp;</p>
                 </td>
+				<td width="33%"><p align="center"><img src="curtis_windatt.png" alt="Curtis Windatt" width="200" height="280"></p>
+                  <p align="center"><strong>Curtis Windatt</strong></p>
+				   <p align="center">IBM Winnipeg</p>
+                  <p align="center">&nbsp;</p></td>
+			    </td>
+			  </tr>
+		    </table>
+		</div>
+	</div>
+	<div id="midcolumn">
+		<div class="homeitem3col">
+			<a name="inactive_committers"></a>
+			<h3>PDE/UI Inactive Committers</h3>
+			<table width="100%" border="0">
                 <td width="33%"><p align="center"><img src="brian_bauman.png" alt="Brian Bauman" width="200" height="280"></p>
                   <p align="center"><strong>Brian Bauman</strong></p>
-                  <p align="center">Committer, IBM Austin Labs</p>
+                  <p align="center">IBM Austin Labs</p>
                   <p align="center">&nbsp;</p>
                 </td>
-                <td width="33%"><p align="center"><img src="ian_bull.PNG" alt="Ian Bull" width="200" height="280"></p>
-                  <p align="center"><strong><a href="http://www.ianbull.com/">Ian Bull</a></strong></p>
-                  <p align="center">Graph Visualizations Correspondent</p>
-                  <p align="center">&nbsp;</p>
-                </td>
-              </tr>
-            <tr>
+               
                <td width="33%"><p align="center"><img src="dejan_glozic.gif" alt="Dejan Glozic" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://dejan-glozic.blogspot.com">Dejan Glozic</a></strong></p>
                   <p align="center">Father of PDE, IBM Toronto Lab</p>
@@ -46,25 +54,20 @@ ob_start();
                 </td>
                 <td width="33%"><p align="center"><img src="janek_lasocki_biczysko.gif" alt="Janek Lasocki-Biczysko" width="200" height="280"></p>
                   <p align="center"><strong>Janek Lasocki-Biczysko</strong></p>
-                  <p align="center">Committer</p>
                   <p align="center">&nbsp;</p>
  				</td>
+			</tr>
+            <tr>
                 <td width="33%"><p align="center"><img src="wassim_melhem.png" alt="Wassim Melhem" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://wassim-melhem.blogspot.com">Wassim Melhem</a></strong></p>
-                  <p align="center">PDE/UI Lead, IBM Toronto Lab</p>
+                  <p align="center">Embarcadero Technologies Inc.</p>
                   <p align="center">&nbsp;</p>
                 </td>
-			</tr>
-			<tr>
                 <td width="33%"><p align="center"><img src="mike_pawlowski.gif" alt="Mike Pawlowski" width="200" height="280"></p>
                   <p align="center"><strong>Mike Pawlowski</strong></p>
-                  <p align="center">Committer, IBM Toronto Lab</p>               
+                  <p align="center">IBM Toronto Lab</p>               
 			    </td>
-			    <td width="33%"><p align="center"><img src="curtis_windatt.jpg" alt="Curtis Windatt" width="200" height="280"></p>
-                  <p align="center"><strong>Curtis Windatt</strong></p>
-                  <p align="center">&nbsp;</p></td>
-			    </td>
-              </tr>
+                </tr>
           </table>
         </div>
 	</div>
@@ -99,7 +102,7 @@ ob_start();
 			    <td width="33%"><p align="center"><img src="les_jones.jpg" alt="Les Jones" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://www.persiflage-n-piffle.com/blog/">Les Jones</a></strong></p>
                   <p align="center">&nbsp;</p></td>
-			  	<td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Brock Janiczak" width="200" height="280"></p>
+			  	<td width="33%"><p align="center"><img src="mystery.png" alt="Brock Janiczak" width="200" height="280"></p>
                   <p align="center"><strong>Brock Janiczak</strong></p>
                   <p align="center">&nbsp;</p></td>
                 <td width="33%"><p align="center"><img src="jakub_jurkiewicz.jpg" alt="Jakub Jurkiewicz" width="200" height="280"></p>
@@ -132,7 +135,7 @@ ob_start();
 	</div>
 	<div id="midcolumn">
 		<div class="homeitem3col">
-			<a name="contributors"></a>
+			<a name="past_committers"></a>
 			<h3>PDE/UI Past Committers</h3>
 			<table width="100%" border="0">
               <tr>
@@ -141,6 +144,11 @@ ob_start();
                 </td>
                 <td width="50%"><p align="center"><img src="cherie_wong.jpg" alt="Cherie Wong" width="200" height="280"></p>
                   <p align="center"><strong>Cherie Wong</strong></p>
+                </td>
+				 <td width="33%"><p align="center"><img src="ian_bull.PNG" alt="Ian Bull" width="200" height="280"></p>
+                  <p align="center"><strong><a href="http://www.ianbull.com/">Ian Bull</a></strong></p>
+                  <p align="center">Graph Visualizations Correspondent</p>
+                  <p align="center">&nbsp;</p>
                 </td>
               </tr>
           </table>
