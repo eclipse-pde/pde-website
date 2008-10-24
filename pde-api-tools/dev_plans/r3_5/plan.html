@@ -168,14 +168,22 @@ function showHiddenWork() {
 			<li><img src="../../images/ok.gif" border="0" height="10" width="10"> Migrate architecture to support binary or source analysis </li>
           <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Consolidate data structures used for delta creation and API use/leak analysis</li>
 		  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Make search criteria implementation more flexible by allowing specializations rather than having one search criteria that can do everything </li>
-		  <li><img src="../../images/progress.gif" width="14" height="5"> Investigate integration as Java compilaion participant </li>
-		</ul>
+		  <li><img src="../../images/glass.gif" border="0" height="10" width="10"> Investigate integration as Java compilaion participant 
+		    <ul>
+		      <li>&gt; decided not to follow this path in 3.5 - compilation participants are intended for lightweight function </li>
+	        </ul>
+		  </li>
+	    </ul>
 		
 		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Analysis Enhancements [<a href="#3">3</a>]</h4>
 		<ul>
 		  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> For non-API super-type leaks, analyze if anything internal is actually exposed </li>
-          <li>Allow &quot;friends&quot; to have special privileges - like implement, reference etc.            </li>
-	      <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating) </li>
+          <li><img src="../../images/glass.gif" border="0" height="10" width="10"> Allow &quot;friends&quot; to have special privileges - like implement, reference etc.            
+            <ul>
+              <li>&gt; decided not to implement this feature (not that widely used - indicates implementation is split across several bundles) </li>
+            </ul>
+          </li>
+	      <li>&gt;[deferred to M4] Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating) </li>
 	  </ul>
 		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing [<a href="#2">2</a>, <a href="#1">1</a>]</h4>
 		<ul>
@@ -201,6 +209,12 @@ function showHiddenWork() {
 	    </li>
         <li>Document use of the Ant tasks in ISV guide</li>
       </ul>	  
+      <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Analysis Enhancements [<a href="#3">3</a>]</h4>
+      <ul>
+        <li>&gt;[from M3] Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating</li>
+        <li>Enhance API use analysis to process anonymous/local types [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=246672">bug 246672</a>] </li>
+        <li>Support @noextend tag on interfaces, in addition to @noimplement  [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=230189">bug 230189</a>]</li>
+      </ul>
       <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Baseline Definition [<a href="#3">2</a>]</h4>
       <ul>
         <li>Follow PDE's use of p2 to discover/analyze what bundles are present in an installation
@@ -209,7 +223,10 @@ function showHiddenWork() {
           </ul>
         </li>
       </ul>      
-    <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>    </td>
+    <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>
+    <ul>
+      <li>Create incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251617">bug 251617</a>] </li>
+    </ul></td>
 </tr>
 <tr>
 	<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" BGCOLOR="#595791"><font face="Arial,Helvetica"><font color="#FFFFFF"><a name="Milestone_Planning_M5">Milestone M5 (2009-01-30) -  Major/Big Features Done</font></font></td>
