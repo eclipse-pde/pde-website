@@ -3,7 +3,9 @@
    <description url="http://www.eclipse.org/pde/pde-api-tools/updates">
       PDE API Tools Update Site
    </description>
-   <feature url="features/com.api.tools.buildnotes.feature_1.0.0.jar" id="com.api.tools.buildnotes.feature" version="1.0.0"/>
+   <feature url="features/com.api.tools.buildnotes.feature_0.1.0.jar" id="com.api.tools.buildnotes.feature" version="0.1.0">
+      <category name="build_notes_tools"/>
+   </feature>
    <category-def name="build_notes_tools" label="Build Notes Tools">
       <description>
          This category contains all of the tools used by the API Tools team for management of buildnotes
