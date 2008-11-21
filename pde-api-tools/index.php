@@ -56,8 +56,8 @@
 	    </div>
 		<div class="homeitem3col">
 		  <h3>Current Development</h3>
-		  	<p><a href="./dev_plans/r3_5/plan.php">API Tools 3.5 Plan</a>
-			</p>
+		  	<p><a href="./dev_plans/r3_5/plan.php">API Tools 3.5 Plan</a></p>
+		  	<p><a href="./coverage/index.php">Code coverage results</a></p>
 	    </div>	    
 		<div class="homeitem3col">
 		  <h3>Get involved!</h3>
