@@ -3,7 +3,7 @@
 <repository name='file:/eclipse/workspaces/workspace/com.api.tools.update.site/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.compressed' value='false'/>
-    <property name='p2.timestamp' value='1227207055615'/>
+    <property name='p2.timestamp' value='1228164114834'/>
   </properties>
   <mappings size='3'>
     <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
@@ -11,19 +11,17 @@
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
   <artifacts size='2'>
-    <artifact classifier='osgi.bundle' id='com.api.tools.buildnotes' version='0.1.0'>
-      <properties size='4'>
-        <property name='artifact.size' value='350097'/>
-        <property name='download.size' value='350097'/>
-        <property name='download.md5' value='8a299bf82fbfbbc7a89116c969bc3682'/>
-        <property name='download.contentType' value='application/zip'/>
-      </properties>
-    </artifact>
     <artifact classifier='org.eclipse.update.feature' id='com.api.tools.buildnotes.feature' version='0.1.0'>
       <properties size='3'>
         <property name='artifact.size' value='1313'/>
         <property name='download.size' value='1313'/>
-        <property name='download.md5' value='cd4a1896660c8eeb483fd4a42fe1fc85'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.api.tools.buildnotes' version='0.1.0'>
+      <properties size='4'>
+        <property name='artifact.size' value='350097'/>
+        <property name='download.size' value='350097'/>
+        <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
   </artifacts>
