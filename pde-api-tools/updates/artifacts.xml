@@ -15,7 +15,6 @@
       <properties size='4'>
         <property name='artifact.size' value='350091'/>
         <property name='download.size' value='350091'/>
-        <property name='download.md5' value='f2a32ba84bd47ff55c7735d76669af99'/>
         <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
@@ -23,14 +22,12 @@
       <properties size='3'>
         <property name='artifact.size' value='1361'/>
         <property name='download.size' value='1361'/>
-        <property name='download.md5' value='082fc83000effe617de7540a5b275c4e'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='com.api.tools.buildnotes.nl' version='0.1.0.200812011634'>
       <properties size='4'>
         <property name='artifact.size' value='3040'/>
         <property name='download.size' value='3040'/>
-        <property name='download.md5' value='70a34e6a288aef3673633c813cb6ec88'/>
         <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
