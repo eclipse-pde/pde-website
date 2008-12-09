@@ -55,51 +55,51 @@
 			  </tr>
 			  <tr> 
 			    <td><a href="#APISETUP">API Setup</a></td>
-			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
-			    <td> <div align="center"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td><div align="center"></div></td>
 				<td><div align="center"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#APIPROFILES">API Profiles</a></td>
 			    <td><div align="center"></div></td>
-			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
-			    <td> <div align="center"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td><div align="center"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#BUILDING">Building</a></td>
-				<td> <div align="center"></div></td>
-			    <td> <div align="center"></div></td>
-				<td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+				<td><div align="center"></div></td>
+			    <td><div align="center"></div></td>
+				<td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#QUICKFIXES">Quick Fixes</a></td>
-			    <td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
-				<td> <div align="center"></div></td>
-				<td> <div align="center"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+				<td><div align="center"></div></td>
+				<td><div align="center"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#FILTERS">Filters</a></td>
 			    <td><div align="center"></div></td>
-			    <td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			    <td><div align="center"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#PREFERENCES">Preferences</a></td>
 				<td><div align="center"></div></td>
 			    <td><div align="center"></div></td>
-			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#SYSTEMLIBRARY">Invalid System Library References</a></td>
-			    <td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
-				<td> <div align="center">&nbsp;</div></td>
-				<td> <div align="center">&nbsp;</div></td>
+			    <td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+				<td><div align="center">&nbsp;</div></td>
+				<td><div align="center">&nbsp;</div></td>
 			  </tr>
 			   <tr> 
 			    <td><a href="#TESTSUITE">Run The Test Suite</a></td>
-			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
-			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
-			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			</table>
 			</div>

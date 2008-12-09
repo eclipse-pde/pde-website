@@ -49,56 +49,56 @@
 			  <tr> 
 			    <td><a href="#APISETUP">API Setup</a></td>
 			    <td> <div align="center">&nbsp;</div></td>
-			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td> <div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 				<td><div align="center">&nbsp;</div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#APIPROFILES">API Profiles</a></td>
 			    <td><div align="center">&nbsp;</div></td>
 			    <td> <div align="center">&nbsp;</div></td>
-			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td> <div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#BUILDING">Building</a></td>
-			    <td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 				<td> <div align="center">&nbsp;</div></td>
 			    <td> <div align="center">&nbsp;</div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#TAGSCANNING">Unsupported Javadoc Tags</a></td>
 				<td> <div align="center">&nbsp;</div></td>
-				<td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+				<td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			    <td> <div align="center">&nbsp;</div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#QUICKFIXES">Quick Fixes</a></td>
 				<td> <div align="center">&nbsp;</div></td>
 				<td> <div align="center">&nbsp;</div></td>
-				<td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+				<td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#FILTERS">Filters</a></td>
-			    <td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			    <td><div align="center">&nbsp;</div></td>
 			    <td><div align="center">&nbsp;</div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#PREFERENCES">Preferences</a></td>
 				<td><div align="center">&nbsp;</div></td>
-				<td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+				<td> <div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			    <td><div align="center">&nbsp;</div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#SYSTEMLIBRARY">Invalid System Library References</a></td>
 				<td> <div align="center">&nbsp;</div></td>
 				<td> <div align="center">&nbsp;</div></td>
-				<td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+				<td><div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			   <tr> 
 			    <td><a href="#TESTSUITE">Run The Test Suite</a></td>
-			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
-			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
-			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td> <div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td> <div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td> <div align="center"><img src="/eclipse/pde/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			</table>
 			</div>
@@ -132,7 +132,8 @@
 			<h4>API Profiles</h4>
 				<p>To ensure that missing API profiles are reported in the workspace, you must have at least one API analysis enabled project
 				in your testing workspace.</p>
-				<ol><li> General
+				<ol>
+				<li> General
 				<ul><li> changing / editing / removing of the default profile should ask you to build when the Ok (or Apply) button is pressed on the preference page
 				</li><li> the page and wizard should have help topics
 				</li></ul>
@@ -248,6 +249,7 @@
 				<ul><li> Commit filter to CVS and check it out in another workspace
 				</li><li> Should update filtered problems on next rebuild (unless the filter store for the project in question is already loaded)
 				</li>
+				</ul>
 				<li> Unused Filters
 					<ul>
 						<li>Create a filter for a Java element and them remove the element - problem should be reported</li>
@@ -256,7 +258,6 @@
 						<li>Quick-fix to open the property page</li>
 					</ul>
 				</li>
-				</ul>
 				</li></ol>
 				<p><a href="#TOP">Back to top</a><br><hr></p>
 			<a name="PREFERENCES"></a>
