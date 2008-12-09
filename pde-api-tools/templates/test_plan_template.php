@@ -55,39 +55,51 @@
 			  </tr>
 			  <tr> 
 			    <td><a href="#APISETUP">API Setup</a></td>
-			    <td> <div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
+			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			    <td> <div align="center"></div></td>
 				<td><div align="center"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#APIPROFILES">API Profiles</a></td>
 			    <td><div align="center"></div></td>
-			    <td> <div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
+			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			    <td> <div align="center"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#BUILDING">Building</a></td>
 				<td> <div align="center"></div></td>
 			    <td> <div align="center"></div></td>
-				<td><div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
+				<td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#QUICKFIXES">Quick Fixes</a></td>
-			    <td><div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 				<td> <div align="center"></div></td>
 				<td> <div align="center"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#FILTERS">Filters</a></td>
 			    <td><div align="center"></div></td>
-			    <td><div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
+			    <td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			    <td><div align="center"></div></td>
 			  </tr>
 			  <tr> 
 			    <td><a href="#PREFERENCES">Preferences</a></td>
 				<td><div align="center"></div></td>
 			    <td><div align="center"></div></td>
-			    <td> <div align="center"><img src="/eclipse/debug/images/ok.gif" width="10" height="10"></div></td>
+			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			  </tr>
+			  <tr> 
+			    <td><a href="#SYSTEMLIBRARY">Invalid System Library References</a></td>
+			    <td><div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+				<td> <div align="center">&nbsp;</div></td>
+				<td> <div align="center">&nbsp;</div></td>
+			  </tr>
+			   <tr> 
+			    <td><a href="#TESTSUITE">Run The Test Suite</a></td>
+			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
+			    <td> <div align="center"><img src="/eclipse/pde-api-tools/images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
 			</table>
 			</div>
@@ -212,7 +224,16 @@
 				</li><li> Should update filtered problems on next rebuild (unless the filter store for the project in question is already loaded)
 	
 				</li></ul>
-				</li></ol>
+				</li>
+				<li> Unused Filters
+					<ul>
+						<li>Create a filter for a Java element and them remove the element - problem should be reported</li>
+						<li>Create a filter for a Java element and delete the containing compilation unit - no problem (filters are cleaned up when the filter store is initialized / workspace restarted)</li>
+						<li>Quick-fix to remove the filter</li>
+						<li>Quick-fix to open the property page</li>
+					</ul>
+				</li>
+				</ol>
 				<p><a href="#TOP">Back to top</a><br><hr></p>
 			<a name="PREFERENCES"></a>
 			<h4>Preferences</h4>
@@ -237,6 +258,30 @@
 				</li><li> Use the link to configure workspace settings
 				</li></ul>
 				</li></ol>
+				<p><a href="#TOP">Back to top</a><br><hr></p>
+				<a name="SYSTEMLIBRARY"></a>
+			<h4>Invalid System Library References</h4>
+				<ol>
+					<li>Change EE to 1.4 (or prior), set build-path JRE to be 1.5 or greater, and access types / methods / fields from the build path library</li>
+				</ol>
+				<p><a href="#TOP">Back to top</a><br><hr></p>
+			<a name="TESTSUITE"></a>
+			<h4>Run The Test Suite</h4>
+				<ol><li> Run ApiToolsTestSuite
+					<ul><li> on Windows XP
+					</li><li> on Windows Vista
+					</li><li> on Linux
+					</li><li> on Mac OS
+					</li></ul>
+				</li>
+				<li> Run ApiToolsPluginTestSuite
+					<ul><li> on Windows XP
+					</li><li> on Windows Vista
+					</li><li> on Linux
+					</li><li> on Mac OS
+					</li></ul>
+				</li>
+				</ol>
 				<p><a href="#TOP">Back to top</a><br><hr></p>
 		</div>
 	</div>
