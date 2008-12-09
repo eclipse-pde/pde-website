@@ -107,7 +107,6 @@
 			<h3>Feature Testing</h3>
 			<a name="APISETUP"></a>
 			<h4>API Tools Setup</h4>
-				<h4>API Tools Setup</h4>
 				<ol>
 					<li> General
 						<ul>
