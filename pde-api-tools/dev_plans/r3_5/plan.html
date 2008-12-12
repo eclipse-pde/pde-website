@@ -244,6 +244,7 @@ function showHiddenWork() {
         <li>&gt;[from M4] Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating</li>
         <li>Support to handle plug-in split/re-organization properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=240914">bug 240914</a>]</li>
 	    <li>Support to handle fragments properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=255720">bug 255720</a>] </li>
+	    <li>Improve presentation of API tooling reports in the releng build </li>
 	  </ul>
 	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API comparison reporting [<a href="#3">3</a>]</h4>
 	  <ul>
@@ -252,9 +253,9 @@ function showHiddenWork() {
       </ul>	  
 	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API use reporting [<a href="#3">3</a>]</h4>
 	  <ul>
-        <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>Tooling to identify what clients (plug-ins/bundles) are illegaly using non-API code
+        <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>Tooling to identify what clients (plug-ins/bundles) are illegally using non-API code
           <ul>
-            <li>Note that this is different from current disouraged access reporting, since it allows the producer to see who is accessing their code, rather than flagging the consumer with a problem </li>
+            <li>Note that this is different from current discouraged access reporting, since it allows the producer to see who is accessing their code, rather than flagging the consumer with a problem </li>
           </ul>
         </li>
 	    <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>Could be presented in the IDE (search) and as an Ant task/report for RelEng build</li>
