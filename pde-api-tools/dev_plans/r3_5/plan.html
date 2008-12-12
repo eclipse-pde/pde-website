@@ -198,13 +198,13 @@ function showHiddenWork() {
 	<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> System Library access validation [<a href="#3">3</a>]</h4>
 	  <ul>
 	    <li><img src="../../images/ok.gif" border="0" height="10" width="10"><strong></strong>Validate references to system library based on EE (J2SE-1.4, etc). A 1.4 project should not reference 1.5/1.6 methods/classes</li>
-        <li><img src="../../images/progress.gif" width="14" height="5">Investigate methods to ship required metadata for access validation </li>
+        <li><img src="../../images/ok.gif" border="0" height="10" width="10"><strong></strong>Investigate methods to ship required metadata for access validation </li>
       </ul>
 	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> RelEng Ant Task API [<a href="#3">2</a>]</h4>
 	  <ul>
 	    <li><img src="../../images/ok.gif" border="0" height="10" width="10">Support API ant tasks for general consumption and integration into RelEng build process
 	      <ul>
-	        <li>Separate data collection and report generation such that report generation can be pluggable </li>
+	        <li><img src="../../images/ok.gif" border="0" height="10" width="10">Separate data collection and report generation such that report generation can be pluggable </li>
           </ul>
 	    </li>
         <li><img src="../../images/ok.gif" border="0" height="10" width="10">Document use of the Ant tasks in ISV guide</li>
@@ -226,7 +226,7 @@ function showHiddenWork() {
       </ul>      
     <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>
     <ul>
-      <li>Create incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251617">bug 251617</a>] </li>
+      <li><img src="../../images/progress.gif" width="14" height="5">Create incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251617">bug 251617</a>] </li>
     </ul></td>
 </tr>
 <tr>
@@ -236,15 +236,41 @@ function showHiddenWork() {
  <tr> 
 	<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Extension point compatibility analysis [<a href="#3">3</a>]</h4>
 	  <ul>
-	    <li>Analyze extension points for compatibility errors (addition of non-optional attributes) </li>
-        <li>Update bundle version numbers based on breaking/compatible changes in extension points</li>
+	    <li><img src="../../images/error.gif" width="15" height="15">Analyze extension points for compatibility errors (addition of non-optional attributes) </li>
+        <li><img src="../../images/error.gif" width="15" height="15">Update bundle version numbers based on breaking/compatible changes in extension points</li>
       </ul>	  
+	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Analysis Enhancements [<a href="#3">3</a>]</h4>
+	  <ul>
+        <li>&gt;[from M4] Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating</li>
+        <li>Support to handle plug-in split/re-organization properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=240914">bug 240914</a>]</li>
+	    <li>Support to handle fragments properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=255720">bug 255720</a>] </li>
+	  </ul>
 	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API comparison reporting [<a href="#3">3</a>]</h4>
 	  <ul>
 	    <li>Tooling to compare APIs - highlights what APIs have changed in a release, relative to a baseline	      </li>
         <li>Could be presented in the IDE (structural compare) and as an Ant task/report for RelEng builds</li>
-	  </ul>	  
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4></td>
+      </ul>	  
+	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API use reporting [<a href="#3">3</a>]</h4>
+	  <ul>
+        <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>Tooling to identify what clients (plug-ins/bundles) are illegaly using non-API code
+          <ul>
+            <li>Note that this is different from current disouraged access reporting, since it allows the producer to see who is accessing their code, rather than flagging the consumer with a problem </li>
+          </ul>
+        </li>
+	    <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>Could be presented in the IDE (search) and as an Ant task/report for RelEng build</li>
+      </ul>
+	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Baseline Definition [<a href="#3">2</a>]</h4>
+	  <ul>
+        <li><img src="../../images/progress.gif" width="14" height="5">&gt;[from M4] Follow PDE's use of p2 to discover/analyze what bundles are present in an installation
+          <ul>
+              <li>API Baseline definition is similar to target platform definition, and we should use a similar approach </li>
+          </ul>
+        </li>
+      </ul>
+	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>
+	  <ul>
+	    <li><img src="../../images/progress.gif" width="14" height="5">&gt;[from M4] Create incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251617">bug 251617</a>] </li>
+      </ul></td>
 </tr>
 <tr>
 	<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" BGCOLOR="#595791"><font face="Arial,Helvetica"><font color="#FFFFFF"><a name="Milestone_Planning_M6">Milestone M6 (2009-03-13) - API Freeze</font></font></td>
@@ -283,10 +309,16 @@ function showHiddenWork() {
 			<td width="50%">item is time permitted.</td>
 		</tr>
 		<tr>
-			<td valign="center"><font class="indexsub" color="#8080ff">[xyz]</font></td>
-			<td width="50%">item is deferred (&gt;) from xyz or continues in xyz.</td>
-			<td valign="center"><font class="indexsub"><img src="../../images/new.gif" border="0"></font></td>
-			<td width="50%">new</td>
+          <td valign="center"><font class="indexsub" color="#8080ff">[xyz]</font></td>
+		  <td>item is deferred (&gt;) from xyz or continues in xyz.</td>
+		  <td valign="center"><font class="indexsub"><img src="../../images/new.gif" border="0"></font></td>
+		  <td>new</td>
+    </tr>
+		<tr>
+			<td valign="center"><img src="../../images/error.gif" width="15" height="15"></td>
+			<td width="50%">item is no longer in plan </td>
+			<td valign="center">&nbsp;</td>
+			<td width="50%">&nbsp;</td>
 		</tr>
 	</tbody>
 </table>
