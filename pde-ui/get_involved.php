@@ -25,29 +25,8 @@
 			</ol>
 		</div>
 			
-		<a name="filing_bugs"></a>
-		<div class="homeitem3col">
-			<h3>Creating bug reports</h3>
-
-			<p>
-			If you encounter a bug while working with Eclipse (whether it be with PDE or elsewhere), file a report in bugzilla.  However, keep some things in mind:
-			</p>
 			
-			<p>
-			 - Search bugzilla for existing bugs like yours BEFORE you file it. Resolving duplicates is time consuming.  - Try to have reproducible steps.  An entry in the log file may not be enough. Some log entries are NOT bugs, and can be caused by incorrect workspace configuration, etc.  - Bugzilla is not a forum. Do not ask questions on bugzilla.  - New feature requests should be marked with a severity of ‘enhancement’.  Try to give a realistic severity to bugs, a bug with a straightforward workaround is not ‘critical’ or ‘blocker’.
-			</p>
-			
-			<h4>Bug Lifecycle:</h4>
-			
-			<ul>
-			<li>NEW - All newly filed bugs start out in the NEW state.</li>
-			<li>DUPLICATE/INVALID/WORKSFORME/WONTFIX - If a bug is a duplicate of another bug or if a committer decides that no code changes will be made for  the bug, the bug is resolved immediately with an explanation. Unless the bug is REOPENED for some reason, this is the end of the road.</li>
-			<li>ASSIGNED - If an individual wants to take ownership of a bug (committer or contributor willing to work on it), the bug is reassigned to them, removing it from the inbox.  If there is an expected timeframe for the bug to be fixed in, set the target milestone.</li>
-			<li>RESOLVED-FIXED - Bugs are marked as RESOLVED-FIXED once code that solves the issue has been checked into CVS.  If a patch was provided by a non-committer it must be marked with the IP Log flag by the committer that committed the code to CVs.  Proving a brief explanation of the fix/a list of affected files is recommended.</li>
-			<li>VERIFIED - PDE UI does not explicitly verify bugs.  However, if the original reporter or a second committer confirms that a fix does in fact fix the original problem, the bug may be marked as verified.</li>
-			</ul>
-			
-		<a name="communications"></a>
+		<a name="communicate"></a>
 		<div class="homeitem3col">
 			<h3>Communication</h3>
 			
@@ -66,13 +45,39 @@
 			<p>
 			PDE has a <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.platform.pde">newsgroup</a> where users can ask for help.
 			</p>
+		</div>
+			
+		<a name="filing_bugs"></a>
+		<div class="homeitem3col">
+			<h3>Creating bug reports</h3>
+
+			<p>
+			If you encounter a bug while working with Eclipse (whether it be with PDE or elsewhere), file a report in bugzilla.  However, keep some things in mind:		
+			<ul>
+			<li>Search bugzilla for existing bugs like yours BEFORE you file it. Resolving duplicates is time consuming.</li>
+			<li>Try to have reproducible steps.  An entry in the log file may not be enough. Some log entries are NOT bugs, and can be caused by incorrect workspace configuration, etc.</li>
+			<li>Bugzilla is not a forum. Do not ask questions on bugzilla.</li>
+			<li>New feature requests should be marked with a severity of ‘enhancement’.  Try to give a realistic severity to bugs, a bug with a straightforward workaround is not ‘critical’ or ‘blocker’.</li>
+			<ul>
+			</p>
+			
+			<h4>Bug Lifecycle:</h4>
+			
+			<ul>
+			<li>NEW - All newly filed bugs start out in the NEW state.</li>
+			<li>DUPLICATE/INVALID/WORKSFORME/WONTFIX - If a bug is a duplicate of another bug or if a committer decides that no code changes will be made for  the bug, the bug is resolved immediately with an explanation. Unless the bug is REOPENED for some reason, this is the end of the road.</li>
+			<li>ASSIGNED - If an individual wants to take ownership of a bug (committer or contributor willing to work on it), the bug is reassigned to them, removing it from the inbox.  If there is an expected timeframe for the bug to be fixed in, set the target milestone.</li>
+			<li>RESOLVED-FIXED - Bugs are marked as RESOLVED-FIXED once code that solves the issue has been checked into CVS.  If a patch was provided by a non-committer it must be marked with the IP Log flag by the committer that committed the code to CVs.  Proving a brief explanation of the fix/a list of affected files is recommended.</li>
+			<li>VERIFIED - PDE UI does not explicitly verify bugs.  However, if the original reporter or a second committer confirms that a fix does in fact fix the original problem, the bug may be marked as verified.</li>
+			</ul>
+		</div>
 			
 		<a name="eclipse_setup"></a>
 		<div class="homeitem3col">
 			<h3>Setting Up Eclipse</h3>
 					
 			<p>
-			We eat our own dogfood, i.e. we try to use a recent Eclipse build so that we are testing as we work.  Updating to the most recent I Build each week is preferred.  You can use <a href="http://wiki.eclipse.org/Eclipse_Project_Update_Sites">Update sites</a> to update your current build or <a href="http://download.eclipse.org/eclipse/downloads/">download recent builds<a>.
+			We eat our own dogfood, i.e. we try to use a recent Eclipse build so that we are testing as we work.  Updating to the most recent I Build each week is preferred.  You can use <a href="http://wiki.eclipse.org/Eclipse_Project_Update_Sites">Update sites</a> to update your current build or download a <a href="http://download.eclipse.org/eclipse/downloads/">recent build</a>.
 			</p>
 			
 			<p>
@@ -88,13 +93,13 @@
 			<pre>:pserver:<a href="mailto:anonymous@dev.eclipse.org">anonymous@dev.eclipse.org</a>:/cvsroot/eclipse</pre>
 			</li>
 			
-			<li>Look in HEAD for the 'pde' folder.  Inside that folder is a project called 'org.eclipse.pde.releng'.  Right click and go to Check Out to copy the project to your workspace.<li>
+			<li>Look in HEAD for the 'pde' folder.  Inside that folder is a project called 'org.eclipse.pde.releng'.  Right click and go to Check Out to copy the project to your workspace.</li>
 			
-			<li>Switch back to the Java perspective, inside the releng project there are a number of .psf files.  These project set files can be used to quickly check out the projects you are interested in working on.  The pde-ui-basic.psf is where most contributors should start.  Simply right click on the file and go to import team project set.  A dialog may pop up requiring you to choose a repository to use, as committers must use different settings then contributors.<li>
+			<li>Switch back to the Java perspective, inside the releng project there are a number of .psf files.  These project set files can be used to quickly check out the projects you are interested in working on.  The pde-ui-basic.psf is where most contributors should start.  Simply right click on the file and go to import team project set.  A dialog may pop up requiring you to choose a repository to use, as committers must use different settings then contributors.</li>
 					
 			<li>You can now edit the code in your workspace.  To test your code you must create an Eclipse Launch Configuration.  The easiest way to do so is to right click on your project, go to Debug As (or Run As) > Run-time Workbench.  Your initial Eclipse instance that you edited your code in is called the ‘host’.  The Eclipse you just launched is called the ‘target’.  Any changes you make in your host will be reflected in the target.</li>
 			
-					
+		</div>		
 		<a name="contributing_fixes"></a>
 		<div class="homeitem3col">
 			<h3>Contributing Fixes</h3>		
@@ -121,12 +126,12 @@
 			<p>
 			Some useful links:
 			</p>
-			
+		</div>	
 		<a name="links"></a>
 		<div class="homeitem3col">
 			<h3>Additional Information</h3>		
 			
-			<p> If you are interested in helping out, feel free to <a href="#communication">contact us</a> and ask questions.  You can also check out the following resources:
+			<p> If you are interested in helping out, feel free to <a href="#communicate">contact us</a> and ask questions.  You can also check out the following resources:
 			<ul>
 			<li><a href="http://wiki.eclipse.org/The_Official_Eclipse_FAQs#Getting_Started">General Eclipse FAQs</a>
 			<li><a href="http://wiki.eclipse.org/Development_Resources">Eclipse developer resources</a>

@@ -65,7 +65,7 @@ ob_start();
 				<td width="82%">Development of new tools that are not ready to be added to the Eclipse SDK</td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-api-tools">PDE API Tools</a></td>
+				<td width="20%" valign="top">PDE Doc</td>
 				<td width="82%">Help documentation for PDE, shared by the other components.</td>
 			</tr>
 			
