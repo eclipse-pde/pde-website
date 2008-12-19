@@ -31,40 +31,32 @@ ob_start();
 				<li>Export Wizards  - wizards that build, package and export plug-ins, fragments and products with a single click. </li>
 				<li>Launchers - test and debug Eclipse applications and OSGi bundles. </li>
 				<li>Views - PDE provides views that help plug-in developers inspect different aspects   of their development environment.</li>
-			    <li>Miscellaneous Tools   - wizards to externalize and clean up manifest files.</li>
+			    <li>Miscellaneous Tools - wizards to externalize and clean up manifest files.</li>
 			    <li>Conversion Tools - wizard to convert a plain Java project or plain JARs into a plug-in project. </li>
 			    <li>Integration with JDT  - plug-in manifest files participate in Java search and refactoring. </li>
+				<li>User Assistance Tools - Editors and tools for developing user help and other UA documents.</li>
+				<li>Declarative Services Tools - Editors and validation for OSGi declarative services.</li>
 			 </ul>
 	  </div>
 		<div class="homeitem3col">
-			<a name="user"></a>
-			<h3>User Resources</h3>
-			<p>
-				New to PDE? Check out the <a href="resources/user.php">User Resources</a>.
-			</p>
-		</div>	  
-		<div class="homeitem3col">
-			<a name="dev"></a>
-			<h3>Development Resources</h3>
-			<p>
-				If you are already a PDE UI developer, check out the <a href="resources/dev.php">Development Resources</a>.
-			</p>
-		</div>			
-		<div class="homeitem3col">
 			<a name="happening"></a>
 			<h3>What&#8217;s Happening?</h3>
-			<p><b>R3.5 Development</b></p>
-			<p>Areas of focus for the <a href="dev_plans/r3_5/plan.php">3.5 Development Plan</a>:</p>
-			<ul>
-			  <li>Performance - analyze OSGi state use, expand performance test suite</li>
-		      <li>Reliability - fix critical bugs</li>
-		      <li>Enhancements - improve target platform definition and p2 integration</li>
-	      </ul>
+			
+			<p>Check out our <a href="dev_plans/r3_5/plan.php">3.5 Development Plan</a></p>
+			
+			<p>We have a new <a href="get_involved.php">Get Involved</a> page.  PDE loves contributors!
+
+
 		</div>
 	  <div class="homeitem3col">
 			<a name="team"></a>
-			<h3>Meet the Team </h3>
+			<h3>More PDE Information</h3>
 	      <p>Visit the <a href="committers/committers.php">Committers</a> page for a list of committers and active contributors on the PDE UI component.</p>
+		  <p>View some of the PDE <a href="resources/user.php">articles and examples</a>.
+		  <p>Check out the <a href="resources/dev.php">development resources</a> page for more detailed information on the PDE UI plug-ins and our development process.</p>
+		  <p>Interested in <a href="get_involved.php">getting involved</a> in the PDE community?  There are many ways you can help improve the quality of the PDE tools.</p>
+		  
+		  
 	  </div>		
    </div>	
    
@@ -74,9 +66,9 @@ ob_start();
 			<h6>Quick Links</h6>
 			<ul>
 			    <li><a href="http://www.eclipse.org/pde/pde-ui/">Home</a></li>
-				<li><a href="resources/user.php">User Resources</a></li>
+				<li><a href="resources/user.php">Articles</a></li>
 				<li><a href="resources/dev.php">Development Resources</a></li>				
-				<li><a href="dev_plans/r3_5/plan.php">3.5 Development Plan</a></li>
+				<li><a href="dev_plans/r3_5/plan.php">3.5 Dev Plan</a></li>
 				<li><a href="committers/committers.php">Meet the Team</a></li>
 			</ul>
 		</div>

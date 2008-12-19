@@ -1,0 +1,124 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Short Smoke Test</title>
+</head>
+
+<body>
+
+<h1><font face="Arial,Helvetica">Short Smoke Test - PDE</font></h1>
+Last updated May 25<sup>th</sup> 2001
+<p><b>Note</b>: PDE is based on Java Tooling. There is little point in running
+PDE smoke test if Java Tooling fails the basic test points.</p>
+<p><b>Setup</b></p>
+<ul>
+  <li>Open Preferences-&gt;Plug-in Development Environment</li>
+  <li>Ensure that Eclipse Home is set and that there is a number of checked
+    plug-ins in the list</li>
+  <li>Set the workspace location to a previously created (empty) directory</li>
+  <li>Switch to PDE perspective (Perspective-&gt;Open-&gt;Other...-&gt;Plug-in
+    Perspective)</li>
+  <li>Ensure that JDK rt.jar and source zip are set in Java Tooling. Default VM
+    that supports JDI must also be set.</li>
+</ul>
+<p><b>Plug-in Project Creation</b></p>
+<ul>
+  <li>Bring up &quot;Plug-in Project&quot; wizard.</li>
+  <li>Type in &quot;com.example.xyz&quot; for the project name. Press Next.</li>
+  <li>Verify that offered library name is &quot;xyz.jar&quot; and source folder
+    is &quot;XYZ Plugin&quot;. Press Next.</li>
+  <li>Switch to using plug-in content template wizards and select the default
+    wizard from the list. Press Next.</li>
+  <li>Accept the offered defaults in the wizard and press 'Finish'.</li>
+  <li>Verify that the new project is created with &quot;XYZ Plugin&quot; folder
+    that contains XYZPlugin.java class.</li>
+  <li>Verify that build.properties is set with the following variable set:&nbsp;<br>
+    <b>source.xyz.jar = XYZ Plugin</b></li>
+  <li>Verify that bin directory is created and that it contains XYZPlugin.class
+    (result of the build).</li>
+  <li>Plug-in manifest editor should open up.</li>
+</ul>
+<p><b>Plug-in Manifest Editing</b></p>
+<ul>
+  <li>Overview page should show no alerts or action items. There should be three
+    required plug-ins (Core Resources, Core Runtime and Workbench UI).</li>
+  <li>Dependencies page should show these three external plug-ins checked and
+    the graph should show the visually.</li>
+  <li>Runtime page should have one library (xyz.jar) and when this library is
+    selected, XYZ Plugin folder should show up in the source folder list.</li>
+  <li>Extensions and Extension Points page should look normal, but must be
+    empty.</li>
+  <li>Source page should show the initial XML content with color coding.</li>
+</ul>
+<p><b>Adding an extension</b></p>
+<ul>
+  <li>Open Extension Points page. Select &quot;New&quot; button and pick
+    &quot;Schema-based Extension&quot; wizard from the list. Press
+    &quot;Next&quot;.</li>
+  <li>Select &quot;Action Sets&quot; extension point from the list. Press
+    &quot;Finish&quot;.</li>
+  <li>Select &quot;Action Sets&quot; object and select &quot;New-&gt;actionSet&quot;
+    from the pop-up menu.</li>
+  <li>Change the name in the property sheet to &quot;Smoke Action Set&quot;.</li>
+  <li>Select &quot;New-&gt;menu&quot; from the pop-up menu. Change the label of
+    the menu into &quot;Smoke Menu&quot;. Change the Id of the menu to &quot;smokeMenu&quot;.</li>
+  <li>Select &quot;New-&gt;separator&quot; on the menu object. Change the name
+    of the separator to &quot;smokeGroup&quot;.</li>
+  <li>Select &quot;New-&gt;action&quot; from the pop-up menu while menu is
+    selected.&nbsp;</li>
+  <li>Select the new action and change its label to &quot;Smoke Action&quot;,
+    its menubarPath to &quot;smokeMenu/smokeGroup&quot;.</li>
+  <li>Select the &quot;class&quot; property and bring up the dialog. Choose to
+    create a new class. Browse for the source container and pick &quot;XYZ
+    Plugin&quot; folder. Change the name of the class to &quot;SmokeAction&quot;.
+    Press Finish.</li>
+  <li>When Java editor opens, add &quot;System.out.println(&quot;Smoke test
+    works!&quot;);&quot; in the &quot;run&quot; method. Save and close.</li>
+  <li>Save the manifest editor.</li>
+</ul>
+<p><b>Running</b></p>
+<ul>
+  <li>Select the project resource and press &quot;Run&quot; button. Another
+    Eclipse should show up (if you forgot to set the default VM, bring up the
+    properties for the project and set the VM to use).</li>
+  <li>Open &quot;Perspective-&gt;Customize-&gt;Other...&quot;. Verify that
+    &quot;Smoke Action Set&quot; is available. Check it.</li>
+  <li>Verify that &quot;Smoke Menu&quot; appears on the menu bar.&nbsp;</li>
+  <li>Verify that the menu contains &quot;Smoke Action&quot; item. Press it.</li>
+  <li>Verify that Console view shows &quot;Smoke test works!&quot;.</li>
+</ul>
+<p><b>Debugging</b></p>
+<ul>
+  <li>Place a breakpoint in the constructor of XYZPlugin.java.</li>
+  <li>Place a breakpoint in 'run' method of SmokeAction.java.</li>
+  <li>Select the project and press Debug tool bar button.</li>
+  <li>When the Eclipse window shows up, select &quot;Smoke Menu-&gt;Smoke
+    Action&quot;. Wait for the debugger to stop.</li>
+  <li>Verify that the debugger stopped in the constructor of XYZPlugin.java.
+    Continue.</li>
+  <li>Verify that the debugger stopped in 'run' method of SmokeAction.java.
+    Continue.</li>
+  <li>Verify that &quot;Smoke test works!&quot; shows up on the Console.</li>
+</ul>
+<p><b>Adding an extension point</b></p>
+<ul>
+  <li>Open Extension Points page. Select &quot;New&quot; to open the wizard.</li>
+  <li>Type &quot;parsers&quot; for the extension point Id, &quot;Sample
+    Parsers&quot; for the name. Press &quot;Finish&quot;.</li>
+  <li>Verify that Schema editor opened up with &quot;extension&quot; element and
+    three attributes (id, name and point).</li>
+  <li>Verify that there is four documentation topics (Overview, Examples, API
+    Information and Supplied Implementation).</li>
+  <li>Verify that Source page shows XML Schema source with color coding.</li>
+  <li>Close the schema and verify that extension point is showing in the
+    manifest editor.</li>
+  <li>Save and switch to the Source view.&nbsp;</li>
+  <li>Verify that extension point markup has been added to the source.</li>
+</ul>
+
+</body>
+
+</html>

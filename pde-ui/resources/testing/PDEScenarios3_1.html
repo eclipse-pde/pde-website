@@ -1,0 +1,502 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+   <title>PDE Scenarios</title>
+</head>
+<body>
+
+<center>
+<h1>
+<font color="#0000FF">PDE Test Scenarios</font></h1></center>
+The following set of scenarios are designed to assist the Eclipse user community 
+explore and test the Plug-in Development Environment (PDE).
+<p>Note that the different scenarios are independent of each other and can be 
+executed in any sequence.</p>
+<p>If you find a problem with a scenario step:</p>
+<ol>
+  <li>Open a Bugzilla defect against
+  the PDE/UI component.</li>
+  <li>Include the build number (e.g. 3.1RC1, 3.1RC2 etc.). </li>
+  <li> <b>Always
+prefix the Summary of the defect with the step number</b>.</li>
+</ol>
+
+<hr>
+<h2>
+<font color="#0000FF">Setup</font></h2>
+<ul>
+  <li>To be able to run the scenarios exactly as described below, you need <b>
+  Eclipse 3.1 RC1 (or later)</b> installed.</li>
+  <li>Two steps that need to be done before executing any of the scenarios.<ul>
+    <li>Launch Eclipse on a new workspace.</li>
+    <li>Dismiss the <b>Welcome Page</b> by clicking on the <b>Go to Workbench</b> 
+    icon.</li>
+  </ul>
+  </li>
+</ul>
+
+<hr>
+<h2>
+<font color="#0000FF">Scenario A: Your first plug-in in less than 10 minutes</font></h2>
+<p>
+<b><u><font color="#0000FF">Objective:</font></u> </b>&nbsp;This is the out-of-the-box experience scenario. We will 
+create a new plug-in, test it and deploy it in less than 10 minutes.</p>
+<p>
+<font size="4" color="#0000FF"><b>A0. Start the clock</b></font></p>
+<p>
+<b><font size="4" color="#0000FF">A1. Creating a new plug-in project</font></b></p>
+<ul>
+  <li><b>A1.1</b>&nbsp; Bring up the <b>New Project Creation</b><i> </i>wizard 
+  by selecting <b>File &gt; New &gt; Project... </b>from the top menu.</li>
+  <li><b>A1.2&nbsp; </b>Select <b>Plug-in Project</b> from the list.&nbsp; Click
+  <b>Next</b>.</li>
+  <li><b>A1.3</b>&nbsp; Enter <b>com.example.xyz </b>as the name of the plug-in 
+  project.&nbsp; Click <b>Next</b>.</li>
+  <li><b>A1.4</b>&nbsp; Accept all defaults on the <b>Project Structure</b> page.&nbsp; 
+  Click <b>Next</b>.</li>
+  <li><b>A1.5</b>&nbsp; Accept all defaults on the <b>Plug-in Content</b> page.&nbsp; 
+  Click <b>Next</b>.</li>
+  <li><b>A1.6</b>&nbsp; Select the <b>Hello World</b> template from the list. 
+  Click <b>Finish</b>.&nbsp; </li>
+  <li><b>A1.7</b> A dialog will come up asking you if you would like to 
+  switch to the <b>Plug-in Development</b> perspective.&nbsp; Answer <b>Yes</b>.</li>
+  <li><b>A1.9 </b>&nbsp;A project will be created in your workspace, and the 
+  manifest editor, which is used to edit and manage all the plug-in files, 
+  will open on the <b>Overview</b> page.</li>
+  <li><b>A1.10</b><font color="#FF0000"> Verify that the newly created project 
+  contains: a src/ folder, a META-INF/ folder, an icons/ folder, a 
+  build.properties file and a plugin.xml file.</font></li>
+</ul>
+<p>
+<font size="4" color="#0000FF"><b>A2. Testing the Plug-in</b></font></p>
+<ul>
+  <li><b>A2.1&nbsp; </b>In the <b>Testing</b> section of the <b>Overview</b> 
+  page of the manifest editor, click on the <b>Launch an Eclipse application</b> 
+  link.</li>
+  <li><b>A2.2 </b>&nbsp;The Eclipse splash screen will appear, and a second 
+  (runtime) workbench will appear within seconds.</li>
+  <li><b>A2.3</b>&nbsp; In the runtime workbench, dismiss the <b>Welcome</b> 
+  page.&nbsp; The <b>Resource</b> perspective will open.</li>
+  <li><b>A2.4<font color="#FF0000"> </font> </b><font color="#FF0000">&nbsp;Verify that there is a new top-level menu <b>Sample Menu</b> 
+  in the menu bar and that it contains menu item <b>Sample Action</b>. </font> </li>
+  <li><b>A2.5</b><font color="#FF0000">&nbsp; Select the menu item.&nbsp; Verify that the Hello World 
+  dialog comes up.&nbsp;</font> Dismiss the dialog.</li>
+  <li><b>A2.6</b> <font color="#FF0000">&nbsp;Verify that there is a toolbar 
+  button showing the blue Eclipse icon.&nbsp; Click it.&nbsp; The same Hello 
+  World dialog will come up.</font>&nbsp; 
+  Dismiss the dialog.</li>
+  <li><b>A2.7</b>&nbsp; Close the runtime workbench.</li>
+</ul>
+<p>
+<b><font size="4" color="#0000FF">A3. Exporting the Plug-in</font></b></p>
+<ul>
+  <li><b>A3.1</b>&nbsp; Select the <b>com.example.xyz</b> project in the Package 
+  Explorer view.&nbsp; From the context menu, select <b>Export...&nbsp; </b>The 
+  Export wizard will come up.</li>
+  <li><b>A3.2</b>&nbsp; From the list of wizards, select the <b>Deployable 
+  Plug-ins and Fragments</b> wizard.&nbsp; Click <b>Next</b>.</li>
+  <li><b>A3.3</b><font color="#FF0000">&nbsp; Verify that the <b>com.example.xyz</b> plug-in is <b>
+  pre-selected</b> in the wizard.</font></li>
+  <li><b>A3.4</b>&nbsp; In the <b>Export Destination</b> section, select <b>
+  directory.</b></li>
+  <li><b>A3.5</b>&nbsp; browse for the installation location of the Eclipse 
+  instance you are running.&nbsp; e.g. D:/Eclipse&nbsp; Click <b>Finish</b>.</li>
+  <li><b>A3.6</b><font color="#FF0000">&nbsp; When the export operation starts, verify that you see a 
+  progress dialog where you have the option to run the operation in the 
+  background if you choose to.</font></li>
+  <li><b>A3.7</b><font color="#FF0000">&nbsp; Go to the directory where you 
+  exported the plug-in and verify that the <b>plugins/</b> subdirectory of the Eclipse installation 
+  now contains 
+    a new JAR called <b>com.example.xyz_1.0.0.jar</b></font></li>
+  <li><b>A3.8</b>&nbsp; Shut down Eclipse and restart.</li>
+  <li><b>A3.9</b>&nbsp; Verify that you see in your workbench the same Hello 
+  World menu and toolbar button that you saw in steps A2.4-2.6.</li>
+  <li><b>A3.10</b> Verify that the Hello World dialog comes up when you press 
+  the toolbar button or the Sample Action menu item.</li>
+  <li><b>A3.11</b>&nbsp; Delete the project from the workspace.</li>
+  <li><b>A3.12</b> Close the workbench.</li>
+  <li><b>A3.13</b>&nbsp; Delete com.example.xyz_1.0.0.jar from the Eclipse 
+  installation.</li>
+</ul>
+<p>
+<b><font size="4" color="#0000FF">A4. Stop the clock</font></b></p>
+
+<hr>
+<h2>
+<font color="#0000FF">Scenario B:&nbsp; Variations in Plug-in Project creation</font></h2>
+<p>
+<b><font size="4" color="#0000FF">B1. Creating a plug-in with a special encoding</font></b></p>
+<ul>
+  <li><b>B1.1</b>&nbsp; Change the default encoding of text files to <b>UTF-16BE</b> 
+  on the <b>Window &gt; Preferences...&gt; General &gt; Editors</b> preference page.</li>
+  <li><b>B1.2</b>&nbsp; Create a Hello World plug-in as described in section <b>
+  A1</b> above.</li>
+  <li><b>B1.3</b><font color="#FF0000">&nbsp; Verify that: no error markers were 
+  generated in the Problems view.</font></li>
+  <li><b>B1.4</b>&nbsp; In the <b>com.example.xyz</b> package, open the <b>
+  XyzPlugin.java</b> file and <font color="#FF0000">make sure its content is 
+  readable</font>. </li>
+  <li><b>B1.5</b>&nbsp; Select the <b>XyzPlugin.java</b> file&nbsp; in the <b>
+  Package Explorer</b> view and click <b>Alt+Enter</b> to bring up the 
+  Properties dialog.&nbsp; <font color="#FF0000">Verify that the 
+  encoding of the file has been set to <b>UTF-16BE</b>.</font></li>
+  <li><b>B1.6</b>&nbsp; Repeat <b>B1.5</b> for the <b>build.properties</b> file.&nbsp;
+  <font color="#FF0000">Verify that the encoding of this file has been set to <b>ISO-8859-1</b></font>.</li>
+  <li><b>B1.7</b>&nbsp; Repeat <b>B1.5 </b>for the <b>plugin.xml</b> 
+  file.&nbsp; <font color="#FF0000">Verify that the encoding of this file has been set to <b>UTF-8</b>.</font></li>
+  <li><b>B1.8</b>&nbsp; Repeat <b>B1.5</b> for the <b>META-INF/MANIFEST.MF</b> 
+  file.&nbsp; <font color="#FF0000">Verify that the encoding of this file had 
+  been set to <b>UTF-8</b>.</font></li>
+  <li><b>B1.9</b>&nbsp; Delete the project you created in <b>B1.2</b></li>
+  <li><b>B1.10&nbsp; </b>Go back to the <b>Windows &gt; Preferences... &gt; 
+  General &gt; 
+  Editors</b> preference page.&nbsp; Click <b>Restore Defaults</b>.&nbsp; Click
+  <b>OK</b>.</li>
+</ul>
+<p>
+<font size="4" color="#0000FF"><b>B2. Creating an old-style plug-in</b></font></p>
+<ul>
+  <li><b>B2.1&nbsp; </b>Create a new plug-in project as described in section <b>
+  A1</b> above, with two differences:<ul>
+    <li>When you get to the <b>Project Structure</b> page (step <b>A1.4</b>), 
+    <b>uncheck</b> the <b>Create an OSGi bundle manifest </b> checkbox.</li>
+    <li>When you get to the <b>Templates</b> page (step <b>A1.6</b>), select the
+    <b>Plug-in with a View</b> template.&nbsp; This template creates a sample 
+    view that will be added to the Resource perspective.</li>
+  </ul>
+  </li>
+  <li><b>B2.2 </b><font color="#FF0000">Verify that the project created contains 
+  the plugin.xml and build.properties files, and that the Java code 
+  generated compiles without errors.</font></li>
+  <li><b>B2.3</b>&nbsp; Bring up the <b>Launch Configuration Dialog</b> by 
+  selecting <b>Run &gt; Run...</b> from the top menu.</li>
+  <li><b>B2.4</b>&nbsp; In the list of configuration types, check if there are 
+  any configurations created of the type <b>Eclipse Application </b>(i.e. if there is 
+  one left over from other scenarios).&nbsp; If so, reuse it and select the 
+  Clear workspace data before launching checkbox on the <b>Main</b> tab of the 
+  launch configuration.&nbsp; Otherwise create a new launch configuration and 
+  keep all defaults.</li>
+  <li><b>B2.5</b>&nbsp; Press <b>Run</b> to launch the application, and 
+  answer <b>Yes</b> when/if asked to clear the workspace data.</li>
+  <li><b>B2.6</b>&nbsp; When the runtime workbench appears, dismiss the Welcome 
+  page.&nbsp; <font color="#FF0000">Verify that a Sample View appears at the bottom right corner of 
+  the Resource perspective.</font></li>
+  <li><b>B2.7</b>&nbsp; Close the runtime workbench.</li>
+  <li><b>B2.8</b>&nbsp; Delete the project from the workspace.</li>
+</ul>
+
+<p><font size="4" color="#0000FF"><b>B3.&nbsp; Manifest files on demand</b></font></p>
+<ul>
+  <li><b>B3.1</b>&nbsp; Create an old-style plug-in as described in step <b>
+  B2.1.</b></li>
+  <li><b>B3.2</b>&nbsp; On the Overview page of the plug-in editor,
+  <font color="#FF0000">verify that the Plug-in Content section has a link that 
+  offers to create an OSGi bundle manifest for the plug-in</font>.</li>
+  <li><b>B3.3&nbsp; </b>Take a look at the <b>Dependencies</b> and <b>Runtime</b> 
+  tabs.&nbsp; Keep a mental picture of what they look like as they are about to 
+  change.</li>
+  <li><b>B3.4</b>&nbsp; Go back to the <b>Overview</b> page, and click on the 
+  link to create an OSGi bundle manifest.</li>
+  <li><b>B3.5</b>&nbsp; <font color="#FF0000">Verify that the link has now 
+  vanished from the Plug-in Content section</font>.</li>
+  <li><b>B3.6</b>&nbsp; <font color="#FF0000">Verify that the editor now contains a manifest.mf 
+  tab.</font></li>
+  <li><b>B3.7</b>&nbsp; <font color="#FF0000">Verify that the <b>Runtime</b> tab 
+  now contains an <b>Exported Packages</b> section and a <b>Package Visibility</b> 
+  section.</font></li>
+  <li><b>B3.8</b>&nbsp; <font color="#FF0000">Verify that the <b>Dependencies</b> 
+  tab now contains an <b>Imported Packages</b> section</font>.</li>
+  <li><b>B3.9 </b>&nbsp;Switch to the Build page.&nbsp; <font color="#FF0000">
+  Verify that the<b> META-INF/</b> folder is checked in the <b>Binary Build</b> 
+  section.</font></li>
+  <li><b>B3.10</b> Delete the project from the workspace.</li>
+</ul>
+
+<p><font size="4" color="#0000FF"><b>B4. Converting a Java project to a plug-in project</b></font></p>
+
+<ul>
+<li>
+<font size=+0><b>B4.1&nbsp; File &gt; New &gt; Project... &gt; Java Project.&nbsp; </b> 
+Enter <b>com.example.java</b> for the project name.&nbsp; Click Finish.&nbsp;&nbsp; 
+Choose No when prompted to switch to the Java perspective.</font></li>
+<li>
+<b>B4.2</b> <b>&nbsp;</b>Right-click on the Java project and 
+select <b>PDE Tools &gt; Convert Projects to Plug-in Projects...</b></font></li>
+<li>
+<b>B4.3</b>&nbsp;The conversion wizard will come up.&nbsp;
+<font color="#FF0000">Verify that com.example.java is pre-selected</font>.</font><font size=+0> 
+Press <b>Finish</b>.</font>&nbsp;&nbsp; </li>
+
+<li>
+<font size=+0 color="#000000"><b>B4.4</b>&nbsp; Open the .project file of the project.&nbsp; </font>
+<font size=+0 color="#FF0000">Verify that the project now has a PDE
+nature and two PDE builders.</font></li>
+
+<li>
+<b>B4.5</b>&nbsp; <font color="#FF0000">Verify that the project now has a 
+META-INF/MANIFEST.MF file with minimal content</font>.</li>
+
+<li>
+<b>B4.6</b>&nbsp; Repeat<b> B4.2</b>.&nbsp; <font color="#FF0000">Verify that 
+the PDE Tools context menu no longer contains the conversion action</font>.&nbsp; 
+It instead should contain some plug-in-specific actions (e.g. Update Classpath, 
+etc.)</li>
+
+<li>
+<b>B4.7</b> Delete the project from the workspace.</li>
+</ul>
+
+<p><b><font size="4" color="#0000FF">B5. The Bundlizer - Part I</font></b></p>
+<ul>
+  <li><b>B5.1</b>&nbsp; Bring up the bundlizer via <b>File &gt; New &gt; Project... &gt; 
+  Plug-in from existing JAR archives</b>.&nbsp; Click <b>Next</b>.</li>
+  <li><b>B5.2 </b>&nbsp;On the first page of the wizard, press <b>Add...</b>.&nbsp;
+  <font color="#FF0000">Verify that the dialog is empty</font>.</li>
+  <li><b>B5.3</b>&nbsp; Press <b>Add External...</b>&nbsp; From the plugins/org.eclipse.pde.build_3.1.0/ 
+  folder in your Eclipse installation, add <b>pdebuild.jar</b>.&nbsp; Click <b>
+  Next</b>.</li>
+  <li><b>B5.4 </b>&nbsp;Enter <b>com.example.abc</b> for the plug-in id.&nbsp; 
+  Leave all defaults as-is.&nbsp; Press <b>Finish</b>.</li>
+  <li><b>B5.5</b>&nbsp; <font color="#FF0000">Verify that 6 Java packages appear 
+  at the root of the project.</font></li>
+  <li><b>B5.6 </b>&nbsp;<font color="#FF0000">Verify that the Bundle-Classpath 
+  header in the META-INF/MANIFEST.MF file of the plug-in project is either 
+  missing or has the value of '.' (without the quotes)</font></li>
+  <li><b>B5.7</b>&nbsp; Delete the project from the workspace.</li>
+</ul>
+
+<p><font size="4" color="#0000FF"><b>B6.&nbsp; The Bundlizer - Part II</b></font></p>
+<ul>
+  <li><b>B6.1</b>&nbsp; Bring up the plug-in import wizard via <b>File &gt; 
+  Import... &gt; External Plug-ins and Fragments</b>.</li>
+  <li><b>B6.2 </b>&nbsp;Leave all defaults as-is on the first page.&nbsp; Click
+  <b>Next</b>.</li>
+  <li><b>B6.3</b>&nbsp; Type '*expr' (without the quotes) in the search field.&nbsp;
+  <font color="#FF0000">Verify that only one plug-in (org.eclipse.core.expressions) 
+  gets selected</font>.&nbsp; </li>
+  <li><b>B6.4</b>&nbsp; Press Add.&nbsp; Verify that the <b>
+  org.eclipse.core.expressions</b> entry goes from the left to the right viewer.&nbsp; 
+  Press <b>Finish</b>.</li>
+  <li><b>B6.5</b>&nbsp; Bring up the bundlizer via <b>File &gt; New &gt; Project... &gt; 
+  Plug-in from existing JAR archives</b>.&nbsp; Click <b>Next</b>.</li>
+  <li><b>B6.6</b>&nbsp; Press <b>Add...&nbsp; </b><font color="#FF0000">Verify 
+  that the dialog shows the org.eclipse.core.expressions project with all its 
+  children filtered out except for the org.eclipse.core.expressions_3.1.0.jar</font>.</li>
+  <li><b>B6.7</b>&nbsp; Press <b>OK</b> to add the JAR.&nbsp; Click <b>Next</b>.</li>
+  <li><b>B6.8</b>&nbsp; Enter <b>com.example.def </b>as the project name.&nbsp;
+  <b>Uncheck</b> the 'Unzip the JAR archives into the project' checkbox.&nbsp; 
+  Press <b>Finish</b>.</li>
+  <li><b>B6.9 </b>&nbsp;<font color="#FF0000">Verify that the Bundle-Classpath 
+  header in the META-INF/MANIFEST.MF file of the plug-in project has the value 
+  of 'org.eclipse.core.expressions_3.1.0.jar' (without the quotes)</font></li>
+  <li><b>B6.10</b>&nbsp; Delete the project from the workspace.</li>
+</ul>
+
+<hr>
+<p><font size="5" color="#0000FF"><b>Scenario C: Plug-in  Export</b></font></p>
+<p><b><font size="4" color="#0000FF">C1.&nbsp; Exporting plug-ins en masse as a directory 
+structure</font></b></p>
+<ul>
+  <li><b>C1.1</b>&nbsp; Using the plug-in import wizard, import the <b>
+  org.eclipse.core.commands, org.eclipse.core.expressions and 
+  org.eclipse.core.filebuffers </b> plug-ins  as <b>projects with 
+  source folders.</b></li>
+  <li><b>C1.2&nbsp; </b>Open the plug-in export wizard via <b>File &gt; Export... &gt; 
+  Deployable Plug-ins and Fragments</b>.&nbsp; </li>
+  <li><b>C1.3</b>&nbsp; Select all three plug-ins.</li>
+  <li><b>C1.4</b>&nbsp; In the <b>Export Destination</b> section, select <b>
+  directory</b>.&nbsp; Enter a temp directory, e.g. D:\Temp</li>
+  <li><b>C1.5</b>&nbsp; In the <b>Export Options</b> section, check the <b>
+  Include source code</b> option.&nbsp; Press <b>Finish</b>.</li>
+  <li><b>C1.6</b>&nbsp; When the operation completes, <font color="#FF0000">verify that all 
+  three 
+  plug-ins are placed in a <b>plugins </b>subdirectory of the destination 
+  specified in <b>C4.4</b></font>.</li>
+  <li><b>C1.7</b>&nbsp; <font color="#FF0000">Verify that each plug-in is a 
+  self-contained JAR with the name pattern &lt;plugin_id&gt;_&lt;plugin_version&gt;.jar</font>. </li>
+  <li><b>C1.8</b>&nbsp; Open each JAR with WinZip.&nbsp; <font color="#FF0000">
+  Verify that it contains source code under a src/ folder nested inside the JAR.</font></li>
+  <li><b>C1.9</b>&nbsp; Delete all three JARs.</li>
+</ul>
+<p><b><font size="4" color="#0000FF">C2.&nbsp; Exporting plug-ins en masse as a 
+ZIP</font></b></p>
+<ul>
+  <li><b>C2.1&nbsp; </b>Open the plug-in export wizard via <b>File &gt; Export... &gt; 
+  Deployable Plug-ins and Fragments</b>.&nbsp; </li>
+  <li><b>C2.2</b>&nbsp; Select all three plug-ins.</li>
+  <li><b>C2.3</b>&nbsp; In the <b>Export Destination</b> section, select <b>
+  Archive file</b>.&nbsp; Enter the name of a ZIP file, e.g. D:\Temp\plugins.zip</li>
+  <li><b>C2.4 </b>&nbsp;When the operation completes, <font color="#FF0000">verify that the zip file 
+  has been created in the correct location</font>.</li>
+  <li><b>C2.5</b>&nbsp; <font color="#FF0000">Open the ZIP file and verify that the path for all 
+  its contents starts with <b>plugins/</b>.</font></li>
+  <li><b>C2.6 </b>&nbsp;<font color="#FF0000">Verify that the three JAR'd 
+  plug-ins are inside the ZIP 
+  file</font>.</li>
+  <li><b>C2.7</b>&nbsp; Delete the ZIP file</li>
+</ul>
+
+<hr>
+<p>
+<font size="5" color="#0000FF"><b>Scenario D: RCP Product Export</b></font></p>
+<p>
+<b><font size="4" color="#0000FF">D1.&nbsp; RCP Mail</font></b></p>
+<ul>
+  <li><b>D1.1 </b>&nbsp;On a fresh workspace, bring up the New Plugin Project 
+  wizard via <b>File &gt; New &gt; Project... &gt; Plug-in Project</b>.</li>
+  <li><b>D1.2</b>&nbsp; Enter <b>com.example.mail</b> for the project name.&nbsp; 
+  Leave all defaults as-is.&nbsp; Click <b>Next</b>.</li>
+  <li><b>D1.3</b>&nbsp; In the <b>Rich Client Application</b> section, choose <b>
+  Yes</b>.&nbsp; Click <b>Next</b>.</li>
+  <li><b>D1.4</b>&nbsp; From the list of available templates, select the <b>RCP 
+  Mail Template</b>.&nbsp; Press <b>Finish</b>.</li>
+  <li><b>D1.5</b>&nbsp; <font color="#FF0000">Verify the creation of the 
+  com.example.mail project.&nbsp; No errors/warnings should appear in the 
+  Problems view. </font></li>
+  <li><b>D1.6</b>&nbsp; In the <b>Testing</b> section of the <b>Overview</b> 
+  page of the plug-in editor, click on&nbsp; the <b>Launch an Eclipse 
+  application </b>link.</li>
+  <li><b>D1.7</b>&nbsp; <font color="#FF0000">Verify that a splash screen comes 
+  up</font>.&nbsp; The splash screen confirms that we are launching in product 
+  mode.</li>
+  <li><b>D1.8</b>&nbsp; <font color="#FF0000">Verify that the mail application 
+  comes up properly</font>.&nbsp; Click on menus, buttons, etc., then close it.</li>
+  <li><b>D1.9</b>&nbsp; Bring up the Product Configuration wizard via <b>File &gt; 
+  New &gt; Product Configuration</b>.</li>
+  <li><b>D1.10</b>&nbsp; Select the <b>com.example.mail </b>project as the 
+  parent folder.</li>
+  <li><b>D1.11</b>&nbsp; Enter <b>mail.product</b> as the file name.</li>
+  <li><b>D1.12</b>&nbsp; In the '<b>Initialize file content</b>' section, make 
+  sure the first option is selected, with com.example.mail.product being 
+  selected in the combo box.&nbsp; Press <b>Finish</b>.</li>
+  <li><b>D1.11</b>&nbsp; In the <b>Product Definition </b>section of the <b>
+  mail.product</b> file, replace 'RCP Product' with '<b>La Poste</b>'.</li>
+  <li><b>D1.12 </b>&nbsp;Switch to the Configuration page.&nbsp;&nbsp;
+  <font color="#FF0000">Verify that the list of plug-ins contains 11 plug-ins</font>.</li>
+  <li><b>D1.13 </b>&nbsp;Remove all plug-ins from the list except for 
+  com.example.mail.</li>
+  <li><b>D1.14</b>&nbsp; Press Add Required Plug-ins.&nbsp;
+  <font color="#FF0000">Verify that the ten plug-ins you removed will now be 
+  added back in</font>.</li>
+  <li><b>D1.15</b>&nbsp; In the<b> Program Arguments</b> section, enter '-nl ar' 
+  without the quotes.</li>
+  <li><b>D1.16</b>&nbsp; In the <b>VM Arguments</b> section, enter -<b>Xmx256M</b></li>
+  <li><b>D1.17&nbsp; </b>Switch to the Branding page.</li>
+  <li><b>D1.18</b>&nbsp; In the Program Launcher section, enter your name as the 
+  launcher name, e.g. Leonardo</li>
+  <li><b>D1.19</b>&nbsp; Switch to the Overview page.</li>
+  <li><b>D1.20</b>&nbsp; In the <b>Exporting</b> section, bring up the <b>
+  Eclipse product export wizard</b> via the link provided.</li>
+  <li><b>D1.21</b>&nbsp; <font color="#FF0000">Verify that the location of the 
+  product file is already preset in the Configuration field</font>.</li>
+  <li><b>D1.22</b>&nbsp; Set the name of the root directory to your last name, 
+  e.g. Dicaprio</li>
+  <li><b>D1.23</b>&nbsp; In the <b>Export Destination</b> section, select 
+  directory.&nbsp; Enter a temp directory name, e.g. <a href="file:///D:/Temp">
+  D:\Temp</a>.&nbsp; Press Finish.</li>
+  <li><b>D1.24</b>&nbsp; <font color="#FF0000">Verify that your product has been 
+  created under </font><a href="file:///D:/Temp"><font color="#FF0000">D:\Temp</font></a><font color="#FF0000"> 
+  and the root directory is named 'Dicaprio'.</font></li>
+  <li><b>D1.25</b>&nbsp; <font color="#FF0000">Verify that the executable under
+  </font><a href="file:///D:/Temp/Dicaprio"><font color="#FF0000">
+  D:\Temp\Dicaprio</font></a><font color="#FF0000"> is named Leonardo.exe (or 
+  just Leonardo on Unix platforms).</font></li>
+  <li><b>D1.26 </b>&nbsp;Double-click on Leonardo.exe.&nbsp;
+  <font color="#FF0000">Verify that the splash screen shows up.</font></li>
+  <li><b>D1.27</b>&nbsp; <font color="#FF0000">Verify that the application shows 
+  up and everything is in reverse because we set the locale to Arabic in step 
+  D1.15</font></li>
+  <li><b>D1.28</b>&nbsp; <font color="#FF0000">Verify that in the Dicaprio 
+  directory, there exists a Leonardo.ini file and that it contains the following 
+  four words each on a separate line: -nl ar -vmargs -Xmx256M</font></li>
+</ul>
+
+<hr>
+<p>
+<font size="5" color="#0000FF"><b>Scenario E: Control over runtime classpath</b></font></p>
+<p><b><font size="4" color="#0000FF">E1.&nbsp; Selectively excluding output 
+folders</font></b></p>
+<ul>
+  <li><b>E1.1&nbsp; </b>On a fresh workspace, create a Hello World plug-in named
+  <b>com.example.xyz</b>, as described in section <b>A1</b>.</li>
+  <li><b>E1.2</b>&nbsp; Launch a runtime Eclipse application on a new workspace. </li>
+  <li><b>E1.3</b>&nbsp; Test the Hello World plug-in as in section <b>A2</b>.&nbsp; 
+  <font color="#FF0000">Verify that it works fine</font>.</li>
+  <li><b>E1.4</b>&nbsp; Close the runtime workbench.</li>
+  <li><b>E1.5</b>&nbsp; Right-click on the <b>com.example.xyz</b> plug-in and 
+  bring up its properties dialog.</li>
+  <li><b>E1.6</b>&nbsp; Select the <b>Self-Hosting</b> property page.</li>
+  <li><b>E1.7</b>&nbsp; Deselect the <b>/com.example.xyz/bin</b> folder.&nbsp; 
+  This will prevent the runtime classloader from not finding these classes at 
+  runtime.&nbsp; Click <b>OK</b>.</li>
+  <li><b>E1.8</b> Launch a runtime Eclipse application.</li>
+  <li><b>E1.9</b> Verify that when you select the <b>Sample Action</b> menu item from 
+  the top <b>Sample Menu</b>, you will get a dialog saying &quot;The chosen operation is not 
+  currently available&quot;.</li>
+  <li><b>E1.10</b> Open the <b>log view</b> of the runtime workbench via <b>Window &gt; Show 
+  View &gt; Error Log.</b>&nbsp; Verify that it contains log entries about classloading 
+  errors.</li>
+  <li><b>E1.11</b> Double-click on one of the log entries.&nbsp; This will bring 
+  up the Events Dialog.&nbsp; Use the Up and Down arrow to navigate from one 
+  entry to the next.</li>
+  <li><b>E1.12 </b><font color="#FF0000">Verify that the log entries that have a stack trace have a 
+  different icon (one with a document background) than log entries with no stack 
+  trace</font>.</li>
+  <li><b>E1.13</b> Close the runtime workbench.</li>
+</ul>
+
+<hr>
+<p>
+<font size="5" color="#0000FF"><b>Scenario F:&nbsp; Features and Update Sites</b></font></p>
+<p>
+<font size="4" color="#0000FF"><b>F1.&nbsp; Feature Creation</b></font></p>
+<ul>
+  <li><b>F1.1&nbsp; </b>Create a plug-in project as in step <b>A1</b>.</li>
+  <li><b>F1.2</b>&nbsp; Bring up the New Feature Creation wizard via <b>File &gt; 
+  New...&gt; Project &gt; Plug-in Development &gt; Feature Project</b>.</li>
+  <li><b>F1.3 </b>&nbsp;Enter <b>com.example.feature</b> as the project 
+  name.&nbsp; Click <b>Next</b>.</li>
+  <li><b>F1.4</b>&nbsp; Set the feature name to <b>Sample Feature</b>.&nbsp; Click <b>Next</b>.</li>
+  <li><b>F1.5</b>&nbsp; Select the <b>com.example.xyz</b> plug-in from F1.1.&nbsp; Press <b>
+  Finish</b>.</li>
+  <li><b>F1.6</b>&nbsp; In the <b>General Information</b> section on the 
+  Overview page of the feature editor, set to the <b>Update site URL</b> to
+  <a href="http://update.eclipse.org/testUpdates">
+  http://update.eclipse.org/testUpdates</a>.</li>
+  <li><b>F1.7</b>&nbsp; Set the <b>Update site name</b> to <b>Main Eclipse 
+  Update Site</b>.</li>
+  <li><b>F1.8</b>&nbsp; Switch to the <b>Information</b> page.&nbsp; Switch to 
+  the <b>Sites to Visit</b> tab.&nbsp; Press <b>Add</b>.</li>
+  <li><b>F1.9 </b>&nbsp;Set the name of the discovery site to <font size=+0 color="#000000"><b>Main Eclipse Discovery Site</b> 
+  and the URL to&nbsp; <a href="http://update.eclipse.org/testUpdates">
+  http://update.eclipse.org/testUpdates</a>.</font></li>
+  <li><b>F</b><font><b>1.10</b>&nbsp; Save the file.</font></li>
+  <li><b>F</b><font><b>1.11&nbsp;</b> Switch to the feature.xml page.&nbsp;
+  <font color="#FF0000">Verify that the &lt;plugin..&gt; element has the <b>unpack</b> 
+  attribute set to <b>false</b></font>.</font></li>
+</ul>
+<p>
+<font size="4" color="#0000FF"><b>F</b></font><b><font size="4" color="#0000FF">2.&nbsp; 
+Update Site Creation</font></b></p>
+<ul>
+  <li><b>F2.1</b><font size="4">&nbsp;  </font>Create a site project via <b>File &gt; 
+  New...&gt; Project &gt; Plug-in development &gt; Update Site Project</b>.&nbsp; Click
+  <b>Next</b>.</li>
+  <li><b>F2.2&nbsp; </b>Enter <b>site</b> as the name of the 
+  project.&nbsp;  Press <b>Finish</b>. </li>
+  <li><b>F2.3</b>&nbsp; In the <b>Managing The Site</b> section, add the <b>
+  com.example.feature </b>and<b> org.eclipse.pde</b> features.</li>
+  <li><b>F2.4</b>&nbsp; In the <b>Managing The Site </b>section, 
+  press the Build All button.&nbsp; </li>
+  <li><b>F2.5</b> <font color="#FF0000">Verify 
+  that two feature JARs are created in the <b>features</b> folder of the site 
+  project, and 8 plug-in Update JARs have been created in the <b>plugins</b> 
+  folder.</font></li>
+</ul>
+
+<hr>
+<p>&nbsp;</p>
+</body>
+</html>

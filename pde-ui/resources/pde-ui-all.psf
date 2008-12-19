@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.team.cvs.core.cvsnature">
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ui/org.eclipse.pde.core,org.eclipse.pde.core"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/doc/org.eclipse.pde.doc.user,org.eclipse.pde.doc.user"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ds/org.eclipse.pde.ds.core,org.eclipse.pde.ds.core"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ds/org.eclipse.pde.ds.tests,org.eclipse.pde.ds.tests"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ds/org.eclipse.pde.ds.ui,org.eclipse.pde.ds.ui"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ua/org.eclipse.pde.ua.core,org.eclipse.pde.ua.core"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ua/org.eclipse.pde.ua.tests,org.eclipse.pde.ua.tests"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ua/org.eclipse.pde.ua.ui,org.eclipse.pde.ua.ui"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ui/org.eclipse.pde.junit.runtime,org.eclipse.pde.junit.runtime"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ui/org.eclipse.pde.runtime,org.eclipse.pde.runtime"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ui/org.eclipse.pde.ui,org.eclipse.pde.ui"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ui/org.eclipse.pde.ui.templates,org.eclipse.pde.ui.templates"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ui/org.eclipse.pde.ui.tests,org.eclipse.pde.ui.tests"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/ui/org.eclipse.ui.views.log,org.eclipse.ui.views.log"/>
+</provider>
+</psf>

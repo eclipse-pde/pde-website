@@ -39,6 +39,11 @@ The view contains three sections:
 (1) Project Links - Contains a tree viewer that models the Eclipse project, sub-projects and components; 
 (2) Useful Links - Contains useful Eclipse hyperlinks;
 (3) Search - Contains a Google search box to enter search queries.</li>
+			<li>
+			The following are the plug-in needed for the Eclipse Forum India tutorial:
+			<p><a href="eclipse_forum_india/org.eclipse.browser_1.0.0.jar">Starter Plug-in</a></p>
+			<p><a href="eclipse_forum_india/org.eclipse.browser.cheatsheets_2.0.0.jar">Cheat Sheets</a></p>
+			</li> 
 			</ul>
 		</div>		
 	</div>

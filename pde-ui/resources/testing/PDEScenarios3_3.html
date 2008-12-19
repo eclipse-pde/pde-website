@@ -1,0 +1,369 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+   <title>PDE Scenarios</title>
+</head>
+<body>
+
+<center>
+<h1>
+PDE Test Scenarios</h1></center>
+The following set of scenarios are designed to assist the Eclipse user community 
+explore and test the Plug-in Development Environment (PDE).
+<p>Note that the different scenarios are independent of each other and can be 
+executed in any sequence.</p>
+<p>The test plan is designed and edited so that it can be executed in a 
+reasonable amount of time.&nbsp; Emphasis is therefore placed on functionality 
+added during the 3.3 cycle.</p>
+<p>If you find a problem with a scenario step:</p>
+<ol>
+  <li>Open a Bugzilla defect against
+  the PDE/UI component after ensuring that no one else has already opened a bug 
+  report.</li>
+  <li>Include the build number (e.g. 3.3RC2 , 3.3RC3etc.). </li>
+  <li> <b>Prefix the Summary of the defect with the step number</b> (e.g. B1.1, 
+  C2.4)</li>
+</ol>
+
+<hr>
+<h2>
+Setup</h2>
+<ul>
+  <li>To be able to run the scenarios exactly as described below, you need <b>
+  Eclipse 3.3 RC1 (or later)</b> installed.</li>
+  <li>Two steps that need to be done before executing any of the scenarios.<ul>
+    <li>Launch Eclipse on a new workspace.</li>
+    <li>Dismiss the <b>Welcome Page</b> by clicking on the <b>Go to Workbench</b> 
+    icon.</li>
+  </ul>
+  </li>
+  <li>At the end of each scenario, it is recommended to delete all projects from 
+  your workspace so that one part does not interfere with the next.</li>
+</ul>
+
+<hr>
+<h2>
+Scenario A:&nbsp; End-to-End Scenarios</h2>
+<p>
+<i><b>If the number of letters in your first name is NOT a prime number, do part 
+A1.&nbsp; Otherwise, do part A2.</b></i></p>
+<p>
+<b><font size="4" color="#0000FF">A1.&nbsp; A Full Plug-in Development Cycle</font></b></p>
+<blockquote>
+  <ol>
+    <li>From the top level menu, select <b>Help &gt; Cheatsheets... &gt; Plug-in 
+    Development &gt; Creating an Eclipse Plug-in</b>.&nbsp; Press <b>OK</b>.</li>
+    <li>Go through this cheatsheet to explore all stages of the plug-in 
+    development cycle.</li>
+  </ol>
+</blockquote>
+<p>
+<b><font size="4" color="#0000FF">A2.&nbsp; Creating an Rich Client Application</font></b></p>
+<blockquote>
+  <ol>
+    <li>From the top level menu, select <b>Help &gt; Cheatsheets... &gt; Plug-in 
+    Development &gt; Creating a Rich Client Application</b>.&nbsp; Press <b>OK</b>.</li>
+    <li>Go through this cheatsheet to create a standalone, fully-branded rich 
+    client application.</li>
+  </ol>
+</blockquote>
+
+<hr>
+<h2>
+Scenario B:&nbsp; Search</h2>
+<p>
+<b><font size="4" color="#0000FF">B1.&nbsp; Classic Plug-in Search</font></b></p>
+<blockquote>
+  <ol>
+    <li>From the top level menu, select <b>Search &gt; Search... </b>to bring up 
+    the Search dialog.</li>
+    <li>Click on the <b>Plug-in Search</b> tab.&nbsp; Enter <b>*.debug.ui.*</b> 
+    as a search string.&nbsp; Leave all defaults as-is.&nbsp; Press the <b>
+    Search</b> button.</li>
+    <li>Verify that the Search view opens and that it contains 32 hits.</li>
+    <li>Double-click on the first hit to open the manifest editor of the <b>
+    org.eclipse.debug.ui</b> plug-in.</li>
+    <li>Verify that the editor opens to the plugin.xml source page and that the 
+    extension point ID is visible and correctly selected.&nbsp; Also verify that 
+    the arrow in the margin is on the correct line.</li>
+    <li>Using the <b>Down Arrow</b> in the Search view toolbar, navigate to the 
+    next hit.</li>
+    <li>Verify that the manifest editor for the <b>org.eclipse.ant.ui</b> 
+    plug-in opens with the extension hit visible and correctly selected.</li>
+    <li>Press the <b>Down Arrow</b> again.&nbsp; Verify that the selection moves 
+    to another hit within the same editor.&nbsp; Verify that a new editor does 
+    NOT open.</li>
+    <li>Close all manifest editors.</li>
+  </ol>
+</blockquote>
+<p>
+<b><font size="4" color="#0000FF">B2.&nbsp; Plug-in Search in Mixed Namespaces</font></b></p>
+<blockquote>
+  <ol>
+    <li>Bring up the New Plug-in Project creation wizard via <b>File &gt; New &gt; 
+    Project... &gt; Plug-in Project</b>.&nbsp; Press <b>Next</b>.</li>
+    <li>Enter <b>com.example.xyz</b> as the project name.&nbsp; Press <b>Next</b>.</li>
+    <li>Accept all defaults and press <b>Finish</b>.&nbsp; Answer <b>Yes</b> 
+    when prompted to switch to the Plug-in Development perspective.</li>
+    <li>On the <b>Extension Points</b> page of the plug-in manifest editor, 
+    press <b>Add...</b> </li>
+    <li>Enter <b>org.eclipse.pde.core.parsers</b> as the extension point ID.&nbsp; 
+    Enter <b>Parsers</b> as the extension point name.&nbsp; </li>
+    <li>Uncheck the checkbox to edit the extension point schema.&nbsp; Press <b>
+    Finish</b>.</li>
+    <li>Verify that the extension point was created.&nbsp; Save the file and 
+    close the editor.</li>
+    <li>Bring up the search dialog via <b>Search &gt; Search...</b> from the top 
+    level menu.</li>
+    <li>On the <b>Plug-in Search</b> tab, enter <b>org.eclipse.pde.core.*</b> as 
+    the search string.&nbsp; In the <b>Limit To</b> group, select <b>
+    Declarations</b>.&nbsp; Press the <b>Search</b> button.</li>
+    <li>Verify that the search view opens with 4 matches.</li>
+    <li>Double-click on the <b>org.eclipse.pde.core.parsers</b> search hit.&nbsp; 
+    Verify that it correctly locates the extension point on the plugin.xml 
+    source page of the <b>com.example.xyz</b> plug-in.</li>
+    <li>Double-click on the <b>org.eclipse.pde.source</b> search hit.&nbsp; 
+    Verify that the extension point declaration is correctly located on the 
+    plugin.xml source page of the <b>org.eclipse.pde.core</b> plug-in.</li>
+  </ol>
+</blockquote>
+<p>
+<b><font size="4" color="#0000FF">B3.&nbsp; PDE as a Java Search Participant</font></b></p>
+<blockquote>
+  <ol>
+    <li>Check out the <b>org.eclipse.pde.core</b> plug-in project from HEAD.</li>
+    <li>Right-click on the <b>org.eclipse.pde.core.plugin</b> package and select
+    <b>References &gt; Workspace</b> from the context menu..</li>
+    <li>Verify that you get a search hit in the MANIFEST.MF file of the plug-in.</li>
+    <li>Double-click on the search hit.&nbsp; Verify that the manifest editor 
+    opens on the <b>MANIFEST.MF </b>source page with the <b>
+    org.eclipse.pde.core.plugin</b> package highlighted in the <b>Export-Package</b> 
+    header.</li>
+    <li>Close the editor.</li>
+    <li>In the <b>Package Explorer</b> view, select <b>References &gt; Workspace</b> 
+    from the context menu of the <b>
+    org.eclipse.pde.internal.core.variables.TargetHomeDynamicVariableResolver</b>.</li>
+    <li>Verify that you get a search hit in the plugin.xml file of the plug-in.</li>
+    <li>Double-click on the search hit. Verify that <b>
+    TargetHomeDynamicVariableResolver</b> is highlighted in the <b>resolver</b> 
+    attribute of the <b>org.eclipse.core.variables.dynamicVariables</b> 
+    extension.</li>
+  </ol>
+</blockquote>
+
+<hr>
+<h2>
+Scenario C:&nbsp; PDE as a Refactoring Participant</h2>
+<p>
+<b><font size="4" color="#0000FF">C1. Renaming Types</font></b></p>
+<blockquote>
+  <ol>
+    <li>Bring up the New Plug-in Project creation wizard via <b>File &gt; New &gt; 
+    Project... &gt; Plug-in Project</b>.&nbsp; Press <b>Next</b>.</li>
+    <li>Enter <b>com.example.abc</b> as the project name.&nbsp; Press <b>Next</b>.</li>
+    <li>Accept all defaults.&nbsp; Press <b>Next</b>.</li>
+    <li>Choose the <b>Hello World</b> template.&nbsp; Press <b>Finish</b>.</li>
+    <li>In the <b>Package Explorer</b> view, select <b>Refactor &gt; Rename...</b> 
+    from the context menu of the <b>com.example.abc.Activator</b> type.</li>
+    <li>Enter <b>BundleActivator</b> as the new name and press <b>Finish</b>.</li>
+    <li>Turn to the MANIFEST.MF source tab of the plug-in editor and verify that 
+    there is no warning next to the <b>Bundle-Activator</b> header and that its 
+    value has been updated to reflect the new type name.</li>
+    <li>In the <b>Package Explorer</b> view, select <b>Refactor &gt; Rename...</b> 
+    from the context menu of the <b>com.example.abc.actions.SampleAction</b> 
+    type.</li>
+    <li>Enter <b>NewAction</b> as the new name and press <b>Finish</b>.</li>
+    <li>Turn to the <b>plugin.xml</b> source tab of the plug-in editor and 
+    verify that there is no warnings in the margin and that the <b>class</b> 
+    attribute on line 21 references the new type name.</li>
+  </ol>
+</blockquote>
+<p>
+<b><font size="4" color="#0000FF">C2. Renaming Packages and Subpackages</font></b></p>
+<blockquote>
+  <ol>
+    <li>Turn to the <b>Runtime</b> page of the manifest editor of the <b>
+    com.example.abc</b> plug-in.</li>
+    <li>In the <b>Exported Packages</b> section, press <b>Add...&nbsp; </b></li>
+    <li>Verify that the selection dialog shows two packages.&nbsp; Select them 
+    both and save the file.</li>
+    <li>In the <b>Package Explorer</b> view, select the <b>com.example.abc</b> 
+    package and select <b>Refactor &gt; Rename...</b> from the context menu.</li>
+    <li>In the Rename dialog, <b>check the Rename subpackages checkbox</b>. 
+    </li>
+    <li>Enter <b>com.example.abc.def </b>as the new package name.&nbsp; Press <b>
+    Finish</b>.</li>
+    <li>Verify that NO warnings appear on the MANIFEST.MF or the plugin.xml 
+    files.</li>
+    <li>Turn to the <b>MANIFEST.MF </b>source tab of the plug-in editor and 
+    verify that the<b> Bundle-Activator</b> and <b>Export-Package </b>headers 
+    are now referencing the new package name.</li>
+    <li>Turn to the <b>plugin.xml</b> source tab of the plug-in editor and 
+    verify that the <b>class</b> attribute on line 21 references the new package 
+    name.</li>
+  </ol>
+</blockquote>
+<p>
+<b><font size="4" color="#0000FF">C3. Renaming Plug-in ID</font></b></p>
+<blockquote>
+  <ol>
+    <li>Create the <b>com.example.xyz</b> project by repeating steps B2.1 - B2.3.</li>
+    <li>Turn to the <b>Dependencies</b> page of the manifest editor of the <b>
+    com.example.abc</b> plug-in.</li>
+    <li>In the <b>Required Plug-ins</b> section, press <b>Add...&nbsp; </b></li>
+    <li>Select the <b>com.example.xyz</b> plug-in.&nbsp; Press <b>
+    Finish</b> and save the file.</li>
+    <li>Open the <b>Plug-ins View</b>.</li>
+    <li>Right click on the <b>com.example.xyz</b> plug-in and select <b>Rename...</b>.
+    </li>
+    <li>In the Rename dialog, check the <b>Rename project to match the plug-in 
+    ID</b>.</li>
+    <li>Enter <b>com.example.mno</b> as the new plug-in ID.&nbsp; Press <b>
+    Finish</b>.</li>
+    <li>Verify that NO warnings appear on the MANIFEST.MF or the plugin.xml 
+    files.</li>
+    <li>Turn to the <b>Required Plug-ins</b> section of the<b>Dependencies</b> 
+    page of the plug-in editor of <b>com.examples.abc</b> and verify the dependency 
+    on <b>com.examples.xyz</b> is now <b>com.examples.mno</b>.</li>
+    <li>In the <b>Package Explorer</b> view, verify the project <b>com.examples.xyz</b>
+    has been renamed to <b>com.examples.mno</b>.
+  </ol>
+</blockquote>
+
+<hr>
+<p><font size="5"><b>Scenario D:&nbsp; Cool Wizards</b></font></p>
+<p><font size="4" color="#0000FF"><b>D1. Externalize Manifests Wizard</b></font></p>
+<blockquote>
+  <ol>
+    <li>Create a Hello World plug-in by repeating steps C1.1 - C1.4</li>
+    <li>Select the <b>com.example.abc</b> plug-in project and select <b>
+    Properties</b> from its context menu.</li>
+    <li>On the <b>Plug-in Development &gt; Plug-in Manifest Compiler</b> preference 
+    page, choose the <b>Use project settings</b> option.</li>
+    <li>Raise the severity level for <b>Usage of non-exteranlized strings</b> 
+    from IGNORE to ERROR.&nbsp; Press <b>OK</b>. </li>
+    <li>Answer Yes when prompted to rebuild the project.</li>
+    <li>Verify that the MANIFEST.MF file now has 2 errors and the plugin.xml has 
+    4 errors.</li>
+    <li>Right-click on the <b>com.example.abc</b> project and select <b>PDE 
+    Tools &gt; Externalize Strings...</b> from the context menu.</li>
+    <li>Verify that the<b> Bundle-Name</b> and <b>Bundle-Vendor</b> headers in 
+    the MANIFEST.MF file are flagged as non-extenalized.</li>
+    <li>Verify that there are four attributes in the plugin.xml that are flagged 
+    as non-externalized.</li>
+    <li>Accept all defaults and press <b>Finish</b>.</li>
+    <li>Verify that all errors have gone away.</li>
+    <li>Verify that a <b>plugin.properties</b> file was created at the root of 
+    the project containing six key-value pairs.</li>
+    <li>Verify that attributes/headers flagged in steps 8 and 9 now have keys 
+    that start with %</li>
+  </ol>
+</blockquote>
+<p><font size="4" color="#0000FF"><b>D2. Organize Manifests Wizard</b></font></p>
+<blockquote>
+  <ol>
+    <li>Check out the <b>org.eclipse.pde.ui </b>plug-in project from HEAD.</li>
+    <li>Open the manifest editor for the <b>org.eclipse.pde.ui </b>plug-in and 
+    go to the <b>Runtime</b> tab.</li>
+    <li>In the <b>Exported Packages</b> section, remove the <b>
+    org.eclipse.pde.ui.launcher</b> and <b>org.eclipse.pde.internal.ui.wizards.product</b> 
+    from the list.</li>
+    <li>Switch to the <b>plugin.xml</b> tab.&nbsp; On line 20, remove the <b>$nl/</b> 
+    prefix from the value for the <b>icon</b> attribute.&nbsp; Save the file.</li>
+    <li>Bring up the <b>Organize Manifests </b>wizard via <b>PDE Tools &gt; 
+    Organize Manifests...</b> from the context menu of the <b>org.eclipse.pde.ui
+    </b>plug-in project.</li>
+    <li>Keep all default options.&nbsp; In the <b>Internationalization</b> 
+    section, <b>check the first option</b>.&nbsp; Press <b>Finish</b>.</li>
+    <li>This should undo the damage done in steps 3 and 4.</li>
+    <li>Select <b>Compare With &gt; Latest from HEAD</b> from the context menu of 
+    the <b>org.eclipse.pde.ui </b>plug-in project.</li>
+    <li>Verify that there are no differences.</li>
+  </ol>
+</blockquote>
+
+<hr>
+<p><font size="5"><b>Scenario E: Target Definitions and Import Management</b></font></p>
+<p><font size="4" color="#0000FF"><b>E1. Loading the RCP Target Definition</b></font></p>
+<blockquote>
+  <ol>
+    <li>Open the Target Platform preference page via <b>Window &gt; Preferences... 
+    &gt; Plug-in Development&nbsp; &gt; Target Platform</b> from the top level menu.</li>
+    <li>From the <b>Pre-Defined Targets </b>section at the bottom, select the <b>
+    Base RCP (with source)</b> target.</li>
+    <li>Click on the <b>Target</b> link next to the combo box to view the makeup 
+    of the target definition in a new window.</li>
+    <li>Verify that the <b>Features</b> tab lists two features: <b>
+    org.eclipse.rcp</b> and <b>org.eclipse.rcp.source</b>.&nbsp; Close the <b>
+    Target Preview</b> window.</li>
+    <li>Press the <b>Load Target</b> button.&nbsp; Verify that only 27 plug-ins 
+    are now selected in the list of plug-ins above.&nbsp; (The count is 27 on 
+    Windows.&nbsp; Number may vary slightly on other platforms).</li>
+    <li>Press <b>OK</b> to apply the changes and dismiss the preferences dialog.</li>
+  </ol>
+</blockquote>
+<p><font size="4" color="#0000FF"><b>E</b></font><b><font size="4" color="#0000FF">2. 
+Import Management</font></b></p>
+<blockquote>
+  <ol>
+    <li>Repeat steps C1.1 - C1.4 to create a Hello World plug-in project.</li>
+    <li>Go to the <b>Dependencies</b> tab of the plug-in manifest editor and 
+    remove the two plug-ins listed in the <b>Required Plug-ins</b> section.</li>
+    <li>Save the file.&nbsp; Verify that you get compiler errors in the project.</li>
+    <li>Expand the collapsed <b>Automated Management of Dependencies </b>section 
+    and press the <b>Add...</b> button in said section.</li>
+    <li>Verify that it lists the plug-ins from E1.5 and not all 111 plug-ins.</li>
+    <li>Add all plug-ins from the selection dialog to the list and save the 
+    file.</li>
+    <li>Verify that the code in the plug-in project now compiles again even 
+    though there are no plug-ins listed in the <b>Required Plug-ins</b> section.</li>
+    <li>In the <b>Automated Management of Dependencies</b> section, click on the
+    <b>add dependencies</b> link.</li>
+    <li>Verify that the <b>Required Plug-ins</b> list is now re-populated with 
+    the <b>org.eclipse.ui </b>and <b>org.eclipse.core.runtime</b> plug-ins.&nbsp; 
+    No more and no less.</li>
+  </ol>
+</blockquote>
+<p><i><b>When you're done with this scenario, go back to the Target Platform 
+preference page.&nbsp; Select all plug-ins on that page and press OK.</b></i></p>
+
+<hr>
+<p><font size="5"><b>Scenario F:&nbsp; Running an OSGi Application</b></font></p>
+<p><font size="4" color="#0000FF"><b>F1. Create an OSGi Bundle</b></font></p>
+<blockquote>
+  <ol>
+    <li>Bring up the New Plug-in Project wizard via <b>File &gt; New &gt; Project... &gt; 
+    Plug-in Project</b>.&nbsp; Press <b>Next</b>.</li>
+    <li>Enter <b>com.example.bundle </b>as the project name.</li>
+    <li>In the <b>Target Platform</b> section, choose the <b>OSGi framework</b> 
+    option.&nbsp; Leave <b>Equinox</b> as the selection.&nbsp; Press <b>Next</b>.</li>
+    <li>Accept all defaults.&nbsp; Press <b>Next</b>.</li>
+    <li>Choose the <b>Hello OSGi Bundle</b> template.&nbsp; Press <b>Finish</b>.</li>
+    <li>Verify that the manifest editor opens but does <b>NOT</b> show the <b>
+    Extensions</b> and <b>Extension Points</b> tabs.</li>
+  </ol>
+</blockquote>
+<p><font size="4" color="#0000FF"><b>F</b></font><b><font size="4" color="#0000FF">2. 
+Run an OSGi bundle</font></b></p>
+<blockquote>
+  <ol>
+    <li>Select <b>Run As &gt; OSGi Framework</b> from the context menu of the <b>
+    com.example.bundle</b> project.</li>
+    <li>Verify that the Console view opens and that it contains an osgi&gt; prompt.</li>
+    <li>Verify that it says <b>Hello World!!</b> at the prompt</li>
+    <li>Type <b>stop com.example.bundle</b> at the osgi&gt; prompt to stop the com.example.bundle 
+    Bundle.</li>
+    <li>Verify that the message <b>Goodbye World!!</b> is printed to the 
+    console.</li>
+    <li>Type <b>bundle com.example.bundle</b> at the osgi&gt; prompt.</li>
+    <li>Verify that the STATUS of com.example.bundle is now listed as RESOLVED.</li>
+    <li>Type <b>exit</b> at the osgi&gt; prompt to terminate the launch.</li>
+  </ol>
+</blockquote>
+
+<hr>
+<p>&nbsp;</p>
+</body>
+</html>

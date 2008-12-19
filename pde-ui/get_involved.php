@@ -58,7 +58,7 @@
 			<li>Try to have reproducible steps.  An entry in the log file may not be enough. Some log entries are NOT bugs, and can be caused by incorrect workspace configuration, etc.</li>
 			<li>Bugzilla is not a forum. Do not ask questions on bugzilla.</li>
 			<li>New feature requests should be marked with a severity of ‘enhancement’.  Try to give a realistic severity to bugs, a bug with a straightforward workaround is not ‘critical’ or ‘blocker’.</li>
-			<ul>
+			</ul>
 			</p>
 			
 			<h4>Bug Lifecycle:</h4>
@@ -141,7 +141,24 @@
 		</div>
 	</div>
 	<div id="rightcolumn">
-		$commonside
+		<div class="sideitem">
+
+			<h6>Contents</h6>
+			<ul>
+			    <li><a href="#">Overview</a></li>
+				<li><a href="#communicate">Communication</a></li>
+				<li><a href="#filing_bugs">Creating Bug Reports</a></li>
+				<li><a href="#eclipse_setup">Setting Up Eclipse</a></li>
+				<li><a href="#contributing_fixes">Contributing Fixes</a></li>
+				<li><a href="#links">Additional Information</a></li>
+			</ul>
+		</div>
+		<div class="sideitem">
+			<h6>Related Links</h6>
+			<ul>
+				<li><a href="http://wiki.eclipse.org/index.php/PDE_UI">PDE UI Wiki</a></li>
+			</ul>
+		</div>
 	</div>
 </div>
 

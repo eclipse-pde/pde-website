@@ -18,56 +18,59 @@ ob_start();
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 		<div class="homeitem3col">
-			<h3>FAQ</h3>
-			<a name="faq"></a>
-			<p>Coming soon ...</p>
-		</div>
-		<div class="homeitem3col">
 			<h3>Plug-ins</h3>
 			<a name="plugins"></a>
 			<p>The PDE UI component is comprised of the following plugins:</p>
 			
-			 <ul>        
-          		<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde">org.eclipse.pde</a></li>
-          		<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.core">org.eclipse.pde.core</a></li>
-                <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.doc.user">org.eclipse.pde.doc.user</a></li>
-                <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.junit.runtime">org.eclipse.pde.junit.runtime</a></li>
-                <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.runtime">org.eclipse.pde.runtime</a></li>
-                <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.ui">org.eclipse.pde.ui</a></li>
-                <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.ui.templates">org.eclipse.pde.ui.templates</a></li>
-                <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.pde.ui.tests">org.eclipse.pde.ui.tests</a></li>
- 			</ul>
-
+			<p>We have <a href="http://wiki.eclipse.org/PSF">PSF</a> files for the <a href="pde-ui.basic.psf">basic plug-ins</a> and <a href="pde-ui-all.psf">all plug-ins</a> in PDE UI.  Note that in November of 2008 the PDE plug-ins were moved from the CVS root to the <pre>/pde</pre> folder.</p>
+			
+			<provider id="org.eclipse.team.cvs.core.cvsnature">
+			<p>The basic PDE UI plug-ins:</p>
+			<ul>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ui/org.eclipse.pde.ui">org.eclipse.pde.ui</a></li>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ui/org.eclipse.pde.core">org.eclipse.pde.core</a></li>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/doc/org.eclipse.pde.doc.user">org.eclipse.pde.doc.user</a></li>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ui/org.eclipse.pde.ui.tests">org.eclipse.pde.ui.tests</a></li>
+			</ul>
+			<p>User Assistance editors and tools:</p>
+			<ul>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ua/org.eclipse.pde.ua.core">org.eclipse.pde.ua.core</a></li>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ua/org.eclipse.pde.ua.tests">org.eclipse.pde.ua.tests</a></li>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ua/org.eclipse.pde.ua.ui">org.eclipse.pde.ua.ui</a></li>
+			</ul>
+			<p>Declarative Services editors and tools:</p>
+			<ul>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ds/org.eclipse.pde.ds.core">org.eclipse.pde.ds.core</a></li>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ds/org.eclipse.pde.ds.tests">org.eclipse.pde.ds.tests</a></li>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ds/org.eclipse.pde.ds.ui">org.eclipse.pde.ds.ui</a></li>
+			</ul>
+			<p>Additional PDE UI plug-ins:</p>
+			<ul>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ui/org.eclipse.pde.junit.runtime">org.eclipse.pde.junit.runtime</a> - For testing Eclipse plug-ins</li>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ui/org.eclipse.pde.runtime">org.eclipse.pde.runtime</a> - Provides information about the OSGi State</li>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ui/org.eclipse.pde.ui.templates">org.eclipse.pde.ui.templates</a> - Template support for new projects and extensions</li>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ui/org.eclipse.ui.views.log">org.eclipse.ui.views.log</a> - The standard Eclipse error log</li>
+			</ul>
+			
 			<p>The <em>org.eclipse.pde.ui.tests</em> plug-in requires the following plugins:</p>
 
 			<ul>        
           		<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.test.performance">org.eclipse.test.performance</a></li>
-                <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.test.performance.win32">org.eclipse.test.performance.win32</a></li>
- 			</ul>
-
-			<p>Use the following project set files to quickly import PDE UI related projects from CVS:</p>
-			<ul>        
-          		<li>Committers:  <a href="../project-set-files/pde-ui-extssh.psf">PDE UI project set file</a></li>
-                <li>Non-Committers:  <a href="../project-set-files/pde-ui-pserver.psf">PDE UI project set file</a></li>
+                <li><a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.test.performance.win32">org.eclipse.test.performance.win32</a> (Windows only)</li>
  			</ul>
 
 		</div>
 		<div class="homeitem3col">
-			<h3>Eclipse Forum India Downloads</h3>
-			<a name="patches"></a>
-			<p>The following are the plug-in needed for the Eclipse Forum tutorial:</p>
-			<p><a href="../patches/org.eclipse.browser_1.0.0.jar">Starter Plug-in</a><p>		 
-			<p><a href="../patches/org.eclipse.browser.cheatsheets_2.0.0.jar">Cheat Sheets</a><p>		 
-		</div>
-		<div class="homeitem3col">
-			<h3>Test Plans </h3>
-			<a name="documents"></a>
+			<h3>Test Plans</h3>
+			<a name="testing"></a>
 			<ul>
-			  <li><a href="../scenarios/PDEScenarios3_3.html">3.3 Test Plan</a></li>
-		      <li><a href="../scenarios/PDEScenarios3_2.html">3.2 Test Plan</a></li>
-		      <li><a href="../scenarios/PDEScenarios3_1.html">3.1 Test Plan</a></li>
-		      <li><a href="../scenarios/PDEScenarios3_0.html">3.0 Test Plan</a></li>
-		      <li><a href="../scenarios/PDEScenarios.html">2.1 Test Plan     </a></li>
+			  <li><a href="http://wiki.eclipse.org/PDE/UI/TestAreas">PDE Functional Testing Areas</a></li>
+			  <li><a href="http://wiki.eclipse.org/PDE/UI/TestPlan_3.4">3.4/3.5 Test Plan</a></li>
+			  <li><a href="testing/PDEScenarios3_3.html">3.3 Test Plan</a></li>
+		      <li><a href="testing/PDEScenarios3_2.html">3.2 Test Plan</a></li>
+		      <li><a href="testing/PDEScenarios3_1.html">3.1 Test Plan</a></li>
+		      <li><a href="testing/PDEScenarios3_0.html">3.0 Test Plan</a></li>
+		      <li><a href="testing/PDEScenarios.html">2.1 Test Plan</a></li>
 		  </ul>
 	  </div>
 		<div class="homeitem3col">
@@ -109,12 +112,10 @@ ob_start();
 			<h6>Quick Links</h6>
 			<ul>
 			    <li><a href="http://www.eclipse.org/pde/pde-ui/">Home</a></li>
-				<li><a href="#faq">FAQ</a></li>
 				<li><a href="#plugins">Plug-ins</a></li>
-				<li><a href="#documents">Documents</a></li>
+				<li><a href="#testing">Test Plans</a></li>
 				<li><a href="#bugs">Bugs</a></li>
 				<li><a href="#mail">Mailing Lists</a></li>		
-				<li><a href="#involved">Get Involved!</a></li>
 			</ul>
 		</div>
 		<div class="sideitem">
