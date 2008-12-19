@@ -50,17 +50,21 @@ The view contains three sections:
 
 	<div id="rightcolumn">
 		<div class="sideitem">
-
-			<h6>Quick Links</h6>
+		<h6>Contents</h6>
 			<ul>
-			    <li><a href="http://www.eclipse.org/pde/pde-ui/">Home</a></li>
 				<li><a href="#articles">Articles</a></li>
-				<li><a href="#examples">Examples</a></li>
+				<li><a href="#examples">Examples</a></li>		
 			</ul>
 		</div>
 		<div class="sideitem">
-			<h6>Related Links</h6>
+		<h6>Quick Links</h6>
 			<ul>
+			    <li><a href="http://www.eclipse.org/pde/pde-ui">Home</a></li>
+				<li><a href="resources/user.php">Articles and Examples</a></li>
+				<li><a href="resources/dev.php">Development Resources</a></li>				
+				<li><a href="dev_plans/r3_5/plan.php">3.5 Dev Plan</a></li>
+				<li><a href="committers/committers.php">Meet the Team</a></li>
+				<li><a href="get_involved.php">Get Involved!</a></li>
 				<li><a href="http://wiki.eclipse.org/index.php/PDE_UI">PDE UI Wiki</a></li>
 			</ul>
 		</div>

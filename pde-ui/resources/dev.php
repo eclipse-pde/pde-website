@@ -20,12 +20,16 @@ ob_start();
 		<div class="homeitem3col">
 			<h3>Plug-ins</h3>
 			<a name="plugins"></a>
+			<p>We have <a href="http://wiki.eclipse.org/PSF">Team Project Set</a> files for the <a href="pde-ui.basic.psf">basic plug-ins</a> and <a href="pde-ui-all.psf">all plug-ins</a> in PDE UI.  You can use them to quickly download the Use team project set files (  Note that in November of 2008 the PDE plug-ins were moved from the CVS root to the <em>/pde</em> folder.</p>
+			
 			<p>The PDE UI component is comprised of the following plugins:</p>
 			
-			<p>We have <a href="http://wiki.eclipse.org/PSF">PSF</a> files for the <a href="pde-ui.basic.psf">basic plug-ins</a> and <a href="pde-ui-all.psf">all plug-ins</a> in PDE UI.  Note that in November of 2008 the PDE plug-ins were moved from the CVS root to the <pre>/pde</pre> folder.</p>
-			
 			<provider id="org.eclipse.team.cvs.core.cvsnature">
-			<p>The basic PDE UI plug-ins:</p>
+			<p>Releng plug-in (contains project set files):</p>
+			<ul>
+				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/org.eclipse.pde.releng">org.eclipse.pde.releng</a></li>
+			</ul>
+			<p>Basic PDE UI plug-ins:</p>
 			<ul>
 				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ui/org.eclipse.pde.ui">org.eclipse.pde.ui</a></li>
 				<li><a href="http://dev.eclipse.org/viewcvs/index.cgi/pde/ui/org.eclipse.pde.core">org.eclipse.pde.core</a></li>
@@ -99,7 +103,8 @@ ob_start();
 			<a name="involved"></a>
 			<h3>Get Involved!</h3>
 		  <p>If you are interested in participating in the development of the
-			PDE UI component, check out the developer's mailing list: <a
+			PDE UI component, check out our <a href="get_involved.php">Get Involved</a> page and then let us know using
+			the developer's mailing list: <a
 				href="http://dev.eclipse.org/mailman/listinfo/pde-ui-dev">pde-ui-dev@eclipse.org</a>.
 			Chat with people there about your problems and interests, and find
 		  out what you can do to help.</p>
@@ -108,10 +113,8 @@ ob_start();
 
 	<div id="rightcolumn">
 		<div class="sideitem">
-
-			<h6>Quick Links</h6>
+		<h6>Contents</h6>
 			<ul>
-			    <li><a href="http://www.eclipse.org/pde/pde-ui/">Home</a></li>
 				<li><a href="#plugins">Plug-ins</a></li>
 				<li><a href="#testing">Test Plans</a></li>
 				<li><a href="#bugs">Bugs</a></li>
@@ -119,12 +122,19 @@ ob_start();
 			</ul>
 		</div>
 		<div class="sideitem">
-			<h6>Related Links</h6>
+		<h6>Quick Links</h6>
 			<ul>
+			    <li><a href="http://www.eclipse.org/pde/pde-ui">Home</a></li>
+				<li><a href="resources/user.php">Articles and Examples</a></li>
+				<li><a href="resources/dev.php">Development Resources</a></li>				
+				<li><a href="dev_plans/r3_5/plan.php">3.5 Dev Plan</a></li>
+				<li><a href="committers/committers.php">Meet the Team</a></li>
+				<li><a href="get_involved.php">Get Involved!</a></li>
 				<li><a href="http://wiki.eclipse.org/index.php/PDE_UI">PDE UI Wiki</a></li>
 			</ul>
 		</div>
 	</div>
+
 <?php
 	$html = ob_get_contents();
 	ob_end_clean();

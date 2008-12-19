@@ -17,12 +17,32 @@ ob_start();
 ?>
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
+		
+				<div class="homeitem3col">
+			<a name="happening"></a>
+			<h3>What&#8217;s Happening?</h3>
+			
+			<p>Check out our <a href="dev_plans/r3_5/plan.php">3.5 Development Plan</a></p>
+			
+			<p>We have a new <a href="get_involved.php">Get Involved</a> page.  PDE loves contributors!
+
+		</div>
+	  <div class="homeitem3col">
+			<a name="team"></a>
+			<h3>PDE Information</h3>
+	      <p>Visit the <a href="committers/committers.php">Committers</a> page for a list of committers and active contributors on the PDE UI component.</p>
+		  <p>View some of the PDE <a href="resources/user.php">articles and examples</a>.
+		  <p>Check out the <a href="resources/dev.php">development resources</a> page for more detailed information on the PDE UI plug-ins and our development process.</p>
+		  <p>Interested in <a href="get_involved.php">getting involved</a> in the PDE community?  There are many ways you can help improve the quality of the PDE tools.</p>
+		    
+	  </div>	
+		
 	  <div class="homeitem3col">
 			<a name="about"></a>
 			<h3>About the PDE UI Component</h3>
 			<p>The PDE UI component provides a comprehensive set of tools to create, develop, test, debug and deploy Eclipse   plug-ins, fragments, features, update sites and RCP products. </p>
 			<p> PDE UI also provides comprehensive OSGi tooling, which makes it an ideal environment   for component programming, not just Eclipse plug-in development.</p>
-			<p>Some of the PDE UI tools include:</p>
+			<p>Here is a small list of what PDE UI provides to the Eclipse SDK:</p>
 			<ul>
 				<li>Form-Based Manifest Editors - multi-page editors that centrally manage all manifest files of a plug-in or feature. </li>
 				<li>RCP Tools - wizards and a form-based editor that allow you to define, brand, test and export products to multiple platforms. </li>
@@ -38,43 +58,19 @@ ob_start();
 				<li>Declarative Services Tools - Editors and validation for OSGi declarative services.</li>
 			 </ul>
 	  </div>
-		<div class="homeitem3col">
-			<a name="happening"></a>
-			<h3>What&#8217;s Happening?</h3>
-			
-			<p>Check out our <a href="dev_plans/r3_5/plan.php">3.5 Development Plan</a></p>
-			
-			<p>We have a new <a href="get_involved.php">Get Involved</a> page.  PDE loves contributors!
-
-
-		</div>
-	  <div class="homeitem3col">
-			<a name="team"></a>
-			<h3>More PDE Information</h3>
-	      <p>Visit the <a href="committers/committers.php">Committers</a> page for a list of committers and active contributors on the PDE UI component.</p>
-		  <p>View some of the PDE <a href="resources/user.php">articles and examples</a>.
-		  <p>Check out the <a href="resources/dev.php">development resources</a> page for more detailed information on the PDE UI plug-ins and our development process.</p>
-		  <p>Interested in <a href="get_involved.php">getting involved</a> in the PDE community?  There are many ways you can help improve the quality of the PDE tools.</p>
-		  
-		  
-	  </div>		
+	
    </div>	
    
    	<div id="rightcolumn">
 		<div class="sideitem">
-
 			<h6>Quick Links</h6>
 			<ul>
-			    <li><a href="http://www.eclipse.org/pde/pde-ui/">Home</a></li>
-				<li><a href="resources/user.php">Articles</a></li>
+			    <li><a href="http://www.eclipse.org/pde">PDE Home Page</a></li>
+				<li><a href="resources/user.php">Articles and Examples</a></li>
 				<li><a href="resources/dev.php">Development Resources</a></li>				
 				<li><a href="dev_plans/r3_5/plan.php">3.5 Dev Plan</a></li>
 				<li><a href="committers/committers.php">Meet the Team</a></li>
-			</ul>
-		</div>
-		<div class="sideitem">
-			<h6>Related Links</h6>
-			<ul>
+				<li><a href="get_involved.php">Get Involved!</a></li>
 				<li><a href="http://wiki.eclipse.org/index.php/PDE_UI">PDE UI Wiki</a></li>
 			</ul>
 		</div>
