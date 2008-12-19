@@ -38,9 +38,10 @@ ob_start();
 		<div class="homeitem3col">
 		  <h3>PDE Components</h3>
 			<p>
-				The PDE subproject is broken down into two components. Each component operates 
-				like a project unto its own, with its own set of committers, bug categories 
-				and mailing lists.
+				The PDE subproject is broken down into three main components, Build, UI and API Tooling.  Each of
+				these components operate like a project unto its own, with its own set of committers, bug categories 
+				and mailing lists.  There are two additional components in PDE, Doc which handles the help documentation 
+				and Incubator which develops non-SDK features.
 			</p>
 			<table width="100%" border="0">
 			<tr> 
@@ -48,18 +49,33 @@ ob_start();
 				<td width="82%"><b>Description</b></td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-build">Build</a></td>
-				<td width="82%">PDE Build</td>
+				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-build">PDE Build</a></td>
+				<td width="82%">Ant based tools and scripts to automate build processes</td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-ui">UI</a></td>
-				<td width="82%">PDE User Interface</td>
+				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-ui">PDE UI</a></td>
+				<td width="82%">Models, builders, editors and more to faciliate plug-in development in the Eclipse IDE.</td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-api-tools">API Tools</a></td>
-				<td width="82%">PDE API Tools</td>
+				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-api-tools">PDE API Tools</a></td>
+				<td width="82%">Eclipse IDE and build process integrated tooling to maintain API</td>
 			</tr>
+			<tr> 
+				<td width="20%" valign="top"><a href="http://wiki.eclipse.org/PDE/Incubator">PDE Incubator</a></td>
+				<td width="82%">Development of new tools that are not ready to be added to the Eclipse SDK</td>
+			</tr>
+			<tr> 
+				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-api-tools">PDE API Tools</a></td>
+				<td width="82%">Help documentation for PDE, shared by the other components.</td>
+			</tr>
+			
 			</table>
+		</div>
+		<div class="homeitem3col">
+		  <h3>Getting Involved</h3>
+			<p>
+				The development of PDE is driven by the community in an open and transparent manner.  By getting involved with PDE, you can help influence the future of the platform improve the quality of Eclipse.  There are many ways to assist, filing bug reports, contributing fixes, producing new features, participating in milestone testing, etc.  Each PDE component has its own bug triage rules, coding guidelines, and testing format, however a good place to start is the PDE UI <a href="pde-ui/get_involved.php">Getting Involved</a> page.
+			</p>
 		</div>
 	</div>
 
