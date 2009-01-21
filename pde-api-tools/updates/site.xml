@@ -3,40 +3,40 @@
    <description url="http://www.eclipse.org/pde/pde-api-tools/updates">
       PDE API Tools Update Site
    </description>
-   <feature url="features/com.api.tools.buildnotes.feature_0.1.0.200901201445.jar" id="com.api.tools.buildnotes.feature" version="0.1.0.200901201445">
+   <feature url="features/com.api.tools.buildnotes.feature_0.1.0.200901211444.jar" id="com.api.tools.buildnotes.feature" version="0.1.0.200901211444">
       <category name="build_notes_tools"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.cdcfoundation10_feature_1.0.0.200901201445.jar" id="org.eclipse.pde.api.tools.ee.cdcfoundation10_feature" version="1.0.0.200901201445">
+   <feature url="features/org.eclipse.pde.api.tools.ee.cdcfoundation10_feature_1.0.0.200901211444.jar" id="org.eclipse.pde.api.tools.ee.cdcfoundation10_feature" version="1.0.0.200901211444">
       <category name="pde_api_tools_metadatas"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.cdcfoundation11_feature_1.0.0.200901201445.jar" id="org.eclipse.pde.api.tools.ee.cdcfoundation11_feature" version="1.0.0.200901201445">
+   <feature url="features/org.eclipse.pde.api.tools.ee.cdcfoundation11_feature_1.0.0.200901211444.jar" id="org.eclipse.pde.api.tools.ee.cdcfoundation11_feature" version="1.0.0.200901211444">
       <category name="pde_api_tools_metadatas"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.j2se12_feature_1.0.0.200901201445.jar" id="org.eclipse.pde.api.tools.ee.j2se12_feature" version="1.0.0.200901201445">
+   <feature url="features/org.eclipse.pde.api.tools.ee.j2se12_feature_1.0.0.200901211444.jar" id="org.eclipse.pde.api.tools.ee.j2se12_feature" version="1.0.0.200901211444">
       <category name="pde_api_tools_metadatas"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.j2se13_feature_1.0.0.200901201445.jar" id="org.eclipse.pde.api.tools.ee.j2se13_feature" version="1.0.0.200901201445">
+   <feature url="features/org.eclipse.pde.api.tools.ee.j2se13_feature_1.0.0.200901211444.jar" id="org.eclipse.pde.api.tools.ee.j2se13_feature" version="1.0.0.200901211444">
       <category name="pde_api_tools_metadatas"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.j2se14_feature_1.0.0.200901201445.jar" id="org.eclipse.pde.api.tools.ee.j2se14_feature" version="1.0.0.200901201445">
+   <feature url="features/org.eclipse.pde.api.tools.ee.j2se14_feature_1.0.0.200901211444.jar" id="org.eclipse.pde.api.tools.ee.j2se14_feature" version="1.0.0.200901211444">
       <category name="pde_api_tools_metadatas"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.j2se15_feature_1.0.0.200901201445.jar" id="org.eclipse.pde.api.tools.ee.j2se15_feature" version="1.0.0.200901201445">
+   <feature url="features/org.eclipse.pde.api.tools.ee.j2se15_feature_1.0.0.200901211444.jar" id="org.eclipse.pde.api.tools.ee.j2se15_feature" version="1.0.0.200901211444">
       <category name="pde_api_tools_metadatas"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.javase16_feature_1.0.0.200901201445.jar" id="org.eclipse.pde.api.tools.ee.javase16_feature" version="1.0.0.200901201445">
+   <feature url="features/org.eclipse.pde.api.tools.ee.javase16_feature_1.0.0.200901211444.jar" id="org.eclipse.pde.api.tools.ee.javase16_feature" version="1.0.0.200901211444">
       <category name="pde_api_tools_metadatas"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.jre11_feature_1.0.0.200901201445.jar" id="org.eclipse.pde.api.tools.ee.jre11_feature" version="1.0.0.200901201445">
+   <feature url="features/org.eclipse.pde.api.tools.ee.jre11_feature_1.0.0.200901211444.jar" id="org.eclipse.pde.api.tools.ee.jre11_feature" version="1.0.0.200901211444">
       <category name="pde_api_tools_metadatas"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.osgiminimum10_feature_1.0.0.200901201445.jar" id="org.eclipse.pde.api.tools.ee.osgiminimum10_feature" version="1.0.0.200901201445">
+   <feature url="features/org.eclipse.pde.api.tools.ee.osgiminimum10_feature_1.0.0.200901211444.jar" id="org.eclipse.pde.api.tools.ee.osgiminimum10_feature" version="1.0.0.200901211444">
       <category name="pde_api_tools_metadatas"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.osgiminimum11_feature_1.0.0.200901201445.jar" id="org.eclipse.pde.api.tools.ee.osgiminimum11_feature" version="1.0.0.200901201445">
+   <feature url="features/org.eclipse.pde.api.tools.ee.osgiminimum11_feature_1.0.0.200901211444.jar" id="org.eclipse.pde.api.tools.ee.osgiminimum11_feature" version="1.0.0.200901211444">
       <category name="pde_api_tools_metadatas"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.osgiminimum12_feature_1.0.0.200901201445.jar" id="org.eclipse.pde.api.tools.ee.osgiminimum12_feature" version="1.0.0.200901201445">
+   <feature url="features/org.eclipse.pde.api.tools.ee.osgiminimum12_feature_1.0.0.200901211444.jar" id="org.eclipse.pde.api.tools.ee.osgiminimum12_feature" version="1.0.0.200901211444">
       <category name="pde_api_tools_metadatas"/>
    </feature>
    <category-def name="build_notes_tools" label="Build Notes Tools">
