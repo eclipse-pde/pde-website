@@ -2,7 +2,7 @@
 
 	#*****************************************************************************
 	#
-	# Copyright (c) 2007 IBM Corporation and others.
+	# Copyright (c) 2009 IBM Corporation and others.
  	# All rights reserved. This program and the accompanying materials
  	# are made available under the terms of the Eclipse Public License v1.0
  	# which accompanies this distribution, and is available at
@@ -33,7 +33,7 @@
 	}
 
 	# Defined project nav bar links
-	$Nav->addCustomNav( "About API Tools", "/projects/project_summary.php?projectid=pde.apitools", "", 1);
+	$Nav->addCustomNav("About API Tools", "/projects/project_summary.php?projectid=pde.apitools", "", 1);
 	$Nav->addCustomNav("API Tools Home", 	"/pde/pde-api-tools/index.php",			"_self", 1);
 	$Nav->addCustomNav("PDE Home", "/pde/", "_self", 1);
 	
