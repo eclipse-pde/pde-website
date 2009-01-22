@@ -27,6 +27,7 @@
 			<li><a href="http://wiki.eclipse.org/Api_Tooling">WIKI</a></li>
 			<li><a href="http://wiki.eclipse.org/PDE/API_Tools/User_Guide">API Tools User Guide</a></li>
 			<li><a href="/pde/pde-api-tools/updates">Update Site</a></li>
+			<li><a href="/pde/pde-api-tools/about.php">About This Content</a></li>
 		</ul>
 	</div> 
 EOHTML
