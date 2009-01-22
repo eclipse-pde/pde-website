@@ -20,7 +20,7 @@
 	# Author: 		API Tools Team
 	# Date:			August 27, 2008
 	#
-	# Description: Main page for the API Tools team website
+	# Description: Main page for the API Tools team web site
 	#
 	#
 	#****************************************************************************
