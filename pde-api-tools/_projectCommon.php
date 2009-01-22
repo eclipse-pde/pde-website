@@ -35,7 +35,10 @@
 	# Defined project nav bar links
 	$Nav->addCustomNav("About API Tools", "/projects/project_summary.php?projectid=pde.apitools", "", 1);
 	$Nav->addNavSeparator("API Tools Home", "/pde/pde-api-tools/index.php");
+	$Nav->addCustomNav("Milestone Plans", "http://wiki.eclipse.org/ApiTools_Milestones", "", 1);
 	$Nav->addNavSeparator("PDE Home", "/pde/");
+	$Nav->addCustomNav("PDE Build", "/pde/pde-build/", "", 1);
+	$Nav->addCustomNav("PDE Build", "/pde/pde-ui/", "", 1);
 	
 
 ?>
