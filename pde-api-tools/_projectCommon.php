@@ -34,8 +34,8 @@
 
 	# Defined project nav bar links
 	$Nav->addCustomNav("About API Tools", "/projects/project_summary.php?projectid=pde.apitools", "", 1);
-	$Nav->addCustomNav("API Tools Home", 	"/pde/pde-api-tools/index.php",			"", 1);
-	$Nav->addCustomNav("PDE Home", "/pde/", "", 1);
+	$Nav->addNavSeparator("API Tools Home", "/pde/pde-api-tools/index.php");
+	$Nav->addNavSeparator("PDE Home", "/pde/");
 	
 
 ?>
