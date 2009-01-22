@@ -38,7 +38,6 @@
 	$Nav->addCustomNav("Milestone Plans", "http://wiki.eclipse.org/ApiTools_Milestones", "", 1);
 	$Nav->addNavSeparator("PDE Home", "/pde/");
 	$Nav->addCustomNav("PDE Build", "/pde/pde-build/", "", 1);
-	$Nav->addCustomNav("PDE Build", "/pde/pde-ui/", "", 1);
-	
-
+	$Nav->addCustomNav("PDE Incubator", "http://wiki.eclipse.org/PDE/Incubator", "", 1);
+	$Nav->addCustomNav("PDE UI", "/pde/pde-ui/", "", 1);
 ?>
