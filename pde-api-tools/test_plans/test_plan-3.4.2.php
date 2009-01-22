@@ -88,12 +88,6 @@
 			    <td><div align="center">&nbsp;</div></td>
 			    <td><div align="center"><img src="../images/ok.gif" width="10" height="10"></div></td>
 			  </tr>
-			  <tr> 
-			    <td><a href="#SYSTEMLIBRARY">Invalid System Library References</a></td>
-			    <td><div align="center"><img src="../images/ok.gif" width="10" height="10"></div></td>
-				<td><div align="center">&nbsp;</div></td>
-				<td><div align="center">&nbsp;</div></td>
-			  </tr>
 			   <tr> 
 			    <td><a href="#TESTSUITE">Run The Test Suite</a></td>
 			    <td><div align="center"><img src="../images/ok.gif" width="10" height="10"></div></td>
@@ -303,12 +297,6 @@
 							<li> Use the link to configure workspace settings</li>
 						</ul>
 					</li>
-				</ol>
-				<p><a href="#TOP">Back to top</a><br><hr></p>
-			<a name="SYSTEMLIBRARY"></a>
-			<h4>Invalid System Library References</h4>
-				<ol>
-					<li>Change EE to 1.4 (or prior), set build-path JRE to be 1.5 or greater, and access types / methods / fields from the build path library</li>
 				</ol>
 				<p><a href="#TOP">Back to top</a><br><hr></p>
 			<a name="TESTSUITE"></a>
