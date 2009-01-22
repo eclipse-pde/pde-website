@@ -38,7 +38,7 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<div class="homeitem3col">
-		  <h3>Introduction to API Tools</h3>
+		  <h2><b>Introduction to API Tools</b></h2>
 		  	<p>  API tooling will assist developers in API maintenance by reporting API defects such as binary incompatibilities, incorrect plug-in version numbers, missing or incorrect @since tags, and usage of non-API code between plug-ins. 
 			  	The tooling will be integrated in the Eclipse SDK and will be used in the automated build process. 
 			  	<br>
@@ -55,12 +55,12 @@
 			</p>
 	    </div>
 		<div class="homeitem3col">
-		  <h3>Current Development</h3>
+		  <h2><b>Current Development</b></h2>
 		  	<p><a href="./dev_plans/r3_5/plan.php">API Tools 3.5 Plan</a></p>
 		  	<p><a href="./coverage/index.php">Code coverage results</a></p>
 	    </div>	    
 		<div class="homeitem3col">
-		  <h3>Get involved!</h3>
+		  <h2><b>Get involved!</b></h2>
 		    <p>
 		    	If you are interested in participating in the development of the API Tools component, 
 		    	check out the developer's mailing list: <a href="http://dev.eclipse.org/mailman/listinfo/pde-ui-build-dev">pde-dev@eclipse.org</a>.

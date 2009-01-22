@@ -31,13 +31,13 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<div class="homeitem3col">
-			<h3>Testers</h3>
+			<h2><b>Testers</b></h2>
 			<p>Committers: Darin Wright, Michael Rennie, Olivier Thomann</p>
 			<p>Community: Anyone who wants to help</p>
 		</div>			
 		<div class="homeitem3col">
 			<a name="TOP"></a>
-			<h3>Test Grid</h3>
+			<h2><b>Test Grid</b></h2>
 			<div align="center">
 			<table width="80%" border="1">
 			  <tr> 
@@ -104,7 +104,7 @@
 			</div>
 		</div>
 		<div class="homeitem3col">
-			<h3>Feature Testing</h3>
+			<h2><b>Feature Testing</b></h2>
 			<a name="APISETUP"></a>
 			<h4>API Tools Setup</h4>
 				<ol>

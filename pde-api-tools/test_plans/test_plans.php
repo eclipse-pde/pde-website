@@ -40,13 +40,13 @@
 		<p>This page contains all of test plans used by the API tools team during a given test pass. The test plan used
 		for each test pass is available in its respective section.</p>		
 		<div class="homeitem3col">
-			<h3>3.5 Test Plans</h3>
+			<h2><b>3.5 Test Plans</b></h2>
 			<a name="3-5_testing"></a>
 			<ul>
 				<li><a href="/pde/pde-api-tools/test_plans/test_plan-3.5M4.php">3.5M4</a></li>
 				<li><a href="/pde/pde-api-tools/test_plans/test_plan-3.5M2.php">3.5M2</a></li>
 			</ul>
-			<h3>3.4.x Test Plans</h3>
+			<h2><b>3.4.x Test Plans</b></h2>
 			<a name="3-4-x_testing"></a>
 			<ul>
 				<li><a href="/pde/pde-api-tools/test_plans/test_plan-3.4.2.php">3.4.2</a></li>
