@@ -68,9 +68,12 @@
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='1'>
+        <instructions size='2'>
           <instruction key='manifest'>
             Bundle-ManifestVersion: 2&#xA;Fragment-Host: org.eclipse.pde.api.tools;bundle-version=&quot;1.0.100&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.0.200901221955&#xA;Bundle-SymbolicName: org.eclipse.pde.api.tools.ee.jre11&#xA;Bundle-Localization: fragmentjre11&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-BundleShape: dir&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
@@ -215,9 +218,12 @@
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='1'>
+        <instructions size='2'>
           <instruction key='manifest'>
             Bundle-ManifestVersion: 2&#xA;Fragment-Host: org.eclipse.pde.api.tools;bundle-version=&quot;1.0.100&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.0.200901221955&#xA;Bundle-SymbolicName: org.eclipse.pde.api.tools.ee.j2se13&#xA;Bundle-Localization: fragmentj2se13&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-BundleShape: dir&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
@@ -245,9 +251,12 @@
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='1'>
+        <instructions size='2'>
           <instruction key='manifest'>
             Bundle-ManifestVersion: 2&#xA;Fragment-Host: org.eclipse.pde.api.tools;bundle-version=&quot;1.0.100&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.0.200901221955&#xA;Bundle-SymbolicName: org.eclipse.pde.api.tools.ee.cdcfoundation10&#xA;Bundle-Localization: fragmentcdcfoundation10&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-BundleShape: dir&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
@@ -383,9 +392,12 @@
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='1'>
+        <instructions size='2'>
           <instruction key='manifest'>
             Bundle-ManifestVersion: 2&#xA;Fragment-Host: org.eclipse.pde.api.tools;bundle-version=&quot;1.0.100&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.0.200901221955&#xA;Bundle-SymbolicName: org.eclipse.pde.api.tools.ee.osgiminimum10&#xA;Bundle-Localization: fragmentosgiminimum10&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-BundleShape: dir&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
@@ -499,9 +511,12 @@
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='1'>
+        <instructions size='2'>
           <instruction key='manifest'>
             Bundle-ManifestVersion: 2&#xA;Fragment-Host: org.eclipse.pde.api.tools;bundle-version=&quot;1.0.100&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.0.200901221955&#xA;Bundle-SymbolicName: org.eclipse.pde.api.tools.ee.j2se15&#xA;Bundle-Localization: fragmentj2se15&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-BundleShape: dir&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
@@ -695,9 +710,12 @@
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='1'>
+        <instructions size='2'>
           <instruction key='manifest'>
             Bundle-ManifestVersion: 2&#xA;Fragment-Host: org.eclipse.pde.api.tools;bundle-version=&quot;1.0.100&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.0.200901221955&#xA;Bundle-SymbolicName: org.eclipse.pde.api.tools.ee.osgiminimum12&#xA;Bundle-Localization: fragmentosgiminimum12&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-BundleShape: dir&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
@@ -1109,9 +1127,12 @@
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='1'>
+        <instructions size='2'>
           <instruction key='manifest'>
             Bundle-ManifestVersion: 2&#xA;Fragment-Host: org.eclipse.pde.api.tools;bundle-version=&quot;1.0.100&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.0.200901221955&#xA;Bundle-SymbolicName: org.eclipse.pde.api.tools.ee.j2se12&#xA;Bundle-Localization: fragmentj2se12&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-BundleShape: dir&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
@@ -1318,9 +1339,12 @@
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='1'>
+        <instructions size='2'>
           <instruction key='manifest'>
             Bundle-ManifestVersion: 2&#xA;Fragment-Host: org.eclipse.pde.api.tools;bundle-version=&quot;1.0.100&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.0.200901221955&#xA;Bundle-SymbolicName: org.eclipse.pde.api.tools.ee.cdcfoundation11&#xA;Bundle-Localization: fragmentcdcfoundation11&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-BundleShape: dir&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
@@ -1349,7 +1373,6 @@
             uninstallBundle(bundle:${artifact})
           </instruction>
           <instruction key='unconfigure'>
-
           </instruction>
           <instruction key='configure'>
             setStartLevel(startLevel:4);
@@ -1374,7 +1397,6 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='install'>
-
           </instruction>
         </instructions>
       </touchpointData>
@@ -1467,9 +1489,12 @@
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='1'>
+        <instructions size='2'>
           <instruction key='manifest'>
             Bundle-ManifestVersion: 2&#xA;Fragment-Host: org.eclipse.pde.api.tools;bundle-version=&quot;1.0.100&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.0.200901221955&#xA;Bundle-SymbolicName: org.eclipse.pde.api.tools.ee.osgiminimum11&#xA;Bundle-Localization: fragmentosgiminimum11&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-BundleShape: dir&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
@@ -1497,9 +1522,12 @@
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='1'>
+        <instructions size='2'>
           <instruction key='manifest'>
             Bundle-ManifestVersion: 2&#xA;Fragment-Host: org.eclipse.pde.api.tools;bundle-version=&quot;1.0.100&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.0.200901221955&#xA;Bundle-SymbolicName: org.eclipse.pde.api.tools.ee.javase16&#xA;Bundle-Localization: fragmentjavase16&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-BundleShape: dir&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
@@ -1603,9 +1631,12 @@
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='1'>
+        <instructions size='2'>
           <instruction key='manifest'>
             Bundle-ManifestVersion: 2&#xA;Fragment-Host: org.eclipse.pde.api.tools;bundle-version=&quot;1.0.100&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 1.0.0.200901221955&#xA;Bundle-SymbolicName: org.eclipse.pde.api.tools.ee.j2se14&#xA;Bundle-Localization: fragmentj2se14&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Vendor: %providerName&#xA;Eclipse-BundleShape: dir&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
