@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description url="http://www.eclipse.org/pde/pde-api-tools/updates">
+   <description name="PDE API Tools Update Site" url="http://www.eclipse.org/pde/pde-api-tools/updates">
       PDE API Tools Update Site
    </description>
    <feature url="features/com.api.tools.buildnotes.feature_0.1.0.200901261134.jar" id="com.api.tools.buildnotes.feature" version="0.1.0.200901261134">
