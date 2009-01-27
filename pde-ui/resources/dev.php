@@ -18,7 +18,7 @@ ob_start();
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 		<div class="homeitem3col">
-			<h3>Plug-ins</h3>
+			<h2>Plug-ins</h2>
 			<a name="plugins"></a>
 			<p>We have <a href="http://wiki.eclipse.org/PSF">Team Project Set</a> files for the <a href="pde-ui.basic.psf">basic plug-ins</a> and <a href="pde-ui-all.psf">all plug-ins</a> in PDE UI.  You can use them to quickly download the Use team project set files (  Note that in November of 2008 the PDE plug-ins were moved from the CVS root to the <em>/pde</em> folder.</p>
 			
@@ -65,7 +65,7 @@ ob_start();
 
 		</div>
 		<div class="homeitem3col">
-			<h3>Test Plans</h3>
+			<h2>Test Plans</h2>
 			<a name="testing"></a>
 			<ul>
 			  <li><a href="http://wiki.eclipse.org/PDE/UI/TestAreas">PDE Functional Testing Areas</a></li>
@@ -78,7 +78,7 @@ ob_start();
 		  </ul>
 	  </div>
 		<div class="homeitem3col">
-			<h3>Bugs</h3>
+			<h2>Bugs</h2>
 			<a name="bugs"></a>
 			<ul> 
                 <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Eclipse&product=PDE&component=UI&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
@@ -90,7 +90,7 @@ ob_start();
 		</div>
 		
 		<div class="homeitem3col">
-			<h3>Mailing List</h3>
+			<h2>Mailing List</h2>
 			<a name="mail"></a>
 		<ul>
         	<li><a
@@ -101,7 +101,7 @@ ob_start();
 		</div>
 	<div class="homeitem3col">
 			<a name="involved"></a>
-			<h3>Get Involved!</h3>
+			<h2>Get Involved!</h2>
 		  <p>If you are interested in participating in the development of the
 			PDE UI component, check out our <a href="get_involved.php">Get Involved</a> page and then let us know using
 			the developer's mailing list: <a

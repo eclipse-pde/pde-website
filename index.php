@@ -27,7 +27,7 @@ ob_start();
 		<h1><?= $pageTitle ?></h1>
 
 		<div class="homeitem3col">
-		  <h3>About the PDE Subproject</h3>
+		  <h2>About the PDE Subproject</h2>
 		  	<p>
 				The Plug-in Development Environment (PDE) provides tools to create, develop, test, debug, build and deploy Eclipse plug-ins, fragments, features, update sites and RCP products. </p>
 		  	<p>PDE also provides comprehensive OSGi tooling, which makes it an ideal environment for component programming, not just Eclipse plug-in development.</p>
@@ -36,7 +36,7 @@ ob_start();
 		</div>
 		</p>
 		<div class="homeitem3col">
-		  <h3>PDE Components</h3>
+		  <h2>PDE Components</h2>
 			<p>
 				The PDE subproject is broken down into three main components, Build, UI and API Tooling.  Each of
 				these components operate like a project unto its own, with its own set of committers, bug categories 
@@ -72,7 +72,7 @@ ob_start();
 			</table>
 		</div>
 		<div class="homeitem3col">
-		  <h3>Getting Involved</h3>
+		  <h2>Getting Involved</h2>
 			<p>
 				The development of PDE is driven by the community in an open and transparent manner.  By getting involved with PDE, you can help influence the future of the platform improve the quality of Eclipse.  There are many ways to assist, filing bug reports, contributing fixes, producing new features, participating in milestone testing, etc.  Each PDE component has its own bug triage rules, coding guidelines, and testing format, however a good place to start is the PDE UI <a href="pde-ui/get_involved.php">Getting Involved</a> page.
 			</p>

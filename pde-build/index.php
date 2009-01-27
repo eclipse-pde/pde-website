@@ -27,7 +27,7 @@ ob_start();
 		<h1><?= $pageTitle ?></h1>
 
 		<div class="homeitem3col">
-		  <h3>About the pde-build component</h3>
+		  <h2>About the pde-build component</h2>
 		  	<p>The goal of PDE Build is to facilitate the automation of plug-in build
 				processes. Essentially, PDE Build produces Ant scripts based on development-time
 				information provided by, for example, the plugin.xml and build.properties
@@ -39,13 +39,13 @@ ob_start();
 	    </div>
 		</p>
 		<div class="homeitem3col">
-		  <h3>Development Resources</h3>
+		  <h2>Development Resources</h2>
 			<p>
 				For more detailed information, check out the <a href="dev.php">Development Resources</a>.
 			</p>
 		</div>
 		<div class="homeitem3col">
-		  <h3>Get involved!</h3>
+		  <h2>Get involved!</h2>
 		    <p>If you are interested in participating in the development of the PDE
 				Build component, check out the developer's mailing list: <a href="http://dev.eclipse.org/mailman/listinfo/pde-build-dev">pde-build-dev@eclipse.org</a>.
 				Chat with people there about your problems and interests, and find out

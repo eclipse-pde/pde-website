@@ -19,7 +19,7 @@ ob_start();
 		<h1><?= $pageTitle ?></h1>
 		<div class="homeitem3col">
 			<a name="committers"></a>
-			<h3>PDE/UI Active Committers</h3>
+			<h2>PDE/UI Active Committers</h2>
 			<table width="100%" border="0">
               <tr>
                 <td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Chris Aniszczyk" width="200" height="280"></p>
@@ -34,12 +34,9 @@ ob_start();
 			    </td>
 			  </tr>
 		    </table>
-		</div>
-	</div>
-	<div id="midcolumn">
-		<div class="homeitem3col">
+
 			<a name="inactive_committers"></a>
-			<h3>PDE/UI Inactive Committers</h3>
+			<h2>PDE/UI Inactive Committers</h2>
 			<table width="100%" border="0">
                 <td width="33%"><p align="center"><img src="brian_bauman.png" alt="Brian Bauman" width="200" height="280"></p>
                   <p align="center"><strong>Brian Bauman</strong></p>
@@ -75,7 +72,7 @@ ob_start();
 	<div id="midcolumn">
 		<div class="homeitem3col">
 			<a name="contributors"></a>
-			<h3>PDE/UI Contributors</h3>
+			<h2>PDE/UI Contributors</h2>
 			<table width="100%" border="0">
               <tr>
                 <td width="33%"><p align="center"><img src="adam_archer.PNG" alt="Adam Archer" width="200" height="280"></p>
@@ -137,7 +134,7 @@ ob_start();
 	<div id="midcolumn">
 		<div class="homeitem3col">
 			<a name="past_committers"></a>
-			<h3>PDE/UI Past Committers</h3>
+			<h2>PDE/UI Past Committers</h2>
 			<table width="100%" border="0">
               <tr>
                 <td width="33%"><p align="center"><img src="konrad_kolosowski.gif" alt="Konrad Kolosowski" width="200" height="280"></p>

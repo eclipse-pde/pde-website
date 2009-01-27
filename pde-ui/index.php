@@ -20,7 +20,7 @@ ob_start();
 		
 				<div class="homeitem3col">
 			<a name="happening"></a>
-			<h3>What&#8217;s Happening?</h3>
+			<h2>What&#8217;s Happening?</h2>
 			
 			<p>Check out our <a href="dev_plans/r3_5/plan.php">3.5 Development Plan</a></p>
 			
@@ -29,7 +29,7 @@ ob_start();
 		</div>
 	  <div class="homeitem3col">
 			<a name="team"></a>
-			<h3>PDE Information</h3>
+			<h2>PDE Information</h2>
 	      <p>Visit the <a href="committers/committers.php">Committers</a> page for a list of committers and active contributors on the PDE UI component.</p>
 		  <p>View some of the PDE <a href="resources/user.php">articles and examples</a>.
 		  <p>Check out the <a href="resources/dev.php">development resources</a> page for more detailed information on the PDE UI plug-ins and our development process.</p>
@@ -39,7 +39,7 @@ ob_start();
 		
 	  <div class="homeitem3col">
 			<a name="about"></a>
-			<h3>About the PDE UI Component</h3>
+			<h2>About the PDE UI Component</h2>
 			<p>The PDE UI component provides a comprehensive set of tools to create, develop, test, debug and deploy Eclipse   plug-ins, fragments, features, update sites and RCP products. </p>
 			<p> PDE UI also provides comprehensive OSGi tooling, which makes it an ideal environment   for component programming, not just Eclipse plug-in development.</p>
 			<p>Here is a small list of what PDE UI provides to the Eclipse SDK:</p>

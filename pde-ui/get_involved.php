@@ -17,11 +17,11 @@ ob_start();
 ?>
 
 	<div id="midcolumn">
-		<h1>$pageTitle</h1>
+		<h1>Get Involved</h1>
 		
 		<a name="communicate"></a>
 		<div class="homeitem3col">
-			<h3>Overview</h3>
+			<h2>Overview</h2>
 			<p>There are many ways that you as a member of the community can get involved and contribute to the PDE Project.</p>
 			<p>The first step is to let us know you are out there, check out the different ways we <a href="#communicate">communicate</a> and chat with us about your problems and interests.  You should also sign up for a <a href="https://bugs.eclipse.org/bugs/">Bugzilla</a> account and add pde-ui-inbox@eclipse.org and pde-doc-inbox@eclipse.org (or the inbox of the component you are interested in) to your watch list.</p>
 			<p>Here are some ways you can contribute:
@@ -37,7 +37,7 @@ ob_start();
 			
 		<a name="communicate"></a>
 		<div class="homeitem3col">
-			<h3>Communication</h3>
+			<h2>Communication</h2>
 			
 			<p>
 			There are two developer mailing lists that are used for developer discussions.
@@ -58,7 +58,7 @@ ob_start();
 			
 		<a name="filing_bugs"></a>
 		<div class="homeitem3col">
-			<h3>Creating bug reports</h3>
+			<h2>Creating bug reports</h2>
 
 			<p>
 			If you encounter a bug while working with Eclipse (whether it be with PDE or elsewhere), file a report in bugzilla.  However, keep some things in mind:		
@@ -66,7 +66,7 @@ ob_start();
 			<li>Search bugzilla for existing bugs like yours BEFORE you file it. Resolving duplicates is time consuming.</li>
 			<li>Try to have reproducible steps.  An entry in the log file may not be enough. Some log entries are NOT bugs, and can be caused by incorrect workspace configuration, etc.</li>
 			<li>Bugzilla is not a forum. Do not ask questions on bugzilla.</li>
-			<li>New feature requests should be marked with a severity of ‘enhancement’.  Try to give a realistic severity to bugs, a bug with a straightforward workaround is not ‘critical’ or ‘blocker’.</li>
+			<li>New feature requests should be marked with a severity of ï¿½enhancementï¿½.  Try to give a realistic severity to bugs, a bug with a straightforward workaround is not ï¿½criticalï¿½ or ï¿½blockerï¿½.</li>
 			</ul>
 			</p>
 			
@@ -83,7 +83,7 @@ ob_start();
 			
 		<a name="eclipse_setup"></a>
 		<div class="homeitem3col">
-			<h3>Setting Up Eclipse</h3>
+			<h2>Setting Up Eclipse</h2>
 					
 			<p>
 			We eat our own dogfood, i.e. we try to use a recent Eclipse build so that we are testing as we work.  Updating to the most recent I Build each week is preferred.  You can use <a href="http://wiki.eclipse.org/Eclipse_Project_Update_Sites">Update sites</a> to update your current build or download a <a href="http://download.eclipse.org/eclipse/downloads/">recent build</a>.
@@ -106,12 +106,12 @@ ob_start();
 			
 			<li>Switch back to the Java perspective, inside the releng project there are a number of .psf files.  These project set files can be used to quickly check out the projects you are interested in working on.  The pde-ui-basic.psf is where most contributors should start.  Simply right click on the file and go to import team project set.  A dialog may pop up requiring you to choose a repository to use, as committers must use different settings then contributors.</li>
 					
-			<li>You can now edit the code in your workspace.  To test your code you must create an Eclipse Launch Configuration.  The easiest way to do so is to right click on your project, go to Debug As (or Run As) > Run-time Workbench.  Your initial Eclipse instance that you edited your code in is called the ‘host’.  The Eclipse you just launched is called the ‘target’.  Any changes you make in your host will be reflected in the target.</li>
+			<li>You can now edit the code in your workspace.  To test your code you must create an Eclipse Launch Configuration.  The easiest way to do so is to right click on your project, go to Debug As (or Run As) > Run-time Workbench.  Your initial Eclipse instance that you edited your code in is called the ï¿½hostï¿½.  The Eclipse you just launched is called the ï¿½targetï¿½.  Any changes you make in your host will be reflected in the target.</li>
 			
 		</div>		
 		<a name="contributing_fixes"></a>
 		<div class="homeitem3col">
-			<h3>Contributing Fixes</h3>		
+			<h2>Contributing Fixes</h2>		
 			<p>
 			In general we follow the standard <a href="http://wiki.eclipse.org/index.php/Development_Conventions_and_Guidelines">Eclipse coding style</a>, some things such as indentation, brackets, imports, etc. are enforced by pde project preferences, so your file will be updated when you save.
 			</p>
@@ -138,7 +138,7 @@ ob_start();
 		</div>	
 		<a name="links"></a>
 		<div class="homeitem3col">
-			<h3>Additional Information</h3>		
+			<h2>Additional Information</h2>		
 			
 			<p> If you are interested in helping out, feel free to <a href="#communicate">contact us</a> and ask questions.  You can also check out the following resources:
 			<ul>

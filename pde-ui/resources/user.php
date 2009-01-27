@@ -19,7 +19,7 @@ ob_start();
 		<h1><?= $pageTitle ?></h1>
 		<div class="homeitem3col">
 			<a name="articles"></a>
-			<h3>Articles</h3>
+			<h2>Articles</h2>
 			<p>The following PDE UI related articles are available:</p>
 			<ul>
 				<li><a href="http://www.eclipse.org/articles/Article-PDE-does-plugins/PDE-intro.html">PDE Does Plug-ins</a> - 
@@ -30,7 +30,7 @@ ob_start();
 		</div>
 		<div class="homeitem3col">
 			<a name="examples"></a>
-			<h3>Examples</h3>
+			<h2>Examples</h2>
 			<p>The following PDE UI related examples are available:</p>
 			<ul>
 				<li><a href="http://www.eclipse.org/pde/pde-ui/examples/eclipsecon_2007/org.eclipse.pde.examples_1.1.0.jar">Eclipse Links View Plug-in 1.1.0</a> - EclipseCon 2007 PDE tutorial example.  
