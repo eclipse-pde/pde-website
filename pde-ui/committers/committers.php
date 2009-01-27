@@ -28,7 +28,7 @@ ob_start();
                   <p align="center">&nbsp;</p>
                 </td>
 				<td width="33%"><p align="center"><img src="curtis_windatt.png" alt="Curtis Windatt" width="200" height="280"></p>
-                  <p align="center"><strong>Curtis Windatt</strong></p>
+                  <p align="center"><strong><a href="http://eclipse-debug.blogspot.com/">Curtis Windatt</a></strong></p>
 				   <p align="center">IBM Winnipeg</p>
                   <p align="center">&nbsp;</p></td>
 			    </td>
@@ -43,34 +43,31 @@ ob_start();
                   <p align="center">IBM Austin Labs</p>
                   <p align="center">&nbsp;</p>
                 </td>
-               
                <td width="33%"><p align="center"><img src="dejan_glozic.gif" alt="Dejan Glozic" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://dejan-glozic.blogspot.com">Dejan Glozic</a></strong></p>
                   <p align="center">Father of PDE, IBM Toronto Lab</p>
                   <p align="center">&nbsp;</p>
                 </td>
+            </tr>
+            <tr>
                 <td width="33%"><p align="center"><img src="janek_lasocki_biczysko.gif" alt="Janek Lasocki-Biczysko" width="200" height="280"></p>
                   <p align="center"><strong>Janek Lasocki-Biczysko</strong></p>
                   <p align="center">&nbsp;</p>
 				  <p align="center">&nbsp;</p>
  				</td>
-			</tr>
-            <tr>
                 <td width="33%"><p align="center"><img src="wassim_melhem.png" alt="Wassim Melhem" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://wassim-melhem.blogspot.com">Wassim Melhem</a></strong></p>
                   <p align="center">Embarcadero Technologies Inc.</p>
                   <p align="center">&nbsp;</p>
                 </td>
+            </tr>
+            <tr>
                 <td width="33%"><p align="center"><img src="mike_pawlowski.gif" alt="Mike Pawlowski" width="200" height="280"></p>
                   <p align="center"><strong>Mike Pawlowski</strong></p>
                   <p align="center">IBM Toronto Lab</p>               
 			    </td>
                 </tr>
           </table>
-        </div>
-	</div>
-	<div id="midcolumn">
-		<div class="homeitem3col">
 			<a name="contributors"></a>
 			<h2>PDE/UI Contributors</h2>
 			<table width="100%" border="0">
@@ -81,14 +78,16 @@ ob_start();
                 <td width="33%"><p align="center"><img src="noam_chitayat.png" alt="Noam Chitayat" width="200" height="280"></p>
                   <p align="center"><strong>Noam Chitayat</strong></p>
                   <p align="center">&nbsp;</p></td>
+            </tr>
+            <tr>                  
 			    <td width="33%"><p align="center"><img src="patrick_dempsey.jpg" alt="Patrick Dempsey" width="200" height="280"></p>
                   <p align="center"><strong>Patrick Dempsey</strong></p>
                   <p align="center">&nbsp;</p></td>				
-              </tr>
-			  <tr>
 			    <td width="33%"><p align="center"><img src="joern_dinkla.png" alt="Joern Dinkla" width="200" height="280"></p>
                   <p align="center"><strong>Joern Dinkla</strong></p>
-                  <p align="center">&nbsp;</p></td>	
+                  <p align="center">&nbsp;</p></td>
+            </tr>
+            <tr>                  	
                 <td width="33%"><p align="center"><img src="peter_friese.JPG" alt="Peter Friese" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://www.peterfriese.de/">Peter Friese</a></strong></p>
                   <p align="center">&nbsp;</p></td>
@@ -103,18 +102,20 @@ ob_start();
 			  	<td width="33%"><p align="center"><img src="mystery.png" alt="Brock Janiczak" width="200" height="280"></p>
                   <p align="center"><strong>Brock Janiczak</strong></p>
                   <p align="center">&nbsp;</p></td>
+            </tr>
+            <tr>                  
                 <td width="33%"><p align="center"><img src="jakub_jurkiewicz.jpg" alt="Jakub Jurkiewicz" width="200" height="280"></p>
                   <p align="center"><strong>Jakub Jurkiewicz</strong></p>
                   <p align="center">&nbsp;</p></td>
-			   </tr>
-			  <tr>
 			  <td width="33%"><p align="center"><img src="blazej_kroll.jpg" alt="Blazej Kroll" width="200" height="280"></p>
                   <p align="center"><strong>Blazej Kroll</strong></p>
                   <p align="center">&nbsp;</p></td>
+            </tr>
+            <tr>                  
 				<td width="33%"><p align="center"><img src="bartosz_michalik.PNG" alt="Bartosz Michalik" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://eclipser-blog.blogspot.com/">Bartosz Michalik</a></strong></p>
                   <p align="center">&nbsp;</p></td>
-                  <td width="33%"><p align="center"><img src="rafael_oliveira.jpg" alt="Rafael Oliveira" width="200" height="280"></p>
+                <td width="33%"><p align="center"><img src="rafael_oliveira.jpg" alt="Rafael Oliveira" width="200" height="280"></p>
                   <p align="center"><strong>Rafael Oliveira</strong></p>
                   <p align="center">&nbsp;</p></td>
 			  </tr>
@@ -122,17 +123,11 @@ ob_start();
 			  <td width="33%"><p align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280"></p>
 			      <p align="center"><strong>Jacek Pospychala</strong></p>
 			      <p align="center">&nbsp;</p></td>
-			    </td>
-				<td>
 				</td>
 				<td>
 				</td>
 			  </tr>
           </table>
-        </div>
-	</div>
-	<div id="midcolumn">
-		<div class="homeitem3col">
 			<a name="past_committers"></a>
 			<h2>PDE/UI Past Committers</h2>
 			<table width="100%" border="0">
@@ -143,13 +138,13 @@ ob_start();
                 <td width="33%"><p align="center"><img src="cherie_wong.jpg" alt="Cherie Wong" width="200" height="280"></p>
                   <p align="center"><strong>Cherie Wong</strong></p>
                 </td>
+            </tr>
+            <tr>                
 				 <td width="33%"><p align="center"><img src="ian_bull.PNG" alt="Ian Bull" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://www.ianbull.com/">Ian Bull</a></strong></p>
                 </td>
               </tr>
           </table>
-        </div>
-	</div>
 <?php
 	$html = ob_get_contents();
 	ob_end_clean();
