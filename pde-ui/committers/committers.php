@@ -17,7 +17,6 @@ ob_start();
 ?><title>PDE/UI Committers and Contributor</title>
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-		<div class="homeitem3col">
 			<a name="committers"></a>
 			<h2>PDE/UI Active Committers</h2>
 			<table width="100%" border="0">
@@ -145,6 +144,7 @@ ob_start();
                 </td>
               </tr>
           </table>
+          </div>
 <?php
 	$html = ob_get_contents();
 	ob_end_clean();
