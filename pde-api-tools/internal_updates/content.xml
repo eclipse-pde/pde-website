@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?metadataRepository class='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'?>
-<repository name='PDE API Tools Update Site' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+<repository name='PDE API Tools Internal Update Site' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
     <property name='p2.compressed' value='false'/>
-    <property name='p2.timestamp' value='1233158405296'/>
+    <property name='p2.timestamp' value='1233160160562'/>
   </properties>
   <units size='11'>
     <unit id='tooling.org.eclipse.update.feature.default' version='1.0.0' singleton='false'>
@@ -35,84 +35,21 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='com.api.tools.buildnotes.feature.feature.group' version='0.1.0.200901281059' singleton='false'>
-      <update id='com.api.tools.buildnotes.feature.feature.group' range='[0.0.0,0.1.0.200901281059)' severity='0'/>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='API Tools Build Notes Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='This tool allows for a more automated experience working with traditional build notes for your plug-in.&#xA;It provides a convenient way to add new entries to existing build notes without having to worry about adding new date sections, etc to the build notes file.'/>
-        <property name='org.eclipse.equinox.p2.provider' value='PDE API Tools Team'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+    <unit id='com.api.tools.buildnotes.nl.translated_host_properties' version='0.1.0.200901281129'>
+      <hostRequirements size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes' range='0.1.0' greedy='false'/>
+      </hostRequirements>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+        <property name='fr.pluginName' value='Contributions pour le projet API/Tooling'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.feature.feature.group' version='0.1.0.200901281059'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='fr' version='1.0.0'/>
       </provides>
-      <requires size='3'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes' range='[0.1.0.200901281059,0.1.0.200901281059]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.nl' range='[0.1.0.200901281059,0.1.0.200901281059]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.feature.feature.jar' range='[0.1.0.200901281059,0.1.0.200901281059]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes' range='0.1.0' greedy='false'/>
       </requires>
       <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license>
-          The Eclipse Foundation makes available all content in this plug-in (&quot;Content&quot;). Unless otherwise indicated below, the Content is provided to you under the terms and conditions of the Eclipse Public License Version 1.0 (&quot;EPL&quot;). A copy of the EPL is available at http://www.eclipse.org/legal/epl-v10.html. For purposes of the EPL, &quot;Program&quot; will mean the Content.&#xA;&#xA;If you did not receive this Content directly from the Eclipse Foundation, the Content is being redistributed by another party (&quot;Redistributor&quot;) and different terms and conditions may apply to your use of any object code in the Content. Check the Redistributor&apos;s license that was provided with the Content. If no such license exists, contact the Redistributor. Unless otherwise indicated below, the terms and conditions of the EPL still apply to any source code in the Content and such source code may be obtained at http://www.eclipse.org.
-        </license>
-      </licenses>
-      <copyright>
-        Copyright (c) 2008 IBM Corporation and others.&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;&#xA;Contributors:&#xA; IBM Corporation - initial implementation
-      </copyright>
-    </unit>
-    <unit id='com.api.tools.buildnotes' version='0.1.0.200901281059'>
-      <update id='com.api.tools.buildnotes' range='[0.0.0,0.1.0.200901281059)' severity='0'/>
-      <properties size='4'>
-        <property name='df_LT.providerName' value='API/Tooling'/>
-        <property name='df_LT.pluginName' value='Contributions for API/Tooling project'/>
-        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
-      </properties>
-      <provides size='21'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes' version='0.1.0.200901281059'/>
-        <provided namespace='osgi.bundle' name='com.api.tools.buildnotes' version='0.1.0.200901281059'/>
-        <provided namespace='java.package' name='com.api.tools.buildnotes' version='0.0.0'/>
-        <provided namespace='java.package' name='com.api.tools.buildnotes.actions' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.codec' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.codec.binary' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.codec.digest' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.codec.language' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.codec.net' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.httpclient' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.httpclient.auth' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.httpclient.cookie' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.httpclient.methods' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.httpclient.methods.multipart' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.httpclient.params' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.httpclient.protocol' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.httpclient.util' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.logging' version='0.0.0'/>
-        <provided namespace='java.package' name='org.apache.commons.logging.impl' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='4'>
-        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='3.5.0'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='com.api.tools.buildnotes' version='0.1.0.200901281059'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Bundle-Name: %pluginName&#xA;Bundle-Activator: com.api.tools.buildnotes.Activator&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ClassPath: .,lib/commons-codec-1.3.jar,lib/commons-httpclient-3.0-rc4.jar,lib/commons-logging.jar&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: com.api.tools.buildnotes;singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-Version: 0.1.0.200901281059&#xA;Bundle-Localization: plugin&#xA;Export-Package: com.api.tools.buildnotes,com.api.tools.buildnotes.actions,org.apache.commons.codec,org.apache.commons.codec.binary,org.apache.commons.codec.digest,org.apache.commons.codec.language,org.apache.commons.codec.net,org.apache.commons.httpclient,org.apache.commons.httpclient.auth,org.apache.commons.httpclient.cookie,org.apache.commons.httpclient.methods,org.apache.commons.httpclient.methods.multipart,org.apache.commons.httpclient.params,org.apache.commons.httpclient.protocol,org.apache.commons.httpclient.util,org.apache.commons.logging,org.apache.commons.logging.impl&#xA;Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.jdt.core;bundle-version=&quot;3.5.0&quot;&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
     </unit>
     <unit id='tooling.source.default' version='1.0.0' singleton='false'>
       <hostRequirements size='1'>
@@ -140,6 +77,55 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='com.api.tools.buildnotes' version='0.1.0.200901281129'>
+      <update id='com.api.tools.buildnotes' range='[0.0.0,0.1.0.200901281129)' severity='0'/>
+      <properties size='4'>
+        <property name='df_LT.providerName' value='API/Tooling'/>
+        <property name='df_LT.pluginName' value='Contributions for API/Tooling project'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+      </properties>
+      <provides size='21'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes' version='0.1.0.200901281129'/>
+        <provided namespace='osgi.bundle' name='com.api.tools.buildnotes' version='0.1.0.200901281129'/>
+        <provided namespace='java.package' name='com.api.tools.buildnotes' version='0.0.0'/>
+        <provided namespace='java.package' name='com.api.tools.buildnotes.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.codec' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.codec.binary' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.codec.digest' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.codec.language' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.codec.net' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.auth' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.cookie' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.methods' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.methods.multipart' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.params' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.protocol' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.httpclient.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.logging' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.commons.logging.impl' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='4'>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='3.5.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.api.tools.buildnotes' version='0.1.0.200901281129'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Bundle-Name: %pluginName&#xA;Bundle-Activator: com.api.tools.buildnotes.Activator&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ClassPath: .,lib/commons-codec-1.3.jar,lib/commons-httpclient-3.0-rc4.jar,lib/commons-logging.jar&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: com.api.tools.buildnotes;singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-Version: 0.1.0.200901281129&#xA;Bundle-Localization: plugin&#xA;Export-Package: com.api.tools.buildnotes,com.api.tools.buildnotes.actions,org.apache.commons.codec,org.apache.commons.codec.binary,org.apache.commons.codec.digest,org.apache.commons.codec.language,org.apache.commons.codec.net,org.apache.commons.httpclient,org.apache.commons.httpclient.auth,org.apache.commons.httpclient.cookie,org.apache.commons.httpclient.methods,org.apache.commons.httpclient.methods.multipart,org.apache.commons.httpclient.params,org.apache.commons.httpclient.protocol,org.apache.commons.httpclient.util,org.apache.commons.logging,org.apache.commons.logging.impl&#xA;Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.jdt.core;bundle-version=&quot;3.5.0&quot;&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='build_notes_tools' version='0.0.0'>
       <properties size='3'>
         <property name='org.eclipse.equinox.p2.name' value='Build Notes Tools'/>
@@ -150,7 +136,7 @@
         <provided namespace='org.eclipse.equinox.p2.iu' name='build_notes_tools' version='0.0.0'/>
       </provides>
       <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.feature.feature.group' range='[0.1.0.200901281059,0.1.0.200901281059]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.feature.feature.group' range='[0.1.0.200901281129,0.1.0.200901281129]'/>
       </requires>
       <touchpoint id='null' version='0.0.0'/>
     </unit>
@@ -208,24 +194,8 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='com.api.tools.buildnotes.nl.translated_host_properties' version='0.1.0.200901281059'>
-      <hostRequirements size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes' range='0.1.0' greedy='false'/>
-      </hostRequirements>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-        <property name='fr.pluginName' value='Contributions pour le projet API/Tooling'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='fr' version='1.0.0'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes' range='0.1.0' greedy='false'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-    </unit>
-    <unit id='com.api.tools.buildnotes.nl' version='0.1.0.200901281059' singleton='false'>
-      <update id='com.api.tools.buildnotes.nl' range='[0.0.0,0.1.0.200901281059)' severity='0'/>
+    <unit id='com.api.tools.buildnotes.nl' version='0.1.0.200901281129' singleton='false'>
+      <update id='com.api.tools.buildnotes.nl' range='[0.0.0,0.1.0.200901281129)' severity='0'/>
       <properties size='6'>
         <property name='fr.fragmentName' value='Fragment traduit pour la contribution au projet API Tooling'/>
         <property name='fr.providerName' value='API/Tooling'/>
@@ -235,10 +205,10 @@
         <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
       </properties>
       <provides size='6'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.nl' version='0.1.0.200901281059'/>
-        <provided namespace='osgi.bundle' name='com.api.tools.buildnotes.nl' version='0.1.0.200901281059'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.nl' version='0.1.0.200901281129'/>
+        <provided namespace='osgi.bundle' name='com.api.tools.buildnotes.nl' version='0.1.0.200901281129'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='osgi.fragment' name='com.api.tools.buildnotes' version='0.1.0.200901281059'/>
+        <provided namespace='osgi.fragment' name='com.api.tools.buildnotes' version='0.1.0.200901281129'/>
         <provided namespace='org.eclipse.equinox.p2.localization' name='fr' version='1.0.0'/>
         <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
       </provides>
@@ -246,34 +216,34 @@
         <required namespace='osgi.bundle' name='com.api.tools.buildnotes' range='0.1.0'/>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='com.api.tools.buildnotes.nl' version='0.1.0.200901281059'/>
+        <artifact classifier='osgi.bundle' id='com.api.tools.buildnotes.nl' version='0.1.0.200901281129'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-ManifestVersion: 2&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Version: 0.1.0.200901281059&#xA;Fragment-Host: com.api.tools.buildnotes;bundle-version=&quot;0.1.0&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Bundle-SymbolicName: com.api.tools.buildnotes.nl&#xA;Bundle-Localization: fragment&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;
+            Bundle-ManifestVersion: 2&#xA;Bundle-Name: %fragmentName&#xA;Bundle-Version: 0.1.0.200901281129&#xA;Fragment-Host: com.api.tools.buildnotes;bundle-version=&quot;0.1.0&quot;&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Bundle-SymbolicName: com.api.tools.buildnotes.nl&#xA;Bundle-Localization: fragment&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='com.api.tools.buildnotes.feature.feature.jar' version='0.1.0.200901281059'>
-      <update id='com.api.tools.buildnotes.feature.feature.jar' range='[0.0.0,0.1.0.200901281059)' severity='0'/>
+    <unit id='com.api.tools.buildnotes.feature.feature.jar' version='0.1.0.200901281129'>
+      <update id='com.api.tools.buildnotes.feature.feature.jar' range='[0.0.0,0.1.0.200901281129)' severity='0'/>
       <properties size='3'>
         <property name='org.eclipse.equinox.p2.name' value='API Tools Build Notes Feature'/>
         <property name='org.eclipse.equinox.p2.description' value='This tool allows for a more automated experience working with traditional build notes for your plug-in.&#xA;It provides a convenient way to add new entries to existing build notes without having to worry about adding new date sections, etc to the build notes file.'/>
         <property name='org.eclipse.equinox.p2.provider' value='PDE API Tools Team'/>
       </properties>
       <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.feature.feature.jar' version='0.1.0.200901281059'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.feature.feature.jar' version='0.1.0.200901281129'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='com.api.tools.buildnotes.feature' version='0.1.0.200901281059'/>
+        <provided namespace='org.eclipse.update.feature' name='com.api.tools.buildnotes.feature' version='0.1.0.200901281129'/>
       </provides>
       <filter>
         (org.eclipse.update.install.features=true)
       </filter>
       <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='com.api.tools.buildnotes.feature' version='0.1.0.200901281059'/>
+        <artifact classifier='org.eclipse.update.feature' id='com.api.tools.buildnotes.feature' version='0.1.0.200901281129'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
@@ -283,6 +253,36 @@
           </instruction>
         </instructions>
       </touchpointData>
+      <licenses size='1'>
+        <license>
+          The Eclipse Foundation makes available all content in this plug-in (&quot;Content&quot;). Unless otherwise indicated below, the Content is provided to you under the terms and conditions of the Eclipse Public License Version 1.0 (&quot;EPL&quot;). A copy of the EPL is available at http://www.eclipse.org/legal/epl-v10.html. For purposes of the EPL, &quot;Program&quot; will mean the Content.&#xA;&#xA;If you did not receive this Content directly from the Eclipse Foundation, the Content is being redistributed by another party (&quot;Redistributor&quot;) and different terms and conditions may apply to your use of any object code in the Content. Check the Redistributor&apos;s license that was provided with the Content. If no such license exists, contact the Redistributor. Unless otherwise indicated below, the terms and conditions of the EPL still apply to any source code in the Content and such source code may be obtained at http://www.eclipse.org.
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2008 IBM Corporation and others.&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;&#xA;Contributors:&#xA; IBM Corporation - initial implementation
+      </copyright>
+    </unit>
+    <unit id='com.api.tools.buildnotes.feature.feature.group' version='0.1.0.200901281129' singleton='false'>
+      <update id='com.api.tools.buildnotes.feature.feature.group' range='[0.0.0,0.1.0.200901281129)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='API Tools Build Notes Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This tool allows for a more automated experience working with traditional build notes for your plug-in.&#xA;It provides a convenient way to add new entries to existing build notes without having to worry about adding new date sections, etc to the build notes file.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='PDE API Tools Team'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.feature.feature.group' version='0.1.0.200901281129'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes' range='[0.1.0.200901281129,0.1.0.200901281129]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.nl' range='[0.1.0.200901281129,0.1.0.200901281129]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.api.tools.buildnotes.feature.feature.jar' range='[0.1.0.200901281129,0.1.0.200901281129]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
       <licenses size='1'>
         <license>
           The Eclipse Foundation makes available all content in this plug-in (&quot;Content&quot;). Unless otherwise indicated below, the Content is provided to you under the terms and conditions of the Eclipse Public License Version 1.0 (&quot;EPL&quot;). A copy of the EPL is available at http://www.eclipse.org/legal/epl-v10.html. For purposes of the EPL, &quot;Program&quot; will mean the Content.&#xA;&#xA;If you did not receive this Content directly from the Eclipse Foundation, the Content is being redistributed by another party (&quot;Redistributor&quot;) and different terms and conditions may apply to your use of any object code in the Content. Check the Redistributor&apos;s license that was provided with the Content. If no such license exists, contact the Redistributor. Unless otherwise indicated below, the terms and conditions of the EPL still apply to any source code in the Content and such source code may be obtained at http://www.eclipse.org.
