@@ -23,18 +23,19 @@
 ob_start();
 ?>		
 
-<!-- Links on this page must be absolute to support the project summary page -->
-
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 
+		<div class="homeitem3col">
 		  <h2>About the PDE Subproject</h2>
 		  	<p>
 				The Plug-in Development Environment (PDE) provides tools to create, develop, test, debug, build and deploy Eclipse plug-ins, fragments, features, update sites and RCP products. </p>
 		  	<p>PDE also provides comprehensive OSGi tooling, which makes it an ideal environment for component programming, not just Eclipse plug-in development.</p>
 		  	<p>PDE is built atop the <a href="http://www.eclipse.org/platform/">Platform</a>  and <a href="http://www.eclipse.org/jdt/">JDT</a>, and ships as part of the Eclipse SDK. </p>
 		  	<p><strong><em>In PDE we do tooling, but our business is people! </em></strong></p>
+		</div>
 		</p>
+		<div class="homeitem3col">
 		  <h2>PDE Components</h2>
 			<p>
 				The PDE subproject is broken down into three main components, Build, UI and API Tooling.  Each of
@@ -48,15 +49,15 @@ ob_start();
 				<td width="82%"><b>Description</b></td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-build">PDE Build</a></td>
+				<td width="20%" valign="top"><a href="pde-build">PDE Build</a></td>
 				<td width="82%">Ant based tools and scripts to automate build processes</td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-ui">PDE UI</a></td>
+				<td width="20%" valign="top"><a href="pde-ui">PDE UI</a></td>
 				<td width="82%">Models, builders, editors and more to faciliate plug-in development in the Eclipse IDE.</td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="http://www.eclipse.org/pde/pde-api-tools">PDE API Tools</a></td>
+				<td width="20%" valign="top"><a href="pde-api-tools">PDE API Tools</a></td>
 				<td width="82%">Eclipse IDE and build process integrated tooling to maintain API</td>
 			</tr>
 			<tr> 
@@ -69,18 +70,21 @@ ob_start();
 			</tr>
 			
 			</table>
+		</div>
+		<div class="homeitem3col">
 		  <h2>Getting Involved</h2>
 			<p>
-				The development of PDE is driven by the community in an open and transparent manner.  By getting involved with PDE, you can help influence the future of the platform improve the quality of Eclipse.  There are many ways to assist, filing bug reports, contributing fixes, producing new features, participating in milestone testing, etc.  Each PDE component has its own bug triage rules, coding guidelines, and testing format, however a good place to start is the PDE UI <a href="http://www.eclipse.org/pde/pde-ui/get_involved.php">Getting Involved</a> page.
+				The development of PDE is driven by the community in an open and transparent manner.  By getting involved with PDE, you can help influence the future of the platform improve the quality of Eclipse.  There are many ways to assist, filing bug reports, contributing fixes, producing new features, participating in milestone testing, etc.  Each PDE component has its own bug triage rules, coding guidelines, and testing format, however a good place to start is the PDE UI <a href="pde-ui/get_involved.php">Getting Involved</a> page.
 			</p>
+		</div>
 	</div>
 	<div id="rightcolumn">
 		<div class="sideitem">
 			<h6>Quick Links</h6>
 			<ul>
-				<li><a href="http://www.eclipse.org/pde/pde-build/">PDE Build</a></li>
-				<li><a href="http://www.eclipse.org/pde/pde-ui">PDE UI</a></li>
-				<li><a href="http://www.eclipse.org/pde/pde-api-tools">PDE API Tools</a></li>
+				<li><a href="pde-build">PDE Build</a></li>
+				<li><a href="pde-ui">PDE UI</a></li>
+				<li><a href="pde-api-tools">PDE API Tools</a></li>
 				<li><a href="http://wiki.eclipse.org/PDE">PDE Wiki Page</a>		
 			</ul>
 		</div>
