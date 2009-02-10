@@ -58,6 +58,13 @@
 		  <h2><b>Current Development</b></h2>
 		  	<p><a href="./dev_plans/r3_5/plan.php">API Tools 3.5 Plan</a></p>
 		  	<p><a href="./coverage/index.php">Code coverage results</a></p>
+		  	<p>API Tooling now has additional Ant tasks that can be used to derive the usage graph between 
+		  	given sets of bundles. The information can be extracted to XML or written into a database. 
+		  	Two sample reports are provided below:
+		  	<ol>
+		  		<li><a href="./apiusage/sdk_html.zip" target="_blank">Example HTML report of the SDK</a></li>
+		  		<li><a href="./apiusage/wtp_sdk_html.zip" target="_blank">Example HTML report searching the WTP plugins for references to the SDK</a></li>
+		  	</ol>
 	    </div>	    
 		<div class="homeitem3col">
 		  <h2><b>Get involved!</b></h2>
