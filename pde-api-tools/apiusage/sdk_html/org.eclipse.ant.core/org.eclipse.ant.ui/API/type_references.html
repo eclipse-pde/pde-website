@@ -1,0 +1,754 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Reference Details</title>
+<style type="text/css">
+	.main{		font-family:Arial, Helvetica, sans-serif;}
+	.main h3 {	font-family:Arial, Helvetica, sans-serif;
+				background-color:#FFFFFF;
+				font-size:14px;
+				margin:0.1em;}
+	.main h4 { 	background-color:#CCCCCC;
+				margin:0.15em;}
+	a.typeslnk{	font-family:Arial, Helvetica, sans-serif;
+			   	text-decoration:none;
+			   	color:#000000;
+			   	margin-left:0.25em;}
+	a.typeslnk:hover{text-decoration:underline;}
+	a.kindslnk{	font-family:Arial, Helvetica, sans-serif;
+			  	text-decoration:none;
+			   	margin-left:0.25em;}
+	.types{	display:none;
+			margin-bottom:0.25em;
+			margin-top:0.25em;
+			margin-right:0.25em;
+		   	margin-left:0.75em;} 
+</style>
+<script type="text/javascript">
+	function expand(loc){
+	   if(document.getElementById){
+		  var foc = loc.firstChild;
+		  foc = loc.firstChild.innerHTML ? loc.firstChild : loc.firstChild.nextSibling;
+		  foc = loc.parentNode.nextSibling.style ? loc.parentNode.nextSibling : loc.parentNode.nextSibling.nextSibling;
+		  foc.style.display = foc.style.display == 'block' ? 'none' : 'block';
+		}
+	}  
+	if(!document.getElementById)
+	   document.write('<style type="text/css"></style>');
+</script>
+<noscript>
+<style type="text/css">
+	.types{display:block;}
+	.kinds{display:block;}
+</style>
+</noscript>
+</head>
+<body>
+<h3>Types from org.eclipse.ant.core used by org.eclipse.ant.ui</h3>
+<p>
+			Click an entry in the table below to reveal the details of the references made to that element.
+		</p>
+<div align="left" class="main">
+<table border="1" width="90%">
+<tr bgcolor="#CC9933">
+<td><b>Reference Details</b></td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ant.core.AntCorePreferences</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntHomeClasspathEntry.getRuntimeClasspathEntries(ILaunchConfiguration)</td><td align="center">97</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.generateCommandLine(IPath, String[], Map, String[], String[], String, String, boolean, boolean, boolean)</td><td align="center">377</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntPropertiesTab.initializeAsGlobal(boolean)</td><td align="center">143</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.ContributedClasspathEntriesEntry.getRuntimeClasspathEntries(ILaunchConfiguration)</td><td align="center">85</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.EditAntHomeEntryAction.run()</td><td align="center">64</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntModel.processAntHome(boolean)</td><td align="center">472</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathLabelProvider.getText(Object)</td><td align="center">82</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathPage.createClasspathModel()</td><td align="center">97</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathPage.initialize()</td><td align="center">86</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathPage.performDefaults()</td><td align="center">104</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntRuntimePreferencePage.performDefaults()</td><td align="center">97</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntRuntimePreferencePage.performOk()</td><td align="center">108</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTasksPage.initialize()</td><td align="center">123</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTypesPage.initialize()</td><td align="center">124</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.appendTaskAndTypes(AntCorePreferences, StringBuffer)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ant.core.AntRunner</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANTIATION</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.AntRunnerWorkbenchAdvisor.preStartup()</td><td align="center">46</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.configureAntRunner(ILaunchConfiguration, IPath, String, StringBuffer, String[], Map, String[], String[], URL[], String, boolean)</td><td align="center">297</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.configureAntRunner(ILaunchConfiguration, IPath, String, StringBuffer, String[], Map, String[], String[], URL[], String, boolean)</td><td align="center">297</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.launch(ILaunchConfiguration, String, ILaunch, IProgressMonitor)</td><td align="center">196</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.runInSameVM(ILaunchConfiguration, ILaunch, IProgressMonitor, IPath, String, AntRunner, StringBuffer, boolean)</td><td align="center">243</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.1.(AntLaunchDelegate, AntRunner, AntProcess)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.runInSameVM(ILaunchConfiguration, ILaunch, IProgressMonitor, IPath, String, AntRunner, StringBuffer, boolean)</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.configureAntRunner(ILaunchConfiguration, IPath, String, StringBuffer, String[], Map, String[], String[], URL[], String, boolean)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ant.core.AntSecurityException</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CATCHES_EXCEPTION</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntDefiningTaskNode.configure(boolean)</td><td align="center">106</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntImportNode.configure(boolean)</td><td align="center">75</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntModel.parseDocument(IDocument)</td><td align="center">331</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntModel.parseDocument(IDocument)</td><td align="center">331</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntModel.parseDocument(IDocument)</td><td align="center">331</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntPropertyNode.configure(boolean)</td><td align="center">114</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntTaskNode.configure(boolean)</td><td align="center">134</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ant.core.IAntClasspathEntry</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>ALLOCATES_ARRAY</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AbstractClasspathEntry.getEntries()</td><td align="center">28</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathPage.performDefaults()</td><td align="center">109</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathPage.performDefaults()</td><td align="center">111</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.addEntry(int, Object)</td><td align="center">74</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.addEntry(int, Object)</td><td align="center">67</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.addEntry(int, Object)</td><td align="center">60</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.getEntries(int)</td><td align="center">128</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.getUserEntries()</td><td align="center">248</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CASTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AbstractClasspathEntry.getEntries()</td><td align="center">28</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathBlock.addJars()</td><td align="center">281</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathLabelProvider.getText(Object)</td><td align="center">77</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathPage.performDefaults()</td><td align="center">109</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathEntry.ClasspathEntry(Object, IClasspathEntry)</td><td align="center">34</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathEntry.equals(Object)</td><td align="center">43</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.getUserEntries()</td><td align="center">248</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>DECLARED_FIELD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AddCustomDialog.library</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathEntry.fEntry</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>EXTENDS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.IClasspathEntry</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANCEOF</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathLabelProvider.getText(Object)</td><td align="center">76</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathEntry.ClasspathEntry(Object, IClasspathEntry)</td><td align="center">33</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathEntry.equals(Object)</td><td align="center">42</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntHomeClasspathEntry.getRuntimeClasspathEntries(ILaunchConfiguration)</td><td align="center">101</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.ContributedClasspathEntriesEntry.addToolsJar(ILaunchConfiguration, List, String)</td><td align="center">132</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.ContributedClasspathEntriesEntry.getRuntimeClasspathEntries(ILaunchConfiguration)</td><td align="center">99</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.ContributedClasspathEntriesEntry.getRuntimeClasspathEntries(ILaunchConfiguration)</td><td align="center">91</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.ContributedClasspathEntriesEntry.getToolsJar(ILaunchConfiguration)</td><td align="center">204</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathBlock.addJars()</td><td align="center">281</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathBlock.getOrderedSelection(IClasspathEntry)</td><td align="center">147</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathLabelProvider.getText(Object)</td><td align="center">77</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathPage.getDefaultAdditionalEntries()</td><td align="center">120</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathEntry.equals(Object)</td><td align="center">43</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AddCustomDialog.setLibraryEntry(IAntClasspathEntry)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.createGlobalEntry(IAntClasspathEntry[], String, boolean, boolean, int)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.setAntHomeEntries(IAntClasspathEntry[])</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.setContributedEntries(IAntClasspathEntry[])</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.setGlobalEntries(IAntClasspathEntry[])</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AbstractClasspathEntry.getEntries()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AddCustomDialog.getLibraryEntry()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathPage.getAdditionalEntries()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathPage.getAntHomeEntries()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntClasspathPage.getContributedEntries()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.getEntries(int)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.ClasspathModel.getUserEntries()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.IClasspathEntry.getEntries()</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ant.core.IAntPropertyValueProvider</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>IMPLEMENTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.AntPropertyValueProvider</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ant.core.Property</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>ALLOCATES_ARRAY</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntPropertiesTab.initializeAsGlobal(boolean)</td><td align="center">150</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.populatePropertyViewer(Map)</td><td align="center">440</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.populatePropertyViewer(Map)</td><td align="center">437</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesPage.initialize()</td><td align="center">82</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesPage.performDefaults()</td><td align="center">89</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntRuntimePreferencePage.performOk()</td><td align="center">132</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CASTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.generateCommandLine(IPath, String[], Map, String[], String[], String, String, boolean, boolean, boolean)</td><td align="center">422</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntPropertiesTab.initializeAsGlobal(boolean)</td><td align="center">150</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntPropertiesTab.performApply(ILaunchConfigurationWorkingCopy)</td><td align="center">171</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntModel.setGlobalProperties(Project)</td><td align="center">488</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntObjectLabelProvider.getBackground(Object)</td><td align="center">133</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntObjectLabelProvider.getColumnImage(Object, int)</td><td align="center">49</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntObjectLabelProvider.getColumnText(Object, int)</td><td align="center">72</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.edit()</td><td align="center">360</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.overwrite(String)</td><td align="center">387</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.propertyTableSelectionChanged(IStructuredSelection)</td><td align="center">423</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesPage.getProperties()</td><td align="center">143</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesPage.initialize()</td><td align="center">82</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesPage.performDefaults()</td><td align="center">89</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntRuntimePreferencePage.performOk()</td><td align="center">132</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANCEOF</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntObjectLabelProvider.getBackground(Object)</td><td align="center">132</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntObjectLabelProvider.getColumnImage(Object, int)</td><td align="center">48</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntObjectLabelProvider.getColumnText(Object, int)</td><td align="center">71</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.propertyTableSelectionChanged(IStructuredSelection)</td><td align="center">422</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANTIATION</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.addProperty()</td><td align="center">351</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.populatePropertyViewer(Map)</td><td align="center">445</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.generateCommandLine(IPath, String[], Map, String[], String[], String, String, boolean, boolean, boolean)</td><td align="center">422</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntPropertiesTab.performApply(ILaunchConfigurationWorkingCopy)</td><td align="center">171</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntModel.setGlobalProperties(Project)</td><td align="center">488</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntObjectLabelProvider.getColumnImage(Object, int)</td><td align="center">49</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.addProperty()</td><td align="center">351</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.edit()</td><td align="center">360</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.overwrite(String)</td><td align="center">387</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.populatePropertyViewer(Map)</td><td align="center">445</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.propertyTableSelectionChanged(IStructuredSelection)</td><td align="center">423</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesPage.getProperties()</td><td align="center">143</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntObjectLabelProvider.getPropertyText(Property, int)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntPropertiesBlock.setPropertiesInput(Property[])</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ant.core.Task</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>ALLOCATES_ARRAY</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntRuntimePreferencePage.performOk()</td><td align="center">120</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CASTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.appendTaskAndTypes(AntCorePreferences, StringBuffer)</td><td align="center">496</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntModel.setTasks(Project, ClassLoader)</td><td align="center">379</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntRuntimePreferencePage.performOk()</td><td align="center">120</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTasksPage.edit(IStructuredSelection)</td><td align="center">103</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTasksPage.getCustomDialog(String, String)</td><td align="center">72</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANCEOF</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntObjectLabelProvider.getColumnImage(Object, int)</td><td align="center">59</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANTIATION</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTasksPage.add()</td><td align="center">61</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.appendTaskAndTypes(AntCorePreferences, StringBuffer)</td><td align="center">496</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntModel.setTasks(Project, ClassLoader)</td><td align="center">379</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTasksPage.add()</td><td align="center">61</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTasksPage.edit(IStructuredSelection)</td><td align="center">103</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTasksPage.getCustomDialog(String, String)</td><td align="center">72</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ant.core.Type</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>ALLOCATES_ARRAY</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntRuntimePreferencePage.performOk()</td><td align="center">126</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CASTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.appendTaskAndTypes(AntCorePreferences, StringBuffer)</td><td align="center">507</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntModel.setTypes(Project, ClassLoader)</td><td align="center">393</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntRuntimePreferencePage.performOk()</td><td align="center">126</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTypesPage.edit(IStructuredSelection)</td><td align="center">89</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTypesPage.getCustomDialog(String, String)</td><td align="center">109</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANTIATION</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTypesPage.add()</td><td align="center">61</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.launchConfigurations.AntLaunchDelegate.appendTaskAndTypes(AntCorePreferences, StringBuffer)</td><td align="center">507</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.model.AntModel.setTypes(Project, ClassLoader)</td><td align="center">393</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTypesPage.add()</td><td align="center">61</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTypesPage.edit(IStructuredSelection)</td><td align="center">89</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ant.internal.ui.preferences.AntTypesPage.getCustomDialog(String, String)</td><td align="center">109</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<p>
+				Back to reference summary for <a href="../org.eclipse.ant.ui.html">org.eclipse.ant.ui</a>
+</p>
+</div>
+<p>
+<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88"></a>
+</p>
+</body>
+</html>
