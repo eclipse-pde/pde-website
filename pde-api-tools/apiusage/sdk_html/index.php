@@ -36,7 +36,7 @@ ob_start();
 		
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-		<?php include("./sdk_html/html/index.html"); ?>
+		<?php include("index.html"); ?>
 	</div>
 <?php
 	$html = ob_get_contents();
