@@ -62,7 +62,7 @@
 		  	given sets of bundles. The information can be extracted to XML or written into a database. 
 		  	Two sample reports are provided below:
 		  	<ol>
-		  		<li><a href="./apiusage/sdk_html.zip" target="_blank">Example HTML report of the SDK</a></li>
+		  		<li><a href="./apiusage/sdk_html.zip" target="_blank">Example HTML report of the SDK</a>. You can also view this report on the web <a href="./apiusage/index.php" target="_self">here</a>.</li>
 		  		<li><a href="./apiusage/wtp_sdk_html.zip" target="_blank">Example HTML report searching the WTP plugins for references to the SDK</a></li>
 		  	</ol>
 		  	<p>

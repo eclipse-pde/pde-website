@@ -38,7 +38,7 @@ ob_start();
 		
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-		<?php include("/html/index.html"); ?>
+		<?php include("/sdk_html/html/index.html"); ?>
 	</div>
 	<div id="rightcolumn">
 		$commonside
