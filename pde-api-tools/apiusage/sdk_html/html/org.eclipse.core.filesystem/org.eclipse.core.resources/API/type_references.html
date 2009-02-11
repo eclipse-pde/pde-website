@@ -1,0 +1,697 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Reference Details</title>
+<style type="text/css">
+	.main{		font-family:Arial, Helvetica, sans-serif;}
+	.main h3 {	font-family:Arial, Helvetica, sans-serif;
+				background-color:#FFFFFF;
+				font-size:14px;
+				margin:0.1em;}
+	.main h4 { 	background-color:#CCCCCC;
+				margin:0.15em;}
+	a.typeslnk{	font-family:Arial, Helvetica, sans-serif;
+			   	text-decoration:none;
+			   	color:#000000;
+			   	margin-left:0.25em;}
+	a.typeslnk:hover{text-decoration:underline;}
+	a.kindslnk{	font-family:Arial, Helvetica, sans-serif;
+			  	text-decoration:none;
+			   	margin-left:0.25em;}
+	.types{	display:none;
+			margin-bottom:0.25em;
+			margin-top:0.25em;
+			margin-right:0.25em;
+		   	margin-left:0.75em;} 
+</style>
+<script type="text/javascript">
+	function expand(loc){
+	   if(document.getElementById){
+		  var foc = loc.firstChild;
+		  foc = loc.firstChild.innerHTML ? loc.firstChild : loc.firstChild.nextSibling;
+		  foc = loc.parentNode.nextSibling.style ? loc.parentNode.nextSibling : loc.parentNode.nextSibling.nextSibling;
+		  foc.style.display = foc.style.display == 'block' ? 'none' : 'block';
+		}
+	}  
+	if(!document.getElementById)
+	   document.write('<style type="text/css"></style>');
+</script>
+<noscript>
+<style type="text/css">
+	.types{display:block;}
+	.kinds{display:block;}
+</style>
+</noscript>
+</head>
+<body>
+<h3>Types from org.eclipse.core.filesystem used by org.eclipse.core.resources</h3>
+<p>
+			Click an entry in the table below to reveal the details of the references made to that element.
+		</p>
+<div align="left" class="main">
+<table border="1" width="90%">
+<tr bgcolor="#CC9933">
+<td><b>Reference Details</b></td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileInfo</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>DECLARED_FIELD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.NO_CHILDREN</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTreeNode.fileInfo</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(IHistoryStore, UnifiedTreeNode)</td><td align="center">115</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.attributes(IResource)</td><td align="center">157</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.fastIsSynchronized(File)</td><td align="center">324</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(IProject, IProjectDescription, int, boolean, boolean)</td><td align="center">497</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.read(IFile, boolean, IProgressMonitor)</td><td align="center">629</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.setLocalTimeStamp(IResource, ResourceInfo, long)</td><td align="center">820</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.write(IFolder, boolean, IProgressMonitor)</td><td align="center">952</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.addChildren(UnifiedTreeNode)</td><td align="center">148</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.addChildrenFromFileSystem(UnifiedTreeNode, IFileInfo[], int)</td><td align="center">203</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.addRootToQueue()</td><td align="center">247</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.quickSort(IFileInfo[], int, int)</td><td align="center">502</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.quickSort(IFileInfo[], int, int)</td><td align="center">509</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.File.appendContents(InputStream, int, IProgressMonitor)</td><td align="center">47</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.File.create(InputStream, int, IProgressMonitor)</td><td align="center">123</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.File.setContents(InputStream, int, IProgressMonitor)</td><td align="center">368</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Folder.create(int, boolean, IProgressMonitor)</td><td align="center">87</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Project.assertCreateRequirements(IProjectDescription)</td><td align="center">40</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Resource.assertLinkRequirements(URI, int)</td><td align="center">170</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Resource.createLink(URI, int, IProgressMonitor)</td><td align="center">592</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.addToLocalHistory(IFile)</td><td align="center">65</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.internalComputeTimestamp(IFile)</td><td align="center">243</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.link(Resource, URI, IFileInfo)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.write(IFile, InputStream, IFileInfo, int, boolean, IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.HistoryStore2.addState(IPath, IFileStore, IFileInfo, boolean)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.HistoryStore2.isValid(IFileStore, IFileInfo)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.IHistoryStore.addState(IPath, IFileStore, IFileInfo, boolean)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.addChildrenFromFileSystem(UnifiedTreeNode, IFileInfo[], int)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.createChildNodeFromFileSystem(UnifiedTreeNode, IFileInfo)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.createNode(IResource, IFileStore, IFileInfo, boolean)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.isRecursiveLink(IFileStore, IFileInfo)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.quickSort(IFileInfo[], int, int)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTreeNode.reuse(UnifiedTree, IResource, IFileStore, IFileInfo, boolean)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTreeNode.UnifiedTreeNode(UnifiedTree, IResource, IFileStore, IFileInfo, boolean)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.File.internalSetContents(InputStream, IFileInfo, int, boolean, IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Folder.assertCreateRequirements(IFileStore, IFileInfo, int)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.FileUtil.fileInfoToAttributes(IFileInfo)</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.getLocalList(UnifiedTreeNode)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Resource.assertLinkRequirements(URI, int)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.FileUtil.attributesToFileInfo(ResourceAttributes)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CASTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.1.compare(Object, Object)</td><td align="center">476</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.1.compare(Object, Object)</td><td align="center">475</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.overLappingResourcesDo(AliasManagerDoit)</td><td align="center">216</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.overLappingResourcesDo(AliasManagerDoit)</td><td align="center">216</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>DECLARED_FIELD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.BlobStore.localStore</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTreeNode.store</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.LazyFileInputStream.target</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.LazyFileInputStream.target</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.BlobStore.addBlob(IFileStore, boolean)</td><td align="center">53</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.BlobStore.fileFor(UniversalUniqueIdentifier)</td><td align="center">108</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.BlobStore.getBlob(UniversalUniqueIdentifier)</td><td align="center">123</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.CopyVisitor.copyContents(UnifiedTreeNode, Resource, Resource)</td><td align="center">77</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.CopyVisitor.copyContents(UnifiedTreeNode, Resource, Resource)</td><td align="center">78</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.DeleteVisitor.delete(UnifiedTreeNode, boolean)</td><td align="center">54</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileStoreRoot.createStore(IPath)</td><td align="center">90</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.attributes(IResource)</td><td align="center">156</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(IResource, IResource, int, IProgressMonitor)</td><td align="center">181</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.getEncoding(File)</td><td align="center">346</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.getFileURI(URI)</td><td align="center">111</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(IProject, IProjectDescription, int, boolean, boolean)</td><td align="center">496</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.read(IFile, boolean, IProgressMonitor)</td><td align="center">627</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.read(IProject, boolean)</td><td align="center">673</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.read(IProject, boolean)</td><td align="center">674</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(IResource, int, boolean, IProgressMonitor)</td><td align="center">755</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.setLocalTimeStamp(IResource, ResourceInfo, long)</td><td align="center">819</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.setResourceAttributes(IResource, ResourceAttributes)</td><td align="center">852</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.write(IFile, InputStream, IFileInfo, int, boolean, IProgressMonitor)</td><td align="center">893</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.write(IFolder, boolean, IProgressMonitor)</td><td align="center">950</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.writeSilently(IProject)</td><td align="center">987</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.writeSilently(IProject)</td><td align="center">977</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.createResource(UnifiedTreeNode, Resource)</td><td align="center">31</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.deleteResource(UnifiedTreeNode, Resource)</td><td align="center">42</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.fileToFolder(UnifiedTreeNode, Resource)</td><td align="center">64</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.folderToFile(UnifiedTreeNode, Resource)</td><td align="center">75</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.RefreshLocalAliasVisitor.resourceChanged(UnifiedTreeNode, Resource)</td><td align="center">53</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.addRootToQueue()</td><td align="center">246</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.createChildForLinkedResource(IResource)</td><td align="center">257</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.getLocalList(UnifiedTreeNode)</td><td align="center">326</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.initLinkHistoriesIfNeeded()</td><td align="center">394</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.1.compare(Object, Object)</td><td align="center">476</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.1.compare(Object, Object)</td><td align="center">475</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.addToLocationsMap(IProject)</td><td align="center">338</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.computeDeepAliases(IResource, IFileStore)</td><td align="center">454</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.internalComputeAliases(IResource, IFileStore)</td><td align="center">590</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.matchingPrefixDo(IFileStore, AliasManagerDoit)</td><td align="center">165</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.matchingPrefixDo(IFileStore, AliasManagerDoit)</td><td align="center">169</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.matchingPrefixDo(IFileStore, AliasManagerDoit)</td><td align="center">165</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.matchingPrefixDo(IFileStore, AliasManagerDoit)</td><td align="center">169</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.overLappingResourcesDo(AliasManagerDoit)</td><td align="center">211</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.overLappingResourcesDo(AliasManagerDoit)</td><td align="center">216</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.overLappingResourcesDo(AliasManagerDoit)</td><td align="center">211</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.overLappingResourcesDo(AliasManagerDoit)</td><td align="center">216</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.File.create(InputStream, int, IProgressMonitor)</td><td align="center">122</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Folder.create(int, boolean, IProgressMonitor)</td><td align="center">86</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Project.assertCreateRequirements(IProjectDescription)</td><td align="center">39</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Project.copyMetaArea(IProject, IProject, IProgressMonitor)</td><td align="center">219</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Project.copyMetaArea(IProject, IProject, IProgressMonitor)</td><td align="center">218</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Resource.assertLinkRequirements(URI, int)</td><td align="center">169</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Resource.delete(int, IProgressMonitor)</td><td align="center">697</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Resource.move(IPath, int, IProgressMonitor)</td><td align="center">1406</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourcesCompatibilityHelper.createHistoryStore(IPath, int)</td><td align="center">66</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.addToLocalHistory(IFile)</td><td align="center">64</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(IFile, int, IProgressMonitor)</td><td align="center">269</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(IFolder, int, IProgressMonitor)</td><td align="center">342</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(IProject, int, IProgressMonitor)</td><td align="center">416</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(IProject, int, IProgressMonitor)</td><td align="center">389</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedProjectSubtree(IProject, IProjectDescription)</td><td align="center">655</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedProjectSubtree(IProject, IProjectDescription)</td><td align="center">654</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.moveProjectContent(IProject, IFileStore, int, IProgressMonitor)</td><td align="center">756</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(IProject, int, IProgressMonitor)</td><td align="center">833</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(IProject, int, IProgressMonitor)</td><td align="center">844</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveFile(IFile, IFile, int, IProgressMonitor)</td><td align="center">917</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveFolder(IFolder, IFolder, int, IProgressMonitor)</td><td align="center">985</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveProject(IProject, IProjectDescription, int, IProgressMonitor)</td><td align="center">1049</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.FileUtil.computeOverlap(URI, URI, boolean)</td><td align="center">130</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.FileUtil.computeOverlap(URI, URI, boolean)</td><td align="center">129</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.BlobStore.addBlob(IFileStore, boolean)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.BlobStore.BlobStore(IFileStore, int)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.doGetEncoding(IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.getLocalName(IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.move(IResource, IFileStore, int, IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.HistoryStore2.addState(IPath, IFileStore, IFileInfo, boolean)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.HistoryStore2.HistoryStore2(Workspace, IFileStore, int)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.HistoryStore2.isValid(IFileStore, IFileInfo)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.IHistoryStore.addState(IPath, IFileStore, IFileInfo, boolean)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.createNode(IResource, IFileStore, IFileInfo, boolean)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.isRecursiveLink(IFileStore, IFileInfo)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTreeNode.reuse(UnifiedTree, IResource, IFileStore, IFileInfo, boolean)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTreeNode.UnifiedTreeNode(UnifiedTree, IResource, IFileStore, IFileInfo, boolean)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.addToLocationsMap(IResource, IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.checkDeletion(Project, IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.computeAliases(IResource, IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.computeDeepAliases(IResource, IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.internalComputeAliases(IResource, IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.add(IFileStore, IResource)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.add(IFileStore, IResource)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.matchingPrefixDo(IFileStore, AliasManagerDoit)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.matchingPrefixDo(IFileStore, AliasManagerDoit)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.matchingResourcesDo(IFileStore, AliasManagerDoit)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.matchingResourcesDo(IFileStore, AliasManagerDoit)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.remove(IFileStore, IResource)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.LocationMap.remove(IFileStore, IResource)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.removeFromLocationsMap(IResource, IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.updateAliases(IResource, IFileStore, int, IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.LazyFileInputStream.LazyFileInputStream(ContentDescriptionManager, IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.LazyFileInputStream.LazyFileInputStream(ContentDescriptionManager, IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Folder.assertCreateRequirements(IFileStore, IFileInfo, int)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.ensureDestinationEmpty(IProject, IFileStore, IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.moveProjectContent(IProject, IFileStore, int, IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.BlobStore.fileFor(UniversalUniqueIdentifier)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.BlobStore.folderFor(UniversalUniqueIdentifier)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileStoreRoot.createStore(IPath)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.getStore(IResource)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.initializeStore(IResource, URI)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTreeNode.getStore()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Resource.getStore()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.computeDestinationStore(IProjectDescription)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileSystem</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedProjectSubtree(IProject, IProjectDescription)</td><td align="center">653</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.FileUtil.computeOverlap(URI, URI, boolean)</td><td align="center">117</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileTree</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>DECLARED_FIELD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.fileTree</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(IResource, int, boolean, IProgressMonitor)</td><td align="center">757</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.UnifiedTree(IResource, IFileTree)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.provider.FileInfo</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANTIATION</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(IHistoryStore, UnifiedTreeNode)</td><td align="center">117</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<p>
+				Back to reference summary for <a href="../org.eclipse.core.resources.html">org.eclipse.core.resources</a>
+</p>
+</div>
+<p>
+<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88"></a>
+</p>
+</body>
+</html>

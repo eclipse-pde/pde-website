@@ -1,0 +1,996 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Reference Details</title>
+<style type="text/css">
+	.main{		font-family:Arial, Helvetica, sans-serif;}
+	.main h3 {	font-family:Arial, Helvetica, sans-serif;
+				background-color:#FFFFFF;
+				font-size:14px;
+				margin:0.1em;}
+	.main h4 { 	background-color:#CCCCCC;
+				margin:0.15em;}
+	a.typeslnk{	font-family:Arial, Helvetica, sans-serif;
+			   	text-decoration:none;
+			   	color:#000000;
+			   	margin-left:0.25em;}
+	a.typeslnk:hover{text-decoration:underline;}
+	a.kindslnk{	font-family:Arial, Helvetica, sans-serif;
+			  	text-decoration:none;
+			   	margin-left:0.25em;}
+	.types{	display:none;
+			margin-bottom:0.25em;
+			margin-top:0.25em;
+			margin-right:0.25em;
+		   	margin-left:0.75em;} 
+</style>
+<script type="text/javascript">
+	function expand(loc){
+	   if(document.getElementById){
+		  var foc = loc.firstChild;
+		  foc = loc.firstChild.innerHTML ? loc.firstChild : loc.firstChild.nextSibling;
+		  foc = loc.parentNode.nextSibling.style ? loc.parentNode.nextSibling : loc.parentNode.nextSibling.nextSibling;
+		  foc.style.display = foc.style.display == 'block' ? 'none' : 'block';
+		}
+	}  
+	if(!document.getElementById)
+	   document.write('<style type="text/css"></style>');
+</script>
+<noscript>
+<style type="text/css">
+	.types{display:block;}
+	.kinds{display:block;}
+</style>
+</noscript>
+</head>
+<body>
+<h3>Types from org.eclipse.ui.workbench used by org.eclipse.ui.console</h3>
+<p>
+			Click an entry in the table below to reveal the details of the references made to that element.
+		</p>
+<div align="left" class="main">
+<table border="1" width="90%">
+<tr bgcolor="#CC9933">
+<td><b>Reference Details</b></td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.contexts.IContextActivation</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>DECLARED_FIELD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.fActivatedContext</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.contexts.IContextService</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CASTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partActivated(IWorkbenchPartReference)</td><td align="center">630</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partDeactivated(IWorkbenchPartReference)</td><td align="center">654</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partActivated(IWorkbenchPartReference)</td><td align="center">630</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partDeactivated(IWorkbenchPartReference)</td><td align="center">654</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IActionBars</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsolePage.createActions()</td><td align="center">256</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsolePage.setActionBars(IActionBars)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsolePage.setGlobalAction(IActionBars, String, IAction)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IPartListener2</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>IMPLEMENTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IPluginContribution</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>IMPLEMENTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleFactoryExtension</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsolePageParticipantExtension</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.PatternMatchListenerExtension</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IPropertyListener</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleWorkbenchPart.addPropertyListener(IPropertyListener)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleWorkbenchPart.removePropertyListener(IPropertyListener)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IViewPart</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>EXTENDS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.IConsoleView</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.RepaintJob.runInUIThread(IProgressMonitor)</td><td align="center">108</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.RepaintJob.runInUIThread(IProgressMonitor)</td><td align="center">108</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.shouldBringToTop(IConsole, IViewPart)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IViewReference</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CASTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.isThisPart(IWorkbenchPartReference)</td><td align="center">662</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANCEOF</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.isThisPart(IWorkbenchPartReference)</td><td align="center">661</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.isThisPart(IWorkbenchPartReference)</td><td align="center">662</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IViewSite</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CASTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.isThisPart(IWorkbenchPartReference)</td><td align="center">667</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANCEOF</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.isThisPart(IWorkbenchPartReference)</td><td align="center">666</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IWorkbenchPage</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.1.run()</td><td align="center">357</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.RepaintJob.runInUIThread(IProgressMonitor)</td><td align="center">106</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.RepaintJob.runInUIThread(IProgressMonitor)</td><td align="center">106</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.ShowConsoleViewJob.runInUIThread(IProgressMonitor)</td><td align="center">283</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.ShowConsoleViewJob.runInUIThread(IProgressMonitor)</td><td align="center">283</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleViewConsoleFactory.openConsole()</td><td align="center">33</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IWorkbenchPart</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CASTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.warnOfContentChange(IConsole)</td><td align="center">593</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>IMPLEMENTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleWorkbenchPart</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.warnOfContentChange(IConsole)</td><td align="center">593</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.6.(ConsoleView, IWorkbenchPart)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.doCreatePage(IWorkbenchPart)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.doDestroyPage(IWorkbenchPart, PageBookViewPageRec)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.isImportant(IWorkbenchPart)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partClosed(IWorkbenchPart)</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.getBootstrapPart()</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IWorkbenchPartReference</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.isThisPart(IWorkbenchPartReference)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partActivated(IWorkbenchPartReference)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partBroughtToTop(IWorkbenchPartReference)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partClosed(IWorkbenchPartReference)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partDeactivated(IWorkbenchPartReference)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partHidden(IWorkbenchPartReference)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partInputChanged(IWorkbenchPartReference)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partOpened(IWorkbenchPartReference)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.partVisible(IWorkbenchPartReference)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IWorkbenchPartSite</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>DECLARED_FIELD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleWorkbenchPart.fSite</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleWorkbenchPart.ConsoleWorkbenchPart(IConsole, IWorkbenchPartSite)</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleWorkbenchPart.getSite()</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.IWorkbenchWindow</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.1.run()</td><td align="center">355</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.RepaintJob.runInUIThread(IProgressMonitor)</td><td align="center">104</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.RepaintJob.runInUIThread(IProgressMonitor)</td><td align="center">104</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.ShowConsoleViewJob.runInUIThread(IProgressMonitor)</td><td align="center">281</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.ShowConsoleViewJob.runInUIThread(IProgressMonitor)</td><td align="center">281</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleViewConsoleFactory.openConsole()</td><td align="center">31</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.part.IPage</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.doDestroyPage(IWorkbenchPart, PageBookViewPageRec)</td><td align="center">272</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.setScrollLock(boolean)</td><td align="center">735</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.showPageRec(PageBookViewPageRec)</td><td align="center">178</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.createDefaultPage(PageBook)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.part.IPageBookViewPage</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>IMPLEMENTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsolePage</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.doCreatePage(IWorkbenchPart)</td><td align="center">304</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.IConsolePageParticipant.init(IPageBookViewPage, IConsole)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.3.(ConsoleView, IConsolePageParticipant, IPageBookViewPage, IConsole, ListenerList)</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.IConsole.createPage(IConsoleView)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.IOConsole.createPage(IConsoleView)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.MessageConsole.createPage(IConsoleView)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsole.createPage(IConsoleView)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.part.IPageSite</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>DECLARED_FIELD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsolePage.fSite</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsolePage.init(IPageSite)</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsolePage.getSite()</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.part.MessagePage</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANTIATION</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.createDefaultPage(PageBook)</td><td align="center">365</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.createDefaultPage(PageBook)</td><td align="center">365</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.part.PageBook</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.createDefaultPage(PageBook)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.part.PageBookView</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>EXTENDS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.part.PageBookView.PageRec</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANTIATION</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.doCreatePage(IWorkbenchPart)</td><td align="center">330</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.doCreatePage(IWorkbenchPart)</td><td align="center">330</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.doDestroyPage(IWorkbenchPart, PageBookViewPageRec)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.showPageRec(PageBookViewPageRec)</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.doCreatePage(IWorkbenchPart)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.part.PageSwitcher</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>EXTENDS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.6</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.6</td><td align="center">548</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.PartInitException</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CATCHES_EXCEPTION</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.ShowConsoleViewJob.runInUIThread(IProgressMonitor)</td><td align="center">310</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.ShowConsoleViewJob.runInUIThread(IProgressMonitor)</td><td align="center">310</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleViewConsoleFactory.openConsole()</td><td align="center">39</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.ShowConsoleViewJob.runInUIThread(IProgressMonitor)</td><td align="center">310</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.ShowConsoleViewJob.runInUIThread(IProgressMonitor)</td><td align="center">310</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleViewConsoleFactory.openConsole()</td><td align="center">39</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>THROWS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsolePage.init(IPageSite)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.plugin.AbstractUIPlugin</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>EXTENDS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.ConsolePlugin</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.progress.IWorkbenchSiteProgressService</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CASTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.warnOfContentChange(IConsole)</td><td align="center">595</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleView.warnOfContentChange(IConsole)</td><td align="center">595</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.progress.UIJob</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>EXTENDS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.IOConsolePartitioner.QueueProcessingJob</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.IOConsolePartitioner.QueueProcessingJob</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.ui.progress.WorkbenchJob</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>DECLARED_FIELD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsoleViewer.revealJob</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>EXTENDS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsoleViewer.3</td><td align="center">111</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.console.TextConsoleViewer.3</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.RepaintJob</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.RepaintJob</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.ShowConsoleViewJob</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.ConsoleManager.ShowConsoleViewJob</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.IOConsolePartitioner.TrimJob</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.console.IOConsolePartitioner.TrimJob</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<p>
+				Back to reference summary for <a href="../org.eclipse.ui.console.html">org.eclipse.ui.console</a>
+</p>
+</div>
+<p>
+<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88"></a>
+</p>
+</body>
+</html>

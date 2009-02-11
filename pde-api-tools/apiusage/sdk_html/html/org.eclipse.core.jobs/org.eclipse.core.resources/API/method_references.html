@@ -1,0 +1,1249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Reference Details</title>
+<style type="text/css">
+	.main{		font-family:Arial, Helvetica, sans-serif;}
+	.main h3 {	font-family:Arial, Helvetica, sans-serif;
+				background-color:#FFFFFF;
+				font-size:14px;
+				margin:0.1em;}
+	.main h4 { 	background-color:#CCCCCC;
+				margin:0.15em;}
+	a.typeslnk{	font-family:Arial, Helvetica, sans-serif;
+			   	text-decoration:none;
+			   	color:#000000;
+			   	margin-left:0.25em;}
+	a.typeslnk:hover{text-decoration:underline;}
+	a.kindslnk{	font-family:Arial, Helvetica, sans-serif;
+			  	text-decoration:none;
+			   	margin-left:0.25em;}
+	.types{	display:none;
+			margin-bottom:0.25em;
+			margin-top:0.25em;
+			margin-right:0.25em;
+		   	margin-left:0.75em;} 
+</style>
+<script type="text/javascript">
+	function expand(loc){
+	   if(document.getElementById){
+		  var foc = loc.firstChild;
+		  foc = loc.firstChild.innerHTML ? loc.firstChild : loc.firstChild.nextSibling;
+		  foc = loc.parentNode.nextSibling.style ? loc.parentNode.nextSibling : loc.parentNode.nextSibling.nextSibling;
+		  foc.style.display = foc.style.display == 'block' ? 'none' : 'block';
+		}
+	}  
+	if(!document.getElementById)
+	   document.write('<style type="text/css"></style>');
+</script>
+<noscript>
+<style type="text/css">
+	.types{display:block;}
+	.kinds{display:block;}
+</style>
+</noscript>
+</head>
+<body>
+<h3>Methods from org.eclipse.core.jobs used by org.eclipse.core.resources</h3>
+<p>
+			Click an entry in the table below to reveal the details of the references made to that element.
+		</p>
+<div align="left" class="main">
+<table border="1" width="90%">
+<tr bgcolor="#CC9933">
+<td><b>Reference Details</b></td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.IJobManager.beginRule(ISchedulingRule, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.checkIn(ISchedulingRule, IProgressMonitor)</td><td align="center">117</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.startup(IProgressMonitor)</td><td align="center">300</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.run(IProgressMonitor)</td><td align="center">99</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.IJobManager.currentJob()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.interrupt()</td><td align="center">185</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.initLinkHistoriesIfNeeded()</td><td align="center">380</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.IJobManager.endRule(ISchedulingRule)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.checkInFailed(ISchedulingRule)</td><td align="center">142</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.checkOut(ISchedulingRule)</td><td align="center">161</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.checkOut(ISchedulingRule)</td><td align="center">161</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.postWorkspaceStartup()</td><td align="center">314</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.postWorkspaceStartup()</td><td align="center">314</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Workspace.close(IProgressMonitor)</td><td align="center">435</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Workspace.close(IProgressMonitor)</td><td align="center">435</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.run(IProgressMonitor)</td><td align="center">103</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.run(IProgressMonitor)</td><td align="center">103</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.IJobManager.isIdle()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.PollingMonitor.run(IProgressMonitor)</td><td align="center">143</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.IJobManager.newLock()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.WorkManager(Workspace)</td><td align="center">89</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.ILock.acquire()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.BuildManager.getDelta(IProject)</td><td align="center">551</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.addToLocalHistory(IFile)</td><td align="center">61</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.computeTimestamp(IFile)</td><td align="center">90</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedFile(IFile)</td><td align="center">115</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedFolder(IFolder)</td><td align="center">138</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedProject(IProject)</td><td align="center">161</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.getTimestamp(IFile)</td><td align="center">226</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.isSynchronized(IResource, int)</td><td align="center">486</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedFile(IFile, IFile)</td><td align="center">508</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedFolderSubtree(IFolder, IFolder)</td><td align="center">565</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedProjectSubtree(IProject, IProjectDescription)</td><td align="center">623</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(IFile, int, IProgressMonitor)</td><td align="center">778</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(IFolder, int, IProgressMonitor)</td><td align="center">791</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(IProject, int, IProgressMonitor)</td><td align="center">808</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveFile(IFile, IFile, int, IProgressMonitor)</td><td align="center">882</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveFolder(IFolder, IFolder, int, IProgressMonitor)</td><td align="center">956</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveProject(IProject, IProjectDescription, int, IProgressMonitor)</td><td align="center">1022</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.updateMovedFileTimestamp(IFile, long)</td><td align="center">1097</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.checkIn(ISchedulingRule, IProgressMonitor)</td><td align="center">118</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.endUnprotected(int)</td><td align="center">181</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.startup(IProgressMonitor)</td><td align="center">301</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.ILock.acquire(long)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.isLockAlreadyAcquired()</td><td align="center">242</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.ILock.getDepth()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.AliasManager.checkDeletion(Project, IFileStore)</td><td align="center">411</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.beginUnprotected()</td><td align="center">100</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.isLockAlreadyAcquired()</td><td align="center">246</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.ILock.release()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.BuildManager.getDelta(IProject)</td><td align="center">589</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.BuildManager.getDelta(IProject)</td><td align="center">589</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.BuildManager.getDelta(IProject)</td><td align="center">589</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.BuildManager.getDelta(IProject)</td><td align="center">589</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.BuildManager.getDelta(IProject)</td><td align="center">589</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.addToLocalHistory(IFile)</td><td align="center">70</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.addToLocalHistory(IFile)</td><td align="center">70</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.addToLocalHistory(IFile)</td><td align="center">70</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.computeTimestamp(IFile)</td><td align="center">95</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.computeTimestamp(IFile)</td><td align="center">95</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.computeTimestamp(IFile)</td><td align="center">95</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedFile(IFile)</td><td align="center">128</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedFile(IFile)</td><td align="center">128</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedFile(IFile)</td><td align="center">128</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedFolder(IFolder)</td><td align="center">151</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedFolder(IFolder)</td><td align="center">151</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedFolder(IFolder)</td><td align="center">151</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedProject(IProject)</td><td align="center">175</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedProject(IProject)</td><td align="center">175</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.deletedProject(IProject)</td><td align="center">175</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.getTimestamp(IFile)</td><td align="center">232</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.getTimestamp(IFile)</td><td align="center">232</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.getTimestamp(IFile)</td><td align="center">232</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.isSynchronized(IResource, int)</td><td align="center">489</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.isSynchronized(IResource, int)</td><td align="center">489</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedFile(IFile, IFile)</td><td align="center">555</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedFile(IFile, IFile)</td><td align="center">555</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedFile(IFile, IFile)</td><td align="center">555</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedFolderSubtree(IFolder, IFolder)</td><td align="center">613</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedFolderSubtree(IFolder, IFolder)</td><td align="center">613</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedFolderSubtree(IFolder, IFolder)</td><td align="center">613</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedProjectSubtree(IProject, IProjectDescription)</td><td align="center">721</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedProjectSubtree(IProject, IProjectDescription)</td><td align="center">721</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.movedProjectSubtree(IProject, IProjectDescription)</td><td align="center">721</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(IFile, int, IProgressMonitor)</td><td align="center">781</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(IFile, int, IProgressMonitor)</td><td align="center">781</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(IFolder, int, IProgressMonitor)</td><td align="center">797</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(IFolder, int, IProgressMonitor)</td><td align="center">797</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(IProject, int, IProgressMonitor)</td><td align="center">871</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(IProject, int, IProgressMonitor)</td><td align="center">871</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(IProject, int, IProgressMonitor)</td><td align="center">871</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveFile(IFile, IFile, int, IProgressMonitor)</td><td align="center">945</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveFile(IFile, IFile, int, IProgressMonitor)</td><td align="center">945</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveFolder(IFolder, IFolder, int, IProgressMonitor)</td><td align="center">1011</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveFolder(IFolder, IFolder, int, IProgressMonitor)</td><td align="center">1011</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveFolder(IFolder, IFolder, int, IProgressMonitor)</td><td align="center">1011</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveProject(IProject, IProjectDescription, int, IProgressMonitor)</td><td align="center">1086</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveProject(IProject, IProjectDescription, int, IProgressMonitor)</td><td align="center">1086</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.standardMoveProject(IProject, IProjectDescription, int, IProgressMonitor)</td><td align="center">1086</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.updateMovedFileTimestamp(IFile, long)</td><td align="center">1108</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.updateMovedFileTimestamp(IFile, long)</td><td align="center">1108</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ResourceTree.updateMovedFileTimestamp(IFile, long)</td><td align="center">1108</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.beginUnprotected()</td><td align="center">102</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.checkOut(ISchedulingRule)</td><td align="center">158</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.isLockAlreadyAcquired()</td><td align="center">247</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.postWorkspaceStartup()</td><td align="center">311</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.ISchedulingRule.isConflicting(ISchedulingRule)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Workspace.prepareOperation(ISchedulingRule, IProgressMonitor)</td><td align="center">1744</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.belongsTo(Object)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>OVERRIDE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.belongsTo(Object)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.RefreshJob.belongsTo(Object)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetDeltaJob.belongsTo(Object)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.belongsTo(Object)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.belongsTo(Object)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.cancel()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.BuildManager.shutdown(IProgressMonitor)</td><td align="center">934</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.NotificationManager.beginNotify()</td><td align="center">125</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.MonitorManager.stop()</td><td align="center">290</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.PollingMonitor.unmonitor(IResource)</td><td align="center">213</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.RefreshJob.stop()</td><td align="center">223</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.shutdown(IProgressMonitor)</td><td align="center">454</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.unmonitor(IResource)</td><td align="center">556</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.SaveManager.initSnap(IProgressMonitor)</td><td align="center">448</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.SaveManager.shutdown(IProgressMonitor)</td><td align="center">1191</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Workspace.close(IProgressMonitor)</td><td align="center">411</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.getJobManager()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INVOKED_STATIC</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.interrupt()</td><td align="center">185</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.localstore.UnifiedTree.initLinkHistoriesIfNeeded()</td><td align="center">380</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.WorkManager.WorkManager(Workspace)</td><td align="center">88</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Workspace.close(IProgressMonitor)</td><td align="center">435</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Workspace.close(IProgressMonitor)</td><td align="center">435</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.run(IProgressMonitor)</td><td align="center">97</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.getState()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.build(boolean)</td><td align="center">76</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.interrupt()</td><td align="center">176</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.NotificationManager.requestNotify()</td><td align="center">204</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.SaveManager.shutdown(IProgressMonitor)</td><td align="center">1186</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.SaveManager.snapshotIfNeeded(boolean)</td><td align="center">1211</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.SaveManager.snapshotIfNeeded(boolean)</td><td align="center">1204</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.addStringPoolParticipant(IStringPoolParticipant, ISchedulingRule)</td><td align="center">60</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.isBlocking()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.isInterrupted()</td><td align="center">203</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.Job(String)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>OVERRIDE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.InternalWorkspaceJob.InternalWorkspaceJob(String)</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>SUPER_CONSTRUCTORMETHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.AutoBuildJob(Workspace)</td><td align="center">47</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.NotificationManager.NotifyJob.NotifyJob(NotificationManager)</td><td align="center">30</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.NotificationManager.NotifyJob.NotifyJob(NotificationManager)</td><td align="center">30</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.PollingMonitor.PollingMonitor(RefreshManager)</td><td align="center">75</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetDeltaJob.CharsetDeltaJob(Workspace)</td><td align="center">55</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.CharsetManagerJob(CharsetManager)</td><td align="center">39</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.CharsetManagerJob(CharsetManager)</td><td align="center">39</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.DelayedSnapshotJob.DelayedSnapshotJob(SaveManager)</td><td align="center">29</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.InternalWorkspaceJob.InternalWorkspaceJob(String)</td><td align="center">26</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.Win32Monitor(IRefreshResult)</td><td align="center">319</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.StringPoolJob()</td><td align="center">35</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.join()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.TestingSupport.waitForSnapshot()</td><td align="center">36</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.run(IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>OVERRIDE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.run(IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.NotificationManager.NotifyJob.run(IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.NotificationManager.NotifyJob.run(IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.PollingMonitor.run(IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetDeltaJob.run(IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.run(IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.run(IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.DelayedSnapshotJob.run(IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.InternalWorkspaceJob.run(IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.run(IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.run(IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.schedule()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.SaveManager.snapshotIfNeeded(boolean)</td><td align="center">1205</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.schedule(long)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.build(boolean)</td><td align="center">90</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.canceled()</td><td align="center">122</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.NotificationManager.requestNotify()</td><td align="center">205</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.PollingMonitor.monitor(IResource)</td><td align="center">88</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.PollingMonitor.run(IProgressMonitor)</td><td align="center">149</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.PollingMonitor.runOnce()</td><td align="center">168</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.RefreshJob.refresh(IResource)</td><td align="center">142</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetDeltaJob.addToQueue(CharsetDeltaJobICharsetListenerFilter)</td><td align="center">63</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.addChanges(Set)</td><td align="center">51</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.addChanges(Set)</td><td align="center">51</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.flush(IProject)</td><td align="center">119</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.flush(IProject)</td><td align="center">119</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.getDescriptionFor(File, ResourceInfo)</td><td align="center">305</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.monitor(IResource)</td><td align="center">446</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.run(IProgressMonitor)</td><td align="center">520</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.SaveManager.snapshotIfNeeded(boolean)</td><td align="center">1215</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.addStringPoolParticipant(IStringPoolParticipant, ISchedulingRule)</td><td align="center">63</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.run(IProgressMonitor)</td><td align="center">114</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.setPriority(int)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.AutoBuildJob(Workspace)</td><td align="center">49</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.PollingMonitor.PollingMonitor(RefreshManager)</td><td align="center">77</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.CharsetManagerJob(CharsetManager)</td><td align="center">41</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.CharsetManagerJob(CharsetManager)</td><td align="center">41</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.FlushJob(ContentDescriptionManager)</td><td align="center">49</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.FlushJob(ContentDescriptionManager)</td><td align="center">49</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.Win32Monitor(IRefreshResult)</td><td align="center">321</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.StringPoolJob()</td><td align="center">37</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.setRule(ISchedulingRule)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.AutoBuildJob(Workspace)</td><td align="center">48</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.FlushJob(ContentDescriptionManager)</td><td align="center">50</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.FlushJob(ContentDescriptionManager)</td><td align="center">50</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.DelayedSnapshotJob.DelayedSnapshotJob(SaveManager)</td><td align="center">31</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.setSystem(boolean)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.build(boolean)</td><td align="center">89</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.NotificationManager.NotifyJob.NotifyJob(NotificationManager)</td><td align="center">31</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.NotificationManager.NotifyJob.NotifyJob(NotificationManager)</td><td align="center">31</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.PollingMonitor.PollingMonitor(RefreshManager)</td><td align="center">78</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.CharsetManagerJob(CharsetManager)</td><td align="center">40</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.CharsetManagerJob(CharsetManager)</td><td align="center">40</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.FlushJob(ContentDescriptionManager)</td><td align="center">47</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.FlushJob(ContentDescriptionManager)</td><td align="center">47</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.DelayedSnapshotJob.DelayedSnapshotJob(SaveManager)</td><td align="center">32</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.Win32Monitor(IRefreshResult)</td><td align="center">322</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.StringPoolJob()</td><td align="center">36</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.setUser(boolean)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.FlushJob(ContentDescriptionManager)</td><td align="center">48</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ContentDescriptionManager.FlushJob.FlushJob(ContentDescriptionManager)</td><td align="center">48</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.shouldRun()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>OVERRIDE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.PollingMonitor.shouldRun()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.refresh.RefreshJob.shouldRun()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.shouldRun()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.CharsetManager.CharsetManagerJob.shouldRun()</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.shouldRun()</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.sleep()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.interrupt()</td><td align="center">181</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.wakeUp()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.SaveManager.snapshotIfNeeded(boolean)</td><td align="center">1207</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.Job.wakeUp(long)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.events.AutoBuildJob.build(boolean)</td><td align="center">86</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.addStringPoolParticipant(IStringPoolParticipant, ISchedulingRule)</td><td align="center">61</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.MultiRule.combine(ISchedulingRule, ISchedulingRule)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INVOKED_STATIC</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.ProjectPreferences.save()</td><td align="center">584</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Rules.moveRule(IResource, IResource)</td><td align="center">147</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.resources.team.ResourceRuleFactory.moveRule(IResource, IResource)</td><td align="center">168</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.MultiRule.combine(ISchedulingRule[])</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INVOKED_STATIC</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.utils.StringPoolJob.run(IProgressMonitor)</td><td align="center">94</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.MultiRule.getChildren()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Resource.contains(ISchedulingRule)</td><td align="center">442</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.runtime.jobs.MultiRule.MultiRule(ISchedulingRule[])</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CONSTRUCTOR_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.internal.resources.Rules.validateEditRule(IResource[])</td><td align="center">199</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.core.resources.team.ResourceRuleFactory.validateEditRule(IResource[])</td><td align="center">231</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<p>
+				Back to reference summary for <a href="../org.eclipse.core.resources.html">org.eclipse.core.resources</a>
+</p>
+</div>
+<p>
+<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88"></a>
+</p>
+</body>
+</html>

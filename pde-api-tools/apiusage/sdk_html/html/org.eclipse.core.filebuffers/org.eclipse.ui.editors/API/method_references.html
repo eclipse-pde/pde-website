@@ -1,0 +1,1012 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Reference Details</title>
+<style type="text/css">
+	.main{		font-family:Arial, Helvetica, sans-serif;}
+	.main h3 {	font-family:Arial, Helvetica, sans-serif;
+				background-color:#FFFFFF;
+				font-size:14px;
+				margin:0.1em;}
+	.main h4 { 	background-color:#CCCCCC;
+				margin:0.15em;}
+	a.typeslnk{	font-family:Arial, Helvetica, sans-serif;
+			   	text-decoration:none;
+			   	color:#000000;
+			   	margin-left:0.25em;}
+	a.typeslnk:hover{text-decoration:underline;}
+	a.kindslnk{	font-family:Arial, Helvetica, sans-serif;
+			  	text-decoration:none;
+			   	margin-left:0.25em;}
+	.types{	display:none;
+			margin-bottom:0.25em;
+			margin-top:0.25em;
+			margin-right:0.25em;
+		   	margin-left:0.75em;} 
+</style>
+<script type="text/javascript">
+	function expand(loc){
+	   if(document.getElementById){
+		  var foc = loc.firstChild;
+		  foc = loc.firstChild.innerHTML ? loc.firstChild : loc.firstChild.nextSibling;
+		  foc = loc.parentNode.nextSibling.style ? loc.parentNode.nextSibling : loc.parentNode.nextSibling.nextSibling;
+		  foc.style.display = foc.style.display == 'block' ? 'none' : 'block';
+		}
+	}  
+	if(!document.getElementById)
+	   document.write('<style type="text/css"></style>');
+</script>
+<noscript>
+<style type="text/css">
+	.types{display:block;}
+	.kinds{display:block;}
+</style>
+</noscript>
+</head>
+<body>
+<h3>Methods from org.eclipse.core.filebuffers used by org.eclipse.ui.editors</h3>
+<p>
+			Click an entry in the table below to reveal the details of the references made to that element.
+		</p>
+<div align="left" class="main">
+<table border="1" width="90%">
+<tr bgcolor="#CC9933">
+<td><b>Reference Details</b></td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.FileBuffers.getSystemFileAtLocation(IPath)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INVOKED_STATIC</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getSystemFile(TextFileDocumentProviderFileInfo)</td><td align="center">1292</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.FileBuffers.getTextFileBufferManager()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INVOKED_STATIC</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileBufferOperationAction.1.run(IProgressMonitor)</td><td align="center">185</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileBufferOperationHandler.1.run(IProgressMonitor)</td><td align="center">207</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.addElementStateListener(IElementStateListener)</td><td align="center">1008</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileFromDocument(IProgressMonitor, IFile, IDocument)</td><td align="center">886</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(Object)</td><td align="center">549</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileStoreFromDocument(IProgressMonitor, URI, IDocument)</td><td align="center">911</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileStoreFromDocument(IProgressMonitor, URI, IDocument)</td><td align="center">914</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileStoreFromDocument(IProgressMonitor, URI, IDocument)</td><td align="center">910</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.disposeFileInfo(Object, TextFileDocumentProviderFileInfo)</td><td align="center">690</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getDefaultEncoding()</td><td align="center">1220</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.removeElementStateListener(IElementStateListener)</td><td align="center">1022</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.TextFileDocumentProvider(IDocumentProvider)</td><td align="center">395</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.editors.text.ConvertLineDelimitersAction.isAcceptableLocation(IPath)</td><td align="center">64</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.editors.text.RemoveTrailingWhitespaceHandler.isAcceptableLocation(IPath)</td><td align="center">46</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.FileBuffers.getWorkspaceFileAtLocation(IPath)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INVOKED_STATIC</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(Object)</td><td align="center">576</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getStatus(Object)</td><td align="center">1136</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.texteditor.ResourceMarkerAnnotationModelFactory.createAnnotationModel(IPath)</td><td align="center">34</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IDocumentSetupParticipant.setup(IDocument)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.ForwardingDocumentProvider.connect(Object)</td><td align="center">119</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.commit(IProgressMonitor, boolean)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.commitFileBuffer(IProgressMonitor, TextFileDocumentProviderFileInfo, boolean)</td><td align="center">868</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileFromDocument(IProgressMonitor, IFile, IDocument)</td><td align="center">890</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileStoreFromDocument(IProgressMonitor, URI, IDocument)</td><td align="center">913</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.getContentType()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getContentType(Object)</td><td align="center">1251</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.getFileStore()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.disposeFileInfo(Object, TextFileDocumentProviderFileInfo)</td><td align="center">696</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getFileStore(TextFileDocumentProviderFileInfo)</td><td align="center">1280</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.getLocation()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.disposeFileInfo(Object, TextFileDocumentProviderFileInfo)</td><td align="center">694</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getStatus(Object)</td><td align="center">1136</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getSystemFile(TextFileDocumentProviderFileInfo)</td><td align="center">1291</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.getModificationStamp()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getModificationStamp(Object)</td><td align="center">926</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.getStatus()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getStatus(Object)</td><td align="center">1121</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.isDirty()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.canSaveDocument(Object)</td><td align="center">968</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.mustSaveDocument(Object)</td><td align="center">958</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.isStateValidated()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.isModifiable(Object)</td><td align="center">1044</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.isStateValidated(Object)</td><td align="center">1083</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.isSynchronized()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.isSynchronized(Object)</td><td align="center">1197</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.releaseSynchronizationContext()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.disposeFileInfo(Object, TextFileDocumentProviderFileInfo)</td><td align="center">692</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.requestSynchronizationContext()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(Object)</td><td align="center">581</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.resetStateValidation()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.updateStateCache(Object)</td><td align="center">1097</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.revert(IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.1.execute(IProgressMonitor)</td><td align="center">736</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.6.execute(IProgressMonitor)</td><td align="center">1157</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.setDirty(boolean)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.commitFileBuffer(IProgressMonitor, TextFileDocumentProviderFileInfo, boolean)</td><td align="center">865</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBuffer.validateState(IProgressMonitor, Object)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.5.execute(IProgressMonitor)</td><td align="center">1059</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBufferManager.addFileBufferListener(IFileBufferListener)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.addElementStateListener(IElementStateListener)</td><td align="center">1009</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBufferManager.connect(IPath, LocationKind, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileFromDocument(IProgressMonitor, IFile, IDocument)</td><td align="center">887</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(Object)</td><td align="center">557</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(Object)</td><td align="center">574</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBufferManager.connectFileStore(IFileStore, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(Object)</td><td align="center">565</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileStoreFromDocument(IProgressMonitor, URI, IDocument)</td><td align="center">910</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBufferManager.disconnect(IPath, LocationKind, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileFromDocument(IProgressMonitor, IFile, IDocument)</td><td align="center">891</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.disposeFileInfo(Object, TextFileDocumentProviderFileInfo)</td><td align="center">694</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBufferManager.disconnectFileStore(IFileStore, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileStoreFromDocument(IProgressMonitor, URI, IDocument)</td><td align="center">914</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.disposeFileInfo(Object, TextFileDocumentProviderFileInfo)</td><td align="center">696</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBufferManager.removeFileBufferListener(IFileBufferListener)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.removeElementStateListener(IElementStateListener)</td><td align="center">1023</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.IFileBufferManager.setSynchronizationContext(ISynchronizationContext)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.TextFileDocumentProvider(IDocumentProvider)</td><td align="center">396</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.ITextFileBuffer.getAnnotationModel()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(Object)</td><td align="center">592</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.ITextFileBuffer.getDocument()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.commitFileBuffer(IProgressMonitor, TextFileDocumentProviderFileInfo, boolean)</td><td align="center">871</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileFromDocument(IProgressMonitor, IFile, IDocument)</td><td align="center">889</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileStoreFromDocument(IProgressMonitor, URI, IDocument)</td><td align="center">912</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createSaveOperation(Object, IDocument, boolean)</td><td align="center">779</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getDocument(Object)</td><td align="center">721</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.setUpSynchronization(TextFileDocumentProviderFileInfo)</td><td align="center">612</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.ITextFileBuffer.getEncoding()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getEncoding(Object)</td><td align="center">1229</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.ITextFileBuffer.setEncoding(String)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.setEncoding(Object, String)</td><td align="center">1239</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.ITextFileBufferManager.getDefaultEncoding()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.getDefaultEncoding()</td><td align="center">1220</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.ITextFileBufferManager.getFileStoreTextFileBuffer(IFileStore)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(Object)</td><td align="center">566</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileStoreFromDocument(IProgressMonitor, URI, IDocument)</td><td align="center">911</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.ITextFileBufferManager.getTextFileBuffer(IPath, LocationKind)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileFromDocument(IProgressMonitor, IFile, IDocument)</td><td align="center">888</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(Object)</td><td align="center">558</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(Object)</td><td align="center">575</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.ITextFileBufferManager.isTextFileLocation(IPath, boolean)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.editors.text.ConvertLineDelimitersAction.isAcceptableLocation(IPath)</td><td align="center">65</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.editors.text.RemoveTrailingWhitespaceHandler.isAcceptableLocation(IPath)</td><td align="center">47</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.manipulation.ContainerCreator.ContainerCreator(IWorkspace, IPath)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CONSTRUCTOR_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileDocumentProvider.doSaveDocument(IProgressMonitor, Object, IDocument, boolean)</td><td align="center">656</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.manipulation.ContainerCreator.createContainer(IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileDocumentProvider.doSaveDocument(IProgressMonitor, Object, IDocument, boolean)</td><td align="center">657</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.manipulation.ConvertLineDelimitersOperation.ConvertLineDelimitersOperation(String)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CONSTRUCTOR_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.editors.text.ConvertLineDelimitersAction.ConvertLineDelimitersAction(String, String)</td><td align="center">49</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.manipulation.FileBufferOperationRunner.FileBufferOperationRunner(IFileBufferManager, Object)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CONSTRUCTOR_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileBufferOperationAction.1.run(IProgressMonitor)</td><td align="center">185</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileBufferOperationHandler.1.run(IProgressMonitor)</td><td align="center">207</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.manipulation.GenericFileBufferOperationRunner.execute(IPath[], IFileBufferOperation, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>VIRTUAL_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileBufferOperationAction.1.run(IProgressMonitor)</td><td align="center">186</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileBufferOperationHandler.1.run(IProgressMonitor)</td><td align="center">208</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.manipulation.IFileBufferOperation.getOperationName()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileBufferOperationAction.1.run(IProgressMonitor)</td><td align="center">175</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileBufferOperationAction.doRun(IFile[], IPath, IFileBufferOperation)</td><td align="center">168</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileBufferOperationHandler.1.run(IProgressMonitor)</td><td align="center">197</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.editors.text.FileBufferOperationHandler.doRun(IFile[], IPath, IFileBufferOperation)</td><td align="center">190</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filebuffers.manipulation.RemoveTrailingWhitespaceOperation.RemoveTrailingWhitespaceOperation()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CONSTRUCTOR_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.editors.text.RemoveTrailingWhitespaceHandler.RemoveTrailingWhitespaceHandler()</td><td align="center">39</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<p>
+				Back to reference summary for <a href="../org.eclipse.ui.editors.html">org.eclipse.ui.editors</a>
+</p>
+</div>
+<p>
+<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88"></a>
+</p>
+</body>
+</html>

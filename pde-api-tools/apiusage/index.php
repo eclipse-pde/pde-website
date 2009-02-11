@@ -31,19 +31,13 @@ $pageTitle 		= "PDE/API Tools API Usage";
 $pageKeywords	= "PDE, pde, API, Java, plan, planning, JDT, development, tools, ide, Eclipse, usage, report, reporting, graph";
 $pageAuthor		= "The PDE Team";
 
-include("../_sideCommon.php");
-
 ob_start();
 ?>
 		
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-		<?php include("/sdk_html/html/index.html"); ?>
+		<?php include("./sdk_html/html/index.html"); ?>
 	</div>
-	<div id="rightcolumn">
-		$commonside
-	</div>
-
 <?php
 	$html = ob_get_contents();
 	ob_end_clean();

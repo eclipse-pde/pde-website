@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Reference Details</title>
+<style type="text/css">
+	.main{		font-family:Arial, Helvetica, sans-serif;}
+	.main h3 {	font-family:Arial, Helvetica, sans-serif;
+				background-color:#FFFFFF;
+				font-size:14px;
+				margin:0.1em;}
+	.main h4 { 	background-color:#CCCCCC;
+				margin:0.15em;}
+	a.typeslnk{	font-family:Arial, Helvetica, sans-serif;
+			   	text-decoration:none;
+			   	color:#000000;
+			   	margin-left:0.25em;}
+	a.typeslnk:hover{text-decoration:underline;}
+	a.kindslnk{	font-family:Arial, Helvetica, sans-serif;
+			  	text-decoration:none;
+			   	margin-left:0.25em;}
+	.types{	display:none;
+			margin-bottom:0.25em;
+			margin-top:0.25em;
+			margin-right:0.25em;
+		   	margin-left:0.75em;} 
+</style>
+<script type="text/javascript">
+	function expand(loc){
+	   if(document.getElementById){
+		  var foc = loc.firstChild;
+		  foc = loc.firstChild.innerHTML ? loc.firstChild : loc.firstChild.nextSibling;
+		  foc = loc.parentNode.nextSibling.style ? loc.parentNode.nextSibling : loc.parentNode.nextSibling.nextSibling;
+		  foc.style.display = foc.style.display == 'block' ? 'none' : 'block';
+		}
+	}  
+	if(!document.getElementById)
+	   document.write('<style type="text/css"></style>');
+</script>
+<noscript>
+<style type="text/css">
+	.types{display:block;}
+	.kinds{display:block;}
+</style>
+</noscript>
+</head>
+<body>
+<h3>Types from org.eclipse.core.filesystem used by org.eclipse.ui.ide</h3>
+<p>
+			Click an entry in the table below to reveal the details of the references made to that element.
+		</p>
+<div align="left" class="main">
+<table border="1" width="90%">
+<tr bgcolor="#CC9933">
+<td><b>Reference Details</b></td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileInfo</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.checkExist(IResource[])</td><td align="center">218</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.RefreshAction.checkLocationDeleted(IProject)</td><td align="center">112</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.ide.dialogs.PathVariableSelectionDialog.updateExtendButtonState()</td><td align="center">210</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run()</td><td align="center">103</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.CreateLinkedResourceGroup.validateLinkLocation(IResource)</td><td align="center">622</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.getDateStringValue(IResource)</td><td align="center">126</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.getSizeString(IResource)</td><td align="center">314</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.PathVariablesGroup.updateVariableTable(String)</td><td align="center">458</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea.handleLocationBrowseButtonPressed()</td><td align="center">321</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.filesystem.FileSystemSupportRegistry.1.browseFileSystem(String, Shell)</td><td align="center">83</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.LinkedResourceDecorator.decorate(Object, IDecoration)</td><td align="center">91</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.CreateLinkedResourceGroup.validateFileType(IFileInfo)</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.getFileInfo(IPath)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.getFileInfo(String)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.getFileInfo(URI)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>ALLOCATES_ARRAY</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.buildFileStores(String[])</td><td align="center">735</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.buildFileStores(URI[])</td><td align="center">657</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.validateImportDestination(IContainer, String[])</td><td align="center">1428</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.listFileStores(IFileStore, IFileStoreFilter, IProgressMonitor)</td><td align="center">421</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.listFileStores(IFileStore, IFileStoreFilter, IProgressMonitor)</td><td align="center">428</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>CASTS</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.ide.dialogs.PathVariableSelectionDialog.buttonPressed(int)</td><td align="center">109</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileContentProvider.getChildren(Object)</td><td align="center">112</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileContentProvider.getChildren(Object)</td><td align="center">112</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileContentProvider.getParent(Object)</td><td align="center">128</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileContentProvider.getParent(Object)</td><td align="center">128</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileLabelProvider.getImage(Object)</td><td align="center">55</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileLabelProvider.getImage(Object)</td><td align="center">55</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileLabelProvider.getText(Object)</td><td align="center">71</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileLabelProvider.getText(Object)</td><td align="center">71</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileSelectionValidator.validate(Object[])</td><td align="center">206</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileSelectionValidator.validate(Object[])</td><td align="center">206</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileViewerSorter.category(Object)</td><td align="center">159</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileViewerSorter.category(Object)</td><td align="center">159</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.wizards.datatransfer.FileStoreStructureProvider.getChildren(Object)</td><td align="center">45</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.wizards.datatransfer.FileStoreStructureProvider.getContents(Object)</td><td align="center">70</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.wizards.datatransfer.FileStoreStructureProvider.getFullPath(Object)</td><td align="center">84</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.wizards.datatransfer.FileStoreStructureProvider.getLabel(Object)</td><td align="center">93</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.wizards.datatransfer.FileStoreStructureProvider.isFolder(Object)</td><td align="center">102</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>DECLARED_FIELD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.ide.FileStoreEditorInput.fileStore</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INSTANCEOF</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileContentProvider.getChildren(Object)</td><td align="center">110</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileContentProvider.getChildren(Object)</td><td align="center">110</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileContentProvider.getParent(Object)</td><td align="center">127</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileContentProvider.getParent(Object)</td><td align="center">127</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileLabelProvider.getImage(Object)</td><td align="center">54</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileLabelProvider.getImage(Object)</td><td align="center">54</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileLabelProvider.getText(Object)</td><td align="center">70</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileLabelProvider.getText(Object)</td><td align="center">70</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileSelectionValidator.validate(Object[])</td><td align="center">205</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileSelectionValidator.validate(Object[])</td><td align="center">205</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileViewerSorter.category(Object)</td><td align="center">158</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileViewerSorter.category(Object)</td><td align="center">158</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.buildFileStores(String[])</td><td align="center">737</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.buildFileStores(URI[])</td><td align="center">661</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.validateImportDestination(IContainer, String[])</td><td align="center">1430</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.validateImportDestinationInternal(IContainer, IFileStore[])</td><td align="center">1469</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.validateImportDestinationInternal(IContainer, IFileStore[])</td><td align="center">1492</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.validateImportDestinationInternal(IContainer, IFileStore[])</td><td align="center">1479</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.validateImportDestinationInternal(IContainer, IFileStore[])</td><td align="center">1478</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.dialogs.WizardNewLinkPage.handleLinkTargetBrowseButtonPressed()</td><td align="center">215</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.dialogs.WizardNewLinkPage.validatePage()</td><td align="center">356</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run()</td><td align="center">101</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.CreateLinkedResourceGroup.handleLinkTargetBrowseButtonPressed()</td><td align="center">386</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.CreateLinkedResourceGroup.handleLinkTargetBrowseButtonPressed()</td><td align="center">420</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileLabelProvider.getImage(Object)</td><td align="center">55</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileLabelProvider.getImage(Object)</td><td align="center">55</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileSelectionValidator.validate(Object[])</td><td align="center">206</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.FileSelectionValidator.validate(Object[])</td><td align="center">206</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.getLocationText(IResource)</td><td align="center">232</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.getResolvedLocationText(IResource)</td><td align="center">276</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.EditorAreaDropAdapter.asyncDrop(DropTargetEvent, IWorkbenchPage)</td><td align="center">134</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.IURIEditorInputAdapterFactory.getAdapter(Object, Class)</td><td align="center">66</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.part.FileEditorInput.getPath()</td><td align="center">208</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.part.FileEditorInput.isLocalFile(IFile)</td><td align="center">66</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>PARAMETER</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.4.(CopyFilesAndFoldersOperation, IFileStore[], IPath)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.checkExist(IFileStore[])</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.copyFileStores(IContainer, IFileStore[], boolean, IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.copyFileStores(IFileStore[], IPath, IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.performFileImport(IFileStore[], IContainer, IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.validateImportDestinationInternal(IContainer, IFileStore[])</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.dialogs.WizardNewLinkPage.validateFileType(IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.ide.dialogs.PathVariableSelectionDialog.setExtensionResult(PathVariablesGroupPathVariableElement, IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.ide.FileStoreEditorInput.FileStoreEditorInput(IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.ide.IDE.getEditorId(IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.ide.IDE.getEditorInput(IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.ide.IDE.getWorkspaceFile(IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.ide.IDE.openEditorOnFileStore(IWorkbenchPage, IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.FileFolderSelectionDialog.1.accept(IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.listFileStores(IFileStore, IFileStoreFilter, IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IFileStoreFilter.accept(IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.IURIEditorInputAdapterFactory.PathEditorInputAdapter.PathEditorInputAdapter(IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.IURIEditorInputAdapterFactory.PathEditorInputAdapter.PathEditorInputAdapter(IFileStore)</td><td align="center">-1</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>RETURN_TYPE</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.buildFileStores(String[])</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.actions.CopyFilesAndFoldersOperation.buildFileStores(URI[])</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.getFileStore(String)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.getFileStore(URI)</td><td align="center">-1</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils.listFileStores(IFileStore, IFileStoreFilter, IProgressMonitor)</td><td align="center">-1</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileSystem</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>LOCAL_VAR_DECLARED</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.ui.internal.ide.dialogs.ResourceInfoPage.createStateGroup(Composite, IResource)</td><td align="center">455</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<p>
+				Back to reference summary for <a href="../org.eclipse.ui.ide.html">org.eclipse.ui.ide</a>
+</p>
+</div>
+<p>
+<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88"></a>
+</p>
+</body>
+</html>

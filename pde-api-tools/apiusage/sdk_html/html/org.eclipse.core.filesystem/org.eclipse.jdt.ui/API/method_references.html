@@ -1,0 +1,858 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Reference Details</title>
+<style type="text/css">
+	.main{		font-family:Arial, Helvetica, sans-serif;}
+	.main h3 {	font-family:Arial, Helvetica, sans-serif;
+				background-color:#FFFFFF;
+				font-size:14px;
+				margin:0.1em;}
+	.main h4 { 	background-color:#CCCCCC;
+				margin:0.15em;}
+	a.typeslnk{	font-family:Arial, Helvetica, sans-serif;
+			   	text-decoration:none;
+			   	color:#000000;
+			   	margin-left:0.25em;}
+	a.typeslnk:hover{text-decoration:underline;}
+	a.kindslnk{	font-family:Arial, Helvetica, sans-serif;
+			  	text-decoration:none;
+			   	margin-left:0.25em;}
+	.types{	display:none;
+			margin-bottom:0.25em;
+			margin-top:0.25em;
+			margin-right:0.25em;
+		   	margin-left:0.75em;} 
+</style>
+<script type="text/javascript">
+	function expand(loc){
+	   if(document.getElementById){
+		  var foc = loc.firstChild;
+		  foc = loc.firstChild.innerHTML ? loc.firstChild : loc.firstChild.nextSibling;
+		  foc = loc.parentNode.nextSibling.style ? loc.parentNode.nextSibling : loc.parentNode.nextSibling.nextSibling;
+		  foc.style.display = foc.style.display == 'block' ? 'none' : 'block';
+		}
+	}  
+	if(!document.getElementById)
+	   document.write('<style type="text/css"></style>');
+</script>
+<noscript>
+<style type="text/css">
+	.types{display:block;}
+	.kinds{display:block;}
+</style>
+</noscript>
+</head>
+<body>
+<h3>Methods from org.eclipse.core.filesystem used by org.eclipse.jdt.ui</h3>
+<p>
+			Click an entry in the table below to reveal the details of the references made to that element.
+		</p>
+<div align="left" class="main">
+<table border="1" width="90%">
+<tr bgcolor="#CC9933">
+<td><b>Reference Details</b></td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.EFS.getLocalFileSystem()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INVOKED_STATIC</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.util.OpenTypeHistory.getContainerTimestamp(TypeNameMatch)</td><td align="center">351</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.configureClasspath(IJavaProject, IPackageFragmentRoot, IFolder, IProgressMonitor)</td><td align="center">200</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.EFS.getStore(URI)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INVOKED_STATIC</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.buildpath.ClasspathModifier.validateAndAddEntry(CPListElement, List, IJavaProject)</td><td align="center">1317</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.binary.AbstractCodeCreationOperation.run(IProgressMonitor)</td><td align="center">156</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.nls.changes.CreateFileChange.isValid(IProgressMonitor)</td><td align="center">133</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.rename.RenameJavaProjectProcessor.projectFolderAlreadyExists(String)</td><td align="center">186</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.util.OpenTypeHistory.getContainerTimestamp(TypeNameMatch)</td><td align="center">339</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.getTargetURI(URI)</td><td align="center">364</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.getTargetURI(URI)</td><td align="center">368</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.replaceJarFile(IProgressMonitor)</td><td align="center">428</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.replaceJarFile(IProgressMonitor)</td><td align="center">423</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.replaceJarFile(IProgressMonitor)</td><td align="center">430</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.replaceJarFile(IProgressMonitor)</td><td align="center">426</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarpackager.JarFileExportOperation.buildJavaToClassMap(IContainer, IProgressMonitor)</td><td align="center">810</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarpackager.JarPackagerUtil.getArchiveFile(IPath)</td><td align="center">294</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFakeCompiltationUnit(IURIEditorInput)</td><td align="center">1109</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.deconfigureClasspath(IProgressMonitor)</td><td align="center">560</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.wizards.buildpaths.AddSourceFolderWizardPage.validatePathName(String, IContainer)</td><td align="center">683</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.wizards.NewSourceFolderWizardPage.updateRootStatus()</td><td align="center">325</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.jarpackager.JarWriter3.addDirectories(IResource, IPath)</td><td align="center">183</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.jarpackager.JarWriter3.addFile(IFile, IPath)</td><td align="center">228</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.deleteProjectFile(URI)</td><td align="center">325</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.hasExistingContent(URI)</td><td align="center">148</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExisitingFolders(URI)</td><td align="center">338</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExistingFiles(URI)</td><td align="center">376</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(URI, IProgressMonitor)</td><td align="center">403</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(URI, IProgressMonitor)</td><td align="center">393</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFolders(URI)</td><td align="center">353</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewPackageWizardPage.packageChanged()</td><td align="center">269</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewTypeWizardPage.typeNameChanged()</td><td align="center">1606</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileInfo.exists()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.buildpath.ClasspathModifier.validateAndAddEntry(CPListElement, List, IJavaProject)</td><td align="center">1318</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.nls.changes.CreateFileChange.isValid(IProgressMonitor)</td><td align="center">134</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.rename.RenameJavaProjectProcessor.projectFolderAlreadyExists(String)</td><td align="center">188</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.util.OpenTypeHistory.getContainerTimestamp(TypeNameMatch)</td><td align="center">340</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.util.OpenTypeHistory.getContainerTimestamp(TypeNameMatch)</td><td align="center">352</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.configureClasspath(IJavaProject, IPackageFragmentRoot, IFolder, IProgressMonitor)</td><td align="center">201</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.deconfigureClasspath(IProgressMonitor)</td><td align="center">561</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.wizards.buildpaths.AddSourceFolderWizardPage.validatePathName(String, IContainer)</td><td align="center">684</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.wizards.NewSourceFolderWizardPage.updateRootStatus()</td><td align="center">326</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.jarpackager.JarWriter3.addDirectories(IResource, IPath)</td><td align="center">184</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.jarpackager.JarWriter3.addFile(IFile, IPath)</td><td align="center">229</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.deleteProjectFile(URI)</td><td align="center">328</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.deleteProjectFile(URI)</td><td align="center">326</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.hasExistingContent(URI)</td><td align="center">149</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExisitingFolders(URI)</td><td align="center">342</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExistingFiles(URI)</td><td align="center">379</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExistingFiles(URI)</td><td align="center">377</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExistingFiles(URI)</td><td align="center">383</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFolders(URI)</td><td align="center">357</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewPackageWizardPage.packageChanged()</td><td align="center">270</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewTypeWizardPage.typeNameChanged()</td><td align="center">1607</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileInfo.getLastModified()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.util.OpenTypeHistory.getContainerTimestamp(TypeNameMatch)</td><td align="center">345</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.util.OpenTypeHistory.getContainerTimestamp(TypeNameMatch)</td><td align="center">353</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.jarpackager.JarWriter3.addDirectories(IResource, IPath)</td><td align="center">185</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.jarpackager.JarWriter3.addFile(IFile, IPath)</td><td align="center">230</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileInfo.isDirectory()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExisitingFolders(URI)</td><td align="center">342</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFolders(URI)</td><td align="center">357</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.childStores(int, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExisitingFolders(URI)</td><td align="center">338</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFolders(URI)</td><td align="center">353</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.copy(IFileStore, int, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.replaceJarFile(IProgressMonitor)</td><td align="center">426</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.replaceJarFile(IProgressMonitor)</td><td align="center">430</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.delete(int, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.replaceJarFile(IProgressMonitor)</td><td align="center">428</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.configureClasspath(IJavaProject, IPackageFragmentRoot, IFolder, IProgressMonitor)</td><td align="center">202</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.deconfigureClasspath(IProgressMonitor)</td><td align="center">562</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.deleteProjectFile(URI)</td><td align="center">329</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(URI, IProgressMonitor)</td><td align="center">404</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(URI, IProgressMonitor)</td><td align="center">394</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFolders(URI)</td><td align="center">358</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.fetchInfo()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.buildpath.ClasspathModifier.validateAndAddEntry(CPListElement, List, IJavaProject)</td><td align="center">1318</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.nls.changes.CreateFileChange.isValid(IProgressMonitor)</td><td align="center">133</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.rename.RenameJavaProjectProcessor.projectFolderAlreadyExists(String)</td><td align="center">188</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.util.OpenTypeHistory.getContainerTimestamp(TypeNameMatch)</td><td align="center">339</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.util.OpenTypeHistory.getContainerTimestamp(TypeNameMatch)</td><td align="center">351</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.wizards.buildpaths.AddSourceFolderWizardPage.validatePathName(String, IContainer)</td><td align="center">684</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.wizards.NewSourceFolderWizardPage.updateRootStatus()</td><td align="center">326</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.jarpackager.JarWriter3.addDirectories(IResource, IPath)</td><td align="center">183</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.jarpackager.JarWriter3.addFile(IFile, IPath)</td><td align="center">228</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.deleteProjectFile(URI)</td><td align="center">328</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.deleteProjectFile(URI)</td><td align="center">326</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.hasExistingContent(URI)</td><td align="center">149</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExisitingFolders(URI)</td><td align="center">341</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExistingFiles(URI)</td><td align="center">383</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExistingFiles(URI)</td><td align="center">379</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExistingFiles(URI)</td><td align="center">377</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFolders(URI)</td><td align="center">356</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewPackageWizardPage.packageChanged()</td><td align="center">270</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewTypeWizardPage.typeNameChanged()</td><td align="center">1607</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.fetchInfo(int, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.configureClasspath(IJavaProject, IPackageFragmentRoot, IFolder, IProgressMonitor)</td><td align="center">201</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.deconfigureClasspath(IProgressMonitor)</td><td align="center">561</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.getChild(IPath)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.binary.AbstractCodeCreationOperation.run(IProgressMonitor)</td><td align="center">166</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.getChild(String)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.binary.AbstractCodeCreationOperation.createCompilationUnit(IFileStore, String, String, IProgressMonitor)</td><td align="center">86</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.rename.RenameJavaProjectProcessor.projectFolderAlreadyExists(String)</td><td align="center">187</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.getTargetURI(URI)</td><td align="center">368</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.wizards.buildpaths.AddSourceFolderWizardPage.validatePathName(String, IContainer)</td><td align="center">683</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.wizards.NewSourceFolderWizardPage.updateRootStatus()</td><td align="center">325</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.deleteProjectFile(URI)</td><td align="center">327</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExistingFiles(URI)</td><td align="center">378</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExistingFiles(URI)</td><td align="center">382</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(URI, IProgressMonitor)</td><td align="center">393</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(URI, IProgressMonitor)</td><td align="center">403</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.getFileStore(IPath)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.buildpath.ClasspathModifier.validateAndAddEntry(CPListElement, List, IJavaProject)</td><td align="center">1317</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.getName()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.getTargetURI(URI)</td><td align="center">368</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFakeCompiltationUnit(IURIEditorInput)</td><td align="center">1132</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFakeCompiltationUnit(IURIEditorInput)</td><td align="center">1111</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExisitingFolders(URI)</td><td align="center">342</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.getParent()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.rename.RenameJavaProjectProcessor.projectFolderAlreadyExists(String)</td><td align="center">187</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.getTargetURI(URI)</td><td align="center">364</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.mkdir(int, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.binary.AbstractCodeCreationOperation.createPackageFragment(IFileStore, String, IProgressMonitor)</td><td align="center">116</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.configureClasspath(IJavaProject, IPackageFragmentRoot, IFolder, IProgressMonitor)</td><td align="center">203</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFolders(URI)</td><td align="center">365</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.openInputStream(int, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarpackager.JarFileExportOperation.buildJavaToClassMap(IContainer, IProgressMonitor)</td><td align="center">810</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.copyFile(IFileStore, File)</td><td align="center">426</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.openOutputStream(int, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.refactoring.binary.AbstractCodeCreationOperation.createCompilationUnit(IFileStore, String, String, IProgressMonitor)</td><td align="center">86</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.copyFile(File, IFileStore, IProgressMonitor)</td><td align="center">433</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.toLocalFile(int, IProgressMonitor)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarpackager.JarPackagerUtil.getArchiveFile(IPath)</td><td align="center">295</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarpackager.JarPackagerUtil.getArchiveFile(IPath)</td><td align="center">298</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileStore.toURI()</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.getTargetURI(URI)</td><td align="center">368</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.configureClasspath(IJavaProject, IPackageFragmentRoot, IFolder, IProgressMonitor)</td><td align="center">204</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.IFileSystem.getStore(IPath)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INTERFACE_METHOD</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.corext.util.OpenTypeHistory.getContainerTimestamp(TypeNameMatch)</td><td align="center">351</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.configureClasspath(IJavaProject, IPackageFragmentRoot, IFolder, IProgressMonitor)</td><td align="center">200</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.URIUtil.toPath(URI)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INVOKED_STATIC</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizard.getTargetPath(IClasspathEntry)</td><td align="center">339</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFakeCompiltationUnit(IURIEditorInput)</td><td align="center">1110</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageOne.setProjectLocationURI(URI)</td><td align="center">1297</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.URIUtil.toURI(IPath)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INVOKED_STATIC</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.refactoring.binary.BinaryRefactoringHistoryWizard.getLocationURI(IClasspathEntry)</td><td align="center">234</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.createProject(IProject, IPath, IProgressMonitor)</td><td align="center">235</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPage.2.run(IProgressMonitor)</td><td align="center">322</td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageOne.getProjectLocationURI()</td><td align="center">1287</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)"><b>org.eclipse.core.filesystem.URIUtil.toURI(String)</b></a>
+</h3>
+<div class="types">
+<table border="0" width="100%">
+<tr>
+<td colspan="2" bgcolor="#CCCCCC"><b>INVOKED_STATIC</b></td>
+</tr>
+<tr bgcolor="#CC9933">
+<td align="left" width="92%"><b>Reference Location</b></td><td align="center" width="8%"><b>Line Number</b></td>
+</tr>
+<tr align="left">
+<td>org.eclipse.jdt.internal.ui.jarimport.JarImportWizardPage.handleJarFileChanged()</td><td align="center">370</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<p>
+				Back to reference summary for <a href="../org.eclipse.jdt.ui.html">org.eclipse.jdt.ui</a>
+</p>
+</div>
+<p>
+<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88"></a>
+</p>
+</body>
+</html>
