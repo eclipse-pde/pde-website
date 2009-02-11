@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wtp_api_use_reporting" default="run" basedir=".">
+    <property name="baseline" value="C:\Eclipse\eclipse-SDK-3.4.1-win32\eclipse" />
+	<property name="scope" value="C:\Eclipse\wtp-sdk\eclipse"/>
+    <property name="report_location" value="C:\Eclipse\wtp_use_report\xml" />
+	<property name="html_report_location" value="C:\Eclipse\wtp_use_report\html"/>
+    <property name="exclude_list" value="C:\Eclipse\exclude\exclude.txt" />
+
+	<target name="run">
+	    <apitooling.apiuse
+	      	baseline="${baseline}"
+	    	scope="${scope}"
+	    	excludelist="${exclude_list}"
+	    	proceedonerror="true"
+	      	includenonapiprojects="true"
+	      	report="${report_location}"
+	      	considerinternal="true"
+	      	considerapi="true"
+	      	debug="true"
+	     />
+	    <apitooling.apiuse_reportconversion
+	      	htmlfiles="${html_report_location}"
+	      	xmlfiles="${report_location}"
+	      	debug="true"
+	    />
+	  </target>
+
+</project>

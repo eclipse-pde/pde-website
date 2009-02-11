@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="api_use_reporting" default="run" basedir=".">
+    <property name="baseline" value="C:\Eclipse\eclipse-SDK-3.4.1-win32\eclipse" />
+    <property name="report_location" value="C:\Eclipse\use_report\xml" />
+	<property name="html_report_location" value="C:\Eclipse\use_report\html"/>
+
+	<target name="run">
+	    <apitooling.apiuse
+	      	baseline="${baseline}"
+	    	proceedonerror="true"
+	      	report="${report_location}"
+	      	considerinternal="true"
+	      	considerapi="true"
+	      	debug="true"
+	     />
+	    <apitooling.apiuse_reportconversion
+	      	htmlfiles="${html_report_location}"
+	      	xmlfiles="${report_location}"
+	      	debug="true"
+	    />
+	  </target>
+
+</project>

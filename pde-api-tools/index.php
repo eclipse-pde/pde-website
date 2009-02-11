@@ -65,6 +65,16 @@
 		  		<li><a href="./apiusage/sdk_html.zip" target="_blank">Example HTML report of the SDK</a></li>
 		  		<li><a href="./apiusage/wtp_sdk_html.zip" target="_blank">Example HTML report searching the WTP plugins for references to the SDK</a></li>
 		  	</ol>
+		  	<p>
+		  	The Ant build files that produced the reports are available:
+			  	<ol>
+				  	<li>Build file for <a href="./apiusage/api_use.xml" target="_blank">SDK reference graph</a></li>
+				  	<li>Build file for <a href="./apiusage/wtp_api_use.xml" target="_blank">WTP references to the SDK</a></li>
+			  	</ol>
+		  	</p>
+		  	<p>
+		  	The exclude file used for the WTP reference extraction is <a href="./apiusage/exclude.txt" target="_blank">available here</a>.
+		  	</p>
 	    </div>	    
 		<div class="homeitem3col">
 		  <h2><b>Get involved!</b></h2>
