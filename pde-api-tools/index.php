@@ -60,20 +60,14 @@
 		  	<p><a href="./coverage/index.php">Code coverage results</a></p>
 		  	<p>API Tooling now has additional Ant tasks that can be used to derive the usage graph between 
 		  	given sets of bundles. The information can be extracted to XML or written into a database. 
-		  	Two sample reports are provided below:
-		  	<ol>
-		  		<li><a href="./apiusage/sdk_html.zip" target="_blank">Example HTML report of the SDK</a>. You can also review the report on the web <a href="http://download.eclipse.org/eclipse/downloads/drops/R-3.4.1-200809111700/pdeapitools/html/index.html" target="_blank">here</a>.</li>
-		  		<li><a href="./apiusage/wtp_sdk_html.zip" target="_blank">Example HTML report searching the WTP plugins for references to the SDK</a></li>
-		  	</ol>
 		  	<p>
-		  	The Ant build files that produced the reports are available:
-			  	<ol>
-				  	<li>Build file for <a href="./apiusage/api_use.xml" target="_blank">SDK reference graph</a></li>
-				  	<li>Build file for <a href="./apiusage/wtp_api_use.xml" target="_blank">WTP references to the SDK</a></li>
-			  	</ol>
+		  		A sample report of the SDK usage graph is available on the web <a href="http://download.eclipse.org/eclipse/downloads/drops/R-3.4.1-200809111700/pdeapitools/html/index.html" target="_blank">here</a>.
 		  	</p>
 		  	<p>
-		  	The exclude file used for the WTP reference extraction is <a href="./apiusage/exclude.txt" target="_blank">available here</a>.
+		  		The Ant build file that produced the report is <a href="./apiusage/api_use.xml" target="_blank">available here</a>.
+		  	</p>
+		  	<p>
+		  		An example exclude file is <a href="./apiusage/exclude.txt" target="_blank">available here</a>.
 		  	</p>
 	    </div>	    
 		<div class="homeitem3col">
