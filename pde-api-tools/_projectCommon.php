@@ -33,6 +33,7 @@
 	}
 
 	# Defined project nav bar links
+	$Nav->addCustomNav("Mailing Lists", 	"http://www.eclipse.org/mail/", "_self", 1);
 	$Nav->addNavSeparator("Projects", 	"index.php");
 	$Nav->addCustomNav("Platform", "http://www.eclipse.org/platform/", "_self", 1);
 	$Nav->addCustomNav("JDT", "http://www.eclipse.org/jdt/", "_self", 1);
@@ -40,12 +41,13 @@
 	$Nav->addCustomNav("e4", "http://www.eclipse.org/e4/", "_self", 1);
 	$Nav->addCustomNav("Incubator", "http://www.eclipse.org/eclipse/incubator/", "_self", 1);
 	$Nav->addNavSeparator("Development", "http://www.eclipse.org/eclipse/development/", "_self", 1);
-	$Nav->addCustomNav("About API Tools", "/projects/project_summary.php?projectid=pde.apitools", "", 1);
-	$Nav->addNavSeparator("API Tools Home", "/pde/pde-api-tools/index.php");
-	$Nav->addCustomNav("Milestone Plans", "http://wiki.eclipse.org/ApiTools_Milestones", "", 1);
-	$Nav->addNavSeparator("PDE Home", "/pde/");
+	$Nav->addNavSeparator("PDE", "/pde/");
 	$Nav->addCustomNav("PDE Build", "/pde/pde-build/", "", 1);
-	$Nav->addCustomNav("PDE Incubator", "http://wiki.eclipse.org/PDE/Incubator", "", 1);
 	$Nav->addCustomNav("PDE UI", "/pde/pde-ui/", "", 1);
+	$Nav->addCustomNav("PDE API Tools", "/pde/pde-api-tools/", "", 1);
+	$Nav->addCustomNav("PDE Incubator", "http://wiki.eclipse.org/PDE/Incubator", "", 1);
+	$Nav->addNavSeparator("API Tools Home", "/pde/pde-api-tools/index.php");
+	$Nav->addCustomNav("About API Tools", "/projects/project_summary.php?projectid=pde.apitools", "", 1);
+	$Nav->addCustomNav("Milestone Plans", "http://wiki.eclipse.org/ApiTools_Milestones", "", 1);
 
 ?>
