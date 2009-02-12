@@ -33,7 +33,7 @@
 	}
 
 	# Defined project nav bar links
-	$Nav->addCustomNav("About PDE", "/projects/project_summary.php?projectid=pde", "", 1);
+	$Nav->addCustomNav("About API Tools", "/projects/project_summary.php?projectid=pde.apitools", "", 1);
 	$Nav->addNavSeparator("Projects", 	"index.php");
 	$Nav->addCustomNav("Platform", "http://www.eclipse.org/platform/", "_self", 1);
 	$Nav->addCustomNav("JDT", "http://www.eclipse.org/jdt/", "_self", 1);
@@ -43,7 +43,7 @@
 	$Nav->addNavSeparator("Development", "http://www.eclipse.org/eclipse/development/", "_self", 1);
 	$Nav->addCustomNav("Mailing Lists", 	"http://www.eclipse.org/mail/", "_self", 1);	
 	$Nav->addNavSeparator("API Tools Home", "/pde/pde-api-tools/index.php");
-	$Nav->addCustomNav("About API Tools", "/projects/project_summary.php?projectid=pde.apitools", "", 1);
-	$Nav->addCustomNav("Milestone Plans", "http://wiki.eclipse.org/ApiTools_Milestones", "", 1);
+	$Nav->addCustomNav("3.5 Development Plan", "./dev_plans/r3_5/plan.php", "", 1);
+	$Nav->addCustomNav("Update Site", "./pde/pde-api-tools/updates", "", 1);
 
 ?>
