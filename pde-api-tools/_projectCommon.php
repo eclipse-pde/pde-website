@@ -43,7 +43,7 @@
 	$Nav->addNavSeparator("Development", "http://www.eclipse.org/eclipse/development/", "_self", 1);
 	$Nav->addCustomNav("Mailing Lists", 	"http://www.eclipse.org/mail/", "_self", 1);	
 	$Nav->addNavSeparator("API Tools Home", "/pde/pde-api-tools/index.php");
-	$Nav->addCustomNav("3.5 Development Plan", "./dev_plans/r3_5/plan.php", "", 1);
-	$Nav->addCustomNav("Update Site", "./pde/pde-api-tools/updates", "", 1);
+	$Nav->addCustomNav("3.5 Dev Plan", "/pde/pde-api-tools/dev_plans/r3_5/plan.php", "", 1);
+	$Nav->addCustomNav("Update Site", "http://www.eclipse.org/pde/pde-api-tools/updates/", "", 1);
 
 ?>
