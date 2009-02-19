@@ -32,9 +32,19 @@
 		<h1>$pageTitle</h1>
 		<p>The PDE API Tools component is very responsive to new ideas, feature requests and bug reports. The following is a list of some 
 			of the newest and more interesting additions to the component.</p>
-		<div class="homeitem3col">
+		<div class="homeitem">
+			<h2><b>New and Noteworthy for 3.5</b></h2>
+			<ul>
+				<li><a href="/pde/pde-api-tools/nan/3.5/m5/nan.php">3.5M5 Release</a></li>
+				<li><a href="/pde/pde-api-tools/nan/3.5/m4/nan.php">3.5M4 Release</a></li>
+				<li><a href="/pde/pde-api-tools/nan/3.5/m2/nan.php">3.5M2 Release</a></li>
+			</ul>
+		</div>
+		<div class="homeitem">
 			<h2><b>New and Noteworthy for 3.4</b></h2>
-			<p><a href="/pde/pde-api-tools/nan/3.4/nan.php">3.4 Release</a></p>
+			<ul>
+				<li><a href="/pde/pde-api-tools/nan/3.4/nan.php">3.4 Release</a></li>
+			</ul>
 		</div>
 	</div>
 	<div id="rightcolumn">
