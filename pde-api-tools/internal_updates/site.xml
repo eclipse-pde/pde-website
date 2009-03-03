@@ -6,9 +6,17 @@
    <feature url="features/com.api.tools.buildnotes.feature_0.1.0.200901281129.jar" id="com.api.tools.buildnotes.feature" version="0.1.0.200901281129">
       <category name="build_notes_tools"/>
    </feature>
+   <feature url="features/org.eclipse.pde.api.tools.usage.feature_1.0.0.jar" id="org.eclipse.pde.api.tools.usage.feature" version="1.0.0">
+      <category name="api_usage_ui"/>
+   </feature>
    <category-def name="build_notes_tools" label="Build Notes Tools">
       <description>
          This category contains all of the tools used by the API Tools team for management of buildnotes
+      </description>
+   </category-def>
+   <category-def name="api_usage_ui" label="API Usage Scanning UI">
+      <description>
+         A nice UI front-end for API usage scanning
       </description>
    </category-def>
 </site>
