@@ -5,24 +5,20 @@
 <xsl:for-each select="site">
 	<html>
 	<head>
-	<title>com.api.tools.update.site</title>
+	<title><xsl:value-of select="description"/></title>
 	<style>@import url("web/site.css");</style>
 	</head>
 	<body>
-	<h1 class="title">com.api.tools.update.site</h1>
-	<p class="bodyText"><xsl:value-of select="description"/></p>
+	<h1 class="title"><xsl:value-of select="description"/></h1>
 	<table width="100%" border="0" cellspacing="1" cellpadding="2">
 	<xsl:for-each select="category-def">
 		<xsl:sort select="@label" order="ascending" case-order="upper-first"/>
-		<xsl:sort select="@name" order="ascending" case-order="upper-first"/>
 	<xsl:if test="count(key('cat',@name)) != 0">
 			<tr class="header">
 				<td class="sub-header" width="30%">
-					<xsl:value-of select="@name"/>
-				</td>
-				<td class="sub-header" width="70%">
 					<xsl:value-of select="@label"/>
 				</td>
+				<td class="sub-header" width="70%">Description</td>
 			</tr>
 			<xsl:for-each select="key('cat',@name)">
 			<xsl:sort select="ancestor::feature//@version" order="ascending"/>
