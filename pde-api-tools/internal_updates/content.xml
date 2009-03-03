@@ -346,7 +346,7 @@
     <unit id='org.eclipse.pde.api.tools.usage.feature.feature.jar' version='1.0.0'>
       <update id='org.eclipse.pde.api.tools.usage.feature.feature.jar' range='[0.0.0,1.0.0)' severity='0'/>
       <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
+        <property name='org.eclipse.equinox.p2.name' value='API Usage Scanning UI Feature'/>
         <property name='org.eclipse.equinox.p2.description' value='Provides a UI front-end for the API usage scanning'/>
         <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
         <property name='org.eclipse.equinox.p2.provider' value='IBM Canada'/>
