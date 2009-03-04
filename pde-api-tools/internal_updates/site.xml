@@ -3,11 +3,11 @@
    <description name="PDE API Tools Internal Update Site" url="http://www.eclipse.org/pde/pde-api-tools/internal_updates">
       PDE API Tools Internal Update Site
    </description>
-   <feature url="features/com.api.tools.buildnotes.feature_0.1.0.200903040842.jar" id="com.api.tools.buildnotes.feature" version="0.1.0.200903040842">
-      <category name="build_notes_tools"/>
-   </feature>
-   <feature url="features/org.eclipse.pde.api.tools.usage.feature_1.0.0.200903040842.jar" id="org.eclipse.pde.api.tools.usage.feature" version="1.0.0.200903040842">
+   <feature url="features/org.eclipse.pde.api.tools.usage.feature_1.0.0.200903040958.jar" id="org.eclipse.pde.api.tools.usage.feature" version="1.0.0.200903040958">
       <category name="api_usage_ui"/>
+   </feature>
+   <feature url="features/com.api.tools.buildnotes.feature_0.1.0.200903040958.jar" id="com.api.tools.buildnotes.feature" version="0.1.0.200903040958">
+      <category name="build_notes_tools"/>
    </feature>
    <category-def name="build_notes_tools" label="Build Notes Tools">
       <description>
