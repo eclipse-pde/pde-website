@@ -27,7 +27,7 @@
 	
 	
 	$pageTitle 		= "API Tools Test Plans";
-	$pageKeywords	= "api, platform, pde, tooling, tools, tags, test, testing, plan, plans, 3.5, 3.4.2, 3.4.x, 3.4";
+	$pageKeywords	= "api, platform, pde, tooling, tools, tags, test, testing, plan, plans, 3.5, 3.4.2, 3.4.x, 3.4, 3.5.x";
 	$pageAuthor		= "API Tools Team";
 	
 	include("../_sideCommon.php");
@@ -43,6 +43,7 @@
 			<h2><b>3.5 Test Plans</b></h2>
 			<a name="3-5_testing"></a>
 			<ul>
+				<li><a href="/pde/pde-api-tools/test_plans/test_plan-3.5M6.php">3.5M6</a></li>
 				<li><a href="/pde/pde-api-tools/test_plans/test_plan-3.5M4.php">3.5M4</a></li>
 				<li><a href="/pde/pde-api-tools/test_plans/test_plan-3.5M2.php">3.5M2</a></li>
 			</ul>

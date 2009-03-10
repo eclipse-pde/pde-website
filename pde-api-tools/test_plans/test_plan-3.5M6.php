@@ -19,8 +19,8 @@
 	#****************************************************************************
 	
 	
-	$pageTitle 		= "API Tools Project 3.5M4 Test Plan";
-	$pageKeywords	= "api, platform, pde, tooling, tools, tags, test, testing, plan, plans, 3.5";
+	$pageTitle 		= "API Tools Project 3.5M6 Test Plan";
+	$pageKeywords	= "api, platform, pde, tooling, tools, tags, test, testing, plan, plans, 3.5, M6, 3.5M6";
 	$pageAuthor		= "API Tools Team";
 	
 	include("../_sideCommon.php");
