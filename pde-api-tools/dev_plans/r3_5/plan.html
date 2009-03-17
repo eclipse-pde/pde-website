@@ -91,241 +91,247 @@ function showHiddenWork() {
 
 <table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
 
-  <tr> 
-    <td WIDTH="100%"> 
-    <p>Last revised: 2008/08/27</p>
-
-    
-      <p>This plan is under continuous refinement. Please send comments about this plan to the <a href="mailto:pde-ui-dev@eclipse.org">pde-ui-dev@eclipse.org</a> developer mailing list.</p>
-      <h2><a NAME="Overall_Planning"></a>Overall Goals</h2>
-      <p>This section lists the goals for Eclipse 3.5 for the PDE/API Tools component as listed on the 
-        <a href="http://www.eclipse.org/eclipse/development/eclipse_project_plan_3_5.html">Eclipse Project 3.5 Draft Plan</a>.      </p>
-
-
-		<p>
-		<strong><a name="1"></a>[1] Performance</strong>.
-		Monitor overall performance and memory consumption. Build a new performance test	suite.	</p>
-
-		<p>
-		<strong><a name="2"></a>[2] Reliability</strong>.
-		Build a comprehensive regression test suite for the API Tools builder. Fix critical bugs,	provide APIs as required.	</p>
-		
-		<p>
-		<strong><a name="3"></a>[3] Keep Eclipse vibrant and attractive</strong>.
-		Investigate and implement enhancements such validating system library access based on a project's associated execution environment.		</p>    </td>
-</tr>
-
-
-<tr>
-    <td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" ><font face="Arial,Helvetica"><font color="#FFFFFF"><a name="Milestone_Planning_M1">Milestone M1 (2008-08-08)</font></font></td>
-</tr>
-
-  <tr> 
-    <td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> General Items [<a href="#2">2</a>]</h4>
-		<ul>
-			<li><img src="../../images/ok.gif" border="0" height="10" width="10"> 3.4.1 maintenance work</li>
-		    <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Bug fixing </li>
-		</ul>	</td>
-</tr>
-<tr>
-	<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" ><font face="Arial,Helvetica"><font color="#FFFFFF"><a name="Milestone_Planning_M2">Milestone M2 (2008-09-19)</font></font></td>
-</tr>
-
- <tr> 
-	<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> General Items [<a href="#2">2</a>]</h4>
-		<ul>
-			<li><img src="../../images/ok.gif" border="0" height="10" width="10"> 3.4.1 maintenance work</li>
-		    <li><img src="../../images/progress.gif" width="14" height="5"> Bug fixing </li>
-		</ul>
-		
-		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Reliability [<a href="#3">2</a>]</h4>
-		<ul>
-		  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Build a comprehensive regression test suite for the API analysis builder (Michael Rennie, Darin Wright, IBM) [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=218571">bug 218571</a>] </li>
-	      <li><img src="../../images/progress.gif" width="14" height="5"> &gt;[M3] Build a performance test suite (Michael Rennie, Darin Wright, IBM) [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=245434">bug 245434</a>] </li>
-	      <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Publish a Smoke Test plan on the web (Michael Rennie, IBM) [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=245415">bug 245415</a>] </li>
-	  </ul>
-		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Usability/Workflow [<a href="#3">3</a>]</h4>
-		<ul>
-		  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Polish API Errors/Warnings preference page (Olivier Thomann, IBM)
-		    <ul>
-		      <li>Reduce the number of settings by combining errors related to type variables/bounds  into one section and combining type conversions into one error [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242618">bug 242618</a> and <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242610">bug 242610</a>] </li>
-              <li>Simplify settings for Annotations [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242609">bug 242609</a>] </li>
+	  <tr> 
+	    <td WIDTH="100%"> 
+	    <p>Last revised: 2008/08/27</p>
+	      <p>This plan is under continuous refinement. Please send comments about this plan to the <a href="mailto:pde-ui-dev@eclipse.org">pde-ui-dev@eclipse.org</a> developer mailing list.</p>
+	      <h2><a NAME="Overall_Planning"></a>Overall Goals</h2>
+	      <p>This section lists the goals for Eclipse 3.5 for the PDE/API Tools component as listed on the 
+	        <a href="http://www.eclipse.org/eclipse/development/eclipse_project_plan_3_5.html">Eclipse Project 3.5 Draft Plan</a>.      
+	      </p>
+			<p>
+			<strong><a name="1"></a>[1] Performance</strong>.
+			Monitor overall performance and memory consumption. Build a new performance test	suite.	</p>
+	
+			<p>
+			<strong><a name="2"></a>[2] Reliability</strong>.
+			Build a comprehensive regression test suite for the API Tools builder. Fix critical bugs,	provide APIs as required.	</p>
+			
+			<p>
+			<strong><a name="3"></a>[3] Keep Eclipse vibrant and attractive</strong>.
+			Investigate and implement enhancements such validating system library access based on a project's associated execution environment.		</p>    </td>
+	</tr>
+	<tr>
+	    <td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" >
+			<a name="Milestone_Planning_M1"/>
+			<h4>Milestone M1 (2008-08-08)</h4>
+		</td>
+	</tr>
+	<tr> 
+	    <td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> General Items [<a href="#2">2</a>]</h4>
+			<ul>
+				<li><img src="../../images/ok.gif" border="0" height="10" width="10"> 3.4.1 maintenance work</li>
+			    <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Bug fixing </li>
+			</ul>	</td>
+	</tr>
+	<tr>
+		<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" >
+			<a name="Milestone_Planning_M2"/>Milestone M2 (2008-09-19)</h4>
+		</td>
+	</tr>
+	<tr> 
+		<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> General Items [<a href="#2">2</a>]</h4>
+			<ul>
+				<li><img src="../../images/ok.gif" border="0" height="10" width="10"> 3.4.1 maintenance work</li>
+			    <li><img src="../../images/progress.gif" width="14" height="5"> Bug fixing </li>
+			</ul>
+			
+			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Reliability [<a href="#3">2</a>]</h4>
+			<ul>
+			  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Build a comprehensive regression test suite for the API analysis builder (Michael Rennie, Darin Wright, IBM) [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=218571">bug 218571</a>] </li>
+		      <li><img src="../../images/progress.gif" width="14" height="5"> &gt;[M3] Build a performance test suite (Michael Rennie, Darin Wright, IBM) [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=245434">bug 245434</a>] </li>
+		      <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Publish a Smoke Test plan on the web (Michael Rennie, IBM) [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=245415">bug 245415</a>] </li>
+		  </ul>
+			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Usability/Workflow [<a href="#3">3</a>]</h4>
+			<ul>
+			  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Polish API Errors/Warnings preference page (Olivier Thomann, IBM)
+			    <ul>
+			      <li>Reduce the number of settings by combining errors related to type variables/bounds  into one section and combining type conversions into one error [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242618">bug 242618</a> and <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242610">bug 242610</a>] </li>
+	              <li>Simplify settings for Annotations [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242609">bug 242609</a>] </li>
+			    </ul>
+			  </li>
+	      </ul>
+			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>	</td>
+	</tr>
+	<tr>
+		<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" >
+			<a name="Milestone_Planning_M3"/>
+			<h4>Milestone M3 (2008-10-31)</h4>
+		</td>
+	</tr>
+	<tr> 
+		<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Architecture/Infrastructure  [<a href="#3">3</a>, <a href="#1">1</a>]</h4>
+			<ul>
+				<li><img src="../../images/ok.gif" border="0" height="10" width="10"> Migrate architecture to support binary or source analysis </li>
+	          <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Consolidate data structures used for delta creation and API use/leak analysis</li>
+			  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Make search criteria implementation more flexible by allowing specializations rather than having one search criteria that can do everything </li>
+			  <li><img src="../../images/glass.gif" border="0" height="10" width="10"> Investigate integration as Java compilaion participant 
+			    <ul>
+			      <li>&gt; decided not to follow this path in 3.5 - compilation participants are intended for lightweight function </li>
+		        </ul>
+			  </li>
 		    </ul>
-		  </li>
-      </ul>
-		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>	</td>
-</tr>
-<tr>
-	<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" ><font face="Arial,Helvetica"><font color="#FFFFFF"><a name="Milestone_Planning_M3">Milestone M3 (2008-10-31)</font></font></td>
-</tr>
-
- <tr> 
-	<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Architecture/Infrastructure  [<a href="#3">3</a>, <a href="#1">1</a>]</h4>
-		<ul>
-			<li><img src="../../images/ok.gif" border="0" height="10" width="10"> Migrate architecture to support binary or source analysis </li>
-          <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Consolidate data structures used for delta creation and API use/leak analysis</li>
-		  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Make search criteria implementation more flexible by allowing specializations rather than having one search criteria that can do everything </li>
-		  <li><img src="../../images/glass.gif" border="0" height="10" width="10"> Investigate integration as Java compilaion participant 
-		    <ul>
-		      <li>&gt; decided not to follow this path in 3.5 - compilation participants are intended for lightweight function </li>
-	        </ul>
-		  </li>
-	    </ul>
-		
-		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Analysis Enhancements [<a href="#3">3</a>]</h4>
-		<ul>
-		  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> For non-API super-type leaks, analyze if anything internal is actually exposed </li>
-          <li><img src="../../images/glass.gif" border="0" height="10" width="10"> Allow &quot;friends&quot; to have special privileges - like implement, reference etc.            
-            <ul>
-              <li>&gt; decided not to implement this feature (not that widely used - indicates implementation is split across several bundles) </li>
-            </ul>
-          </li>
-	      <li>&gt;[deferred to M4] Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating) </li>
-	  </ul>
-		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing [<a href="#2">2</a>, <a href="#1">1</a>]</h4>
-		<ul>
-		  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Build a performance test suite (Michael Rennie, Darin Wright, IBM) [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=245434">bug 245434</a>] </li>
-	  </ul></td>
-</tr>
-<tr>
-	<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" ><font face="Arial,Helvetica"><font color="#FFFFFF"><a name="Milestone_Planning_M4">Milestone M4 (2008-12-12)</font></font></td>
-</tr>
-
- <tr> 
-	<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> System Library access validation [<a href="#3">3</a>]</h4>
-	  <ul>
-	    <li><img src="../../images/ok.gif" border="0" height="10" width="10"><strong></strong>Validate references to system library based on EE (J2SE-1.4, etc). A 1.4 project should not reference 1.5/1.6 methods/classes</li>
-        <li><img src="../../images/ok.gif" border="0" height="10" width="10"><strong></strong>Investigate methods to ship required metadata for access validation </li>
-      </ul>
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> RelEng Ant Task API [<a href="#3">2</a>]</h4>
-	  <ul>
-	    <li><img src="../../images/ok.gif" border="0" height="10" width="10">Support API ant tasks for general consumption and integration into RelEng build process
+			
+			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Analysis Enhancements [<a href="#3">3</a>]</h4>
+			<ul>
+			  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> For non-API super-type leaks, analyze if anything internal is actually exposed </li>
+	          <li><img src="../../images/glass.gif" border="0" height="10" width="10"> Allow &quot;friends&quot; to have special privileges - like implement, reference etc.            
+	            <ul>
+	              <li>&gt; decided not to implement this feature (not that widely used - indicates implementation is split across several bundles) </li>
+	            </ul>
+	          </li>
+		      <li>&gt;[deferred to M4] Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating) </li>
+		  </ul>
+			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing [<a href="#2">2</a>, <a href="#1">1</a>]</h4>
+			<ul>
+			  <li><img src="../../images/ok.gif" border="0" height="10" width="10"> Build a performance test suite (Michael Rennie, Darin Wright, IBM) [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=245434">bug 245434</a>] </li>
+		  </ul></td>
+	</tr>
+	<tr>
+		<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" >
+			<a name="Milestone_Planning_M4"/>
+			<h4>Milestone M4 (2008-12-12)</h4>
+		</td>
+	</tr>
+	<tr> 
+		<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> System Library access validation [<a href="#3">3</a>]</h4>
+		  <ul>
+		    <li><img src="../../images/ok.gif" border="0" height="10" width="10"><strong></strong>Validate references to system library based on EE (J2SE-1.4, etc). A 1.4 project should not reference 1.5/1.6 methods/classes</li>
+	        <li><img src="../../images/ok.gif" border="0" height="10" width="10"><strong></strong>Investigate methods to ship required metadata for access validation </li>
+	      </ul>
+		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> RelEng Ant Task API [<a href="#3">2</a>]</h4>
+		  <ul>
+		    <li><img src="../../images/ok.gif" border="0" height="10" width="10">Support API ant tasks for general consumption and integration into RelEng build process
+		      <ul>
+		        <li><img src="../../images/ok.gif" border="0" height="10" width="10">Separate data collection and report generation such that report generation can be pluggable </li>
+	          </ul>
+		    </li>
+	        <li><img src="../../images/ok.gif" border="0" height="10" width="10">Document use of the Ant tasks in ISV guide</li>
+	      </ul>	  
+	      <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Analysis Enhancements [<a href="#3">3</a>]</h4>
 	      <ul>
-	        <li><img src="../../images/ok.gif" border="0" height="10" width="10">Separate data collection and report generation such that report generation can be pluggable </li>
-          </ul>
-	    </li>
-        <li><img src="../../images/ok.gif" border="0" height="10" width="10">Document use of the Ant tasks in ISV guide</li>
-      </ul>	  
-      <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Analysis Enhancements [<a href="#3">3</a>]</h4>
-      <ul>
-        <li>&gt;[from M3] Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating</li>
-        <li><img src="../../images/ok.gif" border="0" width="10" height="10">Enhance API use analysis to process anonymous/local types [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=246672">bug 246672</a>] </li>
-        <li><img src="../../images/ok.gif" border="0" height="10" width="10">Support @noextend tag on interfaces, in addition to @noimplement  [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=230189">bug 230189</a>]</li>
-        <li><img src="../../images/ok.gif" border="0" width="10" height="10">Tooling to clean up stale API problem filters [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=244676">bug 244676</a>]</li>
-      </ul>
-      <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Baseline Definition [<a href="#3">2</a>]</h4>
-      <ul>
-        <li><img src="../../images/progress.gif" width="14" height="5">Follow PDE's use of p2 to discover/analyze what bundles are present in an installation
-          <ul>
-            <li>API Baseline definition is similar to target platform definition, and we should use a similar approach </li>
-          </ul>
-        </li>
-      </ul>      
-    <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>
-    <ul>
-      <li><img src="../../images/progress.gif" width="14" height="5">Create incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251617">bug 251617</a>] </li>
-    </ul></td>
-</tr>
-<tr>
-	<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" ><font face="Arial,Helvetica"><font color="#FFFFFF"><a name="Milestone_Planning_M5">Milestone M5 (2009-01-30) -  Major/Big Features Done</font></font></td>
-</tr>
-
- <tr> 
-	<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Extension point compatibility analysis [<a href="#3">3</a>]</h4>
-	  <ul>
-	    <li><img src="../../images/error.gif" width="15" height="15">Analyze extension points for compatibility errors (addition of non-optional attributes) </li>
-        <li><img src="../../images/error.gif" width="15" height="15">Update bundle version numbers based on breaking/compatible changes in extension points</li>
-      </ul>	  
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Analysis Enhancements [<a href="#3">3</a>]</h4>
-	  <ul>
-        <li>[&gt;from M4] Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating)</li>
-        <li><img src="../../images/progress.gif" width="14" height="5">Support to handle plug-in split/re-organization properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=240914">bug 240914</a>]</li>
-	    <li><img src="../../images/error.gif" width="15" height="15"> Support to handle fragments properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=255720">bug 255720</a>] </li>
-	    <li>[&gt; M6] Improve presentation of API tooling reports in the releng build </li>
-	    <li>[&gt; M6] Code assist should filter system library completions [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=256287">bug 256287</a>]</li>
-	  </ul>
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API comparison reporting [<a href="#3">3</a>]</h4>
-	  <ul>
-	    <li><img src="../../images/progress.gif" width="14" height="5">[&gt; M6] Tooling to compare APIs - highlights what APIs have changed in a release, relative to a baseline	      </li>
-        <li><img src="../../images/error.gif" width="15" height="15"> Could be presented in the IDE (structural compare)</li>
-      </ul>	  
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API use reporting [<a href="#3">3</a>]</h4>
-	  <ul>
-        <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>[&gt; M6] Tooling to identify what clients (plug-ins/bundles) are illegally using non-API code
-          <ul>
-            <li>Note that this is different from current discouraged access reporting, since it allows the producer to see who is accessing their code, rather than flagging the consumer with a problem </li>
-          </ul>
-        </li>
-	    <li><img src="../../images/error.gif" width="15" height="15">Could be presented in the IDE (search) and as an Ant task/report for RelEng build</li>
-      </ul>
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Baseline Definition [<a href="#3">2</a>]</h4>
-	  <ul>
-        <li><img src="../../images/progress.gif" width="14" height="5">[&gt; M6] Follow PDE's use of p2 to discover/analyze what bundles are present in an installation
-          <ul>
-              <li>API Baseline definition is similar to target platform definition, and we should use a similar approach </li>
-          </ul>
-        </li>
-      </ul>
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>
-	  <ul>
-	    <li><img src="../../images/ok.gif" border="0" width="10" height="10">&gt;[from M4] Create incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251617">bug 251617</a>] </li>
-      </ul></td>
-</tr>
-<tr>
-	<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" ><font face="Arial,Helvetica"><font color="#FFFFFF"><a name="Milestone_Planning_M6">Milestone M6 (2009-03-13) - API Freeze</font></font></td>
-</tr>
-
- <tr> 
-	<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Use Reports [<a href="#3">3</a>]</h4>
-	  <ul>
-        <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>[&gt; from M5] Generate producer centric report of what API/non-API is being consumed by other bundles [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259403">bug 259403</a>] </li>
-      </ul>
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Baseline Definition [<a href="#3">2</a>]</h4>
-	  <ul>
-        <li><img src="../../images/progress.gif" width="14" height="5">[&gt; from M4] Follow PDE's use of p2 to discover/analyze what bundles are present in an installation
-          [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=239493">bug 239493</a>]
-          <ul>
-              <li>API Baseline definition is similar to target platform definition, and we should use a similar approach </li>
-          </ul>
-        </li>
-      </ul>
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Comparison Reporting [<a href="#3">3</a>]</h4>
-	  <ul>
-        <li><img src="../../images/progress.gif" width="14" height="5"> [&gt; from M5] Generate API comparison report - highlights what APIs have changed in a release, relative to a baseline [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=258853">bug 258853</a>] </li>
-	    <li>[&gt;from M4] Detect when new API is used in a required bundle that requires the version range to be incremented/updated [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=255771">bug 255771</a>] </li>
-      </ul>
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Performance </h4>
-	  <ul>
-	    <li>Tune incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=260732">bug 260732</a>] </li>
-      </ul>
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Polish</h4>
-	  <ul>
-	    <li>[&gt; from M5] Support to handle plug-in split/re-organization properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259997">bug 259997</a>]</li>
-        <li><img src="../../images/ok.gif" border="0" width="10" height="10"> Include API descriptions when exporting plug-ins from the workspace [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=227202">bug 227202</a>] </li>
-	    <li>[&gt; from M5] Improve presentation of API tooling reports in the releng build [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=257724">bug 257724</a>] </li>
-	    <li>[&gt; from M5] Code assist should filter system library completions [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=256287">bug 256287</a>]</li>
-	  </ul>	  
-	  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4></td>
-</tr>
-<tr>
-	<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%">
-		<a name="Milestone_Planning_M7"/>
-		<h3>Milestone M7 (2009-05-01) - Feature Freeze, Focus on Performance and Polish</h3>
-	</td>
-</tr>
-
- <tr> 
-	<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Performance
-		</h4>
-		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Polish</h4>
-		<h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>	</td>
-</tr>
+	        <li>&gt;[from M3] Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating</li>
+	        <li><img src="../../images/ok.gif" border="0" width="10" height="10">Enhance API use analysis to process anonymous/local types [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=246672">bug 246672</a>] </li>
+	        <li><img src="../../images/ok.gif" border="0" height="10" width="10">Support @noextend tag on interfaces, in addition to @noimplement  [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=230189">bug 230189</a>]</li>
+	        <li><img src="../../images/ok.gif" border="0" width="10" height="10">Tooling to clean up stale API problem filters [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=244676">bug 244676</a>]</li>
+	      </ul>
+	      <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Baseline Definition [<a href="#3">2</a>]</h4>
+	      <ul>
+	        <li><img src="../../images/progress.gif" width="14" height="5">Follow PDE's use of p2 to discover/analyze what bundles are present in an installation
+	          <ul>
+	            <li>API Baseline definition is similar to target platform definition, and we should use a similar approach </li>
+	          </ul>
+	        </li>
+	      </ul>      
+	    <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>
+	    <ul>
+	      <li><img src="../../images/progress.gif" width="14" height="5">Create incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251617">bug 251617</a>] </li>
+	    </ul></td>
+	</tr>
+	<tr>
+		<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" >
+			<a name="Milestone_Planning_M5"/>
+			<h4>Milestone M5 (2009-01-30) -  Major/Big Features Done</h4>
+		</td>
+	</tr>
+	<tr> 
+		<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Extension point compatibility analysis [<a href="#3">3</a>]</h4>
+		  <ul>
+		    <li><img src="../../images/error.gif" width="15" height="15">Analyze extension points for compatibility errors (addition of non-optional attributes) </li>
+	        <li><img src="../../images/error.gif" width="15" height="15">Update bundle version numbers based on breaking/compatible changes in extension points</li>
+	      </ul>	  
+		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Analysis Enhancements [<a href="#3">3</a>]</h4>
+		  <ul>
+	        <li>[&gt;from M4] Flag when new API is used in a required bundle that requires the version range to be incremented/updated (i.e. using a new API, so lower bound needs updating)</li>
+	        <li><img src="../../images/progress.gif" width="14" height="5">Support to handle plug-in split/re-organization properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=240914">bug 240914</a>]</li>
+		    <li><img src="../../images/error.gif" width="15" height="15"> Support to handle fragments properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=255720">bug 255720</a>] </li>
+		    <li>[&gt; M6] Improve presentation of API tooling reports in the releng build </li>
+		    <li>[&gt; M6] Code assist should filter system library completions [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=256287">bug 256287</a>]</li>
+		  </ul>
+		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API comparison reporting [<a href="#3">3</a>]</h4>
+		  <ul>
+		    <li><img src="../../images/progress.gif" width="14" height="5">[&gt; M6] Tooling to compare APIs - highlights what APIs have changed in a release, relative to a baseline	      </li>
+	        <li><img src="../../images/error.gif" width="15" height="15"> Could be presented in the IDE (structural compare)</li>
+	      </ul>	  
+		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API use reporting [<a href="#3">3</a>]</h4>
+		  <ul>
+	        <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>[&gt; M6] Tooling to identify what clients (plug-ins/bundles) are illegally using non-API code
+	          <ul>
+	            <li>Note that this is different from current discouraged access reporting, since it allows the producer to see who is accessing their code, rather than flagging the consumer with a problem </li>
+	          </ul>
+	        </li>
+		    <li><img src="../../images/error.gif" width="15" height="15">Could be presented in the IDE (search) and as an Ant task/report for RelEng build</li>
+	      </ul>
+		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Baseline Definition [<a href="#3">2</a>]</h4>
+		  <ul>
+	        <li><img src="../../images/progress.gif" width="14" height="5">[&gt; M6] Follow PDE's use of p2 to discover/analyze what bundles are present in an installation
+	          <ul>
+	              <li>API Baseline definition is similar to target platform definition, and we should use a similar approach </li>
+	          </ul>
+	        </li>
+	      </ul>
+		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>
+		  <ul>
+		    <li><img src="../../images/ok.gif" border="0" width="10" height="10">&gt;[from M4] Create incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251617">bug 251617</a>] </li>
+	      </ul></td>
+	</tr>
+	<tr>
+		<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%" >
+			<a name="Milestone_Planning_M6"/>
+			<h4>Milestone M6 (2009-03-13) - API Freeze</h4>
+		</td>
+	</tr>
+	<tr> 
+		<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Use Reports [<a href="#3">3</a>]</h4>
+		  <ul>
+	        <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>[&gt; from M5] Generate producer centric report of what API/non-API is being consumed by other bundles [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259403">bug 259403</a>] </li>
+	      </ul>
+		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Baseline Definition [<a href="#3">2</a>]</h4>
+		  <ul>
+	        <li><img src="../../images/progress.gif" width="14" height="5">[&gt; from M4] Follow PDE's use of p2 to discover/analyze what bundles are present in an installation
+	          [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=239493">bug 239493</a>]
+	          <ul>
+	              <li>API Baseline definition is similar to target platform definition, and we should use a similar approach </li>
+	          </ul>
+	        </li>
+	      </ul>
+		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Comparison Reporting [<a href="#3">3</a>]</h4>
+		  <ul>
+	        <li><img src="../../images/progress.gif" width="14" height="5"> [&gt; from M5] Generate API comparison report - highlights what APIs have changed in a release, relative to a baseline [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=258853">bug 258853</a>] </li>
+		    <li>[&gt;from M4] Detect when new API is used in a required bundle that requires the version range to be incremented/updated [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=255771">bug 255771</a>] </li>
+	      </ul>
+		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Performance </h4>
+		  <ul>
+		    <li>Tune incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=260732">bug 260732</a>] </li>
+	      </ul>
+		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Polish</h4>
+		  <ul>
+		    <li>[&gt; from M5] Support to handle plug-in split/re-organization properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259997">bug 259997</a>]</li>
+	        <li><img src="../../images/ok.gif" border="0" width="10" height="10"> Include API descriptions when exporting plug-ins from the workspace [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=227202">bug 227202</a>] </li>
+		    <li>[&gt; from M5] Improve presentation of API tooling reports in the releng build [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=257724">bug 257724</a>] </li>
+		    <li>[&gt; from M5] Code assist should filter system library completions [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=256287">bug 256287</a>]</li>
+		  </ul>	  
+		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4></td>
+	</tr>
+	<tr>
+		<td ALIGN=LEFT VALIGN=TOP COLSPAN="2" WIDTH="100%">
+			<a name="Milestone_Planning_M7"/>
+			<h4>Milestone M7 (2009-05-01) - Feature Freeze, Focus on Performance and Polish</h4>
+		</td>
+	</tr>
+	<tr> 
+		<td WIDTH="100%">
+			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Performance</h4>
+			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Polish</h4>
+			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>
+		</td>
+	</tr>
 </table>
 <table border="0" cellpadding="2" cellspacing="5" width="100%">
 	<tbody>
 		<tr>
-			<td colspan="4" align="left" bgcolor="#595791" valign="top" width="100%">
-				<h3>Legend</h3>
+			<td colspan="4" align="left" valign="top" width="100%">
+				<h4>Legend</h4>
 			</td>
 		</tr>
 		<tr>
