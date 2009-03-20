@@ -287,11 +287,11 @@ function showHiddenWork() {
 	<tr> 
 		<td WIDTH="100%"><h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Use Reports [<a href="#3">3</a>]</h4>
 		  <ul>
-	        <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font>[&gt; from M5] Generate producer centric report of what API/non-API is being consumed by other bundles [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259403">bug 259403</a>] </li>
+	        <li><font class="indexsub"><img src="../../images/new.gif" border="0"></font><img src="../../images/ok.gif" border="0" width="10" height="10">[&gt; from M5] Generate producer centric report of what API/non-API is being consumed by other bundles [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259403">bug 259403</a>] </li>
 	      </ul>
 		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Baseline Definition [<a href="#3">2</a>]</h4>
 		  <ul>
-	        <li><img src="../../images/progress.gif" width="14" height="5">[&gt; from M4] Follow PDE's use of p2 to discover/analyze what bundles are present in an installation
+	        <li><img src="../../images/ok.gif" border="0" width="10" height="10">[&gt; from M4] Follow PDE's use of p2 to discover/analyze what bundles are present in an installation
 	          [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=239493">bug 239493</a>]
 	          <ul>
 	              <li>API Baseline definition is similar to target platform definition, and we should use a similar approach </li>
@@ -301,18 +301,18 @@ function showHiddenWork() {
 		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> API Comparison Reporting [<a href="#3">3</a>]</h4>
 		  <ul>
 	        <li><img src="../../images/progress.gif" width="14" height="5"> [&gt; from M5] Generate API comparison report - highlights what APIs have changed in a release, relative to a baseline [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=258853">bug 258853</a>] </li>
-		    <li>[&gt;from M4] Detect when new API is used in a required bundle that requires the version range to be incremented/updated [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=255771">bug 255771</a>] </li>
+		    <li><img src="../../images/error.gif" width="15" height="15">[&gt;from M4] Detect when new API is used in a required bundle that requires the version range to be incremented/updated [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=255771">bug 255771</a>] </li>
 	      </ul>
 		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Performance </h4>
 		  <ul>
-		    <li>Tune incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=260732">bug 260732</a>] </li>
+		    <li><img src="../../images/ok.gif" border="0" width="10" height="10">Tune incremental build performance tests [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=260732">bug 260732</a>] </li>
 	      </ul>
 		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Polish</h4>
 		  <ul>
-		    <li>[&gt; from M5] Support to handle plug-in split/re-organization properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259997">bug 259997</a>]</li>
+		    <li><img src="../../images/ok.gif" border="0" width="10" height="10">[&gt; from M5] Support to handle plug-in split/re-organization properly during compatibility analysis [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259997">bug 259997</a>]</li>
 	        <li><img src="../../images/ok.gif" border="0" width="10" height="10"> Include API descriptions when exporting plug-ins from the workspace [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=227202">bug 227202</a>] </li>
-		    <li>[&gt; from M5] Improve presentation of API tooling reports in the releng build [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=257724">bug 257724</a>] </li>
-		    <li>[&gt; from M5] Code assist should filter system library completions [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=256287">bug 256287</a>]</li>
+		    <li><img src="../../images/progress.gif" width="14" height="5">[&gt; from M5] Improve presentation of API tooling reports in the releng build [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=257724">bug 257724</a>] </li>
+		    <li><img src="../../images/error.gif" width="15" height="15">[&gt; from M5] Code assist should filter system library completions [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=256287">bug 256287</a>]</li>
 		  </ul>	  
 		  <h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4></td>
 	</tr>
@@ -326,10 +326,12 @@ function showHiddenWork() {
 	<tr> 
 		<td WIDTH="100%">
 			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Performance</h4>
+			<ul>
+			  <li>Improve incremental build performance and footprint [<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=233643">bug 233643</a>] </li>
+		  </ul>
 			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" border="0" height="16" width="16" align="top"> Polish</h4>
-			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>
-		</td>
-	</tr>
+			<h4><img src="http://www.eclipse.org/images/Adarrow.gif" nosave="" border="0" height="16" width="16" align="top"> Testing</h4>		</td>
+  </tr>
 </table>
 <table border="0" cellpadding="2" cellspacing="5" width="100%">
 	<tbody>
