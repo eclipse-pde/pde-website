@@ -33,7 +33,7 @@
    <feature url="features/org.eclipse.pde.api.tools.ee.osgiminimum11_feature_1.0.0.200901281111.jar" id="org.eclipse.pde.api.tools.ee.osgiminimum11_feature" version="1.0.0.200901281111">
       <category name="pde_api_tools_environment_descriptions"/>
    </feature>
-   <feature url="features/org.eclipse.pde.api.tools.ee.osgiminimum12_feature_1.0.0.200901281111.jar" id="org.eclipse.pde.api.tools.ee.osgiminimum12_feature" version="1.0.0.200901281111">
+   <feature url="features/org.eclipse.pde.api.tools.ee.osgiminimum12_feature_1.0.1.200903251811.jar" id="org.eclipse.pde.api.tools.ee.osgiminimum12_feature" version="1.0.1.200903251811">
       <category name="pde_api_tools_environment_descriptions"/>
    </feature>
    <category-def name="pde_api_tools_environment_descriptions" label="PDE/API Tools Environment Descriptions">
