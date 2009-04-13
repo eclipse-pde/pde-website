@@ -65,14 +65,13 @@ ob_start();
             <br>
              
 
-            <p class="bar">M1 Available</p>
-            <a href="new/index.php"> New &amp; Noteworthy</a> (2007-10-13)  
+            <p class="bar">M2 Available</p>
+            <a href="new/index.php"> New &amp; Noteworthy</a> (2009-04-13)
 
 			<br><br>
             <ul>
                 <li>
-                <b>http://download.eclipse.org/eclipse/pde/incubator/visualization/site</b>  (Eclipse
-                3.3 or later)</li>
+                <b>http://download.eclipse.org/eclipse/pde/incubator/visualization/site</b>(Eclipse 3.4 or later)</li>
             </ul>
 
 			<br>
