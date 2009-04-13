@@ -71,7 +71,8 @@ ob_start();
 			<br><br>
             <ul>
                 <li>
-                <b>http://download.eclipse.org/eclipse/pde/incubator/visualization/site</b>(Eclipse 3.4 or later)</li>
+                <b>http://download.eclipse.org/eclipse/pde/incubator/visualization/site</b>(Eclipse 3.4 or later)
+                </li>
             </ul>
 
 			<br>
@@ -87,8 +88,6 @@ ob_start();
             href="getsource.php">here</a>.<br>
             <br>
              
-
-            <p> </p>
         </div>
         <?php
                         include $_SERVER['DOCUMENT_ROOT'] . "/pde/incubator/component-links.html";
