@@ -21,7 +21,7 @@
 	# Define your project-wide Nav bars here.
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	# these are optional
-	$Nav->addCustomNav("About PDE", "/projects/project_summary.php?projectid=pde", "", 1);
+	$Nav->addCustomNav("About PDE", "/projects/project_summary.php?projectid=eclipse.pde", "", 1);
 	$Nav->addNavSeparator("Projects", 	"index.php");
 	$Nav->addCustomNav("Platform", "http://www.eclipse.org/platform/", "_self", 1);
 	$Nav->addCustomNav("JDT", "http://www.eclipse.org/jdt/", "_self", 1);
