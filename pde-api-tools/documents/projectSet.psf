@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
 <provider id="org.eclipse.team.cvs.core.cvsnature">
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.jdt.core.tests.builder,org.eclipse.jdt.core.tests.builder"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.jdt.core.tests.compiler,org.eclipse.jdt.core.tests.compiler"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.api.tools,org.eclipse.pde.api.tools"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.api.tools.tests,org.eclipse.pde.api.tools.tests"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.pde.api.tools.ui,org.eclipse.pde.api.tools.ui"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,org.eclipse.test.performance,org.eclipse.test.performance"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.orbit/org.objectweb.asm,org.objectweb.asm,v3_1"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools,org.eclipse.pde.api.tools"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ee.cdcfoundation10,org.eclipse.pde.api.tools.ee.cdcfoundation10"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ee.cdcfoundation11,org.eclipse.pde.api.tools.ee.cdcfoundation11"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ee.j2se12,org.eclipse.pde.api.tools.ee.j2se12"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ee.j2se13,org.eclipse.pde.api.tools.ee.j2se13"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ee.j2se14,org.eclipse.pde.api.tools.ee.j2se14"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ee.j2se15,org.eclipse.pde.api.tools.ee.j2se15"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ee.javase16,org.eclipse.pde.api.tools.ee.javase16"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ee.jre11,org.eclipse.pde.api.tools.ee.jre11"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ee.osgiminimum10,org.eclipse.pde.api.tools.ee.osgiminimum10"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ee.osgiminimum11,org.eclipse.pde.api.tools.ee.osgiminimum11"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ee.osgiminimum12,org.eclipse.pde.api.tools.ee.osgiminimum12"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.tests,org.eclipse.pde.api.tools.tests"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/eclipse,pde/apitools/org.eclipse.pde.api.tools.ui,org.eclipse.pde.api.tools.ui"/>
 </provider>
 </psf>
