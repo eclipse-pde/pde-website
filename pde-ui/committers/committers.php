@@ -26,12 +26,25 @@ ob_start();
                   <p align="center">PDE/UI Technical Lead, Code 9</p>               
                   <p align="center">&nbsp;</p>
                 </td>
+			  <td width="33%"><p align="center"><img src="mystery.png" alt="Darin Wright" width="200" height="280"></p>
+                  <p align="center"><strong><a href="http://eclipse-debug.blogspot.com/">Darin Wright</a></strong></p>
+				   <p align="center">PDE/UI Co-Lead, IBM Winnipeg</p>
+                  <p align="center">&nbsp;</p>
+			    </td>
+			  </tr>
+			  <tr>
 				<td width="33%"><p align="center"><img src="curtis_windatt.png" alt="Curtis Windatt" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://eclipse-debug.blogspot.com/">Curtis Windatt</a></strong></p>
 				   <p align="center">IBM Winnipeg</p>
                   <p align="center">&nbsp;</p></td>
 			    </td>
-			  </tr>
+			    <td width="33%"><p align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280"></p>
+			      <p align="center"><strong>Jacek Pospychala</strong></p>
+			       <p align="center">IBM Poland</p>
+			      <p align="center">&nbsp;</p></td>
+				</td>
+		      </tr>
+			</td>
 		    </table>
 
 			<a name="inactive_committers"></a>
@@ -119,12 +132,9 @@ ob_start();
                   <p align="center">&nbsp;</p></td>
 			  </tr>
 			  <tr>
-			  <td width="33%"><p align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280"></p>
-			      <p align="center"><strong>Jacek Pospychala</strong></p>
+			    <td width="33%"><p align="center"><img src="mystery.png" alt="Ankur Sharma" width="200" height="280"></p>
+			      <p align="center"><strong>Ankur Sharma</strong></p>
 			      <p align="center">&nbsp;</p></td>
-				</td>
-				<td>
-				</td>
 			  </tr>
           </table>
 			<a name="past_committers"></a>
