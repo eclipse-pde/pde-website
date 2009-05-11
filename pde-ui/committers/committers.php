@@ -22,8 +22,8 @@ ob_start();
 			<table width="100%" border="0">
               <tr>
                 <td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Chris Aniszczyk" width="200" height="280"></p>
-                  <p align="center"><strong><a href="http://mea-bloga.blogspot.com">Chris Aniszczyk</a></strong></p>
-                  <p align="center">PDE/UI Technical Lead, Code 9</p>               
+                  <p align="center"><strong><a href="http://eclipsesource.com/blogs/author/zx/">Chris Aniszczyk</a></strong></p>
+                  <p align="center">PDE/UI Co-Lead, EclipseSource</p>               
                   <p align="center">&nbsp;</p>
                 </td>
 			  <td width="33%"><p align="center"><img src="mystery.png" alt="Darin Wright" width="200" height="280"></p>
