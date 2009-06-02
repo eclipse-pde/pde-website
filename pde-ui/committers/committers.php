@@ -45,7 +45,7 @@ ob_start();
 				</td>
 		      </tr>
 		      <tr>
-				<td width="33%"><p align="center"><img src="mystery.png" alt="Benjamin Cabe" width="200" height="280"></p>
+				<td width="33%"><p align="center"><img src="benjamin_cabe.jpg" alt="Benjamin Cabe" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://blog.benjamin-cabe.com/">Benjamin Cabe</a></strong></p>
 				   <p align="center">Anyware Technologies</p>
                   <p align="center">&nbsp;</p></td>
