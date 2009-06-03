@@ -26,10 +26,10 @@ ob_start();
                   <p align="center">PDE/UI Co-Lead, EclipseSource</p>               
                   <p align="center">&nbsp;</p>
                 </td>
-			  <td width="33%"><p align="center"><img src="darin_wright" alt="Darin Wright" width="240" height="280"></p>
+			  <td width="33%"><p align="center"><img src="darin_wright.jpg" alt="Darin Wright" width="240" height="280"></p>
                   <p align="center"><strong><a href="http://eclipse-debug.blogspot.com/">Darin Wright</a></strong></p>
 				   <p align="center">PDE/UI Co-Lead, IBM Winnipeg</p>
-                  <p align="center"><em>and dog Java, PDE Mascot</em></p>
+                  <p align="center"><em>and his dog Java, PDE Mascot</em></p>
 			    </td>
 			  </tr>
 			  <tr>
