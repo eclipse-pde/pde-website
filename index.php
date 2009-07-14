@@ -25,16 +25,65 @@ ob_start();
 
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-
+		
 		<div class="homeitem3col">
-		  <h2>About the PDE Subproject</h2>
 		  	<p>
 				The Plug-in Development Environment (PDE) provides tools to create, develop, test, debug, build and deploy Eclipse plug-ins, fragments, features, update sites and RCP products. </p>
 		  	<p>PDE also provides comprehensive OSGi tooling, which makes it an ideal environment for component programming, not just Eclipse plug-in development.</p>
 		  	<p>PDE is built atop the <a href="http://www.eclipse.org/platform/">Platform</a>  and <a href="http://www.eclipse.org/jdt/">JDT</a>, and ships as part of the Eclipse SDK. </p>
 		  	<p><strong><em>In PDE we do tooling, but our business is people! </em></strong></p>
 		</div>
+		
+		<table border="0" cellpadding="5">
+					<tr height=9>	 
+	          		<tr>
+						<td width=20></td>
+						<td><a href="http://download.eclipse.org/eclipse/downloads/"><img border=0 src="images/downloads.jpg"></a></td>
+						<td>
+							<table border="0" cellpadding="0">
+								<tr>
+				          			<td><font size=+1><a href="http://download.eclipse.org/eclipse/downloads/">Downloads</a></font></td>
+								</tr>
+								<tr>
+					          		<td>Get the latest and greatest PDE release.
+					          		</td>
+					          	</tr>
+							</table>
+						</td>
+	          		</tr>
+	          		
+	          		<tr>
+						<td width=20></td>
+						<td><a href="/pde/support"><img border=0 src="images/community.jpg"></a></td>
+						<td>
+							<table border="0" cellpadding="0">
+								<tr>
+				          			<td><font size=+1><a href="/pde/support">Support</a></font></td>
+								</tr>
+								<tr>
+					          		<td>Find support and interact with users and developers.</td>
+					          	</tr>
+							</table>
+						</td>
+	          		</tr>
+
+	          		<tr>
+						<td width=20></td>
+						<td><a href="/pde/start"><img border=0 src="images/reference.png"></a></td>
+						<td>
+							<table border="0" cellpadding="0">
+								<tr>
+				          			<td><font size=+1><a href="/mylyn/start">Get Started</a></font></td>
+								</tr>
+								<tr>
+					          		<td>Resources for new users, links to tutorials and articles.</td>
+					          	</tr>
+							</table>
+						</td>
+	          		</tr>
+	         	</table>
 		</p>
+		
 		<div class="homeitem3col">
 		  <h2>PDE Components</h2>
 			<p>
