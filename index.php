@@ -30,7 +30,6 @@ ob_start();
 		  	<p>
 				The Plug-in Development Environment (PDE) provides tools to create, develop, test, debug, build and deploy Eclipse plug-ins, fragments, features, update sites and RCP products. </p>
 		  	<p>PDE also provides comprehensive OSGi tooling, which makes it an ideal environment for component programming, not just Eclipse plug-in development.</p>
-		  	<p>PDE is built atop the <a href="http://www.eclipse.org/platform/">Platform</a>  and <a href="http://www.eclipse.org/jdt/">JDT</a>, and ships as part of the Eclipse SDK. </p>
 		  	<p><strong><em>In PDE we do tooling, but our business is people! </em></strong></p>
 		</div>
 		
@@ -129,7 +128,20 @@ ob_start();
 	</div>
 	<div id="rightcolumn">
 		<div class="sideitem">
-			<h6>Quick Links</h6>
+			<h6>Contributors</h6>
+			<ul>
+				<li><a href="http://www.anyware-tech.com/">Anywhere Technologies</a></li>
+				<li><a href="http://www.eclipsesource.com">EclipseSource</a></li>
+				<li><a href="http://www.ibm.com">IBM</a></li>	
+			</ul>
+		</div>
+		<div class="sideitem">
+			<h6>Newsgroups</h6>
+			<p>Got Questions?</p>
+			<p>Try out the <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.platform.pde">newsgroups</a> [<a href="http://dev.eclipse.org/newslists/news.eclipse.platform.pde/maillist.html">archive</a>]</p>
+		</div>
+		<div class="sideitem">
+			<h6>Links</h6>
 			<ul>
 				<li><a href="pde-build">PDE Build</a></li>
 				<li><a href="pde-ui">PDE UI</a></li>
