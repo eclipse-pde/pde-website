@@ -112,10 +112,6 @@ ob_start();
 				<td width="20%" valign="top"><a href="http://wiki.eclipse.org/PDE/Incubator">PDE Incubator</a></td>
 				<td width="82%">Development of new tools that are not ready to be added to the Eclipse SDK</td>
 			</tr>
-			<tr> 
-				<td width="20%" valign="top">PDE Doc</td>
-				<td width="82%">Help documentation for PDE, shared by the other components.</td>
-			</tr>
 			
 			</table>
 		</div>
