@@ -130,7 +130,7 @@ ob_start();
 		<div class="sideitem">
 			<h6>Contributors</h6>
 			<ul>
-				<li><a href="http://www.anyware-tech.com/">Anywhere Technologies</a></li>
+				<li><a href="http://www.anyware-tech.com/">Anyware Technologies</a></li>
 				<li><a href="http://www.eclipsesource.com">EclipseSource</a></li>
 				<li><a href="http://www.ibm.com">IBM</a></li>	
 			</ul>

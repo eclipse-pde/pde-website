@@ -53,6 +53,37 @@ ob_start();
 		</div>
 		
 		
+		<div class="homeitem3col">
+			<a name="community"></a><h3>Open Source Support</h3>
+			<table border="0"> 
+        		<tr height="10" colspan="2"></tr>
+        		<tr>
+        		<td width="80" align="center" valign="center">
+        			<img border="0" src="/pde/images/bug-report.png"></a>
+        		</td>
+		        <td>    
+				        <p>
+				        	Submit bugs using <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=PDE">Bugzilla web interface.</a> 
+				        </p>
+				        <p>
+				        Please <a href="https://bugs.eclipse.org/bugs/query.cgi?product=PDE">search for duplicates</a> first! For defects provide steps 
+				        on how to reproduce. For enhancements outline a use case.  Due to an overwhelming number of requests, committers prioritize 
+				        critical bug fixes and framework and API improvements and cannot respond all inquiries. 
+				        </p> 
+			    </td>
+				</tr>
+			</table>
+			
+			<ul>
+				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=PDE&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=blocker&bug_severity=critical&bug_severity=major&bug_severity=normal&emailtype1=substring&email1=&emailtype2=notregexp&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
+				<img border=0 src="/pde/images/query.gif">&nbsp;&nbsp;View bugs with severity of normal or higher</a> 
+				</li>
+				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=PDE&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=minor&bug_severity=trivial&bug_severity=enhancement&emailtype1=substring&email1=&emailtype2=notregexp&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
+					<img border=0 src="/pde/images/query.gif">&nbsp;&nbsp;View bugs marked enhancement, minor, or trivial</a> 
+				</li>
+			</ul>
+		</div>
+		
 	</div>
 
 
