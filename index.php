@@ -72,7 +72,7 @@ ob_start();
 						<td>
 							<table border="0" cellpadding="0">
 								<tr>
-				          			<td><font size=+1><a href="/mylyn/start">Get Started</a></font></td>
+				          			<td><font size=+1><a href="pde-ui/get_involved.php">Get Started</a></font></td>
 								</tr>
 								<tr>
 					          		<td>Resources for new users, links to tutorials and articles.</td>
