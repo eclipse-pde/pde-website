@@ -52,6 +52,7 @@ ob_start();
 			    </td>
 			    <td width="33%"><p align="center"><img src="ankur_sharma.jpg" alt="Ankur Sharma" width="200" height="280"></p>
 			      <p align="center"><strong><a href="http://eclipsepde.wordpress.com/">Ankur Sharma</a></strong></p>
+			      <p align="center">IBM Bangalore</p>
 			      <p align="center">&nbsp;</p></td>
 			  </tr>
 			</td>
