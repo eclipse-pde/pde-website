@@ -7,8 +7,8 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "PDE Support";
-	$pageKeywords	= "pde, support";
+	$pageTitle 		= "PDE Getting Started";
+	$pageKeywords	= "pde, getting started";
 	
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
