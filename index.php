@@ -41,7 +41,7 @@ ob_start();
 						<td>
 							<table border="0" cellpadding="0">
 								<tr>
-				          			<td><font size=+1><a href="http://download.eclipse.org/eclipse/downloads/">Downloads</a></font></td>
+				          			<td><font size=+1><a href="/pde/download">Downloads</a></font></td>
 								</tr>
 								<tr>
 					          		<td>Get the latest and greatest PDE release.
