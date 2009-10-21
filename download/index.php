@@ -56,14 +56,12 @@ ob_start();
 				        <p>
 				        	The PDE Visualization component allows you to visualize dependencies.
 				        </p>
+				        <p>
+				        <img border=0 src="/pde/images/repo.gif">&nbsp;&nbsp;http://download.eclipse.org/eclipse/pde/visualization/updates</a> 
+				        </p>
 			    </td>
 				</tr>
 			</table>
-			
-			<ul>
-				<li><img border=0 src="/pde/images/repo.gif">&nbsp;&nbsp;http://download.eclipse.org/eclipse/pde/visualization/updates</a> 
-				</li>
-			</ul>
 		</div>
 		
 	</div>
