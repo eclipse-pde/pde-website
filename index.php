@@ -37,11 +37,11 @@ ob_start();
 					<tr height=9>	 
 	          		<tr>
 						<td width=20></td>
-						<td><a href="/pde/download"><img border=0 src="images/downloads.jpg"></a></td>
+						<td><a href="/pde/downloads"><img border=0 src="images/downloads.jpg"></a></td>
 						<td>
 							<table border="0" cellpadding="0">
 								<tr>
-				          			<td><font size=+1><a href="/pde/download">Downloads</a></font></td>
+				          			<td><font size=+1><a href="/pde/downloads">Downloads</a></font></td>
 								</tr>
 								<tr>
 					          		<td>Get the latest and greatest PDE release.
