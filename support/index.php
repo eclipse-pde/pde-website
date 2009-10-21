@@ -32,7 +32,7 @@ ob_start();
 				<tr height="10" colspan="2"></tr>
         		<tr>
         		<td width="80" align="center" valign="top" >
-        			&nbsp;&nbsp;&nbsp;&nbsp;<a href="/mylyn/bugs"><img border="0" src="/pde/images/community.jpg"></a>
+        			&nbsp;&nbsp;&nbsp;&nbsp;<a href="/pde/support"><img border="0" src="/pde/images/community.jpg"></a>
         		</td>
         		 <td>    
 					<p>

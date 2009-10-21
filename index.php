@@ -37,7 +37,7 @@ ob_start();
 					<tr height=9>	 
 	          		<tr>
 						<td width=20></td>
-						<td><a href="http://download.eclipse.org/eclipse/downloads/"><img border=0 src="images/downloads.jpg"></a></td>
+						<td><a href="/pde/download"><img border=0 src="images/downloads.jpg"></a></td>
 						<td>
 							<table border="0" cellpadding="0">
 								<tr>
