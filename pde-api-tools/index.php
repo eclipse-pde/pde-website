@@ -9,7 +9,7 @@
 
 	#*****************************************************************************
 	#
-	# Copyright (c) 2008 IBM Corporation and others.
+	# Copyright (c) 2008, 2009 IBM Corporation and others.
  	# All rights reserved. This program and the accompanying materials
  	# are made available under the terms of the Eclipse Public License v1.0
  	# which accompanies this distribution, and is available at
@@ -59,15 +59,12 @@
 		  	<p><a href="./dev_plans/r3_5/plan.php">API Tools 3.5 Plan</a></p>
 		  	<p><a href="./coverage/index.php">Code coverage results</a></p>
 		  	<p>API Tooling now has additional Ant tasks that can be used to derive the usage graph between 
-		  	given sets of bundles. The information can be extracted to XML or written into a database. 
+		  	given sets of bundles. The information can be extracted to XML and converted to HTML. 
 		  	<p>
 		  		A sample report of the SDK usage graph is available on the web <a href="http://download.eclipse.org/eclipse/downloads/drops/R-3.4.1-200809111700/pdeapitools/html/index.html" target="_blank">here</a>.
 		  	</p>
 		  	<p>
 		  		The Ant build file that produced the report is <a href="./apiusage/api_use.xml" target="_blank">available here</a>.
-		  	</p>
-		  	<p>
-		  		An example exclude file is <a href="./apiusage/exclude.txt" target="_blank">available here</a>.
 		  	</p>
 	    </div>	    
 		<div class="homeitem3col">
