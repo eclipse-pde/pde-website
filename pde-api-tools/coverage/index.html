@@ -5,89 +5,10 @@
 	<meta name="GENERATOR" content="Mozilla/4.76 [en] (Windows NT 5.0; U) [Netscape]">
 	<title>Code coverage results</title>
 
-<script type="text/javascript">
-<!--
-function linkifyBugs() {
-	// Replaces plain text 'bug xyz' by a link to Eclipse's bugzilla.
-	traverseLinkifyBugs(document.getElementsByTagName("body")[0]);
-}
-function nextNode(node) {
-	if (node.nextSibling) {
-		return node.nextSibling;
-	} else if (node.parentNode == document.getElementsByTagName("body")[0]) {
-		return null;
-	} else {
-		return nextNode(node.parentNode);
-	}
-}
-function traverseLinkifyBugs(node) {
-	while (node) {
-		if (node.nodeType == 1/*element*/ && node.nodeName == "a") {
-			node= nextNode(node);
-			
-		} else if (node.childNodes != null && node.childNodes.length > 0) {
-			node= node.childNodes[0];
-			
-		} else if (node.nodeType == 3/*text*/) {
-			var txt= node.data;
-			var regex= /([Bb]ug\s*)([0-9]+)/;
-			var res= regex.exec(txt);
-			if (res) {
-				var matchStart= txt.indexOf(res[0]);
-				
-				var beforeNode= document.createTextNode(txt.substring(0, matchStart));
-				node.parentNode.insertBefore(beforeNode, node);
-				
-				var linkNode= document.createElement("a");
-				linkNode.href= "https://bugs.eclipse.org/bugs/show_bug.cgi?id=" + res[2];
-				linkNode.appendChild(document.createTextNode(res[1] + res[2]));
-				node.parentNode.insertBefore(linkNode, node);
-				
-				node.data= txt.substr(matchStart + res[0].length);
-				// continue with current (shortened) node...
-			} else {
-				node= nextNode(node);
-			}
-			
-		} else {
-			node= nextNode(node);
-		}
-	}
-}
 
-function showHiddenWork() {
-	// Open this document with an URL ending in ?work, and the "work" class becomes visible. 
-	if (window.location.search == "?work") {
-		var spans= document.getElementsByTagName("span")
-		for (var i in spans) {
-			var s= spans[i];
-			if (s.className == "work") {
-				s.style.visibility= "visible";
-				s.insertBefore(document.createTextNode("\u00a0"), s.firstChild);
-				s.insertBefore(document.createTextNode("\u00a0"), s.lastChild.nextSibling);
-			}
-		};
-	}
-}
-
-//-->
-</script>
-
-	
-	 <style type="text/css">
-  		.priority {
-  			color: blue;
-  			font-style: italic;
-  		}
-  		.work {
-  			background: lightgreen;
-			visibility: hidden;
-  		}
-	 </style>	
-	
 </head>
 
-<body text="#000000" bgcolor="#FFFFFF" onLoad="linkifyBugs();showHiddenWork();">
+<body text="#000000" bgcolor="#FFFFFF">
 
 <table BORDER=0 CELLSPACING=5 CELLPADDING=2 WIDTH="100%" >
 
@@ -96,16 +17,7 @@ function showHiddenWork() {
     <p>Last revised: 2008/11/21</p>
       <p>This page presents code coverage results:</p>
       <ul>
-	      <li>Run on 2009/03/13 (3.5M6): <a href="20090313/index.html" target="_blank">click here</a><br>
-	      		This is a code coverage merge that corresponds to the following tests being run:
-		      <ul>
-			      <li>org.eclipse.pde.api.tools.tests.ApiTestsPlugin test suite</li>
-			      <li>org.eclipse.pde.api.tools.tests.ApiToolsPluginTestSuite test suite</li>
-			  </ul>
-			</li>
-	      </ul>
-	      </li>
-	      <li>Run on 2009/04/06: <a href="200900406/index.html" target="_blank">click here</a><br>
+	      <li>Run on 2009/04/06: <a href="20090406/index.html" target="_blank">click here</a><br>
 	      		This is a code coverage merge that corresponds to the following tests being run:
 		      <ul>
 			      <li>org.eclipse.pde.api.tools.tests.ApiTestsPlugin test suite</li>

@@ -23,8 +23,8 @@ $Nav	= new Nav();
 $Menu 	= new Menu();		
 include($App->getProjectCommon());    
 
-	$pageTitle 		= "API Tools Test COverage Results";
-	$pageKeywords	= "PDE, pde, API, Java, plan, planning, JDT, development, tools, ide, Eclipse";
+	$pageTitle 		= "API Tools Test Coverage Results";
+	$pageKeywords	= "PDE, pde, API, Java, plan, planning, JDT, development, tools, IDE, Eclipse";
 	$pageAuthor		= "The PDE Team";
 
 ob_start();
