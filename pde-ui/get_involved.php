@@ -40,11 +40,7 @@ ob_start();
 			<h2>Communication</h2>
 			
 			<p>
-			There are two developer mailing lists that are used for developer discussions.
-			<ul>
-			<li><a href="https://dev.eclipse.org/mailman/listinfo/pde-ui-dev">https://dev.eclipse.org/mailman/listinfo/pde-ui-dev</a></li>
-			<li><a href="https://dev.eclipse.org/mailman/listinfo/pde-dev">https://dev.eclipse.org/mailman/listinfo/pde-dev</a></li> 
-			</ul>
+			The <a href="https://dev.eclipse.org/mailman/listinfo/pde-dev">pde-dev</a> mailing list can be used for development discussion and questions about contributing.
 			</p>
 			
 			<p>
