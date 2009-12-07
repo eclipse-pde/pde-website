@@ -101,6 +101,12 @@
 				<td><div align="center">&nbsp;</div></td>
 				<td><div align="center">&nbsp;</div></td>
 			  </tr>
+			  <tr> 
+			    <td><a href="#WORKSPACE">Target Platform Stability / Workspace Baseline</a></td>
+			    <td><div align="center">&nbsp;</div></td>
+				<td><div align="center">&nbsp;</div></td>
+				<td><div align="center">&nbsp;</div></td>
+			  </tr>
 			   <tr> 
 			    <td><a href="#TESTSUITE">Run The Test Suite</a></td>
 			    <td><div align="center"><img src="../images/ok.gif" width="10" height="10"></div></td>
@@ -316,6 +322,19 @@
 			<h4>Invalid System Library References</h4>
 				<ol>
 					<li>Change EE to 1.4 (or prior), set build-path JRE to be 1.5 or greater, and access types / methods / fields from the build path library</li>
+				</ol>
+				<p><a href="#TOP">Back to top</a><br><hr></p>
+				<a name="WORKSPACE"></a>
+			<h4>Target Platform Stability / Workspace Baseline</h4>
+				<p>These tests are to ensure there is no corruption to the target platform when performing
+				workspace baseline changes during normal development. All of the following tests require that 
+				the Target Platform State view be open and that it be checked after each of the following tests to 
+				ensure no bundle problems arise.</p>
+				<ol>
+					<li>Create / delete projects in your workspace</li>
+					<li>Bring in projects from CVS</li>
+					<li>Open / close projects</li>
+					<li>Import projects (binary and normal projects)</li>
 				</ol>
 				<p><a href="#TOP">Back to top</a><br><hr></p>
 			<a name="TESTSUITE"></a>
