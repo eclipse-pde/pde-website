@@ -271,6 +271,16 @@
 							</li>
 							<li> Drag &amp; Drop a filter file out of the project</li>
 							<li> Over-ride and update from CVS</li>
+							<li>Auto-remove using the builder preference
+								<p>
+								A good test case: (1) start new workspace, (2) bring org.eclipse.ui.navigator from R3_5 branch
+								(3) set baseline to an Eclipse 3.5.0 install.
+								</p>
+								<p>
+								With the above set-up now change the setting in the workspace and the project and ensure filters
+								are automatically cleaned up or reported depending on the setting.
+								</p>
+								</li>
 						</ul>
 					</li>
 					<li> Share Filters
@@ -295,6 +305,7 @@
 					<li> General
 						<ul>
 							<li> The API Errors/Warnings page should have a help topic</li>
+							<li> Changing preferences for the workspace should not override project specific settings</li>
 						</ul>
 					</li>
 					<li> Workspace
