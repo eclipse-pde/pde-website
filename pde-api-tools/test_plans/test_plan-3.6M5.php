@@ -2,7 +2,7 @@
 
 	#*****************************************************************************
 	#
-	# Copyright (c) 2009 IBM Corporation and others.
+	# Copyright (c) 2010 IBM Corporation and others.
  	# All rights reserved. This program and the accompanying materials
  	# are made available under the terms of the Eclipse Public License v1.0
  	# which accompanies this distribution, and is available at
@@ -11,7 +11,7 @@
 	#     IBM Corporation - initial implementation
 	#
 	# Author: 		API Tools Team
-	# Date:			December 7, 2009
+	# Date:			January 26, 2010
 	#
 	# Description: This page outlines the API Tools project 3.6 test plan
 	#
@@ -264,6 +264,16 @@
 							</li>
 							<li> Drag &amp; Drop a filter file out of the project</li>
 							<li> Over-ride and update from CVS</li>
+							<li>Auto-remove using the builder preference
+								<p>
+								A good test case: (1) start new workspace, (2) bring org.eclipse.ui.navigator from R3_5 branch
+								(3) set baseline to an Eclipse 3.5.0 install.
+								</p>
+								<p>
+								With the above set-up now change the setting in the workspace and the project and ensure filters
+								are automatically cleaned up or reported depending on the setting.
+								</p>
+								</li>
 						</ul>
 					</li>
 					<li> Share Filters
