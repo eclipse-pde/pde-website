@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Eclipse "New and Noteworthy" Template</title>
+</head><body>
+<h1>Eclipse "New and Noteworthy" Template</h1>
+<p>Last revised October 29, 2007</p>
+<p>This is the template for the "New and Noteworthy" document that
+  accompanies each Eclipse project milestone build.</p>
+<p>Note: This template document is XHTML 1.0 Transitional. Please use the W3C <a href="http://validator.w3.org/#validate_by_input">XHTML
+    Markup Validation Service</a> to check your document's markup before submitting.
+    This will detect screwed up HTML tags, images without an "alt"
+  attrribute, and other tedious little details. </p>
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td colspan="2">
+<hr/>
+<h2>PDE
+</h2>
+<hr/></td>
+</tr>
+<tr id="buildseverities">
+<td align="left" valign="top" width="30%"><b>Configurable problem severities for build.properties
+</b></td>
+<td valign="top" width="70%">Severities for problems in build.properties can
+now be configured individually via the <b>Preferences > Plug-in Development > Compilers</b>
+preference page. Problem severities can also be configured at the project level
+via a project's <b>Properties > Plug-in Development > Plug-in Manifest Compiler</b>
+property page.
+<p><img alt="Severity Settings" title="Severity Settings"
+src="images/build-severities.png"/><br/><br/></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr/> </td>
+</tr>
+<tr id="pdecreateapi">
+<td align="left" valign="top" width="30%"><b>API for plug-in project creation
+</b></td>
+<td valign="top" width="70%">An API is now available to create and modify plug-in
+(bundle) projects. The API provides a description of a project's bundle related
+attributes and allows them to be modified declaratively. For example, a bundle's
+activator, required bundles, package exports and imports can be queried and defined.
+As well, the root of bundle (i.e. the folder containing <code>META-INF/MANIFEST.MF</code>)
+can be placed anywhere inside a project (rather than just the root project folder).
+The new API is available in the <code>org.eclipse.pde.core.project</code> package
+of the <code>org.eclipse.pde.core</code> bundle.
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr/> </td>
+</tr>
+</tbody>
+</table>
+</body></html>
