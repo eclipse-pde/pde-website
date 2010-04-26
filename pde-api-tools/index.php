@@ -58,14 +58,7 @@
 		  <h2><b>Current Development</b></h2>
 		  	<p><a href="./dev_plans/r3_5/plan.php">API Tools 3.5 Plan</a></p>
 		  	<p><a href="./coverage/index.php">Code coverage results</a></p>
-		  	<p>API Tooling now has additional Ant tasks that can be used to derive the usage graph between 
-		  	given sets of bundles. The information can be extracted to XML and converted to HTML. 
-		  	<p>
-		  		A sample report of the SDK usage graph is available on the web <a href="http://download.eclipse.org/eclipse/downloads/drops/R-3.4.1-200809111700/pdeapitools/html/index.html" target="_blank">here</a>.
-		  	</p>
-		  	<p>
-		  		The Ant build file that produced the report is <a href="./apiusage/api_use.xml" target="_blank">available here</a>.
-		  	</p>
+		  	<p>New and exciting examples can be found on the <a href="http://wiki.eclipse.org/PDE/API_Tools/Resources">resources wiki</a></p>
 	    </div>	    
 		<div class="homeitem3col">
 		  <h2><b>Get involved!</b></h2>
