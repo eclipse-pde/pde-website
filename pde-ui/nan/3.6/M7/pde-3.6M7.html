@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Eclipse "New and Noteworthy" Template</title>
+</head><body>
+<h1>Eclipse "New and Noteworthy" Template</h1>
+<p>Last revised October 29, 2007</p>
+<p>This is the template for the "New and Noteworthy" document that
+  accompanies each Eclipse project milestone build.</p>
+<p>Note: This template document is XHTML 1.0 Transitional. Please use the W3C <a href="http://validator.w3.org/#validate_by_input">XHTML
+    Markup Validation Service</a> to check your document's markup before submitting.
+    This will detect screwed up HTML tags, images without an "alt"
+  attrribute, and other tedious little details. </p>
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td colspan="2">
+<hr/>
+<h2>PDE
+</h2>
+<hr/></td>
+</tr>
+<tr id="featurelaunch">
+<td align="left" valign="top" width="30%"><b>Feature based launch
+</b></td>
+<td valign="top" width="70%">Individual bundles can now be added to a 
+feature based launch. This makes it possible to include bundles that are 
+not part of a feature in a feature based launch. PDE automatically launches
+all of the bundles in the selected features, along with the individually
+selected bundles and all of their required bundles. This feature is available
+in Eclipse Applications, JUnit Plug-in Tests, and OSGi Framework launch configurations.
+On the <b>Plug-ins</b> tab, choose '<b>features selected below</b>' to display
+and select features to launch.
+<p><img alt="Add individual plug-ins to a feature based launch" title="Add Individual Plug-ins"
+src="images/add-plugins.png"/><br/><br/></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr/> </td>
+</tr>
+<tr id="importcvs">
+<td align="left" valign="top" width="30%"><b>Import from CVS
+</b></td>
+<td valign="top" width="70%">The <b>Plug-in Import</b> wizard allows you to import
+projects from CVS corresponding to bundles in the target platform. This feature
+is available for bundles that define the <b>Eclipse-SourceReferences</b> header.
+On the first page of the import wizard select the <b>Import As > Projects from a
+repository</b> option.
+<p><img alt="Import from a repository" title="Import From Repository"
+src="images/from-repo.png"/><br/><br/></p>
+<p>
+The second page allows you to choose from all bundles with source repository
+information. Select the bundles you want to import and press <b>Next</b>.
+</p>
+<p><img alt="Select bundles to import" title="Select Bundles to Import"
+src="images/avail.png"/><br/><br/></p>
+<p>
+The last page of the wizard allows you to import the specific versions of the bundles
+used in the target platform or from HEAD. Pressing <b>Finish</b> will import the projects
+into your workspace.
+</p>
+<p><img alt="Select Version" title="Select Version"
+src="images/head-version.png"/><br/><br/></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr/> </td>
+</tr>
+<tr id="osgiconsole">
+<td align="left" valign="top" width="30%"><b>OSGi console
+</b></td>
+<td valign="top" width="70%">An OSGi console is now available to interact with the
+running framework. Use the <b>Open Console</b> drop down action in the <b>Console View</b>
+to open as <b>OSGi Console</b>.
+<p><img alt="Open OSGi Console" title="Open OSGi Console"
+src="images/console-menu.png"/><br/><br/></p>
+<p>
+You can then enter OSGi commands into the console to interact directly with the framework
+running the IDE.
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr/> </td>
+</tr>
+<tr id="pdebuildsynch">
+<td align="left" valign="top" width="30%"><b>Synchronize project settings with PDE build</b>
+</td>
+<td valign="top" width="70%">It's easier to synchronize your project specific compiler
+settings and file encoding settings with PDE build. Two new options appear in the <b>Build</b>
+section of the <b>Preferences > Plug-in Development > Compilers </b> preference page. By default the
+new options are set to <b>Ignore</b>.
+<p><img alt="Build validation settings" title="Build Validation Settings"
+src="images/synch-settings.png"/><br/><br/></p>
+<p>
+When set to <b>Warning</b> or <b>Error</b> problem markers will appear when your project settings
+are not reflected in <code>build.properties</code>. Quick fixes are available to help you synchronize
+the settings.
+</p>
+<p><img alt="Warnings" title="Build Validation Warnings"
+src="images/synch-warnings.png"/><br/><br/></p>
+<p>
+A new <code>javacProjectSettings</code> property is supported in <code>build.properties</code>. The value 
+can be a project relative path to a preference settings file of compiler options supported by the JDT
+compiler, or it can simply by <code>true</code> to indicate the default preference file should be used
+(<code>.settings/org.eclipse.jdt.core.prefs</code>).
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr/> </td>
+</tr>
+<tr id="pdeerrors">
+<td align="left" valign="top" width="30%"><b>Improved error reporting from PDE build</b>
+</td>
+<td valign="top" width="70%">A new <code>prereqErrors.log</code> file is generated by PDE build.
+The file helps locate bundles lowest on the stack with compilation errors. An entry is added for each bundle with
+build errors describing any prerequisite bundles that contained compile errors. Entries are added in the order
+bundles are compiled. For example:
+<p>
+<code>
+org.eclipse.debug.ui_3.6.0.201004141459: the following prerequisites contain compile errors<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;org.eclipse.debug.core_3.6.0.201004141459
+</code>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>
