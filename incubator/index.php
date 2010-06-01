@@ -45,12 +45,12 @@ ob_start();
 			</tr>
 			<tr>
 		      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
-		      <td width="98%"><a href="ds/index.php" target="_top"><b>Declarative Services Tooling</b></a><br>
+		      <td width="98%"><a href="http://wiki.eclipse.org/PDE/Incubator/DS" target="_top"><b>Declarative Services Tooling</b></a><br>
 			    Tooling around the declarative services (DS) specification from OSGi</td>
 			</tr>
 			<tr>
 		      <td width="2%" align=RIGHT valign=TOP><img src="http://eclipse.org/images/Adarrow.gif" width="16" height="16" border="0"></td>
-		      <td width="98%"><a href="product_customization/index.php" target="_top"><b>Product Customization Tooling</b></a><br>
+		      <td width="98%"><a href="http://wiki.eclipse.org/PDE/Incubator/ProductCustomization" target="_top"><b>Product Customization Tooling</b></a><br>
 			    Tooling built around the Equinox Transformations component</td>
 			</tr>
 	  	</table>
