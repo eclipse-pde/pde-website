@@ -39,15 +39,18 @@ ob_start();
 	    </div>
 		</p>
 		<div class="homeitem3col">
-		  <h2>Development Resources</h2>
-			<p>
-				For more detailed information, check out the <a href="dev.php">Development Resources</a>.
-			</p>
+		  <h2>Resources</h2>
+		  	<ul>
+		  		<li>Find <a href="http://help.eclipse.org/galileo/index.jsp?nav=/4_2_0">online documentation</a> at help.eclipse.org.</li>
+		  		<li>Check out the <a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=14&">PDE community forum</a>.  (Also available over 
+		  		<a href="http://eclipse.org/newsgroups/register.php">nntp</a>.) </li>
+		  		<li><a href="http://wiki.eclipse.org/PDE/Build">PDE/Build</a> and <a href="http://wiki.eclipse.org/PDE/Build/FAQ">FAQ</a> on the Eclipse wiki.</li>
+		  	</ul>
 		</div>
 		<div class="homeitem3col">
 		  <h2>Get involved!</h2>
 		    <p>If you are interested in participating in the development of the PDE
-				Build component, check out the developer's mailing list: <a href="http://dev.eclipse.org/mailman/listinfo/pde-build-dev">pde-build-dev@eclipse.org</a>.
+				Build component, check out the developer's mailing list: <a href="http://dev.eclipse.org/mailman/listinfo/pde-dev">pde-dev@eclipse.org</a>.
 				Chat with people there about your problems and interests, and find out
 				what you can do to help.
 			</p>
@@ -59,7 +62,8 @@ ob_start();
 			<h6>PDE-Build links</h6>
 			<ul>
 				<li><a href="index.php">Home</a></li>
-				<li><a href="dev.php">Development Resources</a></li>
+				<li><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=14&">Community Forum</a></li>
+				<li><a href="http://wiki.eclipse.org/PDE/Build">Wiki</a></li>
 			</ul>
 		</div>
 	</div>
