@@ -41,7 +41,7 @@ ob_start();
 		<div class="homeitem3col">
 		  <h2>Resources</h2>
 		  	<ul>
-		  		<li>Find <a href="http://help.eclipse.org/galileo/index.jsp?nav=/4_2_0">online documentation</a> at help.eclipse.org.</li>
+		  		<li>Find <a href="http://help.eclipse.org/galileo/topic/org.eclipse.pde.doc.user/guide/intro/pde_overview.htm#build">online documentation</a> at help.eclipse.org.</li>
 		  		<li>Check out the <a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=14&">PDE community forum</a>.  (Also available over 
 		  		<a href="http://eclipse.org/newsgroups/register.php">nntp</a>.) </li>
 		  		<li><a href="http://wiki.eclipse.org/PDE/Build">PDE/Build</a> and <a href="http://wiki.eclipse.org/PDE/Build/FAQ">FAQ</a> on the Eclipse wiki.</li>

@@ -48,6 +48,12 @@ ob_start();
 				 <li>
 			 		<a href="http://wiki.eclipse.org/RCP_FAQ">Browse RCP FAQ</a>.
 				</li>
+				<li>
+			 		<a href="http://wiki.eclipse.org/PDE/FAQ">PDE</a> and <a href="http://wiki.eclipse.org/PDE/Build/FAQ">PDE/Build</a> FAQs.
+				</li>
+				<li>
+			 		<a href="http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.pde.doc.user/guide/intro/pde_overview.htm">Online Documentation</a>.
+				</li>
 			 </ul>				    
 		</div>
 		
