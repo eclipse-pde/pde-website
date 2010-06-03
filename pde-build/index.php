@@ -61,7 +61,7 @@ ob_start();
 		<div class="sideitem">
 			<h6>PDE-Build links</h6>
 			<ul>
-				<li><a href="index.php">Home</a></li>
+				<li><a href="../index.php">Home</a></li>
 				<li><a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=14&">Community Forum</a></li>
 				<li><a href="http://wiki.eclipse.org/PDE/Build">Wiki</a></li>
 			</ul>
