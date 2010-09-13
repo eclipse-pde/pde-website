@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Eclipse "New and Noteworthy" Template</title>
+</head><body>
+<h1>Eclipse "New and Noteworthy" Template</h1>
+<p>Last revised October 29, 2007</p>
+<p>This is the template for the "New and Noteworthy" document that
+  accompanies each Eclipse project milestone build.</p>
+<p>Note: This template document is XHTML 1.0 Transitional. Please use the W3C <a href="http://validator.w3.org/#validate_by_input">XHTML
+    Markup Validation Service</a> to check your document's markup before submitting.
+    This will detect screwed up HTML tags, images without an "alt"
+  attrribute, and other tedious little details. </p>
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td colspan="2">
+<hr/>
+<h2>PDE
+</h2>
+<hr/></td>
+</tr>
+<tr id="targetresolution">
+<td align="left" valign="top" width="30%"><b>p2 Target Definition Performance
+</b></td>
+<td valign="top" width="70%"><p>Target definitions that use a p2 repository as a location
+will see improved performance in 3.7.  Previously, each time a p2 target definition was
+opened, the remote repository was accessed to determine if all required plug-ins were 
+available.  Now, this information is stored locally in a p2 profile.</p>
+<p>
+If the target definition is modified or a required plug-in cannot be found, the target
+will do a full resolve operation, accessing the remote repository and downloading any
+missing plug-ins.</p>
+<p><img alt="Target Resolution" title="p2 Target Definition"
+src="images/target-resolution.png"/><br/><br/></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr/> </td>
+</tr>
+<tr id="offlinetargets">
+<td align="left" valign="top" width="30%"><b>Offline p2 Target Definitions
+</b></td>
+<td valign="top" width="70%"><p>As an added benefit to performance improvements of
+p2 based target definitions, the target editor is much more functional with an
+intermittent internet connection.  Once a target definition has connected to the
+remote repository and downloaded all required plug-ins, an internet connection
+is no longer required to open the editor, set the definition as the target platform,
+and in some cases even modifying the target.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr/> </td>
+</tr>
+<tr id="productproperties">
+<td align="left" valign="top" width="30%"><b>Properties in Product Editor
+</b></td>
+<td valign="top" width="70%"><p>The product editor now has support to view, add and edit
+configuration properties.  The properties will be added to config.ini files generated
+using the product configuration.</p>
+<p><img alt="Product Properties" title="Properaties in Product Editor"
+src="images/product-properties.png"/><br/><br/></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr/> </td>
+</tr>
+<tr id="buildmodel">
+<td align="left" valign="top" width="30%"><b>PDE Build Model API
+</b></td>
+<td valign="top" width="70%"><p>Calling getBuildModel() on IPluginModelBase objects will now return
+a handle to PDE's build model for that plug-in.  The IBuildModel API can be used
+to view and edit the contents of a build.properties file.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>
