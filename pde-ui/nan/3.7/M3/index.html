@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Eclipse "New and Noteworthy" Template</title>
+</head><body>
+<h1>Eclipse "New and Noteworthy" Template</h1>
+<p>Last revised October 29, 2007</p>
+<p>This is the template for the "New and Noteworthy" document that
+  accompanies each Eclipse project milestone build.</p>
+<p>Note: This template document is XHTML 1.0 Transitional. Please use the W3C <a href="http://validator.w3.org/#validate_by_input">XHTML
+    Markup Validation Service</a> to check your document's markup before submitting.
+    This will detect screwed up HTML tags, images without an "alt"
+  attrribute, and other tedious little details. </p>
+<table border="0" cellpadding="10" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td colspan="2">
+<hr/>
+<h2>PDE
+</h2>
+<hr/></td>
+</tr>
+<tr id="includelists">
+<td align="left" valign="top" width="30%"><b>Include Lists in Ant Tasks
+</b></td>
+<td valign="top" width="70%"><p></p>
+<p>
+API Tooling ant tasks that previous supported exclude lists now support include lists. The include list seeds the 
+set of bundles and members to be analyzed (when omitted, all bundles and members are included), and the exclude list
+is then applied.  Include lists have the same structure as the exclude lists, allowing specific bundles/members, regular
+expressions and comments to be added.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr/> </td>
+</tr>
+<tr id="consumerreport">
+<td align="left" valign="top" width="30%"><b>Consumer Use Report
+</b></td>
+<td valign="top" width="70%"><p>The API Consumer Use Report Conversion task is a new ant task that generates an HTML report
+from the XML result of a use scan.  The information is organized in a different format than the standard report converter
+produces.  The references are organized by consumer bundle, the bundle which contains the code that references the API/type.
+The standard report organizes references by the bundle that produced the API/type.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>
