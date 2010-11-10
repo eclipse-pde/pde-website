@@ -21,39 +21,40 @@ ob_start();
 			<h2>PDE/UI Active Committers</h2>
 			<table width="100%" border="0">
               <tr>
+              <td width="33%"><p align="center"><img src="curtis_windatt.png" alt="Curtis Windatt" width="200" height="280"></p>
+                  <p align="center"><strong><a href="http://eclipse-debug.blogspot.com/">Curtis Windatt</a></strong></p>
+				   <p align="center">PDE UI Co-Lead, IBM Winnipeg</p>
+                  <p align="center">&nbsp;</p></td>
+			    </td>
+			     <td width="33%"><p align="center"><img src="ankur_sharma.jpg" alt="Ankur Sharma" width="200" height="280"></p>
+			      <p align="center"><strong><a href="http://eclipsepde.wordpress.com/">Ankur Sharma</a></strong></p>
+			      <p align="center">PDE UI Co-Lead, IBM Bangalore</p>
+			      <p align="center">&nbsp;</p></td>
+			  </tr>
+			  <tr>
                 <td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Chris Aniszczyk" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://eclipsesource.com/blogs/author/zx/">Chris Aniszczyk</a></strong></p>
-                  <p align="center">PDE/UI Co-Lead, EclipseSource</p>               
+                  <p align="center">Red Hat</p>               
                   <p align="center">&nbsp;</p>
                 </td>
 			  <td width="33%"><p align="center"><img src="darin_wright.jpg" alt="Darin Wright" width="240" height="280"></p>
                   <p align="center"><strong><a href="http://eclipse-debug.blogspot.com/">Darin Wright</a></strong></p>
-				   <p align="center">PDE/UI Co-Lead, IBM Winnipeg</p>
+				   <p align="center">New Relic</p>
                   <p align="center"><em>and his dog Java, PDE Mascot</em></p>
 			    </td>
 			  </tr>
-			  <tr>
-				<td width="33%"><p align="center"><img src="curtis_windatt.png" alt="Curtis Windatt" width="200" height="280"></p>
-                  <p align="center"><strong><a href="http://eclipse-debug.blogspot.com/">Curtis Windatt</a></strong></p>
-				   <p align="center">IBM Winnipeg</p>
-                  <p align="center">&nbsp;</p></td>
-			    </td>
+			  </tr>
+		      <tr>
 			    <td width="33%"><p align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280"></p>
 			      <p align="center"><strong>Jacek Pospychala</strong></p>
 			       <p align="center">IBM Poland</p>
 			      <p align="center">&nbsp;</p></td>
 				</td>
-		      </tr>
-		      <tr>
 				<td width="33%"><p align="center"><img src="benjamin_cabe.jpg" alt="Benjamin Cabe" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://blog.benjamin-cabe.com/">Benjamin Cabe</a></strong></p>
 				   <p align="center">Anyware Technologies</p>
                   <p align="center">&nbsp;</p></td>
 			    </td>
-			    <td width="33%"><p align="center"><img src="ankur_sharma.jpg" alt="Ankur Sharma" width="200" height="280"></p>
-			      <p align="center"><strong><a href="http://eclipsepde.wordpress.com/">Ankur Sharma</a></strong></p>
-			      <p align="center">IBM Bangalore</p>
-			      <p align="center">&nbsp;</p></td>
 			  </tr>
 			</td>
 		    </table>
