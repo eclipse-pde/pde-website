@@ -86,7 +86,7 @@ ob_start();
 		<div class="homeitem3col">
 		  <h2>PDE Components</h2>
 			<p>
-				The PDE subproject is broken down into three main components, Build, UI and API Tooling.  Each of
+				The PDE subproject is broken down into three main components, Build, UI and API Tools.  Each of
 				these components operate like a project unto its own, with its own set of committers, bug categories 
 				and mailing lists.  There are two additional components in PDE, Doc which handles the help documentation 
 				and Incubator which develops non-SDK features.
