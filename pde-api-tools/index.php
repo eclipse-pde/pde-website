@@ -58,7 +58,6 @@
 		  <h2><b>Current Development</b></h2>
 		  	<p><a href="./dev_plans/r3_5/plan.php">API Tools 3.5 Plan</a></p>
 		  	<p><a href="./coverage/index.php">Code coverage results</a></p>
-		  	<p>An example of the complete API use scan for Galileo can be found <a href="xml.tar.bz2">here</a></p>
 		  	<p>New and exciting examples can be found on the <a href="http://wiki.eclipse.org/PDE/API_Tools/Resources">resources wiki</a></p>
 	    </div>	    
 		<div class="homeitem3col">
