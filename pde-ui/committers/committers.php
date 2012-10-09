@@ -23,28 +23,27 @@ ob_start();
               <tr>
               <td width="33%"><p align="center"><img src="curtis_windatt.png" alt="Curtis Windatt" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://eclipse-debug.blogspot.com/">Curtis Windatt</a></strong></p>
-				   <p align="center">PDE Co-Lead, IBM Winnipeg</p>
+				   <p align="center">PDE Lead, IBM Winnipeg</p>
                   <p align="center">&nbsp;</p></td>
 			    </td>
-			     <td width="33%"><p align="center"><img src="ankur_sharma.jpg" alt="Ankur Sharma" width="200" height="280"></p>
-			      <p align="center"><strong><a href="http://blog.ankursharma.org/">Ankur Sharma</a></strong></p>
-			      <p align="center">PDE Co-Lead, IBM Bangalore</p>
-			      <p align="center">&nbsp;</p></td>
-			  </tr>
-			  <tr>
-                <td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Chris Aniszczyk" width="200" height="280"></p>
-                  <p align="center"><strong><a href="http://eclipsesource.com/blogs/author/zx/">Chris Aniszczyk</a></strong></p>
-                  <p align="center">Red Hat</p>               
-                  <p align="center">&nbsp;</p>
-                </td>
-			  <td width="33%"><p align="center"><img src="darin_wright.jpg" alt="Darin Wright" width="240" height="280"></p>
-                  <p align="center"><strong><a href="http://eclipse-debug.blogspot.com/">Darin Wright</a></strong></p>
-				   <p align="center">New Relic</p>
-                  <p align="center"><em>and his dog Java, PDE Mascot</em></p>
+			    <td width="33%"><p align="center"></p>
+                  <p align="center"><strong><a href="http://eclipse-debug.blogspot.com/">Michael Rennie</a></strong></p>
+				   <p align="center">IBM Winnipeg</p>
+                  <p align="center">&nbsp;</p></td>
 			    </td>
+			    <td width="33%"><p align="center"></p>
+                  <p align="center"><strong>Daniel Megert</strong></p>
+				   <p align="center">IBM Zurich</p>
+                  <p align="center">&nbsp;</p></td>
+			    </td>
+			    
 			  </tr>
-			  </tr>
-		      <tr>
+		    </table>
+
+			<a name="inactive_committers"></a>
+			<h2>PDE/UI Inactive Committers</h2>
+			<table width="100%" border="0">
+			 <tr>
 			    <td width="33%"><p align="center"><img src="jacek_pospychala.jpg" alt="Jacek Pospychala" width="200" height="280"></p>
 			      <p align="center"><strong>Jacek Pospychala</strong></p>
 			       <p align="center">IBM Poland</p>
@@ -56,12 +55,17 @@ ob_start();
                   <p align="center">&nbsp;</p></td>
 			    </td>
 			  </tr>
-			</td>
-		    </table>
-
-			<a name="inactive_committers"></a>
-			<h2>PDE/UI Inactive Committers</h2>
-			<table width="100%" border="0">
+			     <td width="33%"><p align="center"><img src="ankur_sharma.jpg" alt="Ankur Sharma" width="200" height="280"></p>
+			      <p align="center"><strong><a href="http://blog.ankursharma.org/">Ankur Sharma</a></strong></p>
+			      <p align="center">IBM Bangalore</p>
+			      <p align="center">&nbsp;</p></td>
+                <td width="33%"><p align="center"><img src="chris_aniszczyk.png" alt="Chris Aniszczyk" width="200" height="280"></p>
+                  <p align="center"><strong><a href="http://eclipsesource.com/blogs/author/zx/">Chris Aniszczyk</a></strong></p>
+                  <p align="center">Red Hat</p>               
+                  <p align="center">&nbsp;</p>
+                </td>
+			  </tr>
+			<tr>
                 <td width="33%"><p align="center"><img src="brian_bauman.png" alt="Brian Bauman" width="200" height="280"></p>
                   <p align="center"><strong>Brian Bauman</strong></p>
                   <p align="center">IBM Austin Labs</p>
@@ -89,6 +93,11 @@ ob_start();
                 <td width="33%"><p align="center"><img src="mike_pawlowski.gif" alt="Mike Pawlowski" width="200" height="280"></p>
                   <p align="center"><strong>Mike Pawlowski</strong></p>
                   <p align="center">IBM Toronto Lab</p>               
+			    </td>
+			     <td width="33%"><p align="center"><img src="darin_wright.jpg" alt="Darin Wright" width="240" height="280"></p>
+                  <p align="center"><strong><a href="http://eclipse-debug.blogspot.com/">Darin Wright</a></strong></p>
+				   <p align="center">New Relic</p>
+                  <p align="center"><em>and his dog Java, PDE Mascot</em></p>
 			    </td>
                 </tr>
           </table>
