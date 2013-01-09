@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.sdk.samples_3.0.0.jar" id="org.eclipse.sdk.samples" version="3.0.0">
+      <category name="samples"/>
+   </feature>
+   <feature url="features/org.eclipse.sdk.samples_3.1.0.jar" id="org.eclipse.sdk.samples" version="3.1.0">
+      <category name="samples"/>
+   </feature>
+   <feature url="features/org.eclipse.sdk.samples_3.2.0.jar" id="org.eclipse.sdk.samples" version="3.2.0">
+      <category name="samples"/>
+   </feature>
+   <feature url="features/org.eclipse.sdk.samples_3.3.0.jar" id="org.eclipse.sdk.samples" version="3.3.0">
+      <category name="samples"/>
+   </feature>
+   <category-def name="samples" label="Eclipse SDK Samples">
+      <description>
+         Samples for the Eclipse SDK, demonstrating the use of editors, views, etc.
+      </description>
+   </category-def>
+</site>
