@@ -18,6 +18,8 @@ ob_start();
 
 	<div id="midcolumn">
 		<h1>Get Involved</h1>
+        
+        The content on this page is out of date, please refer to our wiki page <a href="http://wiki.eclipse.org/PDE/Contributor_Guide">Contributor Guide</a>.
 		
 		<a name="communicate"></a>
 		<div class="homeitem3col">

@@ -37,14 +37,14 @@ ob_start();
 					<tr height=9>	 
 	          		<tr>
 						<td width=20></td>
-						<td><a href="/pde/downloads"><img border=0 src="images/downloads.jpg"></a></td>
+						<td><a href="http://download.eclipse.org/eclipse/downloads/"><img border=0 src="images/downloads.gif"></a></td>
 						<td>
 							<table border="0" cellpadding="0">
 								<tr>
-				          			<td><font size=+1><a href="/pde/downloads">Downloads</a></font></td>
+				          			<td><font size=+1><a href="http://download.eclipse.org/eclipse/downloads/">Download</a></font></td>
 								</tr>
 								<tr>
-					          		<td>Get the latest and greatest PDE release.
+					          		<td>PDE ships with the Eclipse SDK and can be downloaded from the Eclipse project downloads page. 
 					          		</td>
 					          	</tr>
 							</table>
@@ -68,14 +68,29 @@ ob_start();
 
 	          		<tr>
 						<td width=20></td>
-						<td><a href="/pde/start"><img border=0 src="images/reference.png"></a></td>
+						<td><a href="http://wiki.eclipse.org/PDE/Contributor_Guide"><img border=0 src="images/reference.png"></a></td>
 						<td>
 							<table border="0" cellpadding="0">
 								<tr>
-				          			<td><font size=+1><a href="/pde/start">Get Started</a></font></td>
+				          			<td><font size=+1><a href="http://wiki.eclipse.org/PDE/Contributor_Guide">Contributing to PDE</a></font></td>
 								</tr>
 								<tr>
-					          		<td>Resources for new users, links to tutorials and articles.</td>
+					          		<td>The development of PDE is driven by the community in a transparent manner. Read our contributor guide wiki page and get involved.</td>
+					          	</tr>
+							</table>
+						</td>
+	          		</tr>
+            
+            <tr>
+						<td width=20></td>
+						<td><a href="http://wiki.eclipse.org/PDE"><img border=0 src="images/downloads.jpg"></a></td>
+						<td>
+							<table border="0" cellpadding="0">
+								<tr>
+				          			<td><font size=+1><a href="http://wiki.eclipse.org/PDE">Wiki</a></font></td>
+								</tr>
+								<tr>
+					          		<td>Visit the wiki page for release planning, test plans, user guides and more.</td>
 					          	</tr>
 							</table>
 						</td>
@@ -86,10 +101,7 @@ ob_start();
 		<div class="homeitem3col">
 		  <h2>PDE Components</h2>
 			<p>
-				The PDE subproject is broken down into three main components, Build, UI and API Tools.  Each of
-				these components operate like a project unto its own, with its own set of committers, bug categories 
-				and mailing lists.  There are two additional components in PDE, Doc which handles the help documentation 
-				and Incubator which develops non-SDK features.
+				The PDE subproject is broken down into three main components, Build, UI and API Tools. We also have an Incubator component where we can develop non-SDK features.
 			</p>
 			<table width="100%" border="0">
 			<tr> 
@@ -97,15 +109,15 @@ ob_start();
 				<td width="82%"><b>Description</b></td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="pde-build">PDE Build</a></td>
+				<td width="20%" valign="top"><a href="#pdebuild">PDE Build</a></td>
 				<td width="82%">Ant based tools and scripts to automate build processes</td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="pde-ui">PDE UI</a></td>
+				<td width="20%" valign="top"><a href="#pdeui">PDE UI</a></td>
 				<td width="82%">Models, builders, editors and more to faciliate plug-in development in the Eclipse IDE.</td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="pde-api-tools">PDE API Tools</a></td>
+				<td width="20%" valign="top"><a href="#pdeapitools">PDE API Tools</a></td>
 				<td width="82%">Eclipse IDE and build process integrated tooling to maintain API</td>
 			</tr>
 			<tr> 
@@ -115,35 +127,47 @@ ob_start();
 			
 			</table>
 		</div>
-		<div class="homeitem3col">
-		  <h2>Getting Involved</h2>
-			<p>
-				The development of PDE is driven by the community in an open and transparent manner.  By getting involved with PDE, you can help influence the future of the platform improve the quality of Eclipse.  There are many ways to assist, filing bug reports, contributing fixes, producing new features, participating in milestone testing, etc.  Each PDE component has its own bug triage rules, coding guidelines, and testing format, however a good place to start is the PDE UI <a href="pde-ui/get_involved.php">Getting Involved</a> page.
-			</p>
+		<div class="homeitem3col" id="pdebuild">
+		  <h2>PDE Build</h2>
+			<p>The goal of PDE Build is to facilitate the automation of plug-in build processes. Essentially, PDE Build produces Ant scripts based on development-time information provided by, for example, the plugin.xml and build.properties files. The generated Ant scripts, can fetch the relevant projects from a CVS repository, build jars, Javadoc, source zips, put everything together in a format ready to ship and send it out to a remote location (e.g., a local network or a downloads server). </p>
+                    
 		</div>
-	</div>
-	<div id="rightcolumn">
-		<div class="sideitem">
-			<h6>Contributors</h6>
+        <div class="homeitem3col" id="pdeui">
+		  <h2>PDE UI</h2>
+			<p>The PDE UI component provides a comprehensive set of tools to create, develop, test, debug and deploy Eclipse   plug-ins, fragments, features, update sites and RCP products. </p>
+			<p> PDE UI also provides comprehensive OSGi tooling, which makes it an ideal environment   for component programming, not just Eclipse plug-in development.</p>
+			<p>Here is a small list of what PDE UI provides to the Eclipse SDK:</p>
 			<ul>
-				<li><a href="http://www.anyware-tech.com/">Anyware Technologies</a></li>
-				<li><a href="http://www.eclipsesource.com">EclipseSource</a></li>
-				<li><a href="http://www.ibm.com">IBM</a></li>	
-			</ul>
+				<li>Form-Based Manifest Editors - multi-page editors that centrally manage all manifest files of a plug-in or feature. </li>
+				<li>RCP Tools - wizards and a form-based editor that allow you to define, brand, test and export products to multiple platforms. </li>
+				<li>New Project Creation Wizards - create a new plug-in, fragment, feature, feature patch and update sites.</li>
+				<li>Import Wizards - import plug-ins and features from the file system.</li>
+				<li>Export Wizards  - wizards that build, package and export plug-ins, fragments and products with a single click. </li>
+				<li>Launchers - test and debug Eclipse applications and OSGi bundles. </li>
+				<li>Views - PDE provides views that help plug-in developers inspect different aspects   of their development environment.</li>
+			    <li>Miscellaneous Tools - wizards to externalize and clean up manifest files.</li>
+			    <li>Conversion Tools - wizard to convert a plain Java project or plain JARs into a plug-in project. </li>
+			    <li>Integration with JDT  - plug-in manifest files participate in Java search and refactoring. </li>
+				<li>User Assistance Tools - Editors and tools for developing user help and other UA documents.</li>
+				<li>Declarative Services Tools - Editors and validation for OSGi declarative services.</li>
 		</div>
-		<div class="sideitem">
-			<h6>Newsgroups</h6>
-			<p>Got Questions?</p>
-			<p>Try out the <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.platform.pde">newsgroups</a> [<a href="http://dev.eclipse.org/newslists/news.eclipse.platform.pde/maillist.html">archive</a>]</p>
-		</div>
-		<div class="sideitem">
-			<h6>Links</h6>
-			<ul>
-				<li><a href="pde-build">PDE Build</a></li>
-				<li><a href="pde-ui">PDE UI</a></li>
-				<li><a href="pde-api-tools">PDE API Tools</a></li>
-				<li><a href="http://wiki.eclipse.org/PDE">PDE Wiki Page</a>		
-			</ul>
+        <div class="homeitem3col" id="pdeapitools">
+		  <h2>PDE API Tools</h2>
+			<p>API tooling will assist developers in API maintenance by reporting API defects such as binary incompatibilities, incorrect plug-in version numbers, missing or incorrect @since tags, and usage of non-API code between plug-ins. 
+			  	The tooling will be integrated in the Eclipse SDK and will be used in the automated build process. 
+			  	<br>
+			  	Specifically, the tooling is designed to do the following:
+				</p>
+                <ul>
+				    <li> Identify binary compatibility issues between two versions of a software component or product.</li>
+				    <li> Update version numbers for plug-ins (bundles) based on the Eclipse versioning scheme.</li>
+				    <li> Update @since tags for newly added classes, interfaces, methods, etc.</li>
+				    <li> Provide new javadoc tags and code assist to annotate types with special restrictions.</li>
+				   	<li> Leverage existing information (in MANIFEST.MF) to define the visibility of packages between bundles.</li>
+				    <li> Identify usage of non-API code between plug-ins.</li>
+				    <li> Identity leakage of non-API types into API.</li>
+                </ul>         
+            
 		</div>
 	</div>
 

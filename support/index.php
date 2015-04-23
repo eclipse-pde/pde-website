@@ -27,34 +27,34 @@ ob_start();
 		<h1><?= $pageTitle ?></h1>
 
 		<div class="homeitem3col">
-			<a name="community"></a><h3>Community Newsgroup</h3>
+			<a name="community"></a><h3>Communication</h3>
 			<table border="0"> 
 				<tr height="10" colspan="2"></tr>
         		<tr>
-        		<td width="80" align="center" valign="top" >
-        			&nbsp;&nbsp;&nbsp;&nbsp;<a href="/pde/support"><img border="0" src="/pde/images/community.jpg"></a>
+                    <td width="80" align="center" valign="top" >
+        			&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" src="/pde/images/community.jpg"><
+                        
+                    <p>
+                    The <a href="https://dev.eclipse.org/mailman/listinfo/pde-dev">pde-dev</a> mailing list can be used for development discussion and questions about contributing.
+                    </p>
+
+                    <p>
+                    We are active on <a href="http://wiki.eclipse.org/index.php/IRC">IRC</a> channels #eclipse and #eclipse-dev
+                    </p>
+
+                    <p>
+                    PDE has a <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.platform.pde">newsgroup</a> where users can ask for help.
+                    </p>
+                    
+        		
         		</td>
-        		 <td>    
-					<p>
-						The PDE newsgroup is intended for the user community discussions on PDE usage and troubleshooting.
-					</p>
-			    </td>
 				</tr>
 			</table>
-			 <ul>
-				 <li>
-			 		<a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.platform.pde">Browse newsgroup posts</a> using the web interface
-				</li>
-			 	<li>
-					<a href="news://news.eclipse.org/eclipse.platform.pde">Subscribe</a> to the newsgroup with your news reader.
-					<a href="http://wiki.eclipse.org/index.php/Webmaster_FAQ#How_do_I_access_the_Eclipse_newsgroups.3F">See the FAQ</a> for instructions.
-				</li>
-			 </ul>				    
 		</div>
 		
 		
 		<div class="homeitem3col">
-			<a name="community"></a><h3>Open Source Support</h3>
+			<a name="bugzilla"></a><h3>Reporting Bugs</h3>
 			<table border="0"> 
         		<tr height="10" colspan="2"></tr>
         		<tr>
