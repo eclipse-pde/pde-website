@@ -9,7 +9,7 @@
 
 	#*****************************************************************************
 	#
-	# Copyright (c) 2008, 2009 IBM Corporation and others.
+	# Copyright (c) 2008, 2016 IBM Corporation and others.
  	# All rights reserved. This program and the accompanying materials
  	# are made available under the terms of the Eclipse Public License v1.0
  	# which accompanies this distribution, and is available at
@@ -18,7 +18,7 @@
 	#     IBM Corporation - initial implementation
 	#
 	# Author: 		API Tools Team
-	# Date:			August 27, 2008
+	# Date:			August 27, 2016
 	#
 	# Description: Main page for the API Tools team web site
 	#
@@ -27,7 +27,7 @@
 	
 	
 	$pageTitle 		= "PDE API Tools";
-	$pageKeywords	= "api, platform, pde, tooling, tools, tags, test, testing, plan, plans, 3.5";
+	$pageKeywords	= "api, platform, pde, tooling, tools, tags, test, testing";
 	$pageAuthor		= "API Tools Team";
 	
 	include("_sideCommon.php");
@@ -53,23 +53,13 @@
 				    <li> Identity leakage of non-API types into API.</li>
 				</ol>
 			</p>
-	    </div>
-		<div class="homeitem3col">
-		  <h2><b>Current Development</b></h2>
-		  	<p><a href="./dev_plans/r3_5/plan.php">API Tools 3.5 Plan</a></p>
-		  	<p><a href="./coverage/index.php">Code coverage results</a></p>
-		  	<p>New and exciting examples can be found on the <a href="http://wiki.eclipse.org/PDE/API_Tools/Resources">resources wiki</a></p>
 	    </div>	    
 		<div class="homeitem3col">
 		  <h2><b>Get involved!</b></h2>
 		    <p>
 		    	If you are interested in participating in the development of the API Tools component, 
-		    	check out the developer's mailing list: <a href="http://dev.eclipse.org/mailman/listinfo/pde-ui-build-dev">pde-dev@eclipse.org</a>.
+		    	check out the developer's mailing list: <a href="http://dev.eclipse.org/mailman/listinfo/pde-dev">pde-dev@eclipse.org</a>.
 				Chat with people there about your problems and interests, and find out what you can do to help.
-			</p>
-			<p>
-				To get started you can check out the source for API Tools using either the <a href="../pde-api-tools/documents/projectSet.psf">extssh project set file</a> (if you have a bugzilla account) or the 
-				<a href="../pde-api-tools/documents/pserverProjectSet.psf">pserver project set file</a> (if you do not have a bugzilla account).
 			</p>
 			<br>
 		</div>

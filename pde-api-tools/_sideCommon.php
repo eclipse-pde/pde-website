@@ -20,13 +20,7 @@
 	<div class="sideitem">
 		<h6>Quick Links</h6>
 		<ul>
-			<li><a href="/pde/pde-api-tools/index.php">Home</a></li>
-			<li><a href="/pde/pde-api-tools/nan/new_and_noteworthy.php">New and Noteworthy</a></li>
-			<li><a href="/pde/pde-api-tools/test_plans/test_plans.php">Test Plans</a></li>
-			<li><a href="http://wiki.eclipse.org/ApiTools_Milestones">Milestone Plans</a></li>
-			<li><a href="http://wiki.eclipse.org/API_Tools">WIKI</a></li>
-			<li><a href="http://wiki.eclipse.org/PDE/API_Tools/User_Guide">API Tools User Guide</a></li>
-			<li><a href="/pde/pde-api-tools/about.php">About This Content</a></li>
+			<li><a href="https://projects.eclipse.org/projects/eclipse.pde">PDE project home</a></li>
 		</ul>
 	</div> 
 EOHTML
