@@ -127,13 +127,7 @@ ob_start();
 			
 			</table>
 		</div>
-		<div class="homeitem3col" id="pdebuild">
-		  <h2>PDE Build</h2>
-			<p>The goal of PDE Build is to facilitate the automation of plug-in build processes. Essentially, PDE Build produces Ant scripts based on development-time information provided by, for example, the plugin.xml and build.properties files. The generated Ant scripts, can fetch the relevant projects from a CVS repository, build jars, Javadoc, source zips, put everything together in a format ready to ship and send it out to a remote location (e.g., a local network or a downloads server). </p>
-
-                        <p>While PDE Build is still being maintained, it is not actively enhanced. For new builds, you can also consider other build systems like Maven Tycho or Gradle.</p>
-                    
-		</div>
+		
         <div class="homeitem3col" id="pdeui">
 		  <h2>PDE UI</h2>
 			<p>The PDE UI component provides a comprehensive set of tools to create, develop, test, debug and deploy Eclipse   plug-ins, fragments, features, update sites and RCP products. </p>
@@ -152,6 +146,13 @@ ob_start();
 			    <li>Integration with JDT  - plug-in manifest files participate in Java search and refactoring. </li>
 				<li>User Assistance Tools - Editors and tools for developing user help and other UA documents.</li>
 				<li>Declarative Services Tools - Editors and validation for OSGi declarative services.</li>
+		</div>
+        <div class="homeitem3col" id="pdebuild">
+		  <h2>PDE Build</h2>
+			<p>The goal of PDE Build is to facilitate the automation of plug-in build processes. Essentially, PDE Build produces Ant scripts based on development-time information provided by, for example, the plugin.xml and build.properties files. The generated Ant scripts, can fetch the relevant projects from a CVS repository, build jars, Javadoc, source zips, put everything together in a format ready to ship and send it out to a remote location (e.g., a local network or a downloads server). </p>
+
+                        <p>While PDE Build is still being maintained, it is not actively enhanced. For new builds, you can also consider other build systems like Maven Tycho or Gradle.</p>
+                    
 		</div>
         <div class="homeitem3col" id="pdeapitools">
 		  <h2>PDE API Tools</h2>
