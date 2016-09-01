@@ -130,6 +130,8 @@ ob_start();
 		<div class="homeitem3col" id="pdebuild">
 		  <h2>PDE Build</h2>
 			<p>The goal of PDE Build is to facilitate the automation of plug-in build processes. Essentially, PDE Build produces Ant scripts based on development-time information provided by, for example, the plugin.xml and build.properties files. The generated Ant scripts, can fetch the relevant projects from a CVS repository, build jars, Javadoc, source zips, put everything together in a format ready to ship and send it out to a remote location (e.g., a local network or a downloads server). </p>
+
+                        <p>While PDE Build is still being maintained, it is not actively enhanced. For new builds, you can also consider other build systems like Maven Tycho or Gradle.</p>
                     
 		</div>
         <div class="homeitem3col" id="pdeui">
