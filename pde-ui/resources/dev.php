@@ -127,7 +127,6 @@ ob_start();
 			    <li><a href="http://www.eclipse.org/pde/pde-ui">Home</a></li>
 				<li><a href="user.php">Articles and Examples</a></li>
 				<li><a href="dev.php">Development Resources</a></li>				
-				<li><a href="../dev_plans/r3_5/plan.php">3.5 Dev Plan</a></li>
 				<li><a href="../committers/committers.php">Meet the Team</a></li>
 				<li><a href="https://projects.eclipse.org/projects/eclipse.pde/">Get Involved!</a></li>
 				<li><a href="http://wiki.eclipse.org/index.php/PDE_UI">PDE UI Wiki</a></li>

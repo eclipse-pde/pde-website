@@ -18,13 +18,6 @@ ob_start();
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 		
-				<div class="homeitem3col">
-			<a name="happening"></a>
-			<h2>What&#8217;s Happening?</h2>
-			
-			<p>Check out our <a href="dev_plans/r3_5/plan.php">3.5 Development Plan</a></p>
-
-		</div>
 	  <div class="homeitem3col">
 			<a name="team"></a>
 			<h2>PDE Information</h2>
@@ -66,7 +59,6 @@ ob_start();
 			    <li><a href="http://www.eclipse.org/pde">PDE Home Page</a></li>
 				<li><a href="resources/user.php">Articles and Examples</a></li>
 				<li><a href="resources/dev.php">Development Resources</a></li>				
-				<li><a href="dev_plans/r3_5/plan.php">3.5 Dev Plan</a></li>
 				<li><a href="committers/committers.php">Meet the Team</a></li>
 				<li><a href="https://wiki.eclipse.org/PDE/Contributor_Guide">Get Involved!</a></li>
 				<li><a href="http://wiki.eclipse.org/index.php/PDE_UI">PDE UI Wiki</a></li>
