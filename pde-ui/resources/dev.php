@@ -103,7 +103,7 @@ ob_start();
 			<a name="involved"></a>
 			<h2>Get Involved!</h2>
 		  <p>If you are interested in participating in the development of the
-			PDE UI component, check out our <a href="get_involved.php">Get Involved</a> page and then let us know using
+			PDE UI component, check out our <a href="https://projects.eclipse.org/projects/eclipse.pde/">Contributor Guide</a> and then let us know using
 			the developer's mailing list: <a
 				href="http://dev.eclipse.org/mailman/listinfo/pde-ui-dev">pde-ui-dev@eclipse.org</a>.
 			Chat with people there about your problems and interests, and find
@@ -129,7 +129,7 @@ ob_start();
 				<li><a href="dev.php">Development Resources</a></li>				
 				<li><a href="../dev_plans/r3_5/plan.php">3.5 Dev Plan</a></li>
 				<li><a href="../committers/committers.php">Meet the Team</a></li>
-				<li><a href="../get_involved.php">Get Involved!</a></li>
+				<li><a href="https://projects.eclipse.org/projects/eclipse.pde/">Get Involved!</a></li>
 				<li><a href="http://wiki.eclipse.org/index.php/PDE_UI">PDE UI Wiki</a></li>
 			</ul>
 		</div>

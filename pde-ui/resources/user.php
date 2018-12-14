@@ -64,7 +64,7 @@ The view contains three sections:
 				<li><a href="dev.php">Development Resources</a></li>				
 				<li><a href="../dev_plans/r3_5/plan.php">3.5 Dev Plan</a></li>
 				<li><a href="../committers/committers.php">Meet the Team</a></li>
-				<li><a href="../get_involved.php">Get Involved!</a></li>
+				<li><a href="https://projects.eclipse.org/projects/eclipse.pde/">Get Involved!</a></li>
 				<li><a href="http://wiki.eclipse.org/index.php/PDE_UI">PDE UI Wiki</a></li>
 			</ul>
 		</div>

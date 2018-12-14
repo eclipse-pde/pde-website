@@ -23,8 +23,6 @@ ob_start();
 			<h2>What&#8217;s Happening?</h2>
 			
 			<p>Check out our <a href="dev_plans/r3_5/plan.php">3.5 Development Plan</a></p>
-			
-			<p>We have a new <a href="get_involved.php">Get Involved</a> page.  PDE loves contributors!
 
 		</div>
 	  <div class="homeitem3col">
@@ -33,7 +31,7 @@ ob_start();
 	      <p>Visit the <a href="committers/committers.php">Committers</a> page for a list of committers and active contributors on the PDE UI component.</p>
 		  <p>View some of the PDE <a href="resources/user.php">articles and examples</a>.
 		  <p>Check out the <a href="resources/dev.php">development resources</a> page for more detailed information on the PDE UI plug-ins and our development process.</p>
-		  <p>Interested in <a href="get_involved.php">getting involved</a> in the PDE community?  There are many ways you can help improve the quality of the PDE tools.</p>
+		  <p>Interested in <a href="https://wiki.eclipse.org/PDE/Contributor_Guide">getting involved</a> in the PDE community?  There are many ways you can help improve the quality of the PDE tools.</p>
 		    
 	  </div>	
 		
@@ -70,7 +68,7 @@ ob_start();
 				<li><a href="resources/dev.php">Development Resources</a></li>				
 				<li><a href="dev_plans/r3_5/plan.php">3.5 Dev Plan</a></li>
 				<li><a href="committers/committers.php">Meet the Team</a></li>
-				<li><a href="get_involved.php">Get Involved!</a></li>
+				<li><a href="https://wiki.eclipse.org/PDE/Contributor_Guide">Get Involved!</a></li>
 				<li><a href="http://wiki.eclipse.org/index.php/PDE_UI">PDE UI Wiki</a></li>
 			</ul>
 		</div>
