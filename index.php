@@ -101,7 +101,7 @@ ob_start();
 		<div class="homeitem3col">
 		  <h2>PDE Components</h2>
 			<p>
-				The PDE subproject is broken down into three main components, Build, UI and API Tools. We also have an Incubator component where we can develop non-SDK features.
+				The PDE subproject consists out of UI, API Tools and Build. We also have an Incubator component where we can develop non-SDK features.
 			</p>
 			<table width="100%" border="0">
 			<tr> 
@@ -109,16 +109,16 @@ ob_start();
 				<td width="82%"><b>Description</b></td>
 			</tr>
 			<tr> 
-				<td width="20%" valign="top"><a href="#pdebuild">PDE Build</a></td>
-				<td width="82%">Ant based tools and scripts to automate build processes</td>
-			</tr>
-			<tr> 
 				<td width="20%" valign="top"><a href="#pdeui">PDE UI</a></td>
 				<td width="82%">Models, builders, editors and more to faciliate plug-in development in the Eclipse IDE.</td>
 			</tr>
 			<tr> 
 				<td width="20%" valign="top"><a href="#pdeapitools">PDE API Tools</a></td>
-				<td width="82%">Eclipse IDE and build process integrated tooling to maintain API</td>
+				<td width="82%">Eclipse IDE and build process integrated tooling to maintain API.</td>
+			</tr>
+			<tr> 
+				<td width="20%" valign="top"><a href="#pdebuild">PDE Build</a></td>
+				<td width="82%">Ant based tools and scripts to automate build processes.</td>
 			</tr>
 			<tr> 
 				<td width="20%" valign="top"><a href="http://wiki.eclipse.org/PDE/Incubator">PDE Incubator</a></td>
