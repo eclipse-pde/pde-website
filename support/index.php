@@ -38,23 +38,14 @@ ob_start();
                     The <a href="https://dev.eclipse.org/mailman/listinfo/pde-dev">pde-dev</a> mailing list can be used for development discussion and questions about contributing.
                     </p>
 
-                    <p>
-                    We are active on <a href="http://wiki.eclipse.org/index.php/IRC">IRC</a> channels #eclipse and #eclipse-dev
-                    </p>
-
-                    <p>
-                    PDE has a <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.platform.pde">newsgroup</a> where users can ask for help.
-                    </p>
-                    
-        		
-        		</td>
+        	    </td>
 				</tr>
 			</table>
 		</div>
 		
 		
 		<div class="homeitem3col">
-			<a name="bugzilla"></a><h3>Reporting Bugs</h3>
+			<a name="github"></a><h3>Reporting Bugs</h3>
 			<table border="0"> 
         		<tr height="10" colspan="2"></tr>
         		<tr>
@@ -63,10 +54,10 @@ ob_start();
         		</td>
 		        <td>    
 				        <p>
-				        	Submit bugs using <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=PDE">Bugzilla web interface.</a> 
+				        	Submit bugs using <a href="https://github.com/eclipse-pde/eclipse.pde/issues">GitHub web interface.</a> 
 				        </p>
 				        <p>
-				        Please <a href="https://bugs.eclipse.org/bugs/query.cgi?product=PDE">search for duplicates</a> first! For defects provide steps 
+				        Please search for duplicates first! For defects provide steps 
 				        on how to reproduce. For enhancements outline a use case.  Due to an overwhelming number of requests, committers prioritize 
 				        critical bug fixes and framework and API improvements and cannot respond all inquiries. 
 				        </p> 
@@ -75,14 +66,8 @@ ob_start();
 			</table>
 			
 			<ul>
-				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=PDE&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=blocker&bug_severity=critical&bug_severity=major&bug_severity=normal&emailtype1=substring&email1=&emailtype2=notregexp&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-				<img border=0 src="/pde/images/query.gif">&nbsp;&nbsp;View bugs with severity of normal or higher</a> 
-				</li>
-				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=PDE&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=minor&bug_severity=trivial&bug_severity=enhancement&emailtype1=substring&email1=&emailtype2=notregexp&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-					<img border=0 src="/pde/images/query.gif">&nbsp;&nbsp;View bugs marked enhancement, minor, or trivial</a> 
-				</li>
-				<li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=PDE&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&keywords_type=allwords&keywords=helpwanted&keywords=bugday&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-					<img border=0 src="/pde/images/query.gif">&nbsp;&nbsp;View bugs marked helpwanted or bugday</a> 
+				<li><a href="https://github.com/eclipse-pde/eclipse.pde/issues">
+				<img border=0 src="/pde/images/query.gif">&nbsp;&nbsp;View open bugs</a> 
 				</li>
 			</ul>
 		</div>
