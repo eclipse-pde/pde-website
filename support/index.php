@@ -28,20 +28,13 @@ ob_start();
 
 		<div class="homeitem3col">
 			<a name="community"></a><h3>Communication</h3>
-			<table border="0"> 
-				<tr height="10" colspan="2"></tr>
-        		<tr>
-                    <td width="80" align="center" valign="top" >
-        			&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" src="/pde/images/community.jpg"><
+			<img border="0" src="/pde/images/community.jpg">
                         
                     <p>
                     The <a href="https://dev.eclipse.org/mailman/listinfo/pde-dev">pde-dev</a> mailing list can be used for development discussion and questions about contributing.
                     </p>
 
-        	    </td>
-				</tr>
-			</table>
-		</div>
+        	    </div>
 		
 		
 		<div class="homeitem3col">
